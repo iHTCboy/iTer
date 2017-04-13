@@ -12,6 +12,8 @@ class ITQuestionListViewCell: UITableViewCell {
 
     @IBOutlet weak var tagLbl: UILabel!
     
+    @IBOutlet weak var langugeLbl: UILabel!
+    
     @IBOutlet weak var questionLbl: ITCopyLabel!
     
     override func awakeFromNib() {

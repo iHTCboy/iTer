@@ -71,9 +71,13 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2km-lX-hSg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="语言" image="language_tabbar_normal.png" selectedImage="language_tabbar_selected.png" id="fhS-3c-oCy"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O3v-qv-Ey5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="O3v-qv-Ey5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0097922282289999996" green="0.58012366289999995" blue="0.94970387219999997" alpha="0.84729863556338025" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -90,9 +94,13 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bLq-5e-DWk" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="职位" image="Engineer_normal.png" selectedImage="Engineer_selected.png" id="Auc-75-r2L"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IZs-vs-zoc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="IZs-vs-zoc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0097922282289999996" green="0.58012366289999995" blue="0.94970387219999997" alpha="0.84828895246478875" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

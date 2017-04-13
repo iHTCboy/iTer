@@ -68,8 +68,24 @@ extension ITQuestionDetailViewController : UITableViewDelegate, UITableViewDataS
             cell.selectionStyle = .none
             cell.tagLbl.layer.cornerRadius = 3
             cell.tagLbl.layer.masksToBounds = true
-            cell.tagLbl.text = " \(self.title!) "
-            cell.questionLbl.text = questionModle?.question
+            cell.langugeLbl.layer.cornerRadius = 3
+            cell.langugeLbl.layer.masksToBounds = true
+            cell.langugeLbl.backgroundColor = kColorAppBlue
+            
+            cell.questionLbl.text = questionModle!.question
+            cell.tagLbl.text =  " \(self.title!) "
+            
+            if self.title == questionModle?.lauguage {
+                // 判断当前是语言tabbar 也可以用 self.tabBarController?.selectedIndex 判断，但兼容性不好
+                cell.tagLbl.backgroundColor = kColorAppBlue
+                cell.langugeLbl.isHidden = true
+            }else{
+                
+                cell.tagLbl.backgroundColor = kColorAppOrange
+                cell.langugeLbl.isHidden = false
+                cell.langugeLbl.text = " \(questionModle!.lauguage) "
+                
+            }
             return cell
         default:
             let cell: ITQuestionDetailViewCell = tableView.dequeueReusableCell(withIdentifier: "ITQuestionDetailViewCell") as! ITQuestionDetailViewCell

@@ -51,16 +51,54 @@ class ITLanguageViewController: UIViewController {
             }
         }
         
-        let contentView = ITPageContentView(frame: contentFrame, childVcs: childVcs, parentVc: self)
+    let contentView = ITPageContentView(frame: contentFrame, childVcs: childVcs, parentVc: self)
         contentView.delegate = self
         return contentView
-        }()
+    }()
+    
+    var isFirstLaunch = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // 设置 UI 界面
         setUpUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        launchAnimate()
+        
+        self.tabBarController?.tabBar.tintColor = UIColor.orange
+        
+    }
+    
+    func launchAnimate() {
+        if !isFirstLaunch {
+            isFirstLaunch = true
+            
+            let vc = UIStoryboard.init(name: "LaunchScreen", bundle: nil);
+            let launchView = vc.instantiateInitialViewController()!.view
+            let window =  UIWindow.init(frame: (view?.frame)!)
+            window.windowLevel = UIWindowLevelAlert
+            window.backgroundColor = UIColor.clear
+            window.addSubview(launchView!)
+            window.makeKeyAndVisible()
+            
+            UIView.animate(withDuration: 1.2, delay: 0.8, options: .beginFromCurrentState, animations: {
+                launchView?.transform = CGAffineTransform.init(scaleX: 5, y: 5).rotated(by: CGFloat.pi * 3)
+                launchView?.alpha = 0.7
+            }, completion: { (true) in
+                UIView.animate(withDuration: 0.5, animations: {
+                    launchView?.layer.transform = CATransform3DScale(CATransform3DIdentity, 0.5, 0.5, 1)
+                    launchView?.alpha = 0.0
+                }, completion: { (true) in
+                    
+                    window.removeFromSuperview()
+                })
+            })
+        }
     }
     
 }

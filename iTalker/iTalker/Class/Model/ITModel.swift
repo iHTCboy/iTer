@@ -11,6 +11,7 @@ import UIKit
 class ITModel: NSObject {
     var success = 0
     var total = 0
+    
     lazy var result: Array<ITQuestionModel> = {
         return Array()
     }()
@@ -19,7 +20,7 @@ class ITModel: NSObject {
         super.init()
     }
     
-    init(dictionary: Dictionary<String, Any>) {
+    init(dictionary: Dictionary<String, Any> , language: String) {
         super.init()
         
         guard !dictionary.isEmpty else {
@@ -32,6 +33,7 @@ class ITModel: NSObject {
         let resultArray = dictionary["result"] as! Array<Any>
         for dic in resultArray {
             let questionModel = ITQuestionModel.init(dictionary: dic as! Dictionary<String, Any>);
+            questionModel.lauguage = language
             result.append(questionModel)
         }
         

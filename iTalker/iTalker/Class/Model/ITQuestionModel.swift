@@ -13,6 +13,7 @@ class ITQuestionModel: NSObject {
     var typeID = ""
     var answer = ""
     var question = ""
+    var lauguage = ""
     
     init(dictionary: Dictionary<String, Any>) {
         

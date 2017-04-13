@@ -725,8 +725,9 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iTalker/Resource/ios_api",
-					"\"$(SRCROOT)/iTalker/Resource/ios_api/libBaiduMobStat.a\"",
 				);
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ihtc.iTalker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/HTC/Documents/Programing/iOSProjects/iTalker/iTalker/iTalker/Class/iTalker-Brdging-Header.h";
@@ -746,7 +747,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iTalker/Resource/ios_api",
-					"\"$(SRCROOT)/iTalker/Resource/ios_api/libBaiduMobStat.a\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ihtc.iTalker;
 				PRODUCT_NAME = "$(TARGET_NAME)";

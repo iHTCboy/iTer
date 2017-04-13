@@ -25,15 +25,16 @@ class ITQuestionListViewController: UIViewController {
 
     lazy var tableView: UITableView = {
         var tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenW, height: kScreenH-64-58), style: .plain)
-        tableView.tableHeaderView = UIView(frame:CGRect(x: 0, y: 0, width: 0, height: 0.1))
         tableView.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 40, right: 0)
         tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         tableView.estimatedRowHeight = 80
         tableView.register(UINib.init(nibName: "ITQuestionListViewCell", bundle: Bundle.main), forCellReuseIdentifier: "ITQuestionListViewCell")
-        // 调试
-        //        tableView.fd_debugLogEnabled = true
+        self.refreshControl.addTarget(self, action: #selector(randomRefresh(sender:)), for: UIControlEvents.valueChanged)
+        tableView.addSubview(self.refreshControl)
         return tableView
     }()
+    
+    let refreshControl = UIRefreshControl.init()
     
     lazy var listModel: ITModel = {
         
@@ -52,23 +53,22 @@ class ITQuestionListViewController: UIViewController {
                     sumModel.total += model.total
                     sumModel.success = model.success==1 ? 1 : sumModel.success
                 }
-                
                 return sumModel
                 
             } else {
                 print("no featch title")
             }
-            
-            let mel = self.getModel(title: "dd")
-            print(mel)
-            
-            
         }
         
         return ITModel()
        
     }()
     
+    public func randomRefresh(sender: AnyObject) {
+        self.listModel.result.shuffle()
+        tableView.reloadData()
+        refreshControl.endRefreshing()
+    }
     
     func getModel(title: String) -> ITModel {
         
@@ -79,7 +79,7 @@ class ITQuestionListViewController: UIViewController {
                 if let object = json as? [String: Any] {
                     // json is a dictionary
                     
-                    let model = ITModel.init(dictionary: object)
+                    let model = ITModel.init(dictionary: object, language: title)
                     return model
                     
                 } else {
@@ -136,13 +136,27 @@ extension ITQuestionListViewController : UITableViewDelegate, UITableViewDataSou
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: ITQuestionListViewCell = tableView.dequeueReusableCell(withIdentifier: "ITQuestionListViewCell") as! ITQuestionListViewCell
         cell.accessoryType = .disclosureIndicator
-        
-        let question = self.listModel.result[indexPath.row]
-        
         cell.tagLbl.layer.cornerRadius = 3
         cell.tagLbl.layer.masksToBounds = true
-        cell.tagLbl.text = " \(self.title!) "
+        cell.langugeLbl.layer.cornerRadius = 3
+        cell.langugeLbl.layer.masksToBounds = true
+        cell.langugeLbl.backgroundColor = kColorAppBlue
+        
+        let question = self.listModel.result[indexPath.row]
         cell.questionLbl.text = question.question
+        cell.tagLbl.text =  " \(self.title!) "
+        
+        if self.title == question.lauguage {
+            // 判断当前是语言tabbar 也可以用 self.tabBarController?.selectedIndex 判断，但兼容性不好
+            cell.tagLbl.backgroundColor = kColorAppBlue
+            cell.langugeLbl.isHidden = true
+        }else{
+            
+            cell.tagLbl.backgroundColor = kColorAppOrange
+            cell.langugeLbl.isHidden = false
+            cell.langugeLbl.text = " \(question.lauguage) "
+            
+        }
         
         return cell
     }
@@ -160,5 +174,29 @@ extension ITQuestionListViewController : UITableViewDelegate, UITableViewDataSou
     }
 }
 
+
+extension MutableCollection where Indices.Iterator.Element == Index {
+    /// Shuffles the contents of this collection.
+    mutating func shuffle() {
+        let c = count
+        guard c > 1 else { return }
+        
+        for (firstUnshuffled , unshuffledCount) in zip(indices, stride(from: c, to: 1, by: -1)) {
+            let d: IndexDistance = numericCast(arc4random_uniform(numericCast(unshuffledCount)))
+            guard d != 0 else { continue }
+            let i = index(firstUnshuffled, offsetBy: d)
+            swap(&self[firstUnshuffled], &self[i])
+        }
+    }
+}
+
+extension Sequence {
+    /// Returns an array with the contents of this sequence, shuffled.
+    func shuffled() -> [Iterator.Element] {
+        var result = Array(self)
+        result.shuffle()
+        return result
+    }
+}
 
 
