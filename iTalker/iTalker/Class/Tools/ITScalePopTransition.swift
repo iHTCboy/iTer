@@ -16,7 +16,7 @@ class ITScalePopTransition: NSObject, UIViewControllerAnimatedTransitioning {
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         let fromVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from) as! ITQuestionDetailViewController
-        let prentVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) as! ITBaseTransitionViewController
+        let prentVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) as! ITBasePushTransitionVC
         let toVC = prentVC.childViewControllers[prentVC.selectTitleIndex] as! ITQuestionListViewController
         let container = transitionContext.containerView
         
@@ -26,7 +26,7 @@ class ITScalePopTransition: NSObject, UIViewControllerAnimatedTransitioning {
         
         func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
             let fromVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from) as! ITQuestionDetailViewController
-            let prentVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) as! ITBaseTransitionViewController
+            let prentVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) as! ITBasePushTransitionVC
             let toVC = prentVC.childViewControllers[prentVC.selectTitleIndex] as! ITQuestionListViewController
             let container = transitionContext.containerView
             

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ITBaseTransitionViewController: UIViewController {
+class ITBasePushTransitionVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,7 @@ class ITBaseTransitionViewController: UIViewController {
 
 
 // MARK: 转换协议
-extension ITBaseTransitionViewController : UINavigationControllerDelegate{
+extension ITBasePushTransitionVC : UINavigationControllerDelegate{
     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         if operation == UINavigationControllerOperation.push {
             return ITScalePushTransition()

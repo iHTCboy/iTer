@@ -1,0 +1,99 @@
+{"success":1,"total":2100,"result":[
+  {
+    "ID" : "55fa696ee4b043d0caf26f88",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "optionD" : "e.stopImmediatePropagation()",
+    "optionC" : "e.stopPropagation()",
+    "optionAnswer" : "C",
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "optionB" : "e.cancelBubble=true",
+    "type" : "1",
+    "optionA" : "e.preventDefault()",
+    "knowledge" : "HTML\/CSS",
+    "question" : "下列哪个操作是W3C标准定义的阻止事件向父容器传递："
+  },
+  {
+    "ID" : "55fa696ee4b043d0caf26f89",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "optionD" : "IE盒子模型中：盒子总宽度 ＝ width",
+    "optionC" : "标准盒子模型中：盒子的总宽度 ＝ 左右margin + 左右border + width",
+    "optionAnswer" : "A",
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "optionB" : "IE盒子模型中：盒子总宽度 ＝ 左右margin + 左右border + width",
+    "type" : "1",
+    "optionA" : "标准盒子模型中：盒子的总宽度 ＝ 左右margin + 左右border + 左右padding + width",
+    "knowledge" : "HTML\/CSS",
+    "question" : "以下关于盒子模型描述正确的是："
+  },
+  {
+    "ID" : "55fa696ee4b043d0caf26f8a",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "optionD" : "多个宽高不等的元素，实现无缝瀑布流布局",
+    "optionC" : "三列布局，左列宽度像素数确定，中、右列随容器宽度等宽弹性伸缩",
+    "optionAnswer" : "D",
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "optionB" : "多列布局，每列的高度按内容最高的一列等高",
+    "type" : "1",
+    "optionA" : "三列布局，随容器宽度等宽弹性伸缩",
+    "knowledge" : "HTML\/CSS",
+    "question" : "使用CSS的flexbox布局，不能实现以下哪一个效果："
+  },
+  {
+    "ID" : "55fa696ee4b043d0caf26f8b",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "optionD" : "Header、article、address都属于语义化明确的标签",
+    "optionC" : "语义化是HTML5带来的新概念，此前版本的HTML无法做到语义化",
+    "optionAnswer" : "D",
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "optionB" : "Table 属于过时的标签，遇到数据列表时，需尽量使用 div 来模拟表格",
+    "type" : "1",
+    "optionA" : "语义化的HTML有利于机器的阅读，如PDA手持设备、搜索引擎爬虫；但不利于人的阅读",
+    "knowledge" : "HTML\/CSS",
+    "question" : "关于HTML语义化，以下哪个说法是正确的？"
+  },
+  {
+    "ID" : "55fa696ee4b043d0caf26f8c",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "optionD" : "一个HTTP请求返回的HTTP状态码中，304表示临时重定向。",
+    "optionC" : "RESTful 接口中，利用HTTP协议的method字段来描述要对资源操作的方式，比如GET表示获取资源，POST表示新增一个资源，PUT表示更新资源,DELETE 表示删除资源等等。",
+    "optionAnswer" : "C",
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "optionB" : "以下是一个Http链接的response 的响应头： GET \/xxx\/xxx\/js\/lib\/test.js HTTP\/1.1 Host: 127.0.0.1 Connection: keep-alive Pragma: no-cache Cache-Control: no-cache Accept: *\/*",
+    "type" : "1",
+    "optionA" : "HTTP协议是有状态协议。",
+    "knowledge" : "HTML\/CSS",
+    "question" : "关于HTTP协议，下面哪个说法是正确的？"
+  },
+  {
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "ID" : "55fa696ee4b043d0caf26f8d",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "type" : "2",
+    "knowledge" : "",
+    "question" : "使用 for in 循环数组中的元素会枚举原型链上的所有属性，过滤这些属性的方式是使用_____函数"
+  },
+  {
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "ID" : "55fa696ee4b043d0caf26f8e",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "type" : "2",
+    "knowledge" : "",
+    "question" : "写一个求和的函数sum，达到下面的效果\n\n\/\/ Should equal 15\nsum(1, 2, 3, 4, 5);\n\/\/ Should equal 0\nsum(5, null, -5);\n\/\/ Should equal 10\nsum('1.0', false, 1, true, 1, 'A', 1, 'B', 1, 'C', 1, 'D', 1,\n  'E', 1, 'F', 1, 'G', 1);\n\/\/ Should equal 0.3, not 0.30000000000000004\nsum(0.1, 0.2);"
+  },
+  {
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "ID" : "55fa696ee4b043d0caf26f8f",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "type" : "2",
+    "knowledge" : "",
+    "question" : "请写一个表格以及对应的CSS，使表格奇数行为白色背景，偶数行为灰色背景，鼠标移上去时为黄色背景。"
+  },
+  {
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "ID" : "55fa696ee4b043d0caf26f90",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "type" : "2",
+    "knowledge" : "",
+    "question" : "写一个traverse函数，输出所有页面宽度和高度大于50像素的节点。"
+  }
+]}

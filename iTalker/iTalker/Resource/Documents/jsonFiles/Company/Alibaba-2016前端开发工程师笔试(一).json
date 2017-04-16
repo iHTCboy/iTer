@@ -1,0 +1,75 @@
+{"success":1,"total":2100,"result":[
+  {
+    "ID" : "55fa696ee4b043d0caf26f82",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "optionD" : "keydown",
+    "optionC" : "mouseout",
+    "optionAnswer" : "D",
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "optionB" : "contextmenu",
+    "type" : "1",
+    "optionA" : "click",
+    "knowledge" : "Javascript",
+    "question" : "下列事件哪个不是由鼠标触发的事件（）"
+  },
+  {
+    "ID" : "55fa696ee4b043d0caf26f83",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "optionD" : "块级元素实际占用的宽度与它的 background 属性有关。",
+    "optionC" : "块级元素实际占用的宽度与它的 padding 属性有关；",
+    "optionAnswer" : "D",
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "optionB" : "块级元素实际占用的宽度与它的 border 属性有关；",
+    "type" : "1",
+    "optionA" : "块级元素实际占用的宽度与它的 width 属性有关；",
+    "knowledge" : "Javascript",
+    "question" : "下面关于CSS布局的描述，不正确的是？"
+  },
+  {
+    "ID" : "55fa696ee4b043d0caf26f84",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "optionD" : "使用 <table> 元素展现学生成绩表等数据。",
+    "optionC" : "避免使用 <font> 标签",
+    "optionAnswer" : "B",
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "optionB" : "在 中间插入 HTML 代码；",
+    "type" : "1",
+    "optionA" : "在页面顶部添加 doctype声明；",
+    "knowledge" : "Javascript",
+    "question" : "下面有关html的描述，不推荐的是？"
+  },
+  {
+    "ID" : "55fa696ee4b043d0caf26f85",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "optionD" : "使用 POST",
+    "optionC" : "写入 Session",
+    "optionAnswer" : "D",
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "optionB" : "写入 COOKIE",
+    "type" : "1",
+    "optionA" : "存入 IndexdDB",
+    "knowledge" : "HTML\/CSS",
+    "question" : "浏览器在一次 HTTP 请求中，需要传输一个 4097 字节的文本数据给服务端，可以采用那些方式?"
+  },
+  {
+    "ID" : "55fa696ee4b043d0caf26f86",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "optionD" : "float: left;",
+    "optionC" : "position: relative;",
+    "optionAnswer" : "C",
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "optionB" : "position: fixed;",
+    "type" : "1",
+    "optionA" : "position: absolute;",
+    "knowledge" : "HTML\/CSS",
+    "question" : "下面哪个属性不会让 div 脱离文档流（normal flow）？"
+  },
+  {
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "ID" : "55fa696ee4b043d0caf26f87",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "type" : "2",
+    "knowledge" : "",
+    "question" : "请实现一个fibonacci函数，要求其参数和返回值如下所示：\n\n\/**\n *@desc: fibonacci\n *@param: count {Number}\n *@return: result {Number} 第count个fibonacci值，计数从0开始\n  fibonacci数列为：[1, 1, 2, 3, 5, 8, 13, 21, 34 …]\n  则getNthFibonacci(0)返回值为1\n  则getNthFibonacci(4)返回值为5\n *\/\nfunction getNthFibonacci(count) {\n}"
+  }
+]}

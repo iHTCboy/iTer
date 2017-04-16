@@ -28,6 +28,46 @@
             </objects>
             <point key="canvasLocation" x="1497" y="-937"/>
         </scene>
+        <!--企业-->
+        <scene sceneID="RIu-IP-yhe">
+            <objects>
+                <navigationController id="T0k-tT-zim" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="企业" image="company_tabbar_normal.png" selectedImage="company_tabbar_selected.png" id="tOD-5L-U1d"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="IO7-GX-A2G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0097922282289999996" green="0.58012366289999995" blue="0.94970387219999997" alpha="0.84828895250000003" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1kw-k5-wsh" kind="relationship" relationship="rootViewController" id="r02-xc-JyB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dNE-V9-foX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="586" y="-242"/>
+        </scene>
+        <!--iTalker-->
+        <scene sceneID="Jvr-UN-ojD">
+            <objects>
+                <viewController id="1kw-k5-wsh" customClass="ITCompanyViewController" customModule="iTalker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rS6-6S-3Kb"/>
+                        <viewControllerLayoutGuide type="bottom" id="igb-6y-J3Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wep-FW-oqd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="iTalker" id="v8D-Zh-aQr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l0p-ph-UUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1497" y="-242"/>
+        </scene>
         <!--iTalker-->
         <scene sceneID="UZP-wO-DqN">
             <objects>
@@ -59,6 +99,7 @@
                     <connections>
                         <segue destination="2km-lX-hSg" kind="relationship" relationship="viewControllers" id="ftZ-Zs-uQy"/>
                         <segue destination="bLq-5e-DWk" kind="relationship" relationship="viewControllers" id="1eD-ag-XmO"/>
+                        <segue destination="T0k-tT-zim" kind="relationship" relationship="viewControllers" id="MkO-dR-dnu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6xl-OX-9YF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -71,7 +112,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2km-lX-hSg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="语言" image="language_tabbar_normal.png" selectedImage="language_tabbar_selected.png" id="fhS-3c-oCy"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="O3v-qv-Ey5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O3v-qv-Ey5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0097922282289999996" green="0.58012366289999995" blue="0.94970387219999997" alpha="0.84729863556338025" colorSpace="custom" customColorSpace="sRGB"/>
@@ -94,7 +135,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bLq-5e-DWk" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="职位" image="Engineer_normal.png" selectedImage="Engineer_selected.png" id="Auc-75-r2L"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="IZs-vs-zoc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IZs-vs-zoc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0097922282289999996" green="0.58012366289999995" blue="0.94970387219999997" alpha="0.84828895246478875" colorSpace="custom" customColorSpace="sRGB"/>
@@ -115,6 +156,8 @@
     <resources>
         <image name="Engineer_normal.png" width="27" height="27"/>
         <image name="Engineer_selected.png" width="27" height="27"/>
+        <image name="company_tabbar_normal.png" width="27" height="27"/>
+        <image name="company_tabbar_selected.png" width="27" height="27"/>
         <image name="language_tabbar_normal.png" width="27" height="27"/>
         <image name="language_tabbar_selected.png" width="27" height="27"/>
     </resources>

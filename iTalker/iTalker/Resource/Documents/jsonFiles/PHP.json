@@ -1,1 +1,417 @@
-﻿{"success":1,"total":53,"result":[{"ID":"1383","typeID":"13","question":"\u5199\u51fa\u51e0\u4e2aPHP\u4e2d\u5e38\u7528\u7684\u8d85\u5168\u5c40\u53d8\u91cf\uff1f","answer":"$_GET ----->get\u4f20\u9001\u65b9\u5f0f\r\n$_POST ----->post\u4f20\u9001\u65b9\u5f0f\r\n$_REQUEST ----->\u53ef\u4ee5\u63a5\u6536\u5230get\u548cpost\u4e24\u79cd\u65b9\u5f0f\u7684\u503c\r\n$_GLOBALS ----->\u6240\u6709\u7684\u53d8\u91cf\u90fd\u653e\u5728\u91cc\u9762\r\n$_FILE ----->\u4e0a\u4f20\u6587\u4ef6\u4f7f\u7528\r\n$_SERVER ----->\u7cfb\u7edf\u73af\u5883\u53d8\u91cf\r\n$_SESSION ----->\u4f1a\u8bdd\u63a7\u5236\u7684\u65f6\u5019\u4f1a\u7528\u5230\r\n$_COOKIE ----->\u4f1a\u8bdd\u63a7\u5236\u7684\u65f6\u5019\u4f1a\u7528\u5230"},{"ID":"1382","typeID":"13","question":"echo\u3001print_r\u3001print\u3001var_dump\u4e4b\u95f4\u7684\u533a\u522b\uff1f","answer":"echo\u3001print\u662fphp\u8bed\u53e5\uff0cvar_dump\u548cprint_r\u662f\u51fd\u6570\r\necho \u8f93\u51fa\u4e00\u4e2a\u6216\u591a\u4e2a\u5b57\u7b26\u4e32\uff0c\u4e2d\u95f4\u4ee5\u9017\u53f7\u9694\u5f00\uff0c\u6ca1\u6709\u8fd4\u56de\u503c\u662f\u8bed\u8a00\u7ed3\u6784\u800c\u4e0d\u662f\u771f\u6b63\u7684\u51fd\u6570\uff0c\u56e0\u6b64\u4e0d\u80fd\u4f5c\u4e3a\u8868\u8fbe\u5f0f\u7684\u4e00\u90e8\u5206\u4f7f\u7528\r\nprint\u4e5f\u662fphp\u7684\u4e00\u4e2a\u5173\u952e\u5b57\uff0c\u6709\u8fd4\u56de\u503c \u53ea\u80fd\u6253\u5370\u51fa\u7b80\u5355\u7c7b\u578b\u53d8\u91cf\u7684\u503c(\u5982int\uff0cstring)\uff0c\u5982\u679c\u5b57\u7b26\u4e32\u663e\u793a\u6210\u529f\u5219\u8fd4\u56detrue\uff0c\u5426\u5219\u8fd4\u56defalse\r\nprint_r \u53ef\u4ee5\u6253\u5370\u51fa\u590d\u6742\u7c7b\u578b\u53d8\u91cf\u7684\u503c(\u5982\u6570\u7ec4\u3001\u5bf9\u8c61\uff09\u4ee5\u5217\u8868\u7684\u5f62\u5f0f\u663e\u793a\uff0c\u5e76\u4ee5array\u3001object\u5f00\u5934\uff0c\u4f46print_r\u8f93\u51fa\u5e03\u5c14\u503c\u548cNULL\u7684\u7ed3\u679c\u6ca1\u6709\u610f\u4e49\uff0c\u56e0\u4e3a\u90fd\u662f\u6253\u5370\"\n\"\uff0c\u56e0\u6b64var_dump()\u51fd\u6570\u66f4\u9002\u5408\u8c03\u8bd5\r\nvar_dump() \u5224\u65ad\u4e00\u4e2a\u53d8\u91cf\u7684\u7c7b\u578b\u548c\u957f\u5ea6\uff0c\u5e76\u8f93\u51fa\u53d8\u91cf\u7684\u6570\u503c\u3002"},{"ID":"1381","typeID":"13","question":"\u8bed\u53e5include\u548crequire\u7684\u533a\u522b\u662f\u4ec0\u4e48\uff1f\u4e3a\u907f\u514d\u591a\u6b21\u5305\u542b\u540c\u4e00\u6587\u4ef6\uff0c\u53ef\u4ee5\u7528\u4ec0\u4e48\u8bed\u53e5\u4ee3\u66ff\u4ed6\u4eec\uff1f","answer":"require\u662f\u65e0\u6761\u4ef6\u5305\u542b\uff0c\u4e5f\u5c31\u662f\u5982\u679c\u4e00\u4e2a\u6d41\u7a0b\u91cc\u52a0\u5165require\uff0c\u65e0\u8bba\u6761\u4ef6\u6210\u7acb\u4e0e\u5426\u90fd\u4f1a\u5148\u6267\u884crequire\uff0c\u5f53\u6587\u4ef6\u4e0d\u5b58\u5728\u6216\u8005\u65e0\u6cd5\u6253\u5f00\u7684\u65f6\u5019\uff0c\u4f1a\u63d0\u793a\u9519\u8bef\uff0c\u5e76\u4e14\u4f1a\u7ec8\u6b62\u7a0b\u5e8f\u6267\u884c\r\ninclude\u6709\u8fd4\u56de\u503c\uff0c\u800crequire\u6ca1\u6709(\u53ef\u80fd\u56e0\u4e3a\u5982\u6b64require\u7684\u901f\u5ea6\u6bd4include\u5feb)\uff0c\u5982\u679c\u88ab\u5305\u542b\u7684\u6587\u4ef6\u4e0d\u5b58\u5728\u7684\u5316\uff0c\u90a3\u4e48\u4f1a\u63d0\u793a\u4e00\u4e2a\u9519\u8bef\uff0c\u4f46\u662f\u7a0b\u5e8f\u4f1a\u7ee7\u7eed\u6267\u884c\u4e0b\u53bb\r\n\u6ce8\u610f:\u5305\u542b\u6587\u4ef6\u4e0d\u5b58\u5728\u6216\u8005\u8bed\u6cd5\u9519\u8bef\u7684\u65f6\u5019require\u662f\u81f4\u547d\u7684\uff0c\u7a0b\u5e8f\u4e0d\u4f1a\u6267\u884c\u4e0b\u53bb\uff0c\u800cinclude\u4e0d\u662f\u3002\r\nrequire_once\u8868\u793a\u4e86\u53ea\u5305\u542b\u4e00\u6b21\uff0c\u907f\u514d\u4e86\u91cd\u590d\u5305\u542b\u3002"},{"ID":"1380","typeID":"13","question":"\u5199\u51fa\u4f60\u5e38\u7528\u7684\u51e0\u4e2a\u9b54\u672f\u5e38\u91cf\uff1f","answer":"__LINE__\u6587\u4ef6\u4e2d\u7684\u5f53\u524d\u884c\u53f7\u3002\r\n__FILE__\u6587\u4ef6\u7684\u5b8c\u6574\u8def\u5f84\u548c\u6587\u4ef6\u540d\u3002\r\n__FUNCTION__\u51fd\u6570\u540d\u79f0\r\n__CLASS__\u7c7b\u7684\u540d\u79f0\r\n__METHOD__\u7c7b\u7684\u65b9\u6cd5\u540d"},{"ID":"1379","typeID":"13","question":"\u8bf4\u51e0\u4e2a\u4f60\u77e5\u9053\u7684PHP\u7684\u8bbe\u8ba1\u6a21\u5f0f\uff1f","answer":"\u5355\u4f8b\u6a21\u5f0f\uff1a \u4fdd\u8bc1\u4e00\u4e2a\u7c7b\u4ec5\u6709\u4e00\u4e2a\u5b9e\u4f8b\uff0c\u5e76\u63d0\u4f9b\u4e00\u4e2a\u8bbf\u95ee\u4ed6\u7684\u5168\u5c40\u8bbf\u95ee\u70b9\u4f8b\u5982\u6846\u67b6\u4e2d\u7684\u6570\u636e\u5e93\u8fde\u63a5\r\n\u7b80\u5355\u5de5\u5382\u6a21\u5f0f\uff1a \u5b83\u5177\u6709\u521b\u5efa\u5bf9\u8c61\u7684\u67d0\u4e9b\u65b9\u6cd5\uff0c\u53ef\u4ee5\u4f7f\u7528\u5de5\u5382\u7c7b\u521b\u5efa\u5bf9\u8c61\uff0c\u800c\u4e0d\u76f4\u63a5\u4f7f\u7528 new\u3002\u4f8b\u5982\u521d\u59cb\u5316\u6570\u636e\u5e93\u7684\u65f6\u5019\u4f1a\u7528\u5230\uff0c\u6bd4\u5982MySQL\uff0cMSSQL\r\n\u7b56\u7565\u6a21\u5f0f\uff1a \u9488\u5bf9\u4e00\u7ec4\u7b97\u6cd5\uff0c\u5c06\u6bcf\u4e00\u4e2a\u7b97\u6cd5\u5c01\u88c5\u5230\u5177\u6709\u5171\u540c\u63a5\u53e3\u7684\u72ec\u7acb\u7684\u7c7b\u4e2d\uff0c\u4f8b\u5982\u8fdb\u5165\u4e2a\u4eba\u4e3b\u9875\u65f6\uff0c\u6839\u636e\u6d4f\u89c8\u8005\u7684\u4e0d\u540c\uff0c\u7ed9\u4e88\u4e0d\u540c\u7684\u663e\u793a\u4e0e\u64cd\u4f5c\r\n\u6ce8\u518c\u6a21\u5f0f\uff1a \u63d0\u4f9b\u4e86\u5728\u7a0b\u5e8f\u4e2d\u6709\u6761\u7406\u7684\u5b58\u653e\u5e76\u7ba1\u7406\u4e00\u7ec4\u5168\u5c40\u5bf9\u8c61 (object)\uff0c\u4f8b\u5982ZF\u6846\u67b6\u4e2d\u7684Zend_Registry::set\r\n\u9002\u914d\u5668\u6a21\u5f0f\uff1a \u5c06\u4e0d\u540c\u63a5\u53e3\u9002\u914d\u6210\u7edf\u4e00\u7684API\u63a5\u53e3\uff0c\u4f8b\u5982\u6570\u636e\u64cd\u4f5c\u6709mysql\u3001mysqli\u3001pdo\u7b49\uff0c\u53ef\u5229\u7528\u9002\u914d\u5668\u6a21\u5f0f\u7edf\u4e00\u63a5\u53e3\r\n\u89c2\u5bdf\u8005\u6a21\u5f0f\uff1a \u4e00\u4e2a\u5bf9\u8c61\u901a\u8fc7\u6dfb\u52a0\u4e00\u4e2a\u65b9\u6cd5\u4f7f\u672c\u8eab\u53d8\u5f97\u53ef\u89c2\u5bdf\u3002\u5f53\u53ef\u89c2\u5bdf\u7684\u5bf9\u8c61\u66f4\u6539\u65f6\uff0c\u5b83\u4f1a\u5c06\u6d88\u606f\u53d1\u9001\u5230\u5df2\u6ce8\u518c\u7684\u89c2\u5bdf\u8005\u3002\u4f8b\u5982\u5b9e\u73b0\u5b9e\u73b0\u6d88\u606f\u63a8\u9001\r\n\u88c5\u9970\u5668\u6a21\u5f0f\uff1a \u4e0d\u4fee\u6539\u539f\u7c7b\u4ee3\u7801\u548c\u7ee7\u627f\u7684\u60c5\u51b5\u4e0b\u52a8\u6001\u6269\u5c55\u7c7b\u7684\u529f\u80fd\uff0c\u4f8b\u5982\u6846\u67b6\u7684\u6bcf\u4e2aController\u6587\u4ef6\u4f1a\u63d0\u4f9bbefore\u548cafter\u65b9\u6cd5\r\n\u8fed\u4ee3\u5668\u6a21\u5f0f\uff1a \u63d0\u4f9b\u4e00\u4e2a\u65b9\u6cd5\u987a\u5e8f\u8bbf\u95ee\u4e00\u4e2a\u805a\u5408\u5bf9\u8c61\u4e2d\u5404\u4e2a\u5143\u7d20\uff0c\u5728PHP\u4e2d\u5c06\u7ee7\u627f Iterator \u7c7b\r\n\u539f\u578b\u6a21\u5f0f\uff1a \u5b9e\u73b0\u4e86\u4e00\u4e2a\u539f\u578b\u63a5\u53e3\uff0c\u8be5\u63a5\u53e3\u7528\u4e8e\u521b\u5efa\u5f53\u524d\u5bf9\u8c61\u7684\u514b\u9686\u3002\u5f53\u76f4\u63a5\u521b\u5efa\u5bf9\u8c61\u7684\u4ee3\u4ef7\u6bd4\u8f83\u5927\u65f6\uff0c\u5219\u91c7\u7528\u8fd9\u79cd\u6a21\u5f0f\u3002\u4f8b\u5982\uff0c\u4e00\u4e2a\u5bf9\u8c61\u9700\u8981\u5728\u4e00\u4e2a\u9ad8\u4ee3\u4ef7\u7684\u6570\u636e\u5e93\u64cd\u4f5c\u4e4b\u540e\u88ab\u521b\u5efa\u3002"},{"ID":"1378","typeID":"13","question":"\u5bf9\u4e8e\u5927\u6d41\u91cf\u7684\u7f51\u7ad9,\u60a8\u91c7\u7528\u4ec0\u4e48\u6837\u7684\u65b9\u6cd5\u6765\u89e3\u51b3\u8bbf\u95ee\u91cf\u95ee\u9898?","answer":"\u9996\u5148\uff0c\u786e\u8ba4\u670d\u52a1\u5668\u786c\u4ef6\u662f\u5426\u8db3\u591f\u652f\u6301\u5f53\u524d\u7684\u6d41\u91cf\u3002\r\n\u5176\u6b21\uff0c\u4f18\u5316\u6570\u636e\u5e93\u8bbf\u95ee\u3002\r\n\u7b2c\u4e09\uff0c\u7981\u6b62\u5916\u90e8\u7684\u76d7\u94fe\u3002\r\n\u7b2c\u56db\uff0c\u63a7\u5236\u5927\u6587\u4ef6\u7684\u4e0b\u8f7d\u3002\r\n\u7b2c\u4e94\uff0c\u4f7f\u7528\u4e0d\u540c\u4e3b\u673a\u5206\u6d41\u4e3b\u8981\u6d41\u91cf\r\n\u7b2c\u516d\uff0c\u4f7f\u7528\u6d41\u91cf\u5206\u6790\u7edf\u8ba1\u8f6f\u4ef6\u3002"},{"ID":"546","typeID":"13","question":" PHP\u7684\u5783\u573e\u6536\u96c6\u673a\u5236\u662f\u600e\u6837\u7684?","answer":"PHP\u4f5c\u4e3a\u811a\u672c\u8bed\u8a00\u662f\u9875\u9762\u7ed3\u675f\u5373\u91ca\u653e\u53d8\u91cf\u6240\u5360\u5185\u5b58\u7684\uff0c\u5f53\u4e00\u4e2a PHP\u7ebf\u7a0b\u7ed3\u675f\u65f6\uff0c\u5f53\u524d\u5360\u7528\u7684\u6240\u6709\u5185\u5b58\u7a7a\u95f4\u90fd\u4f1a\u88ab\u9500\u6bc1\uff0c\u5f53\u524d\u7a0b\u5e8f\u4e2d\u6240\u6709\u5bf9\u8c61\u540c\u65f6\u88ab\u9500\u6bc1\u3002"},{"ID":"545","typeID":"13","question":"\u8bf7\u5bf9POSIX\u98ce\u683c\u548c\u517c\u5bb9Perl\u98ce\u683c\u4e24\u79cd\u6b63\u5219\u8868\u8fbe\u5f0f\u7684\u4e3b\u8981\u51fd\u6570\u8fdb\u884c\u7c7b\u6bd4\u8bf4\u660eereg preg_match:ereg_replace preg_replace","answer":"ereg\/preg_match \u4e3a\u6267\u884c\u6b63\u5219\u5339\u914d\uff0cereg\u91cc\u9762\u662f\u4e0d\u9700\u8981\u4e5f\u4e0d\u80fd\u4f7f\u7528\u5206\u9694\u7b26\u548c\u4fee\u9970\u7b26\u7684\uff0c\u6240\u4ee5ereg\u7684\u529f\u80fd\u6bd4preg\u8981\u5f31\u4e0a\u4e0d\u5c11\u3002\r\n\u5173\u4e8e\u201d.\u201d\uff1a\u70b9\u5728\u6b63\u5219\u91cc\u9762\u4e00\u822c\u662f\u9664\u4e86\u6362\u884c\u7b26\u4ee5\u5916\u7684\u5168\u90e8\u5b57\u7b26\uff0c\u4f46\u662f\u5728ereg\u91cc\u9762\u7684\u201d.\u201d\u662f\u4efb\u610f\u5b57\u7b26\uff0c\u5373\u5305\u62ec\u6362\u884c\u7b26\uff01\u5982\u679c\u5728preg\u91cc\u9762\u5e0c\u671b\u201d.\u201d \u80fd\u591f\u5305\u62ec\u6362\u884c\u7b26\uff0c\u53ef\u4ee5\u5728\u4fee\u9970\u7b26\u4e2d\u52a0\u4e0a\u201ds\u201d\r\nereg\u9ed8\u8ba4\u4f7f\u7528\u8d2a\u5a6a\u6a21\u5f0f\uff0c\u5e76\u4e14\u4e0d\u80fd\u4fee\u6539\uff0c\u8fd9\u4e2a\u7ed9\u5f88\u591a\u66ff\u6362\u548c\u5339\u914d\u5e26\u6765\u9ebb\u70e6\u3002\r\n\u901f\u5ea6\uff1a\u8fd9\u4e2a\u6216\u8bb8\u662f\u5f88\u591a\u4eba\u5173\u5fc3\u7684\u95ee\u9898\uff0c\u4f1a\u4e0d\u4f1apreg\u529f\u80fd\u5f3a\u5927\u662f\u4ee5\u901f\u5ea6\u6765\u6362\u53d6\u7684\uff1f\u4e0d\u7528\u62c5\u5fc3\uff0cpreg\u7684\u901f\u5ea6\u8981\u8fdc\u8fdc\u6bd4ereg\u5feb3\u500d"},{"ID":"544","typeID":"13","question":"\u5bf9\u4e8e\u5927\u6d41\u91cf\u7684\u7f51\u7ad9,\u60a8\u91c7\u7528\u4ec0\u4e48\u6837\u7684\u65b9\u6cd5\u6765\u89e3\u51b3\u8bbf\u95ee\u91cf\u95ee\u9898?(","answer":"\u9996\u5148\uff0c\u786e\u8ba4\u670d\u52a1\u5668\u786c\u4ef6\u662f\u5426\u8db3\u591f\u652f\u6301\u5f53\u524d\u7684\u6d41\u91cf\r\n\u5176\u6b21\uff0c\u4f18\u5316\u6570\u636e\u5e93\u8bbf\u95ee\u3002\r\n\u7b2c\u4e09\uff0c\u7981\u6b62\u5916\u90e8\u7684\u76d7\u94fe\u3002\r\n\u7b2c\u56db\uff0c\u63a7\u5236\u5927\u6587\u4ef6\u7684\u4e0b\u8f7d\u3002\r\n\u7b2c\u4e94\uff0c\u4f7f\u7528\u4e0d\u540c\u4e3b\u673a\u5206\u6d41\u4e3b\u8981\u6d41\u91cf\r\n\u7b2c\u516d\uff0c\u4f7f\u7528\u6d41\u91cf\u5206\u6790\u7edf\u8ba1\u8f6f\u4ef6\u3002"},{"ID":"543","typeID":"13","question":"\u8bf7\u5199\u51fapHp5\u6743\u9650\u63a7\u5236\u4fee\u9970\u7b26","answer":"private protected public"},{"ID":"542","typeID":"13","question":"apache+mysql+php\u5b9e\u73b0\u6700\u5927\u8d1f\u8f7d\u7684\u65b9\u6cd5","answer":"\u4e3b\u8981\u662f\u914d\u7f6e\u6587\u4ef6\u7684\u4f18\u5316\u4e86\uff0c\u53e6\u5916\u7528linux\u8dd1\u8981\u6bd4\u7528windows\u8dd1\u6548\u679c\u597d\u4e00\u70b9\u3002\r\nmkdir\u521b\u5efa\u76ee\u5f55 touch\u521b\u5efa\u6587\u4ef6\u5939 \u4fee\u6539\u6743\u9650chmod\u4e4b\u7c7b"},{"ID":"541","typeID":"13","question":"\u8bf7\u5199\u4e00\u4e2a\u51fd\u6570\u9a8c\u8bc1\u7535\u5b50\u90ae\u4ef6\u7684\u683c\u5f0f\u662f\u5426\u6b63\u786e\uff08\u8981\u6c42\u4f7f\u7528\u6b63\u5219\uff09","answer":"function checkEmail($mail){\r\n$reg = \u2018\/^\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$\/\u2019;\r\n$rst = preg_match($reg , $mail);\r\nif($rst){\r\nreturn TRUE;\r\n}else {\r\nreturn FALSE;\r\n}\r\n}"},{"ID":"540","typeID":"13","question":"\u6253\u5f00php.ini\u4e2d\u7684Safe_mode\uff0c\u4f1a\u5f71\u54cd\u54ea\u4e9b\u53c2\u6570\uff1f\u81f3\u5c11\u8bf4\u51fa6\u4e2a","answer":"\u6b64\u6a21\u5757\u6253\u5f00\u65f6\uff0cphp\u5c06\u68c0\u67e5\u5f53\u524d\u811a\u672c\u7684\u62e5\u6709\u8005\u662f\u5426\u548c\u88ab\u64cd\u4f5c\u6587\u4ef6\u7684\u62e5\u6709\u8005\u76f8\u540c\uff0c\u56e0\u6b64\uff0c\u5c06\u5f71\u54cd\u6587\u4ef6\u64cd\u4f5c\u7c7b\u51fd\u6570\uff0c\u7a0b\u5e8f\u6267\u884c\u51fd\u6570\uff08program Execution Functions\uff09\u3002\u8fd9\u4e9b\u51fd\u6570\u6709.pathinfo,basename,fopen,system,exec,proc_open \u7b49\u51fd\u6570\uff1b"},{"ID":"539","typeID":"13","question":"\u5982\u4f55\u5b9e\u73b0pHp\u3001JSp\u4ea4\u4e92\uff1f","answer":"SOAp,XML_RpC,Socket function,CURL\u90fd\u53ef\u4ee5\u5b9e\u73b0\u8fd9\u4e9b,\u5982\u679c\u662f\u8003pHp\u548cJava\u7684\u6574\u5408,pHp\u5185\u7f6e\u4e86\u8fd9\u79cd\u673a\u5236(\u5982\u679c\u8003pHp\u548c.NET\u7684\u6574\u5408,\u4e5f\u53ef\u4ee5\u8fd9\u4e48\u56de\u7b54), \u4f8b\u5982$foo = new Java(\u2018java.lang.System\u2019);"},{"ID":"538","typeID":"13","question":"error_reporting(2047)\u4ec0\u4e48\u4f5c\u7528\uff1f","answer":"\u76f8\u5f53\u4e8e error_reporting(\u2018E_ALL\u2019); \u8f93\u51fa\u6240\u6709\u7684\u9519\u8bef"},{"ID":"537","typeID":"13","question":"\u7528pHp\u5199\u51fa\u663e\u793a\u5ba2\u6237\u7aefIp\u4e0e\u670d\u52a1\u5668Ip\u7684\u4ee3\u7801","answer":"\u5ba2\u6237\u7aef getenv(\u2018REMOTE_ADDR\u2019);\r\n\u670d\u52a1\u5668\u7aef getenv(\u2018SERVER_ADDR\u2019); \/\/ gethostbyname(\u201cwww.baidu.com\u201d);"},{"ID":"536","typeID":"13","question":"echo count(\u201cabc\u201d); \u8f93\u51fa\u4ec0\u4e48\uff1f","answer":"1"},{"ID":"300","typeID":"13","question":"\u5982\u4f55\u8c03\u7528\u7236\u7c7b\u7684\u6784\u9020\u65b9\u6cd5?","answer":"\u4f7f\u7528parent::constructor($value)\u3002"},{"ID":"299","typeID":"13","question":"\u5982\u4f55\u77e5\u9053\u6709\u51e0\u4e2a\u53c2\u6570\u4f20\u5165\u5230\u4e86\u4e00\u4e2afunction?","answer":"func_num_args() \u51fd\u6570\u8fd4\u56de\u4f20\u5165\u7684\u53c2\u6570\u7684\u4e2a\u6570\u3002"},{"ID":"298","typeID":"13","question":"PHP\u91cc\u9762\u6240\u6709\u7684\u5bf9\u8c61\u662fpassed by value (\u503c\u4f20\u9012)\u8fd8\u662f passed by reference\uff08\u5f15\u7528\u4f20\u9012\uff09?","answer":"PHP\u91cc\u9762\u6240\u6709\u7684\u5bf9\u8c61\u90fd\u662f\u503c\u4f20\u9012\u3002"},{"ID":"297","typeID":"13","question":"sleep\u548c_wakeup\u6709\u4ec0\u4e48\u7279\u6b8a\u542b\u4e49?","answer":"_sleep\u8fd4\u56de\u9700\u8981\u88ab\u4fdd\u5b58\u7684\u53d8\u91cf\u7684\u6570\u7ec4\uff0c\u800c_wakeup\u5219\u662f\u53d6\u5f97\u8fd9\u4e9b\u9700\u8981\u88ab\u4fdd\u5b58\u7684\u53d8\u91cf"},{"ID":"296","typeID":"13","question":"PHP\u91cc\u9762\u5355\u5f15\u53f7\u4e0e\u53cc\u5f15\u53f7\u7684\u533a\u522b\uff1f","answer":"\u53cc\u5f15\u53f7\u5185\u7684\u53d8\u91cf\u6216\u8f6c\u4e49\u7b26\u53f7\u53ef\u4ee5\u88ab\u89e3\u91ca\u6267\u884c\uff0c\u5355\u5f15\u53f7\u5219\u4e0d\u884c"},{"ID":"295","typeID":"13","question":"\u5bf9\u4e8e\u5927\u6d41\u91cf\u7684\u7f51\u7ad9,\u60a8\u91c7\u7528\u4ec0\u4e48\u6837\u7684\u65b9\u6cd5\u6765\u89e3\u51b3\u8bbf\u95ee\u91cf\u95ee\u9898\uff1f","answer":"\u9996\u5148\uff0c\u786e\u8ba4\u670d\u52a1\u5668\u786c\u4ef6\u662f\u5426\u8db3\u591f\u652f\u6301\u5f53\u524d\u7684\u6d41\u91cf\r\n\r\n\u5176\u6b21\uff0c\u4f18\u5316\u6570\u636e\u5e93\u8bbf\u95ee\u3002\r\n\r\n\u7b2c\u4e09\uff0c\u7981\u6b62\u5916\u90e8\u7684\u76d7\u94fe\u3002\r\n\r\n\u7b2c\u56db\uff0c\u63a7\u5236\u5927\u6587\u4ef6\u7684\u4e0b\u8f7d\u3002\r\n\r\n\u7b2c\u4e94\uff0c\u4f7f\u7528\u4e0d\u540c\u4e3b\u673a\u5206\u6d41\u4e3b\u8981\u6d41\u91cf\r\n\r\n\u7b2c\u516d\uff0c\u4f7f\u7528\u6d41\u91cf\u5206\u6790\u7edf\u8ba1\u8f6f\u4ef6"},{"ID":"294","typeID":"13","question":"\u5982\u4f55\u901a\u8fc7javascript\u5224\u65ad\u4e00\u4e2a\u7a97\u53e3\u662f\u5426\u5df2\u7ecf\u88ab\u5c4f\u853d\uff1f","answer":"\u83b7\u53d6open()\u7684\u8fd4\u56de\u503c\uff0c\u5982\u679c\u662fnull\uff0c\u5c31\u662f\u5c4f\u853d\u4e86"},{"ID":"293","typeID":"13","question":"PHP\u4e2d\u4f20\u503c\u548c\u4f20\u5f15\u7528\u3001\u4f20\u5730\u5740\u7684\u533a\u522b\u662f\u4ec0\u4e48\uff1f","answer":"\u4f20\u503c  \u662f\u628a\u5b9e\u53c2\u7684\u503c\u8d4b\u503c\u7ed9\u884c\u53c2 \u90a3\u4e48\u5bf9\u884c\u53c2\u7684\u4fee\u6539\uff0c\u4e0d\u4f1a\u5f71\u54cd\u5b9e\u53c2\u7684\u503c \r\n\r\n\u4f20\u5730\u5740 \u662f\u4f20\u503c\u7684\u4e00\u79cd\u7279\u6b8a\u65b9\u5f0f\uff0c\u53ea\u662f\u4ed6\u4f20\u9012\u7684\u662f\u5730\u5740\uff0c\u4e0d\u662f\u666e\u901a\u7684\u5982int \u90a3\u4e48\u4f20\u5730\u5740\u4ee5\u540e\uff0c\u5b9e\u53c2\u548c\u884c\u53c2\u90fd\u6307\u5411\u540c\u4e00\u4e2a\u5bf9\u8c61"},{"ID":"292","typeID":"13","question":"\u9632\u6b62SQL\u6ce8\u5c04\u6f0f\u6d1e\u4e00\u822c\u7528\u4ec0\u4e48\u51fd\u6570\uff1f","answer":"__addslashes___"},{"ID":"291","typeID":"13","question":"\u8bf7\u4e3e\u4f8b\u8bf4\u660e\u5728\u4f60\u7684\u5f00\u53d1\u8fc7\u7a0b\u4e2d\u7528\u4ec0\u4e48\u65b9\u6cd5\u6765\u52a0\u5feb\u9875\u9762\u7684\u52a0\u8f7d\u901f\u5ea6\uff1f","answer":"\u8981\u7528\u5230\u670d\u52a1\u5668\u8d44\u6e90\u65f6\u624d\u6253\u5f00\uff0c\u53ca\u65f6\u5173\u95ed\u670d\u52a1\u5668\u8d44\u6e90\uff0c\u6570\u636e\u5e93\u6dfb\u52a0\u7d22\u5f15\uff0c\u9875\u9762\u53ef\u751f\u6210\u9759\u6001\uff0c\u56fe\u7247\u7b49\u5927\u6587\u4ef6\u5355\u72ec\u670d\u52a1\u5668\u3002\u4f7f\u7528\u4ee3\u7801\u4f18\u5316\u5de5\u5177"},{"ID":"290","typeID":"13","question":"GD \u51fd\u5f0f\u5e93\u7528\u6765\u505a\u4ec0\u4e48\uff1f","answer":"\u8fd9\u4e2a\u51fd\u5f0f\u5e93\u8ba9\u4f60\u5904\u7406\u548c\u663e\u793a\u5404\u5f0f\u683c\u5f0f\u7684\u56fe\u6863\uff0c\u5b83\u7684\u53e6\u4e00\u4e2a\u5e38\u89c1\u7528\u9014\u662f\u5236\u4f5c\u6240\u56fe\u6863\u3002GD \u4ee5\u5916\u7684\u53e6\u4e00\u4e2a\u9009\u62e9\u662f ImageMagick\uff0c\u4f46\u8fd9\u4e2a\u51fd\u5f0f\u5e93\u5e76\u4e0d\u5185\u5efa\u4e8e PHP \u4e4b\u4e2d\uff0c\u5fc5\u987b\u7531\u7cfb\u7edf\u7ba1\u7406\u5458\u5b89\u88c5\u5728\u4f3a\u670d\u5668\u4e0a"},{"ID":"289","typeID":"13","question":"\u5b9e\u73b0\u4e2d\u6587\u5b57\u4e32\u622a\u53d6\u65e0\u4e71\u7801\u7684\u65b9\u6cd5\uff1f","answer":"mb_substr()"},{"ID":"288","typeID":"13","question":"echo(),print(),print_r()\u7684\u533a\u522b\uff1f","answer":"echo\u662f\u8bed\u8a00\u7ed3\u6784\uff0c\u65e0\u8fd4\u56de\u503c;print\u529f\u80fd\u548cecho\u57fa\u672c\u76f8\u540c\uff0c\u4e0d\u540c\u7684\u662fprint\u662f\u51fd\u6570\uff0c\u6709\u8fd4\u56de\u503c;print_r\u662f\u9012\u5f52\u6253\u5370\uff0c\u7528\u4e8e\u8f93\u51fa\u6570\u7ec4\u5bf9\u8c61"},{"ID":"287","typeID":"13","question":"\u5728PHP\u4e2d\uff0cheredoc\u662f\u4e00\u79cd\u7279\u6b8a\u7684\u5b57\u7b26\u4e32\uff0c\u5b83\u7684\u7ed3\u675f\u6807\u5fd7\u5fc5\u987b\uff1f","answer":"\u7ed3\u675f\u6807\u8bc6\u7b26\u6240\u5728\u7684\u884c\u4e0d\u80fd\u5305\u542b\u4efb\u4f55\u5176\u5b83\u5b57\u7b26\u9664\";\""},{"ID":"286","typeID":"13","question":"\u4e00\u4e2a\u51fd\u6570\u7684\u53c2\u6570\u4e0d\u80fd\u662f\u5bf9\u53d8\u91cf\u7684\u5f15\u7528\uff0c\u9664\u975e\u5728php.ini\u4e2d\u628a\u4ec0\u4e48\u8bbe\u4e3aon\uff1f","answer":"allow_call_time_pass_reference"},{"ID":"285","typeID":"13","question":"\u4e3a\u4e86\u907f\u514d\u591a\u6b21\u5305\u542b\u540c\u4e00\u6587\u4ef6\uff0c\u53ef\u4ee5\u7528\u8bed\u53e5\u4ec0\u4e48\u6765\u4ee3\u66ff\u5b83\u4eec\uff1f","answer":"require_once()\/include_once()"},{"ID":"284","typeID":"13","question":"\u8bed\u53e5 include \u548c require \u90fd\u80fd\u628a\u53e6\u5916\u4e00\u4e2a\u6587\u4ef6\u5305\u542b\u5230\u5f53\u524d\u6587\u4ef6\u4e2d\uff0c\u5b83\u4eec\u7684\u533a\u522b\u662f?","answer":"\u53d1\u751f\u5f02\u5e38\u65f6include\u4ea7\u751f\u8b66\u544arequire\u4ea7\u751f\u81f4\u547d\u9519\u8bef"},{"ID":"283","typeID":"13","question":"\u5199\u51fa\u4e00\u4e2a\u6b63\u5219\u8868\u8fbe\u5f0f\uff0c\u8fc7\u8651\u7f51\u9875\u4e0a\u7684\u6240\u6709JS\/VBS\u811a\u672c\uff08\u5373\u628a\u6807\u8bb0\u53ca\u5176\u5185\u5bb9\u90fd\u53bb\u6389\uff09","answer":"\/<[^>].*?>.*?<\/>\/si"},{"ID":"282","typeID":"13","question":"\u8bed\u53e5 error_reporting(2047)\u7684\u4f5c\u7528\u662f?","answer":"All errors and warnings"},{"ID":"281","typeID":"13","question":"\u6570\u7ec4\u51fd\u6570 arsort \u7684\u4f5c\u7528\u662f?","answer":"\u5bf9\u6570\u7ec4\u8fdb\u884c\u9006\u5411\u6392\u5e8f\u5e76\u4fdd\u6301\u7d22\u5f15\u5173\u7cfb"},{"ID":"280","typeID":"13","question":"\u5982\u679c\u8fd4\u56de\u201c\u627e\u4e0d\u5230\u6587\u4ef6\u201d\u7684\u63d0\u793a\uff0c\u5219\u53ef\u7528 header \u51fd\u6570\uff0c\u5176\u8bed\u53e5\u4e3a?","answer":"header(\"HTTP\/1.0 404 Not Found\");"},{"ID":"279","typeID":"13","question":"\u5728HTTP 1.0\u4e2d\uff0c\u72b6\u6001\u7801 401 \u7684\u542b\u4e49\u662f?","answer":"\u672a\u6388\u6743 "},{"ID":"278","typeID":"13","question":"\u6267\u884c\u7a0b\u5e8f\u6bb5<?php echo 8%(-2) ?>\u5c06\u8f93\u51fa?","answer":"0"},{"ID":"37","typeID":"13","question":"\u8bf7\u7b80\u8ff0\u9879\u76ee\u4e2d\u4f18\u5316sql\u8bed\u53e5\u6267\u884c\u6548\u7387\u7684\u65b9\u6cd5,\u4ece\u54ea\u4e9b\u65b9\u9762,sql\u8bed\u53e5\u6027\u80fd\u5982\u4f55\u5206\u6790?","answer":" ANSWER:  sql\u4f18\u5316\u6709\u9e1f\u7528\uff0c\u4e0d\u5982\u76f4\u63a5\u52a0\u7d22\u5f15\u3002"},{"ID":"36","typeID":"13","question":"\u8868\u4e2d\u6709A B C\u4e09\u5217,\u7528SQL\u8bed\u53e5\u5b9e\u73b0\uff1a\u5f53A\u5217\u5927\u4e8eB\u5217\u65f6\u9009\u62e9A\u5217\u5426\u5219\u9009\u62e9B\u5217\uff0c\u5f53B\u5217\u5927\u4e8eC\u5217\u65f6\u9009\u62e9B\u5217\u5426\u5219\u9009\u62e9C\u5217","answer":"select\r\n case\r\n  when first_name>middle_name then \r\n  case when first_name>last_name then first_name \r\n  else last_name end \r\n else\r\n  case when middle_name>last_name then middle_name else last_name\r\n   end \r\n  end as name\r\n from member"},{"ID":"35","typeID":"13","question":" \u8bf7\u7b80\u8ff0\u6570\u636e\u5e93\u8bbe\u8ba1\u7684\u8303\u5f0f\u53ca\u5e94\u7528","answer":"\u4e00\u822c\u7b2c3\u8303\u5f0f\u5c31\u8db3\u4ee5\uff0c\u7528\u4e8e\u8868\u7ed3\u6784\u7684\u4f18\u5316\uff0c\u8fd9\u6837\u505a\u65e2\u53ef\u4ee5\u907f\u514d\u5e94\u7528\u7a0b\u5e8f\u8fc7\u4e8e\u590d\u6742\u540c\u65f6\u4e5f\u907f\u514d\u4e86SQL\u8bed\u53e5\u8fc7\u4e8e\u5e9e\u5927\u6240\u9020\u6210\u7cfb\u7edf\u6548\u7387\u4f4e\u4e0b\u3002 \r\nANSWER\uff1a\r\n\u7b2c\u4e00\u8303\u5f0f\uff1a\u82e5\u5173\u7cfb\u6a21\u5f0fR\u7684\u6bcf\u4e00\u4e2a\u5c5e\u6027\u662f\u4e0d\u53ef\u518d\u5206\u89e3\u7684\uff0c\u518d\u5c5e\u4e8e\u7b2c\u4e00\u8303\u5f0f\u3002\r\n\u7b2c\u4e8c\u8303\u5f0f\uff1a\u82e5R\u5c5e\u4e8e\u7b2c\u4e00\u8303\u5f0f\uff0c\u4e14\u6240\u6709\u7684\u975e\u7801\u5c5e\u6027\u90fd\u5b8c\u5168\u51fd\u6570\u4f9d\u8d56\u4e8e\u7801\u5c5e\u6027\uff0c\u5219\u4e3a\u7b2c\u4e8c\u8303\u5f0f\u3002\r\n\u7b2c\u4e09\u8303\u5f0f\uff1a\u82e5R\u5c5e\u4e8e\u7b2c\u4e8c\u8303\u5f0f\uff0c\u4e14\u6240\u6709\u7684\u975e\u7801\u5c5e\u6027\u6ca1\u6709\u4e00\u4e2a\u662f\u4f20\u9012\u51fd\u6570\u4f9d\u8d56\u4e8e\u5019\u9009\u7801\uff0c\u5219\u5c5e\u4e8e\u7b2c\u4e09\u8303\u5f0f\u3002"},{"ID":"34","typeID":"13","question":"\u8c08\u8c08\u4e8b\u52a1\u5904\u7406?","answer":"\u53ef\u4ee5\u63a7\u5236\u5e76\u53d1\u64cd\u4f5c\u6240\u4ea7\u751f\u7684\u6570\u636e\u540c\u6b65\u63d0\u4ea4\u3001\u66f4\u65b0\u6240\u5e26\u6765\u7684\u51b2\u7a81\u95ee\u9898.\u53ef\u4ee5\u8fdb\u884ccomit,rollback\u64cd\u4f5c\uff0c\u6570\u636e\u7684\u5b89\u5168\u6027\u5f97\u5230\u4e86\u63d0\u9ad8\u3002"},{"ID":"33","typeID":"13","question":"\u5982\u4f55\u5b9e\u73b0PHP\u3001JSP\u4ea4\u4e92\uff1f","answer":"PHP\u63d0\u4f9b\u4e86\u652f\u6301JAVA\u7684\u7c7b\u5e93\u6587\u4ef6,\u6216\u8005\u901a\u8fc7HTTP\u534f\u8bae\u6765\u4ea4\u4e92\u6570\u636e"},{"ID":"32","typeID":"13","question":"echo(),print(),print_r()\u7684\u533a\u522b?","answer":"echo\u53ef\u4ee5\u63a5\u591a\u4e2a\u53c2\u6570,print\u53ea\u80fd\u63a5\u4e00\u4e2a\u53c2\u6570,\u5b83\u4eec\u90fd\u662fPHP\u7684\u8bed\u8a00\u7ed3\u6784,print_r\u662f\u9012\u89c4\u6253\u5370,\u7528\u6765\u6253\u5370\u6570\u7ec4\u6216\u5bf9\u8c61"},{"ID":"31","typeID":"13","question":"php\u4e2dinclude\u548crequire\u7684\u533a\u522b\uff1f","answer":"\u8fd9\u4e24\u79cd\u7ed3\u6784\u9664\u4e86\u5728\u5982\u4f55\u5904\u7406\u5931\u8d25\u4e4b\u5916\u5b8c\u5168\u4e00\u6837\u3002include()\u4ea7\u751f\u4e00\u4e2a\u8b66\u544a\u800c require() \u5219\u5bfc\u81f4\u4e00\u4e2a\u81f4\u547d\u9519\u8bef\u3002\u6362\u53e5\u8bdd\u8bf4\uff0c\u5982\u679c\u4f60\u60f3\u5728\u9047\u5230\u4e22\u5931\u6587\u4ef6\u65f6\u505c\u6b62\u5904\u7406\u9875\u9762\u5c31\u7528 require()\u3002include() \u5c31\u4e0d\u662f\u8fd9\u6837\uff0c\u811a\u672c\u4f1a\u7ee7\u7eed\u8fd0\u884c\u3002"},{"ID":"30","typeID":"13","question":"\u8868\u5355\u63d0\u4ea4get\u548cpost\u6709\u4f55\u533a\u522b\uff1f","answer":"get\u7684\u65b9\u5f0f\u662f\u628a\u6570\u636e\u5728\u5730\u5740\u680f\u4e2d\u53d1\u9001\uff0cget\u4f20\u9001\u7684\u6570\u636e\u91cf\u8f83\u5c0f\uff0c\u4e0d\u80fd\u5927\u4e8e2KB\u3002post\u4f20\u9001\u7684\u6570\u636e\u91cf\u8f83\u5927\uff0c\u4e00\u822c\u88ab\u9ed8\u8ba4\u4e3a\u4e0d\u53d7\u9650\u5236\u3002\u4f46\u7406\u8bba\u4e0a\uff0cIIS4\u4e2d\u6700\u5927\u91cf\u4e3a80KB\uff0cIIS5\u4e2d\u4e3a100KB\u3002"},{"ID":"29","typeID":"13","question":"\u5b9e\u73b0\u4e2d\u6587\u5b57\u4e32\u622a\u53d6\u65e0\u4e71\u7801\u65b9\u6cd5?","answer":"mb_substr($str, 1, 1, \"GB2312\");"},{"ID":"28","typeID":"13","question":"\u4f18\u5316MYSQL\u6570\u636e\u5e93\u7684\u65b9\u6cd5?","answer":"\u8bed\u53e5\u65b9\u9762\uff1a\r\n1 \u4f7f\u7528\u7d22\u5f15\uff0c\u589e\u52a0\u67e5\u8be2\u6548\u7387\r\n2 \u4f18\u5316\u67e5\u8be2\u8bed\u53e5\uff0c\u63d0\u9ad8\u7d22\u5f15\u547d\u4e2d\u7387\r\n\u6570\u636e\u5e93\u6d89\u53ca\u65b9\u9762\uff1a\r\n1 \u6784\u9020\u5206\u5e93\u5206\u8868\uff0c\u63d0\u9ad8\u6570\u636e\u5e93\u7684\u5b58\u50a8\u548c\u6269\u5c55\u80fd\u529b\r\n2 \u6839\u636e\u9700\u8981\u4f7f\u7528\u4e0d\u540c\u7684\u5b58\u50a8\u5f15\u64ce"},{"ID":"27","typeID":"13","question":"\u5982\u4f55\u5b9e\u73b0\u5b57\u7b26\u4e32\u7ffb\u8f6c?","answer":"strrev($a)\r\n\u4e2d\u6587\u6216\u5176\u4ed6\u6587\u5b57\uff1a\r\n\u4e2d\u6587\uff1aGB2312\uff0c \u4ee3\u7801\u662f\u4f7f\u7528GB2312\u7f16\u7801\r\n<?php\t\r\nfunction reverse($str)\r\n{\r\n\t\t$ret = \"\";\t\r\n\t\t$len = mb_strwidth($str,\"GB2312\");\r\n\t\tfor($i=0; $i< $len; $i++)\r\n\t\t{\r\n\t\t\t$arr[] = mb_substr($str, $i, 1, \"GB2312\");\r\n\t\t}\r\n\t\treturn implode(\"\", array_reverse($arr));\r\n}\r\nprint_r(reverse(\"\u4f60\u597d\"));\r\n"},{"ID":"26","typeID":"13","question":"\u80fd\u591f\u4f7fHTML\u548cPHP\u5206\u79bb\u5f00\u4f7f\u7528\u7684\u6a21\u677f?","answer":"smarty,phplib"},{"ID":"25","typeID":"13","question":"\u7528PHP\u6253\u5370\u51fa\u524d\u4e00\u5929\u7684\u65f6\u95f4\u683c\u5f0f\u662f2006-5-10 22:21:21","answer":"$a = date(\"Y-m-d H:i:s\", strtotime(\"-1 day\"));\r\nprint_r($a);"}]}
+﻿{"success":1,"total":53,"result":[{
+    "answer" : "mysql_fetch_row是从结果集取出1行数组,作为枚举 mysql_fetch_array是从结果集取出一行数组作为关联数组,或数字数组,两者兼得",
+    "ID" : "5667ae62ddb2a419aefe652b",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "mysql_fetch_row() 和mysql_fetch_array之间有什么区别?"
+  },
+  {
+    "answer" : "<?php\n    $a = '\/a\/b\/c\/d\/e.php';\n    $b = '\/a\/b\/13\/34\/c.php';\n    echo getRelativePath($a, $b); \/\/\"..\/..\/12\/34\/\"\n    function getRelativePath($a,$b){\n        $a2array = explode('\/', $a);\n        $b2array = explode('\/', $b);\n        $relativePath   = '';\n        for( $i = 1; $i <= count($b2array)-2; $i++ ) {\n            $relativePath .= $a2array[$i] == $b2array[$i] ? '..\/' : $b2array[$i].'\/';\n        }\n        return $relativePath;\n    }\n?>",
+    "ID" : "56679fa660b2d140a9761273",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "写一个函数，算出两个文件的相对路径\n如 $a = '\/a\/b\/c\/d\/e.php';\n$b = '\/a\/b\/12\/34\/c.php';\n计算出 $b 相对于 $a 的相对路径应该是 ..\/..\/c\/d将()添上"
+  },
+  {
+    "answer" : "echo strrev($a);",
+    "ID" : "5667a81900b0d1db76d99181",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "如何实现字符串翻转?"
+  },
+  {
+    "answer" : "(1)配置优化（服务器配置）   \n(2)建表优化（表、字段设置） \n(3)查询优化（sql语句） \n\n具体可从如下方面展开： \n1、选取最适用的字段属性,尽可能减少定义字段长度,尽量把字段设置NOT NULL,例如’省份,性别’,最好设置为ENUM \n2、使用连接（JOIN）来代替子查询: \n3、使用联合(UNION)来代替手动创建的临时表 \n4、事务处理: \n5、锁定表,优化事务处理: \n6、使用外键,优化锁定表 \n7、建立索引: \n8、优化查询语句",
+    "ID" : "5667a71460b2d140a97650bc",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "MySQL数据库，怎么优化？"
+  },
+  {
+    "ID" : "566aaee560b262671c557626",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "optionD" : "join",
+    "optionC" : "explode",
+    "optionAnswer" : "A",
+    "answer" : "split用正则表达式将字符串分割到数组中,\nimplode将数组的内容组合成一个字符串,\nexplode使用一个字符串分割另一个字符串,\njoin是implode函数的别名。",
+    "optionB" : "implode",
+    "type" : "1",
+    "optionA" : "split",
+    "question" : "下列哪个PHP函数是用正则表达式将字符串分割到数组中？"
+  },
+  {
+    "answer" : "所谓单点登录，无非就是几个站点共用一个用户中心，实现同步登陆，同步退出。 \n其实最终还是用户去登录，只是采用了ajax （javascript利用src异步跨域调用）用户不会发现。 \n而且利用了p3p头实现了，不同域名，单点登录(ucenter用的cookie) \n缺点就是采用ajax 客服端请求 ，如果有10个以上应用，登录速度就慢下来了。",
+    "ID" : "5667af6360b25b0400e451aa",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "简述UCenter的单点登录机制。"
+  },
+  {
+    "answer" : "状态401代表未被授权,\nheader(\"Location:xxx.php\");",
+    "ID" : "5667abbe60b2d140a9767b07",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "在HTTP 1.0中，状态码401的含义是什么？\n如果返回“找不到文件”的提示，则可用 header函数，其语句是？"
+  },
+  {
+    "ID" : "566aafa260b2e416627cbd59",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "optionD" : "在HTML5中废除了<frameset>、<frame>、<font>、<big>、<bgsound>等标签",
+    "optionC" : "<button>是<input type=\"button\">的简写，二者没有任何区别",
+    "optionAnswer" : "D",
+    "answer" : "<h1>标签和<h6>标签还有强调程度不同的区别。html符号实体是区分大小写的。\n\n<button> 标签定义一个按钮。在 button 元素内部，您可以放置内容，比如文本或图像。这是该元素与使用 input 元素创建的按钮之间的不同之处。\n<button> 控件 与 <input type=\"button\"> 相比，提供了更为强大的功能和更丰富的内容。<button> 与 <\/button> 标签之间的所有内容都是按钮的内容，其中包括任何可接受的正文内容，比如文本或多媒体内容。例如，我们可以在按钮中包括一个图像和相关的文本，用它们在按钮中创建一个吸引人的标记图像。\n唯一禁止使用的元素是图像映射，因为它对鼠标和键盘敏感的动作会干扰表单按钮的行为。\n请始终为按钮规定 type 属性。Internet Explorer 的默认类型是 \"button\"，而其他浏览器中（包括 W3C 规范）的默认值是 \"submit\"。",
+    "optionB" : "html符号实体不区分大小写",
+    "type" : "1",
+    "optionA" : "<h1>标签和<h6>标签只有字体大小的区别",
+    "question" : "下列哪种说法是正确的？"
+  },
+  {
+    "answer" : "打印客户端IP:\necho $_SERVER['REMOTE_ADDR']; \n或者: getenv('REMOTE_ADDR'); \n\n打印服务器IP:\necho gethostbyname('www.oxcoder.com')",
+    "ID" : "5667a4fcddb2a419aefe13d0",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "PHP写出显示客户端IP与服务器IP的代码。"
+  },
+  {
+    "answer" : "session:储存用户访问的全局唯一变量,存储在服务器上的php指定的目录中的（session_dir）的位置进行的存放 。\ncookie:用来存储连续訪問一个頁面时所使用，是存储在客户端，对于Cookie来说是存储在用户WIN的Temp目录中的。 \n两者都可通过时间来设置时间长短",
+    "ID" : "5667a5d160b243ec0dff79c5",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "session与cookie的区别?"
+  },
+  {
+    "answer" : "1:用户输入输出函数(fopen() file()require(),只能用于调用这些函数有相同脚本的拥有者) \n2:创建新文件(限制用户只在该用户拥有目录下创建文件) \n3:用户调用popen() systen()exec()等脚本，只有脚本处在sa fe_mode_exec_dir配置指令指定的 录中才可能 \n4:加强HTTP认证，认证脚本拥有者的UID的划入认证领域范围内，此外启用安全模式下，不会设置PHP_AUTH \n5:mysql服务器所用的用户名必须与调用mysql_connect()的文件的拥有者用户名相同 \n6:受影响的函数变量以及配置命令达到40个",
+    "ID" : "5667a6d960b26c5b7db62639",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "打开php.ini中的Safe_mode，会影响哪些函数？至少说出6个。"
+  },
+  {
+    "answer" : "$script_name = basename(__FILE__); print_r($script_name);",
+    "ID" : "5667adce60b204d58902215a",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "简述如何得到当前执行脚本路径，包括所得到参数。"
+  },
+  {
+    "answer" : "function checkEmail($email) {\n\n    $pregEmail = \"\/([a-z0-9]*[-_\\.]?[a-z0-9]+)*@([a-z0-9]*[-_]?[a-z0-9]+)+[\\.][a-z]{2,3}([\\.][a-z]{2})?\/i\";\n    return preg_match($pregEmail,$email);\n}\n\n",
+    "ID" : "5667a8b500b09f857186ab0f",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "请写一个函数验证电子邮件的格式是否正确\n"
+  },
+  {
+    "answer" : "PEAR也就是为PHP扩展与应用库（PHP Extension and Application Repository），它是一个PHP扩展及应用的一个代码仓库。",
+    "ID" : "56679d8e00b07a180e00396b",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "PHP中的PEAR是什么？"
+  },
+  {
+    "answer" : "GD库提供了一系列用来处理图片的API，使用GD库可以处理图片，或者生成图片。 在网站上GD库通常用来生成缩略图或者用来对图片加水印或者对网站数据生成报表。",
+    "ID" : "5667ae78ddb2a419aefe6605",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "GD库是做什么用的?"
+  },
+  {
+    "ID" : "566aacba60b20de5461de717",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "optionD" : "a {decoration: no underline}",
+    "optionC" : "a {underline: none}",
+    "optionAnswer" : "A",
+    "answer" : "text-decoration 属性规定添加到文本的修饰，属性值none定义标准的文本，属性值underline定义文本下的一条线，属性值overline定义文本上的一条线。",
+    "optionB" : "a {text-decoration: no underline}",
+    "type" : "1",
+    "optionA" : "a {text-decoration: none}",
+    "question" : "如何显示没有下划线的超链接？"
+  },
+  {
+    "ID" : "566ab1aa60b202590bcc3a76",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "optionD" : "原型模式",
+    "optionC" : "建造者模式",
+    "optionAnswer" : "B",
+    "answer" : "策略模式是定义一组算法，将每个算法都封装起来，并且使他们之间可以互换。\n单例模式是确保一个类只有一个实例，而且自行实例化并向整个系统提供这个实例。\n建造者模式是将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。\n原型模式是用原型实例指定创建对象的种类，并通过拷贝这些原型创建新的对象。",
+    "optionB" : "单例模式",
+    "type" : "1",
+    "optionA" : "策略模式",
+    "question" : "哪种OOP设计模式能让类在整个脚本里只实例化一次？\n"
+  },
+  {
+    "ID" : "566ab95360b262671c55ee19",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "optionD" : "<hr>",
+    "optionC" : "<break>",
+    "optionAnswer" : "A",
+    "answer" : "<br>是换行标签，<hr>是水平线标签，<lb>和<break>不是HTML标签",
+    "optionB" : "<lb>",
+    "type" : "1",
+    "optionA" : "<br>",
+    "question" : "在下列的 HTML 中，哪个可以插入换行？"
+  },
+  {
+    "answer" : "PHP全称：Hypertext Preprocessor，是一种用来开发动态网站的服务器脚本语言。",
+    "ID" : "56679b0960b26c5b7db57805",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "请用最简单的语言告诉我PHP是什么？"
+  },
+  {
+    "ID" : "566ab12700b0814d65d794bc",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "optionD" : "<a name=\"http:\/\/www.oxcoder.com\">",
+    "optionC" : "<a src=\"http:\/\/www.oxcoder.com\">",
+    "optionAnswer" : "B",
+    "answer" : "<a> 标签定义超链接，用于从一张页面链接到另一张页面。\n<a> 元素最重要的属性是 href 属性，它指示链接的目标。",
+    "optionB" : "<a href=\"http:\/\/www.oxcoder.com\">",
+    "type" : "1",
+    "optionA" : "<a url=\"http:\/\/www.oxcoder.com\">",
+    "question" : "在下列的 HTML 中，哪个可以产生超链接？"
+  },
+  {
+    "answer" : "echodate('Y-m-d H:i:s', strtotime('-1 days'));",
+    "ID" : "5667a6a660b2647733ab3c3c",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "用PHP打印出前一天的时间格式是2016-1-26 12:11:11"
+  },
+  {
+    "ID" : "566aae64ddb2a419311cb07d",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "optionD" : "<h1>",
+    "optionC" : "<header>",
+    "optionAnswer" : "D",
+    "answer" : "<h1>是最大的标题标签，<h6>是最小的标题标签。",
+    "optionB" : "<head>",
+    "type" : "1",
+    "optionA" : "<h6>",
+    "question" : "在HTML中，哪个是最大的标题标签？"
+  },
+  {
+    "answer" : "魔术函数 \n1。__construct() \n实例化对象时被调用， \n当__construct和以类名为函数名的函数同时存在时，__construct将被调用，另一个不被调用。 \n2。__destruct() \n当删除一个对象或对象操作终止时被调用。 \n3。__call() \n对象调用某个方法， \n若方法存在，则直接调用； \n若不存在，则会去调用__call函数。 \n4。__get() \n读取一个对象的属性时， \n若属性存在，则直接返回属性值； \n若不存在，则会调用__get函数。 \n5。__set() \n设置一个对象的属性时， \n若属性存在，则直接赋值； \n若不存在，则会调用__set函数。 \n6。__toString() \n打印一个对象的时被调用。如echo $obj;或print $obj; \n7。__clone() \n克隆对象时被调用。如：$t=new Test();$t1=clone $t; \n8。__sleep() \nserialize之前被调用。若对象比较大，想删减一点东东再序列化，可考虑一下此函数。 \n9。__wakeup() \nunserialize时被调用，做些对象的初始化工作。 \n10。__isset() \n检测一个对象的属性是否存在时被调用。如：isset($c->name)。 \n11。__unset() \nunset一个对象的属性时被调用。如：unset($c->name)。 \n12。__set_state() \n调用var_export时，被调用。用__set_state的返回值做为var_export的返回值。 \n13。__autoload() \n实例化一个对象时，如果对应的类不存在，则该方法被调用。 \n\n魔术常量 \n1。__LINE__ \n返回文件中的当前行号。 \n2。__FILE__ \n返回文件的完整路径和文件名。如果用在包含文件中，则返回包含文件名。自 PHP 4.0.2 起，__FILE__ 总是包含一个绝对路径，而在此之前的版本有时会包含一个相对路径。 \n3。__FUNCTION__ \n返回函数名称（PHP 4.3.0 新加）。自 PHP 5 起本常量返回该函数被定义时的名字（区分大小写）。在 PHP 4 中该值总是小写字母的。 \n4。__CLASS__ \n返回类的名称（PHP 4.3.0 新加）。自 PHP 5 起本常量返回该类被定义时的名字（区分大小写）。在 PHP 4 中该值总是小写字母的。 \n5。__METHOD__ \n返回类的方法名（PHP 5.0.0 新加）。返回该方法被定义时的名字（区分大小写）。 ",
+    "ID" : "5667aededdb2a419aefe6a06",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "例举几个常用的魔术函数, 并说明作用。"
+  },
+  {
+    "ID" : "5667a12960b2d140a9761ebc",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "optionD" : "变量$a的值不存在，$b的值存在。",
+    "optionC" : "变量$a和$b的值都不存在",
+    "optionAnswer" : "D",
+    "answer" : "关于unset()函数使用注意:只有当指向该值的所有变量（比如有引用变量指向该值）都被销毁后，地址才会被释放,如下：\n<?php \n    $a = \"test\";\n    $b = & $a;\n    unset($a);\n    unset($b);\n    echo $b;\/\/输出空\n?>",
+    "optionB" : "变量$a的值存在，$b的值不存在",
+    "type" : "1",
+    "optionA" : "变量$a和$b的值都存在",
+    "question" : "关于下列代码说法正确的一项是？\n<?php \n    $a = \"test\";\n    $b = & $a;\n    unset($a);\n    echo $b;\/\/test\n?>"
+  },
+  {
+    "answer" : "1.以<<<End开始标记开始，以End结束标记结束，结束标记必须顶头写，不能有缩进和空格，且在结束标记末尾要有分号 。开始标记和开始标记相同，比如常用大写的EOT、EOD、EOF来表示，但是不只限于那几个，只要保证开始标记和结束标记不在正文中出现即可。\n\n2.位于开始标记和结束标记之间的变量可以被正常解析，但是函数则不可以。在heredoc中，变量不需要用连接符.或,来拼接，如下：\n\n$v=2;\n$a= <<<EOF\n\"abc\"$v\n\"123\"\nEOF;\necho $a; \/\/结果连同双引号一起输出：\"abc\"2 \"123\"\n\n3.heredoc常用在输出包含大量HTML语法d文档的时候。比如：函数outputhtml()要输出HTML的主页。可以有两种写法。很明显第二种写法比较简单和易于阅读。\n\nfunction outputhtml(){\n  echo \"<html>\";\n  echo \"<head><title>主页<\/title><\/head>\"; \n  echo \"<body>主页内容<\/body>\";\n  echo \"<\/html>;\n}\n\nfunction outputhtml(){\necho <<<EOT\n   <html>\n   <head><title>主页<\/title><\/head>\n   <body>主页内容<\/body>\n   <\/html>\nEOT;\n}\n\noutputhtml();",
+    "ID" : "5667ac4060b2d140a9767f91",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "谈谈heredoc的用法和注意事项"
+  },
+  {
+    "answer" : "require->require是无条件包含也就是如果一个流程里加入require,无论条件成立与否都会先执行require \ninclude->include有返回值，而require没有(可能因为如此require的速度比include快) \n注意:包含文件不存在或者语法错误的时候require是致命的,include不是 \n使用 require_once() 和 include_once()可以避免多次包含同一文件以避免函数重定义，变量重新赋值等问题。 返回值和 include() 相同。如果文件已被包含，本函数返回 TRUE。 \n注: require_once() 是 php 4.0.1pl2 中新加入的。",
+    "ID" : "5667aa7e60b27cc2c4b54ebe",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "语句include和require的区别是什么?\n为避免多次包含同一文件，可用什么语句代替它们吗?"
+  },
+  {
+    "ID" : "566ab1e760b202590bcc3cbb",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "optionD" : "_top 在整个浏览器窗口中打开超连接,并删除所有框架结构",
+    "optionC" : "_parent 在父窗口显示目标网页,常在有框架结构的网页中应用\n",
+    "optionAnswer" : "A",
+    "answer" : "<a> 标签target属性的默认值是_self，即在当前窗口显示目标网页",
+    "optionB" : "_self 在当前窗口显示目标网页",
+    "type" : "1",
+    "optionA" : "_blank 在新窗口显示目标网页,此为默认值",
+    "question" : "下列对于<a>标签target属性的说法里，哪种是错误的？"
+  },
+  {
+    "answer" : "在页面中使用CSS有3中方式：\n引用外部CSS文件\n内部定义Style样式\n内联样式",
+    "ID" : "56679b9660b25b0400e3a715",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "在页面中引用CSS有几种方式？"
+  },
+  {
+    "answer" : "事务（transaction）是作为一个单元的一组有序的数据库操作。如果组中的所有操作都成功，则认为事务成功，即使只有一个操作失败，事务也不成功。如果所有操作完成， 事务则提交，其修改将作用于所有其他数据库进程。如果一个操作失败，则事务将回滚，该事务所有操作的影响都将取消。 答：事务就是一系列的操作,这些操作完成一项任务。只要这些操作里有一个操作没有成功,事务就操作失败,发生回滚事件。即撤消前面的操作,这样可以保证数据的一致性。而且可以把操作暂时放在缓存里,等所有操作都成功有提交数据库,这样保证费时的操作都是有效操作。",
+    "ID" : "5667a4ab00b07a180e0073b7",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "数据库中的事务是什么？"
+  },
+  {
+    "answer" : "MVC由Model（模型）, view（视图）和Controller（控制器）组成，PHP MVC可以更高效地管理好3个不同层的PHP代码。\nModel：数据信息存取层。\nView：view层负责将应用的数据以特定的方式展现在界面上。\nController：通常控制器负责从视图读取数据，控制用户输入，并向模型发送数据。",
+    "ID" : "56679b3c00b0a9f1b6d0e048",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "什么是MVC？"
+  },
+  {
+    "answer" : "function GBsubstr($string, $start, $length) {\n\n    if(strlen($string)>$length){\n    \n        $str=null;\n        $len=$start+$length;\n        \n        for($i=$start;$i<$len;$i++){\n        \n            if(ord(substr($string,$i,1))>0xa0){\n                $str.=substr($string,$i,2);\n                $i++;\n            }else{\n                $str.=substr($string,$i,1);\n            }\n        }\n        \n        return $str.'…';\n        \n    }else{\n\n        return $string;\n    }\n}\n\n",
+    "ID" : "5667a9f200b0a9f1b6d15a33",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "写一个能够实现中文字串截取无乱码的方法。"
+  },
+  {
+    "ID" : "566aaf4e00b0ee7f996747a7",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "optionD" : "array_walk",
+    "optionC" : "array_search",
+    "optionAnswer" : "C",
+    "answer" : "array_values 返回数组中所有的值。\narray_keys 返回数组中所有的键名。\narray_search 在数组中搜索给定的值，如果成功则返回相应的键名。\narray_walk 对数组中的每个成员应用用户函数。",
+    "optionB" : "array_keys",
+    "type" : "1",
+    "optionA" : "array_values",
+    "question" : "下列哪个PHP函数可以根据数组的单元值返回对应的键？\n"
+  },
+  {
+    "answer" : "无限极分类，那么应该是考察递归函数吧！\n第一步：建立测试数据库：\n\n CREATE TABLE `category` (\n  `id` smallint(5) unsigned NOT NULL auto_increment,\n  `fid` smallint(5) unsigned NOT NULL default '0',\n  `value` varchar(50) NOT NULL default '',\n  PRIMARY KEY (`id`)\n ) ENGINE=MyISAM DEFAULT CHARSET=utf8;\n\n第二步：插入测试数据：\n\n INSERT INTO `category` ( `fid`, `value`) VALUES \n (0, 'PHP点点通博客PHPDDT.COM'),\n (1,'a'),\n (1,'b'),\n (2,'c'),\n (2,'d'),\n (4,'e')\n\n第三步：递归输出分类：\n\n<?php\n$conn = mysql_connect(\"localhost\", \"root\", \"mckee\");\nmysql_select_db(\"test\",$conn);\nmysql_query(\"set names utf8\");\n$sql = \"SELECT * FROM category\";\n$res = mysql_query($sql);\nwhile($row = mysql_fetch_assoc($res)){\n    $arr[] = array($row[id],$row[fid],$row[value]);\n}\ngetCate(0);\nfunction getCate($fid = 0) {   \n    global $arr; \n    for ($i = 0; $i < count($arr); $i++) {   \n        if ($arr[$i][1] == $fid) {        \n            echo $arr[$i][2] . \"<br>\"; \n            getCate($arr[$i][0]); \/\/递归\n        }\n    }\n}\n?>",
+    "ID" : "5667a00c00b0acaae45c2cf9",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "简述论坛中无限分类的实现原理。"
+  },
+  {
+    "answer" : "nginx是应用层 我觉得从下往上的话 传输层用的是tcp\/ip 应用层用的是http \nfastcgi负责调度进程 ",
+    "ID" : "5667afb700b0ee7fa8c8c268",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "nginx使用哪种网络协议? "
+  },
+  {
+    "answer" : "error_reporting 用来设置错误级别与错误信息回报；\nerror_reporting（2047）显示所有错误 E_ALL",
+    "ID" : "5667a54300b0a9f1b6d1308d",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "在PHP中error_reporting这个函数有什么作用? \nerror_reporting(2047)呢？"
+  },
+  {
+    "ID" : "566aad8160b20fc9115a641f",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "optionD" : "匹配包括下划线的任何单词字符",
+    "optionC" : " 匹配任何空白字符",
+    "optionAnswer" : "B",
+    "answer" : "\\b  匹配一个单词边界，也就是指单词和空格间的位置。\n\\d  匹配一个数字字符。等价于 [0-9]。\n\\s  匹配任何空白字符，包括空格、制表符、换页符等等。等价于\"[\\f\\n\\r\\t\\v]\"。\n\\w  匹配包括下划线的任何单词字符。等价于\"[A-Za-z0-9_]\"。",
+    "optionB" : "匹配一个数字字符",
+    "type" : "1",
+    "optionA" : "匹配一个单词边界",
+    "question" : "在正则表达式中，\"\\d\"代表什么意思？"
+  },
+  {
+    "answer" : "echo是PHP语句, print和print_r是函数,语句没有返回值,函数可以有返回值(即便没有用) \n\nprint() 只能打印出简单类型变量的值(如int,string) \nprint_r() 可以打印出复杂类型变量的值(如数组,对象) \necho 输出一个或者多个字符串，显示多个值的时候可以用逗号隔开，只支持基本类型。\n\n如：\n<?\n$value = print 'hello word<br \/>';\necho \"the value is $value<br \/>\";\n$arr = array('name'=>'nowamagic','qq'=>'123456');\nprint_r($arr);\n?>\n\n程序运行结果：\nhello word\nthe value is 1\nArray ( [name] => nowamagic [qq] => 123456 ) ......\n",
+    "ID" : "56679cab60b2298fddddb6c6",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "请问PHP中echo(),print(),print_r()有什么区别？\n\n"
+  },
+  {
+    "answer" : "$d = dir(dirname(__file__));\necho \"Handle: \" . $d->handle . \"\\n\";\necho \"Path: \" . $d->path . \"\\n\";\nwhile ( false !== ($entry = $d->read ()) ) {\n    echo $entry . \"\";\n}\n$d->close ();",
+    "ID" : "56679fdc60b27cc2c4b4f4f0",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "写一个函数，能够遍历一个文件夹下的所有文件和子文件夹。"
+  },
+  {
+    "answer" : "我是直接用PHP内置函数搞定的，不重复造轮子，估计出题者也是想考察基础知识，主要是解析url和一个返回文件信息的函数（扩展：取得文件后缀名的多种方法）：\n<?php\n    $url = \"http:\/\/www.oxcoder.com\/abc\/de\/fg.php?id=1\";\n    $path = parse_url($url);\n    echo pathinfo($path['path'],PATHINFO_EXTENSION);  \/\/php\n?>",
+    "ID" : "56679ee060b215d62100aa6b",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "写一个函数，尽可能高效的，从一个标准 url 里取出文件的扩展名。\n 例如: http:\/\/www.oxcoder.com\/abc\/de\/fg.php?id=1 需要取出 php 或 .php"
+  },
+  {
+    "answer" : "我们再网页上填写的表单信息都可以通过这两个方法将数据传递到服务器上，当我们使用GET方法是，所有的信息都会出现在URL地址中，并且使用GET方法最多只能传递1024个字符，所以如果在传输量小或者安全性不那么重要的情况下可以使用GET方法。而post是实体数据,可以通过表单提交大量信息，最多可以传输2MB字节的数据，而且可以根据需要调节。",
+    "ID" : "56679cd900b0acaae45c133f",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "请问GET和POST方法有什么区别？"
+  },
+  {
+    "answer" : "确认服务器硬件是否足够支持当前的流量,数据库读写分离,优化数据表, 程序功能规则,禁止外部的盗链,控制大文件的下载,使用不同主机分流主要流量",
+    "ID" : "5667aa4d60b215d621010c41",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "对于大流量的网站,您采用什么样的方法来解决访问量问题?\n"
+  },
+  {
+    "answer" : "不支持。PHP类只能继承一个父类，并用关键字“extends”标识。",
+    "ID" : "56679bdc60b25b79810f9407",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "PHP支持多继承吗？"
+  },
+  {
+    "answer" : "方法1:将php.ini中的session.gc_maxlifetime设置为9999重启apache \n方法2: $savePath = \".\/session_save_dir\/\"; $lifeTime = 小时 * 秒; session_save_path($savePath); session_set_cookie_params($lifeTime); session_start(); \n方法3: setcookie() and session_set_cookie_params($lifeTime);",
+    "ID" : "5667aae700b09f857186bfaa",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "如何修改SESSION的生存时间？"
+  },
+  {
+    "answer" : "<?php\n    $html = \"<meta http-equiv='Content-Type' content='text\/html; charset=gbk'>\";\n    \/\/匹配标准的meta标签\n    $pattern = \"\/<meta\\s+http-equiv=(\\'|\\\")?Content-Type(\\'|\\\")?\\s+content=(\\'|\\\")text\\\/html;\\s+charset=(.*)(\\'|\\\")>\/i\";\n    $replacement = \"<meta http-equiv='Content-Type' content='text\/html; charset=big5'>\";\n    $result = preg_replace($pattern, $replacement, $html);\n    echo htmlspecialchars($result);\n?>",
+    "ID" : "56679f6460b26c5b7db5b840",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "在 HTML 语言中，页面头部的 meta 标记可以用来输出文件的编码格式，以下是一个标准的 meta 语句\n  <META http-equiv='Content-Type' content='text\/html; charset=gbk'>\n请使用 PHP 语言写一个函数，把一个标准 HTML 页面中的类似 meta 标记中的 charset 部分值改为 big5\n请注意:\n  (1) 需要处理完整的 html 页面，即不光此 meta 语句\n  (2) 忽略大小写\n  (3) ' 和 \" 在此处是可以互换的\n  (4) 'Content-Type' 两侧的引号是可以忽略的，但 'text\/html; charset=gbk' 两侧的不行\n  (5) 注意处理多余空格"
+  },
+  {
+    "answer" : "Smarty,Dwoo,TinyButStrong,Template Lite,Savant,phemplate,XTemplate",
+    "ID" : "5667a7de60b204d58901ecf5",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "能够使HTML和PHP分离开使用的模板"
+  },
+  {
+    "ID" : "566aad26ddb2a419311ca4ca",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "optionD" : "min",
+    "optionC" : "max",
+    "optionAnswer" : "B",
+    "answer" : "floor是向下取整（又称舍去法取整），\nceil是向上取整（又称进一法取整），\nmax是找出最大值，\nmin找出最小值。",
+    "optionB" : "ceil",
+    "type" : "1",
+    "optionA" : "floor",
+    "question" : "下列哪个PHP函数可以实现向上取整（又称进一法取整）？"
+  },
+  {
+    "answer" : "getimagesize () 获取图片的尺寸\nImagesx () 获取图片的宽度\nImagesy () 获取图片的高度",
+    "ID" : "56679d2a00b0a9f1b6d0efd6",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "PHP中获取图像尺寸大小的方法是什么？"
+  },
+  {
+    "answer" : "now(),date()",
+    "ID" : "5667a88500b07a180e009426",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "MYSQL取得当前时间的函数是?格式化日期的函数是？"
+  },
+  {
+    "answer" : "方法1(对于PHP5及更高版本): \n$readcontents = fopen(\"http:\/\/www.oxcoder.com\", \"rb\"); \n$contents = stream_get_contents($readcontents); \nfclose($readcontents); \necho $contents; \n\n方法2: \necho file_get_contents(\"http:\/\/www.oxcoder.com\");",
+    "ID" : "5667ab2860b2647733ab63ee",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "有一个网页地址, 比如猿圈主页: http:\/\/www.oxcoder.com,如何得到它的内容?"
+  },
+  {
+    "answer" : " 按值传递：函数范围内对值的任何改变在函数外部都会被忽略 \n 按引用传递：函数范围内对值的任何改变在函数外部也能反映出这些修改 \n 优缺点：     \n 按值传递时，php必须复制值。特别是对于大型的字符串和对象来说，这将会是一个代价很大的操作。     \n 按引用传递则不需要复制值，对于性能提高很有好处。",
+    "ID" : "5667ae0260b215d621012c86",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "请说明php中传值与传引用的区别。什么时候传值什么时候传引用?"
+  },
+  {
+    "answer" : "ASP全名Active Server Pages，是一个WEB服务器端的开发环境， 利用它可以产生和运行动态的、交互的、高性能的WEB服务应用程序。ASP采用脚本语言VB Script（Java script）作为自己的开发语言。         \nPHP是一种跨平台的服务器端的嵌入式脚本语言. 它大量地借用C,Java和Perl语言的语法, 并耦合PHP自己的特性,使WEB开发者能够快速地写出动态生成页面.它支持目前绝大多数数据库。还有一点，PHP是完全免费的，不用花钱，你可以从PHP官方站点(http:\/\/www.php.net)自由下载。而且你可以不受限制地获得源码，甚至可以从中加进你自己需要的特色。        \nJSP 是Sun公司推出的新一代站点开发语言，他完全解决了目前ASP,PHP的一个通病－－脚本级执行（据说PHP4 也已经在Zend 的支持下，实现编译运行）.Sun 公司借助自己在Java 上的不凡造诣，将Java 从Java 应用程序 和 Java Applet 之外，又有新的硕果，就是Jsp－－Java Server Page。Jsp 可以在Serverlet和JavaBean的支持下，完成功能强大的站点程序。        \n三者都提供在 HTML 代码中混合某种程序代码、由语言引擎解释执行程序代码的能力。但JSP代码被编译成 Servlet 并由 Java 虚拟机解释执行，这种编译操作仅在对 JSP 页面的第一次请求时发生。在 ASP 、PHP、JSP 环境下， HTML 代码主要负责描述信息的显示样式，而程序代码则用来描述处理逻辑。普通的 HTML 页面只依赖于 Web 服务器，而 ASP 、PHP、JSP 页面需要附加的语言引擎分析和执行程序代码。程序代码的执行结果被重新嵌入到HTML 代码中，然后一起发送给浏览器。 ASP 、PHP、 JSP三者都是面向 Web 服务器的技术，客户端浏览器不需要任何附加的软件支持。",
+    "ID" : "5667abe960b25b7981101b94",
+    "typeID" : "5667b25fddb2a419aefe8bac",
+    "type" : "2",
+    "question" : "谈谈asp,php,jsp的优缺点"
+  },{"ID":"1383","typeID":"13","question":"\u5199\u51fa\u51e0\u4e2aPHP\u4e2d\u5e38\u7528\u7684\u8d85\u5168\u5c40\u53d8\u91cf\uff1f","answer":"$_GET ----->get\u4f20\u9001\u65b9\u5f0f\r\n$_POST ----->post\u4f20\u9001\u65b9\u5f0f\r\n$_REQUEST ----->\u53ef\u4ee5\u63a5\u6536\u5230get\u548cpost\u4e24\u79cd\u65b9\u5f0f\u7684\u503c\r\n$_GLOBALS ----->\u6240\u6709\u7684\u53d8\u91cf\u90fd\u653e\u5728\u91cc\u9762\r\n$_FILE ----->\u4e0a\u4f20\u6587\u4ef6\u4f7f\u7528\r\n$_SERVER ----->\u7cfb\u7edf\u73af\u5883\u53d8\u91cf\r\n$_SESSION ----->\u4f1a\u8bdd\u63a7\u5236\u7684\u65f6\u5019\u4f1a\u7528\u5230\r\n$_COOKIE ----->\u4f1a\u8bdd\u63a7\u5236\u7684\u65f6\u5019\u4f1a\u7528\u5230"},{"ID":"1382","typeID":"13","question":"echo\u3001print_r\u3001print\u3001var_dump\u4e4b\u95f4\u7684\u533a\u522b\uff1f","answer":"echo\u3001print\u662fphp\u8bed\u53e5\uff0cvar_dump\u548cprint_r\u662f\u51fd\u6570\r\necho \u8f93\u51fa\u4e00\u4e2a\u6216\u591a\u4e2a\u5b57\u7b26\u4e32\uff0c\u4e2d\u95f4\u4ee5\u9017\u53f7\u9694\u5f00\uff0c\u6ca1\u6709\u8fd4\u56de\u503c\u662f\u8bed\u8a00\u7ed3\u6784\u800c\u4e0d\u662f\u771f\u6b63\u7684\u51fd\u6570\uff0c\u56e0\u6b64\u4e0d\u80fd\u4f5c\u4e3a\u8868\u8fbe\u5f0f\u7684\u4e00\u90e8\u5206\u4f7f\u7528\r\nprint\u4e5f\u662fphp\u7684\u4e00\u4e2a\u5173\u952e\u5b57\uff0c\u6709\u8fd4\u56de\u503c \u53ea\u80fd\u6253\u5370\u51fa\u7b80\u5355\u7c7b\u578b\u53d8\u91cf\u7684\u503c(\u5982int\uff0cstring)\uff0c\u5982\u679c\u5b57\u7b26\u4e32\u663e\u793a\u6210\u529f\u5219\u8fd4\u56detrue\uff0c\u5426\u5219\u8fd4\u56defalse\r\nprint_r \u53ef\u4ee5\u6253\u5370\u51fa\u590d\u6742\u7c7b\u578b\u53d8\u91cf\u7684\u503c(\u5982\u6570\u7ec4\u3001\u5bf9\u8c61\uff09\u4ee5\u5217\u8868\u7684\u5f62\u5f0f\u663e\u793a\uff0c\u5e76\u4ee5array\u3001object\u5f00\u5934\uff0c\u4f46print_r\u8f93\u51fa\u5e03\u5c14\u503c\u548cNULL\u7684\u7ed3\u679c\u6ca1\u6709\u610f\u4e49\uff0c\u56e0\u4e3a\u90fd\u662f\u6253\u5370\"\n\"\uff0c\u56e0\u6b64var_dump()\u51fd\u6570\u66f4\u9002\u5408\u8c03\u8bd5\r\nvar_dump() \u5224\u65ad\u4e00\u4e2a\u53d8\u91cf\u7684\u7c7b\u578b\u548c\u957f\u5ea6\uff0c\u5e76\u8f93\u51fa\u53d8\u91cf\u7684\u6570\u503c\u3002"},{"ID":"1381","typeID":"13","question":"\u8bed\u53e5include\u548crequire\u7684\u533a\u522b\u662f\u4ec0\u4e48\uff1f\u4e3a\u907f\u514d\u591a\u6b21\u5305\u542b\u540c\u4e00\u6587\u4ef6\uff0c\u53ef\u4ee5\u7528\u4ec0\u4e48\u8bed\u53e5\u4ee3\u66ff\u4ed6\u4eec\uff1f","answer":"require\u662f\u65e0\u6761\u4ef6\u5305\u542b\uff0c\u4e5f\u5c31\u662f\u5982\u679c\u4e00\u4e2a\u6d41\u7a0b\u91cc\u52a0\u5165require\uff0c\u65e0\u8bba\u6761\u4ef6\u6210\u7acb\u4e0e\u5426\u90fd\u4f1a\u5148\u6267\u884crequire\uff0c\u5f53\u6587\u4ef6\u4e0d\u5b58\u5728\u6216\u8005\u65e0\u6cd5\u6253\u5f00\u7684\u65f6\u5019\uff0c\u4f1a\u63d0\u793a\u9519\u8bef\uff0c\u5e76\u4e14\u4f1a\u7ec8\u6b62\u7a0b\u5e8f\u6267\u884c\r\ninclude\u6709\u8fd4\u56de\u503c\uff0c\u800crequire\u6ca1\u6709(\u53ef\u80fd\u56e0\u4e3a\u5982\u6b64require\u7684\u901f\u5ea6\u6bd4include\u5feb)\uff0c\u5982\u679c\u88ab\u5305\u542b\u7684\u6587\u4ef6\u4e0d\u5b58\u5728\u7684\u5316\uff0c\u90a3\u4e48\u4f1a\u63d0\u793a\u4e00\u4e2a\u9519\u8bef\uff0c\u4f46\u662f\u7a0b\u5e8f\u4f1a\u7ee7\u7eed\u6267\u884c\u4e0b\u53bb\r\n\u6ce8\u610f:\u5305\u542b\u6587\u4ef6\u4e0d\u5b58\u5728\u6216\u8005\u8bed\u6cd5\u9519\u8bef\u7684\u65f6\u5019require\u662f\u81f4\u547d\u7684\uff0c\u7a0b\u5e8f\u4e0d\u4f1a\u6267\u884c\u4e0b\u53bb\uff0c\u800cinclude\u4e0d\u662f\u3002\r\nrequire_once\u8868\u793a\u4e86\u53ea\u5305\u542b\u4e00\u6b21\uff0c\u907f\u514d\u4e86\u91cd\u590d\u5305\u542b\u3002"},{"ID":"1380","typeID":"13","question":"\u5199\u51fa\u4f60\u5e38\u7528\u7684\u51e0\u4e2a\u9b54\u672f\u5e38\u91cf\uff1f","answer":"__LINE__\u6587\u4ef6\u4e2d\u7684\u5f53\u524d\u884c\u53f7\u3002\r\n__FILE__\u6587\u4ef6\u7684\u5b8c\u6574\u8def\u5f84\u548c\u6587\u4ef6\u540d\u3002\r\n__FUNCTION__\u51fd\u6570\u540d\u79f0\r\n__CLASS__\u7c7b\u7684\u540d\u79f0\r\n__METHOD__\u7c7b\u7684\u65b9\u6cd5\u540d"},{"ID":"1379","typeID":"13","question":"\u8bf4\u51e0\u4e2a\u4f60\u77e5\u9053\u7684PHP\u7684\u8bbe\u8ba1\u6a21\u5f0f\uff1f","answer":"\u5355\u4f8b\u6a21\u5f0f\uff1a \u4fdd\u8bc1\u4e00\u4e2a\u7c7b\u4ec5\u6709\u4e00\u4e2a\u5b9e\u4f8b\uff0c\u5e76\u63d0\u4f9b\u4e00\u4e2a\u8bbf\u95ee\u4ed6\u7684\u5168\u5c40\u8bbf\u95ee\u70b9\u4f8b\u5982\u6846\u67b6\u4e2d\u7684\u6570\u636e\u5e93\u8fde\u63a5\r\n\u7b80\u5355\u5de5\u5382\u6a21\u5f0f\uff1a \u5b83\u5177\u6709\u521b\u5efa\u5bf9\u8c61\u7684\u67d0\u4e9b\u65b9\u6cd5\uff0c\u53ef\u4ee5\u4f7f\u7528\u5de5\u5382\u7c7b\u521b\u5efa\u5bf9\u8c61\uff0c\u800c\u4e0d\u76f4\u63a5\u4f7f\u7528 new\u3002\u4f8b\u5982\u521d\u59cb\u5316\u6570\u636e\u5e93\u7684\u65f6\u5019\u4f1a\u7528\u5230\uff0c\u6bd4\u5982MySQL\uff0cMSSQL\r\n\u7b56\u7565\u6a21\u5f0f\uff1a \u9488\u5bf9\u4e00\u7ec4\u7b97\u6cd5\uff0c\u5c06\u6bcf\u4e00\u4e2a\u7b97\u6cd5\u5c01\u88c5\u5230\u5177\u6709\u5171\u540c\u63a5\u53e3\u7684\u72ec\u7acb\u7684\u7c7b\u4e2d\uff0c\u4f8b\u5982\u8fdb\u5165\u4e2a\u4eba\u4e3b\u9875\u65f6\uff0c\u6839\u636e\u6d4f\u89c8\u8005\u7684\u4e0d\u540c\uff0c\u7ed9\u4e88\u4e0d\u540c\u7684\u663e\u793a\u4e0e\u64cd\u4f5c\r\n\u6ce8\u518c\u6a21\u5f0f\uff1a \u63d0\u4f9b\u4e86\u5728\u7a0b\u5e8f\u4e2d\u6709\u6761\u7406\u7684\u5b58\u653e\u5e76\u7ba1\u7406\u4e00\u7ec4\u5168\u5c40\u5bf9\u8c61 (object)\uff0c\u4f8b\u5982ZF\u6846\u67b6\u4e2d\u7684Zend_Registry::set\r\n\u9002\u914d\u5668\u6a21\u5f0f\uff1a \u5c06\u4e0d\u540c\u63a5\u53e3\u9002\u914d\u6210\u7edf\u4e00\u7684API\u63a5\u53e3\uff0c\u4f8b\u5982\u6570\u636e\u64cd\u4f5c\u6709mysql\u3001mysqli\u3001pdo\u7b49\uff0c\u53ef\u5229\u7528\u9002\u914d\u5668\u6a21\u5f0f\u7edf\u4e00\u63a5\u53e3\r\n\u89c2\u5bdf\u8005\u6a21\u5f0f\uff1a \u4e00\u4e2a\u5bf9\u8c61\u901a\u8fc7\u6dfb\u52a0\u4e00\u4e2a\u65b9\u6cd5\u4f7f\u672c\u8eab\u53d8\u5f97\u53ef\u89c2\u5bdf\u3002\u5f53\u53ef\u89c2\u5bdf\u7684\u5bf9\u8c61\u66f4\u6539\u65f6\uff0c\u5b83\u4f1a\u5c06\u6d88\u606f\u53d1\u9001\u5230\u5df2\u6ce8\u518c\u7684\u89c2\u5bdf\u8005\u3002\u4f8b\u5982\u5b9e\u73b0\u5b9e\u73b0\u6d88\u606f\u63a8\u9001\r\n\u88c5\u9970\u5668\u6a21\u5f0f\uff1a \u4e0d\u4fee\u6539\u539f\u7c7b\u4ee3\u7801\u548c\u7ee7\u627f\u7684\u60c5\u51b5\u4e0b\u52a8\u6001\u6269\u5c55\u7c7b\u7684\u529f\u80fd\uff0c\u4f8b\u5982\u6846\u67b6\u7684\u6bcf\u4e2aController\u6587\u4ef6\u4f1a\u63d0\u4f9bbefore\u548cafter\u65b9\u6cd5\r\n\u8fed\u4ee3\u5668\u6a21\u5f0f\uff1a \u63d0\u4f9b\u4e00\u4e2a\u65b9\u6cd5\u987a\u5e8f\u8bbf\u95ee\u4e00\u4e2a\u805a\u5408\u5bf9\u8c61\u4e2d\u5404\u4e2a\u5143\u7d20\uff0c\u5728PHP\u4e2d\u5c06\u7ee7\u627f Iterator \u7c7b\r\n\u539f\u578b\u6a21\u5f0f\uff1a \u5b9e\u73b0\u4e86\u4e00\u4e2a\u539f\u578b\u63a5\u53e3\uff0c\u8be5\u63a5\u53e3\u7528\u4e8e\u521b\u5efa\u5f53\u524d\u5bf9\u8c61\u7684\u514b\u9686\u3002\u5f53\u76f4\u63a5\u521b\u5efa\u5bf9\u8c61\u7684\u4ee3\u4ef7\u6bd4\u8f83\u5927\u65f6\uff0c\u5219\u91c7\u7528\u8fd9\u79cd\u6a21\u5f0f\u3002\u4f8b\u5982\uff0c\u4e00\u4e2a\u5bf9\u8c61\u9700\u8981\u5728\u4e00\u4e2a\u9ad8\u4ee3\u4ef7\u7684\u6570\u636e\u5e93\u64cd\u4f5c\u4e4b\u540e\u88ab\u521b\u5efa\u3002"},{"ID":"1378","typeID":"13","question":"\u5bf9\u4e8e\u5927\u6d41\u91cf\u7684\u7f51\u7ad9,\u60a8\u91c7\u7528\u4ec0\u4e48\u6837\u7684\u65b9\u6cd5\u6765\u89e3\u51b3\u8bbf\u95ee\u91cf\u95ee\u9898?","answer":"\u9996\u5148\uff0c\u786e\u8ba4\u670d\u52a1\u5668\u786c\u4ef6\u662f\u5426\u8db3\u591f\u652f\u6301\u5f53\u524d\u7684\u6d41\u91cf\u3002\r\n\u5176\u6b21\uff0c\u4f18\u5316\u6570\u636e\u5e93\u8bbf\u95ee\u3002\r\n\u7b2c\u4e09\uff0c\u7981\u6b62\u5916\u90e8\u7684\u76d7\u94fe\u3002\r\n\u7b2c\u56db\uff0c\u63a7\u5236\u5927\u6587\u4ef6\u7684\u4e0b\u8f7d\u3002\r\n\u7b2c\u4e94\uff0c\u4f7f\u7528\u4e0d\u540c\u4e3b\u673a\u5206\u6d41\u4e3b\u8981\u6d41\u91cf\r\n\u7b2c\u516d\uff0c\u4f7f\u7528\u6d41\u91cf\u5206\u6790\u7edf\u8ba1\u8f6f\u4ef6\u3002"},{"ID":"546","typeID":"13","question":" PHP\u7684\u5783\u573e\u6536\u96c6\u673a\u5236\u662f\u600e\u6837\u7684?","answer":"PHP\u4f5c\u4e3a\u811a\u672c\u8bed\u8a00\u662f\u9875\u9762\u7ed3\u675f\u5373\u91ca\u653e\u53d8\u91cf\u6240\u5360\u5185\u5b58\u7684\uff0c\u5f53\u4e00\u4e2a PHP\u7ebf\u7a0b\u7ed3\u675f\u65f6\uff0c\u5f53\u524d\u5360\u7528\u7684\u6240\u6709\u5185\u5b58\u7a7a\u95f4\u90fd\u4f1a\u88ab\u9500\u6bc1\uff0c\u5f53\u524d\u7a0b\u5e8f\u4e2d\u6240\u6709\u5bf9\u8c61\u540c\u65f6\u88ab\u9500\u6bc1\u3002"},{"ID":"545","typeID":"13","question":"\u8bf7\u5bf9POSIX\u98ce\u683c\u548c\u517c\u5bb9Perl\u98ce\u683c\u4e24\u79cd\u6b63\u5219\u8868\u8fbe\u5f0f\u7684\u4e3b\u8981\u51fd\u6570\u8fdb\u884c\u7c7b\u6bd4\u8bf4\u660eereg preg_match:ereg_replace preg_replace","answer":"ereg\/preg_match \u4e3a\u6267\u884c\u6b63\u5219\u5339\u914d\uff0cereg\u91cc\u9762\u662f\u4e0d\u9700\u8981\u4e5f\u4e0d\u80fd\u4f7f\u7528\u5206\u9694\u7b26\u548c\u4fee\u9970\u7b26\u7684\uff0c\u6240\u4ee5ereg\u7684\u529f\u80fd\u6bd4preg\u8981\u5f31\u4e0a\u4e0d\u5c11\u3002\r\n\u5173\u4e8e\u201d.\u201d\uff1a\u70b9\u5728\u6b63\u5219\u91cc\u9762\u4e00\u822c\u662f\u9664\u4e86\u6362\u884c\u7b26\u4ee5\u5916\u7684\u5168\u90e8\u5b57\u7b26\uff0c\u4f46\u662f\u5728ereg\u91cc\u9762\u7684\u201d.\u201d\u662f\u4efb\u610f\u5b57\u7b26\uff0c\u5373\u5305\u62ec\u6362\u884c\u7b26\uff01\u5982\u679c\u5728preg\u91cc\u9762\u5e0c\u671b\u201d.\u201d \u80fd\u591f\u5305\u62ec\u6362\u884c\u7b26\uff0c\u53ef\u4ee5\u5728\u4fee\u9970\u7b26\u4e2d\u52a0\u4e0a\u201ds\u201d\r\nereg\u9ed8\u8ba4\u4f7f\u7528\u8d2a\u5a6a\u6a21\u5f0f\uff0c\u5e76\u4e14\u4e0d\u80fd\u4fee\u6539\uff0c\u8fd9\u4e2a\u7ed9\u5f88\u591a\u66ff\u6362\u548c\u5339\u914d\u5e26\u6765\u9ebb\u70e6\u3002\r\n\u901f\u5ea6\uff1a\u8fd9\u4e2a\u6216\u8bb8\u662f\u5f88\u591a\u4eba\u5173\u5fc3\u7684\u95ee\u9898\uff0c\u4f1a\u4e0d\u4f1apreg\u529f\u80fd\u5f3a\u5927\u662f\u4ee5\u901f\u5ea6\u6765\u6362\u53d6\u7684\uff1f\u4e0d\u7528\u62c5\u5fc3\uff0cpreg\u7684\u901f\u5ea6\u8981\u8fdc\u8fdc\u6bd4ereg\u5feb3\u500d"},{"ID":"544","typeID":"13","question":"\u5bf9\u4e8e\u5927\u6d41\u91cf\u7684\u7f51\u7ad9,\u60a8\u91c7\u7528\u4ec0\u4e48\u6837\u7684\u65b9\u6cd5\u6765\u89e3\u51b3\u8bbf\u95ee\u91cf\u95ee\u9898?(","answer":"\u9996\u5148\uff0c\u786e\u8ba4\u670d\u52a1\u5668\u786c\u4ef6\u662f\u5426\u8db3\u591f\u652f\u6301\u5f53\u524d\u7684\u6d41\u91cf\r\n\u5176\u6b21\uff0c\u4f18\u5316\u6570\u636e\u5e93\u8bbf\u95ee\u3002\r\n\u7b2c\u4e09\uff0c\u7981\u6b62\u5916\u90e8\u7684\u76d7\u94fe\u3002\r\n\u7b2c\u56db\uff0c\u63a7\u5236\u5927\u6587\u4ef6\u7684\u4e0b\u8f7d\u3002\r\n\u7b2c\u4e94\uff0c\u4f7f\u7528\u4e0d\u540c\u4e3b\u673a\u5206\u6d41\u4e3b\u8981\u6d41\u91cf\r\n\u7b2c\u516d\uff0c\u4f7f\u7528\u6d41\u91cf\u5206\u6790\u7edf\u8ba1\u8f6f\u4ef6\u3002"},{"ID":"543","typeID":"13","question":"\u8bf7\u5199\u51fapHp5\u6743\u9650\u63a7\u5236\u4fee\u9970\u7b26","answer":"private protected public"},{"ID":"542","typeID":"13","question":"apache+mysql+php\u5b9e\u73b0\u6700\u5927\u8d1f\u8f7d\u7684\u65b9\u6cd5","answer":"\u4e3b\u8981\u662f\u914d\u7f6e\u6587\u4ef6\u7684\u4f18\u5316\u4e86\uff0c\u53e6\u5916\u7528linux\u8dd1\u8981\u6bd4\u7528windows\u8dd1\u6548\u679c\u597d\u4e00\u70b9\u3002\r\nmkdir\u521b\u5efa\u76ee\u5f55 touch\u521b\u5efa\u6587\u4ef6\u5939 \u4fee\u6539\u6743\u9650chmod\u4e4b\u7c7b"},{"ID":"541","typeID":"13","question":"\u8bf7\u5199\u4e00\u4e2a\u51fd\u6570\u9a8c\u8bc1\u7535\u5b50\u90ae\u4ef6\u7684\u683c\u5f0f\u662f\u5426\u6b63\u786e\uff08\u8981\u6c42\u4f7f\u7528\u6b63\u5219\uff09","answer":"function checkEmail($mail){\r\n$reg = \u2018\/^\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$\/\u2019;\r\n$rst = preg_match($reg , $mail);\r\nif($rst){\r\nreturn TRUE;\r\n}else {\r\nreturn FALSE;\r\n}\r\n}"},{"ID":"540","typeID":"13","question":"\u6253\u5f00php.ini\u4e2d\u7684Safe_mode\uff0c\u4f1a\u5f71\u54cd\u54ea\u4e9b\u53c2\u6570\uff1f\u81f3\u5c11\u8bf4\u51fa6\u4e2a","answer":"\u6b64\u6a21\u5757\u6253\u5f00\u65f6\uff0cphp\u5c06\u68c0\u67e5\u5f53\u524d\u811a\u672c\u7684\u62e5\u6709\u8005\u662f\u5426\u548c\u88ab\u64cd\u4f5c\u6587\u4ef6\u7684\u62e5\u6709\u8005\u76f8\u540c\uff0c\u56e0\u6b64\uff0c\u5c06\u5f71\u54cd\u6587\u4ef6\u64cd\u4f5c\u7c7b\u51fd\u6570\uff0c\u7a0b\u5e8f\u6267\u884c\u51fd\u6570\uff08program Execution Functions\uff09\u3002\u8fd9\u4e9b\u51fd\u6570\u6709.pathinfo,basename,fopen,system,exec,proc_open \u7b49\u51fd\u6570\uff1b"},{"ID":"539","typeID":"13","question":"\u5982\u4f55\u5b9e\u73b0pHp\u3001JSp\u4ea4\u4e92\uff1f","answer":"SOAp,XML_RpC,Socket function,CURL\u90fd\u53ef\u4ee5\u5b9e\u73b0\u8fd9\u4e9b,\u5982\u679c\u662f\u8003pHp\u548cJava\u7684\u6574\u5408,pHp\u5185\u7f6e\u4e86\u8fd9\u79cd\u673a\u5236(\u5982\u679c\u8003pHp\u548c.NET\u7684\u6574\u5408,\u4e5f\u53ef\u4ee5\u8fd9\u4e48\u56de\u7b54), \u4f8b\u5982$foo = new Java(\u2018java.lang.System\u2019);"},{"ID":"538","typeID":"13","question":"error_reporting(2047)\u4ec0\u4e48\u4f5c\u7528\uff1f","answer":"\u76f8\u5f53\u4e8e error_reporting(\u2018E_ALL\u2019); \u8f93\u51fa\u6240\u6709\u7684\u9519\u8bef"},{"ID":"537","typeID":"13","question":"\u7528pHp\u5199\u51fa\u663e\u793a\u5ba2\u6237\u7aefIp\u4e0e\u670d\u52a1\u5668Ip\u7684\u4ee3\u7801","answer":"\u5ba2\u6237\u7aef getenv(\u2018REMOTE_ADDR\u2019);\r\n\u670d\u52a1\u5668\u7aef getenv(\u2018SERVER_ADDR\u2019); \/\/ gethostbyname(\u201cwww.baidu.com\u201d);"},{"ID":"536","typeID":"13","question":"echo count(\u201cabc\u201d); \u8f93\u51fa\u4ec0\u4e48\uff1f","answer":"1"},{"ID":"300","typeID":"13","question":"\u5982\u4f55\u8c03\u7528\u7236\u7c7b\u7684\u6784\u9020\u65b9\u6cd5?","answer":"\u4f7f\u7528parent::constructor($value)\u3002"},{"ID":"299","typeID":"13","question":"\u5982\u4f55\u77e5\u9053\u6709\u51e0\u4e2a\u53c2\u6570\u4f20\u5165\u5230\u4e86\u4e00\u4e2afunction?","answer":"func_num_args() \u51fd\u6570\u8fd4\u56de\u4f20\u5165\u7684\u53c2\u6570\u7684\u4e2a\u6570\u3002"},{"ID":"298","typeID":"13","question":"PHP\u91cc\u9762\u6240\u6709\u7684\u5bf9\u8c61\u662fpassed by value (\u503c\u4f20\u9012)\u8fd8\u662f passed by reference\uff08\u5f15\u7528\u4f20\u9012\uff09?","answer":"PHP\u91cc\u9762\u6240\u6709\u7684\u5bf9\u8c61\u90fd\u662f\u503c\u4f20\u9012\u3002"},{"ID":"297","typeID":"13","question":"sleep\u548c_wakeup\u6709\u4ec0\u4e48\u7279\u6b8a\u542b\u4e49?","answer":"_sleep\u8fd4\u56de\u9700\u8981\u88ab\u4fdd\u5b58\u7684\u53d8\u91cf\u7684\u6570\u7ec4\uff0c\u800c_wakeup\u5219\u662f\u53d6\u5f97\u8fd9\u4e9b\u9700\u8981\u88ab\u4fdd\u5b58\u7684\u53d8\u91cf"},{"ID":"296","typeID":"13","question":"PHP\u91cc\u9762\u5355\u5f15\u53f7\u4e0e\u53cc\u5f15\u53f7\u7684\u533a\u522b\uff1f","answer":"\u53cc\u5f15\u53f7\u5185\u7684\u53d8\u91cf\u6216\u8f6c\u4e49\u7b26\u53f7\u53ef\u4ee5\u88ab\u89e3\u91ca\u6267\u884c\uff0c\u5355\u5f15\u53f7\u5219\u4e0d\u884c"},{"ID":"295","typeID":"13","question":"\u5bf9\u4e8e\u5927\u6d41\u91cf\u7684\u7f51\u7ad9,\u60a8\u91c7\u7528\u4ec0\u4e48\u6837\u7684\u65b9\u6cd5\u6765\u89e3\u51b3\u8bbf\u95ee\u91cf\u95ee\u9898\uff1f","answer":"\u9996\u5148\uff0c\u786e\u8ba4\u670d\u52a1\u5668\u786c\u4ef6\u662f\u5426\u8db3\u591f\u652f\u6301\u5f53\u524d\u7684\u6d41\u91cf\r\n\r\n\u5176\u6b21\uff0c\u4f18\u5316\u6570\u636e\u5e93\u8bbf\u95ee\u3002\r\n\r\n\u7b2c\u4e09\uff0c\u7981\u6b62\u5916\u90e8\u7684\u76d7\u94fe\u3002\r\n\r\n\u7b2c\u56db\uff0c\u63a7\u5236\u5927\u6587\u4ef6\u7684\u4e0b\u8f7d\u3002\r\n\r\n\u7b2c\u4e94\uff0c\u4f7f\u7528\u4e0d\u540c\u4e3b\u673a\u5206\u6d41\u4e3b\u8981\u6d41\u91cf\r\n\r\n\u7b2c\u516d\uff0c\u4f7f\u7528\u6d41\u91cf\u5206\u6790\u7edf\u8ba1\u8f6f\u4ef6"},{"ID":"294","typeID":"13","question":"\u5982\u4f55\u901a\u8fc7javascript\u5224\u65ad\u4e00\u4e2a\u7a97\u53e3\u662f\u5426\u5df2\u7ecf\u88ab\u5c4f\u853d\uff1f","answer":"\u83b7\u53d6open()\u7684\u8fd4\u56de\u503c\uff0c\u5982\u679c\u662fnull\uff0c\u5c31\u662f\u5c4f\u853d\u4e86"},{"ID":"293","typeID":"13","question":"PHP\u4e2d\u4f20\u503c\u548c\u4f20\u5f15\u7528\u3001\u4f20\u5730\u5740\u7684\u533a\u522b\u662f\u4ec0\u4e48\uff1f","answer":"\u4f20\u503c  \u662f\u628a\u5b9e\u53c2\u7684\u503c\u8d4b\u503c\u7ed9\u884c\u53c2 \u90a3\u4e48\u5bf9\u884c\u53c2\u7684\u4fee\u6539\uff0c\u4e0d\u4f1a\u5f71\u54cd\u5b9e\u53c2\u7684\u503c \r\n\r\n\u4f20\u5730\u5740 \u662f\u4f20\u503c\u7684\u4e00\u79cd\u7279\u6b8a\u65b9\u5f0f\uff0c\u53ea\u662f\u4ed6\u4f20\u9012\u7684\u662f\u5730\u5740\uff0c\u4e0d\u662f\u666e\u901a\u7684\u5982int \u90a3\u4e48\u4f20\u5730\u5740\u4ee5\u540e\uff0c\u5b9e\u53c2\u548c\u884c\u53c2\u90fd\u6307\u5411\u540c\u4e00\u4e2a\u5bf9\u8c61"},{"ID":"292","typeID":"13","question":"\u9632\u6b62SQL\u6ce8\u5c04\u6f0f\u6d1e\u4e00\u822c\u7528\u4ec0\u4e48\u51fd\u6570\uff1f","answer":"__addslashes___"},{"ID":"291","typeID":"13","question":"\u8bf7\u4e3e\u4f8b\u8bf4\u660e\u5728\u4f60\u7684\u5f00\u53d1\u8fc7\u7a0b\u4e2d\u7528\u4ec0\u4e48\u65b9\u6cd5\u6765\u52a0\u5feb\u9875\u9762\u7684\u52a0\u8f7d\u901f\u5ea6\uff1f","answer":"\u8981\u7528\u5230\u670d\u52a1\u5668\u8d44\u6e90\u65f6\u624d\u6253\u5f00\uff0c\u53ca\u65f6\u5173\u95ed\u670d\u52a1\u5668\u8d44\u6e90\uff0c\u6570\u636e\u5e93\u6dfb\u52a0\u7d22\u5f15\uff0c\u9875\u9762\u53ef\u751f\u6210\u9759\u6001\uff0c\u56fe\u7247\u7b49\u5927\u6587\u4ef6\u5355\u72ec\u670d\u52a1\u5668\u3002\u4f7f\u7528\u4ee3\u7801\u4f18\u5316\u5de5\u5177"},{"ID":"290","typeID":"13","question":"GD \u51fd\u5f0f\u5e93\u7528\u6765\u505a\u4ec0\u4e48\uff1f","answer":"\u8fd9\u4e2a\u51fd\u5f0f\u5e93\u8ba9\u4f60\u5904\u7406\u548c\u663e\u793a\u5404\u5f0f\u683c\u5f0f\u7684\u56fe\u6863\uff0c\u5b83\u7684\u53e6\u4e00\u4e2a\u5e38\u89c1\u7528\u9014\u662f\u5236\u4f5c\u6240\u56fe\u6863\u3002GD \u4ee5\u5916\u7684\u53e6\u4e00\u4e2a\u9009\u62e9\u662f ImageMagick\uff0c\u4f46\u8fd9\u4e2a\u51fd\u5f0f\u5e93\u5e76\u4e0d\u5185\u5efa\u4e8e PHP \u4e4b\u4e2d\uff0c\u5fc5\u987b\u7531\u7cfb\u7edf\u7ba1\u7406\u5458\u5b89\u88c5\u5728\u4f3a\u670d\u5668\u4e0a"},{"ID":"289","typeID":"13","question":"\u5b9e\u73b0\u4e2d\u6587\u5b57\u4e32\u622a\u53d6\u65e0\u4e71\u7801\u7684\u65b9\u6cd5\uff1f","answer":"mb_substr()"},{"ID":"288","typeID":"13","question":"echo(),print(),print_r()\u7684\u533a\u522b\uff1f","answer":"echo\u662f\u8bed\u8a00\u7ed3\u6784\uff0c\u65e0\u8fd4\u56de\u503c;print\u529f\u80fd\u548cecho\u57fa\u672c\u76f8\u540c\uff0c\u4e0d\u540c\u7684\u662fprint\u662f\u51fd\u6570\uff0c\u6709\u8fd4\u56de\u503c;print_r\u662f\u9012\u5f52\u6253\u5370\uff0c\u7528\u4e8e\u8f93\u51fa\u6570\u7ec4\u5bf9\u8c61"},{"ID":"287","typeID":"13","question":"\u5728PHP\u4e2d\uff0cheredoc\u662f\u4e00\u79cd\u7279\u6b8a\u7684\u5b57\u7b26\u4e32\uff0c\u5b83\u7684\u7ed3\u675f\u6807\u5fd7\u5fc5\u987b\uff1f","answer":"\u7ed3\u675f\u6807\u8bc6\u7b26\u6240\u5728\u7684\u884c\u4e0d\u80fd\u5305\u542b\u4efb\u4f55\u5176\u5b83\u5b57\u7b26\u9664\";\""},{"ID":"286","typeID":"13","question":"\u4e00\u4e2a\u51fd\u6570\u7684\u53c2\u6570\u4e0d\u80fd\u662f\u5bf9\u53d8\u91cf\u7684\u5f15\u7528\uff0c\u9664\u975e\u5728php.ini\u4e2d\u628a\u4ec0\u4e48\u8bbe\u4e3aon\uff1f","answer":"allow_call_time_pass_reference"},{"ID":"285","typeID":"13","question":"\u4e3a\u4e86\u907f\u514d\u591a\u6b21\u5305\u542b\u540c\u4e00\u6587\u4ef6\uff0c\u53ef\u4ee5\u7528\u8bed\u53e5\u4ec0\u4e48\u6765\u4ee3\u66ff\u5b83\u4eec\uff1f","answer":"require_once()\/include_once()"},{"ID":"284","typeID":"13","question":"\u8bed\u53e5 include \u548c require \u90fd\u80fd\u628a\u53e6\u5916\u4e00\u4e2a\u6587\u4ef6\u5305\u542b\u5230\u5f53\u524d\u6587\u4ef6\u4e2d\uff0c\u5b83\u4eec\u7684\u533a\u522b\u662f?","answer":"\u53d1\u751f\u5f02\u5e38\u65f6include\u4ea7\u751f\u8b66\u544arequire\u4ea7\u751f\u81f4\u547d\u9519\u8bef"},{"ID":"283","typeID":"13","question":"\u5199\u51fa\u4e00\u4e2a\u6b63\u5219\u8868\u8fbe\u5f0f\uff0c\u8fc7\u8651\u7f51\u9875\u4e0a\u7684\u6240\u6709JS\/VBS\u811a\u672c\uff08\u5373\u628a\u6807\u8bb0\u53ca\u5176\u5185\u5bb9\u90fd\u53bb\u6389\uff09","answer":"\/<[^>].*?>.*?<\/>\/si"},{"ID":"282","typeID":"13","question":"\u8bed\u53e5 error_reporting(2047)\u7684\u4f5c\u7528\u662f?","answer":"All errors and warnings"},{"ID":"281","typeID":"13","question":"\u6570\u7ec4\u51fd\u6570 arsort \u7684\u4f5c\u7528\u662f?","answer":"\u5bf9\u6570\u7ec4\u8fdb\u884c\u9006\u5411\u6392\u5e8f\u5e76\u4fdd\u6301\u7d22\u5f15\u5173\u7cfb"},{"ID":"280","typeID":"13","question":"\u5982\u679c\u8fd4\u56de\u201c\u627e\u4e0d\u5230\u6587\u4ef6\u201d\u7684\u63d0\u793a\uff0c\u5219\u53ef\u7528 header \u51fd\u6570\uff0c\u5176\u8bed\u53e5\u4e3a?","answer":"header(\"HTTP\/1.0 404 Not Found\");"},{"ID":"279","typeID":"13","question":"\u5728HTTP 1.0\u4e2d\uff0c\u72b6\u6001\u7801 401 \u7684\u542b\u4e49\u662f?","answer":"\u672a\u6388\u6743 "},{"ID":"278","typeID":"13","question":"\u6267\u884c\u7a0b\u5e8f\u6bb5<?php echo 8%(-2) ?>\u5c06\u8f93\u51fa?","answer":"0"},{"ID":"37","typeID":"13","question":"\u8bf7\u7b80\u8ff0\u9879\u76ee\u4e2d\u4f18\u5316sql\u8bed\u53e5\u6267\u884c\u6548\u7387\u7684\u65b9\u6cd5,\u4ece\u54ea\u4e9b\u65b9\u9762,sql\u8bed\u53e5\u6027\u80fd\u5982\u4f55\u5206\u6790?","answer":" ANSWER:  sql\u4f18\u5316\u6709\u9e1f\u7528\uff0c\u4e0d\u5982\u76f4\u63a5\u52a0\u7d22\u5f15\u3002"},{"ID":"36","typeID":"13","question":"\u8868\u4e2d\u6709A B C\u4e09\u5217,\u7528SQL\u8bed\u53e5\u5b9e\u73b0\uff1a\u5f53A\u5217\u5927\u4e8eB\u5217\u65f6\u9009\u62e9A\u5217\u5426\u5219\u9009\u62e9B\u5217\uff0c\u5f53B\u5217\u5927\u4e8eC\u5217\u65f6\u9009\u62e9B\u5217\u5426\u5219\u9009\u62e9C\u5217","answer":"select\r\n case\r\n  when first_name>middle_name then \r\n  case when first_name>last_name then first_name \r\n  else last_name end \r\n else\r\n  case when middle_name>last_name then middle_name else last_name\r\n   end \r\n  end as name\r\n from member"},{"ID":"35","typeID":"13","question":" \u8bf7\u7b80\u8ff0\u6570\u636e\u5e93\u8bbe\u8ba1\u7684\u8303\u5f0f\u53ca\u5e94\u7528","answer":"\u4e00\u822c\u7b2c3\u8303\u5f0f\u5c31\u8db3\u4ee5\uff0c\u7528\u4e8e\u8868\u7ed3\u6784\u7684\u4f18\u5316\uff0c\u8fd9\u6837\u505a\u65e2\u53ef\u4ee5\u907f\u514d\u5e94\u7528\u7a0b\u5e8f\u8fc7\u4e8e\u590d\u6742\u540c\u65f6\u4e5f\u907f\u514d\u4e86SQL\u8bed\u53e5\u8fc7\u4e8e\u5e9e\u5927\u6240\u9020\u6210\u7cfb\u7edf\u6548\u7387\u4f4e\u4e0b\u3002 \r\nANSWER\uff1a\r\n\u7b2c\u4e00\u8303\u5f0f\uff1a\u82e5\u5173\u7cfb\u6a21\u5f0fR\u7684\u6bcf\u4e00\u4e2a\u5c5e\u6027\u662f\u4e0d\u53ef\u518d\u5206\u89e3\u7684\uff0c\u518d\u5c5e\u4e8e\u7b2c\u4e00\u8303\u5f0f\u3002\r\n\u7b2c\u4e8c\u8303\u5f0f\uff1a\u82e5R\u5c5e\u4e8e\u7b2c\u4e00\u8303\u5f0f\uff0c\u4e14\u6240\u6709\u7684\u975e\u7801\u5c5e\u6027\u90fd\u5b8c\u5168\u51fd\u6570\u4f9d\u8d56\u4e8e\u7801\u5c5e\u6027\uff0c\u5219\u4e3a\u7b2c\u4e8c\u8303\u5f0f\u3002\r\n\u7b2c\u4e09\u8303\u5f0f\uff1a\u82e5R\u5c5e\u4e8e\u7b2c\u4e8c\u8303\u5f0f\uff0c\u4e14\u6240\u6709\u7684\u975e\u7801\u5c5e\u6027\u6ca1\u6709\u4e00\u4e2a\u662f\u4f20\u9012\u51fd\u6570\u4f9d\u8d56\u4e8e\u5019\u9009\u7801\uff0c\u5219\u5c5e\u4e8e\u7b2c\u4e09\u8303\u5f0f\u3002"},{"ID":"34","typeID":"13","question":"\u8c08\u8c08\u4e8b\u52a1\u5904\u7406?","answer":"\u53ef\u4ee5\u63a7\u5236\u5e76\u53d1\u64cd\u4f5c\u6240\u4ea7\u751f\u7684\u6570\u636e\u540c\u6b65\u63d0\u4ea4\u3001\u66f4\u65b0\u6240\u5e26\u6765\u7684\u51b2\u7a81\u95ee\u9898.\u53ef\u4ee5\u8fdb\u884ccomit,rollback\u64cd\u4f5c\uff0c\u6570\u636e\u7684\u5b89\u5168\u6027\u5f97\u5230\u4e86\u63d0\u9ad8\u3002"},{"ID":"33","typeID":"13","question":"\u5982\u4f55\u5b9e\u73b0PHP\u3001JSP\u4ea4\u4e92\uff1f","answer":"PHP\u63d0\u4f9b\u4e86\u652f\u6301JAVA\u7684\u7c7b\u5e93\u6587\u4ef6,\u6216\u8005\u901a\u8fc7HTTP\u534f\u8bae\u6765\u4ea4\u4e92\u6570\u636e"},{"ID":"32","typeID":"13","question":"echo(),print(),print_r()\u7684\u533a\u522b?","answer":"echo\u53ef\u4ee5\u63a5\u591a\u4e2a\u53c2\u6570,print\u53ea\u80fd\u63a5\u4e00\u4e2a\u53c2\u6570,\u5b83\u4eec\u90fd\u662fPHP\u7684\u8bed\u8a00\u7ed3\u6784,print_r\u662f\u9012\u89c4\u6253\u5370,\u7528\u6765\u6253\u5370\u6570\u7ec4\u6216\u5bf9\u8c61"},{"ID":"31","typeID":"13","question":"php\u4e2dinclude\u548crequire\u7684\u533a\u522b\uff1f","answer":"\u8fd9\u4e24\u79cd\u7ed3\u6784\u9664\u4e86\u5728\u5982\u4f55\u5904\u7406\u5931\u8d25\u4e4b\u5916\u5b8c\u5168\u4e00\u6837\u3002include()\u4ea7\u751f\u4e00\u4e2a\u8b66\u544a\u800c require() \u5219\u5bfc\u81f4\u4e00\u4e2a\u81f4\u547d\u9519\u8bef\u3002\u6362\u53e5\u8bdd\u8bf4\uff0c\u5982\u679c\u4f60\u60f3\u5728\u9047\u5230\u4e22\u5931\u6587\u4ef6\u65f6\u505c\u6b62\u5904\u7406\u9875\u9762\u5c31\u7528 require()\u3002include() \u5c31\u4e0d\u662f\u8fd9\u6837\uff0c\u811a\u672c\u4f1a\u7ee7\u7eed\u8fd0\u884c\u3002"},{"ID":"30","typeID":"13","question":"\u8868\u5355\u63d0\u4ea4get\u548cpost\u6709\u4f55\u533a\u522b\uff1f","answer":"get\u7684\u65b9\u5f0f\u662f\u628a\u6570\u636e\u5728\u5730\u5740\u680f\u4e2d\u53d1\u9001\uff0cget\u4f20\u9001\u7684\u6570\u636e\u91cf\u8f83\u5c0f\uff0c\u4e0d\u80fd\u5927\u4e8e2KB\u3002post\u4f20\u9001\u7684\u6570\u636e\u91cf\u8f83\u5927\uff0c\u4e00\u822c\u88ab\u9ed8\u8ba4\u4e3a\u4e0d\u53d7\u9650\u5236\u3002\u4f46\u7406\u8bba\u4e0a\uff0cIIS4\u4e2d\u6700\u5927\u91cf\u4e3a80KB\uff0cIIS5\u4e2d\u4e3a100KB\u3002"},{"ID":"29","typeID":"13","question":"\u5b9e\u73b0\u4e2d\u6587\u5b57\u4e32\u622a\u53d6\u65e0\u4e71\u7801\u65b9\u6cd5?","answer":"mb_substr($str, 1, 1, \"GB2312\");"},{"ID":"28","typeID":"13","question":"\u4f18\u5316MYSQL\u6570\u636e\u5e93\u7684\u65b9\u6cd5?","answer":"\u8bed\u53e5\u65b9\u9762\uff1a\r\n1 \u4f7f\u7528\u7d22\u5f15\uff0c\u589e\u52a0\u67e5\u8be2\u6548\u7387\r\n2 \u4f18\u5316\u67e5\u8be2\u8bed\u53e5\uff0c\u63d0\u9ad8\u7d22\u5f15\u547d\u4e2d\u7387\r\n\u6570\u636e\u5e93\u6d89\u53ca\u65b9\u9762\uff1a\r\n1 \u6784\u9020\u5206\u5e93\u5206\u8868\uff0c\u63d0\u9ad8\u6570\u636e\u5e93\u7684\u5b58\u50a8\u548c\u6269\u5c55\u80fd\u529b\r\n2 \u6839\u636e\u9700\u8981\u4f7f\u7528\u4e0d\u540c\u7684\u5b58\u50a8\u5f15\u64ce"},{"ID":"27","typeID":"13","question":"\u5982\u4f55\u5b9e\u73b0\u5b57\u7b26\u4e32\u7ffb\u8f6c?","answer":"strrev($a)\r\n\u4e2d\u6587\u6216\u5176\u4ed6\u6587\u5b57\uff1a\r\n\u4e2d\u6587\uff1aGB2312\uff0c \u4ee3\u7801\u662f\u4f7f\u7528GB2312\u7f16\u7801\r\n<?php\t\r\nfunction reverse($str)\r\n{\r\n\t\t$ret = \"\";\t\r\n\t\t$len = mb_strwidth($str,\"GB2312\");\r\n\t\tfor($i=0; $i< $len; $i++)\r\n\t\t{\r\n\t\t\t$arr[] = mb_substr($str, $i, 1, \"GB2312\");\r\n\t\t}\r\n\t\treturn implode(\"\", array_reverse($arr));\r\n}\r\nprint_r(reverse(\"\u4f60\u597d\"));\r\n"},{"ID":"26","typeID":"13","question":"\u80fd\u591f\u4f7fHTML\u548cPHP\u5206\u79bb\u5f00\u4f7f\u7528\u7684\u6a21\u677f?","answer":"smarty,phplib"},{"ID":"25","typeID":"13","question":"\u7528PHP\u6253\u5370\u51fa\u524d\u4e00\u5929\u7684\u65f6\u95f4\u683c\u5f0f\u662f2006-5-10 22:21:21","answer":"$a = date(\"Y-m-d H:i:s\", strtotime(\"-1 day\"));\r\nprint_r($a);"}]}

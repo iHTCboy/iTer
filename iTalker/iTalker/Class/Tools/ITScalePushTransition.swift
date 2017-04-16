@@ -15,7 +15,7 @@ class ITScalePushTransition: NSObject, UIViewControllerAnimatedTransitioning {
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         //1.获取动画的源控制器和目标控制器
-        let prentVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from) as! ITBaseTransitionViewController
+        let prentVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from) as! ITBasePushTransitionVC
         let fromVC = prentVC.childViewControllers[prentVC.selectTitleIndex] as! ITQuestionListViewController
         let toVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) as! ITQuestionDetailViewController
         let container = transitionContext.containerView

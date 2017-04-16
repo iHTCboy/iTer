@@ -1,0 +1,66 @@
+{"success":1,"total":2100,"result":[
+  {
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "ID" : "55fa697ee4b043d0caf2702e",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "type" : "2",
+    "knowledge" : "",
+    "question" : "用 C 语言写一个函数来执行一串任务。任务是互相依赖的。比如 B 任务依赖 A 任 务，则 A 完成 B 才能执行。不考虑并发限制，假设所有的任务都能一次执行成功， 所有的任务执行时间都相等。任务数据结构原型为：\ntypedef struct {\n    \/\/该任务的 ID\n    int id;\n    \/\/该任务依赖的任务的 ID\n    int *child;\n    \/\/该任务依赖的任务个数\n    int child_num;\n} task;\n \n\/\/ 函数原型：\nbool doschedule(task*pask，inttask_num);\n \n\/\/以下函数可以直接调用：\nvoid dotask(int id); \/\/执行一个进程\n \n\/\/等待 timeout 时间，并返回一个执行成功的任务的 id，如果没有任务在时间片内完成，则返回-1\nint waittask(int timeout);\n \nbool killtask(int id); \/\/杀掉一个进程"
+  },
+  {
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "ID" : "55fa697ee4b043d0caf2702f",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "type" : "2",
+    "knowledge" : "",
+    "question" : "阐述栈和堆在生命周期、速度、内存性能等方面的不同点。假如现在有一个缓冲 区域绝大多数只需要 1KB 空间，极少数极端情况下需要 100MB，怎么样合理分配内 存？"
+  },
+  {
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "ID" : "55fa697ee4b043d0caf27030",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "type" : "2",
+    "knowledge" : "",
+    "question" : "说明以下包含 const 修饰符的语句的意义\na). double * ptr=&value；\nb). const double * ptr=&value;\nc). double *constptr =&value;\nd).const double *const ptr=&value;"
+  },
+  {
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "ID" : "55fa697ee4b043d0caf27031",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "type" : "2",
+    "knowledge" : "",
+    "question" : "请问 c 语言中怎么去除 const 修饰？ 比如：\nconst double value=0.2f； double *ptr；\nptr 怎么样获取 value 的值？"
+  },
+  {
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "ID" : "55fa697ee4b043d0caf27032",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "type" : "2",
+    "knowledge" : "",
+    "question" : "在一维坐标轴上存在许多条线段， 用最简单的算法找出重合长度最长得两条线段。 比如线段 A（1,5）、B（2,8）、C（3,9），则 B 和 C 的重合长度最长，为 5。"
+  },
+  {
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "ID" : "55fa697ee4b043d0caf27033",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "type" : "2",
+    "knowledge" : "",
+    "question" : "百度的某服务机制类似于 CS（customer-server），有时候大量用户访问服务器 S， 导致 S 运行效率缓慢。 为了提升效率， 拟在 C 上利用一些空余的结果空间作为缓存。 已知在 C 的一台客户机上，每天接收 1000w query，其中 500w uniq query，每个 query 5KB，客户机内存 3GB，硬盘 500GB。做出一个方案，说明系统结构、存储结 构、性能优化等方面的设计。"
+  },
+  {
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "ID" : "55fa697ee4b043d0caf27034",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "type" : "2",
+    "knowledge" : "",
+    "question" : "判断一个括号字符串是否匹配正确，如果括号有多种，怎么做？如（（[]））正确，[[(()错误。"
+  },
+  {
+    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "ID" : "55fa697ee4b043d0caf27035",
+    "typeID" : "55dd5e2360b258078b9e4458",
+    "type" : "2",
+    "knowledge" : "",
+    "question" : "搜索引擎的日志要记录所有查询串,有一千万条查询,不重复的不超过三百万\n要统计最热门的10条查询串. 内存<1G. 字符串长 0-255\n(1) 主要解决思路\n(2) 算法及其复杂度分析"
+  }
+]}

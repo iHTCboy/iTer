@@ -8,7 +8,22 @@
 
 import UIKit
 
-class ITLanguageViewController: ITBaseTransitionViewController {
+class ITLanguageViewController: ITBasePushTransitionVC {
+    
+    // MARK: Life Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // 设置 UI 界面
+        setUpUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        launchAnimate()
+        self.tabBarController?.tabBar.tintColor = UIColor.orange
+    }
     
     // MARK:- 懒加载
     fileprivate var titles = ["Object-C",
@@ -25,7 +40,8 @@ class ITLanguageViewController: ITBaseTransitionViewController {
                               "R",
                               "Linux",
                               "BigData",
-                              "Algorithm"]//["热门", "社林会", "科林可要技", "旅游", "社会", "林转基因要科技", "旅游", "社会", "科技", "旅ssssa游"]
+                              "Algorithm",
+                              "NetworkSecurity"]
     
     fileprivate lazy var pageTitleView: ITPageTitleView = {
         let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavBarH, width: kScreenW, height: kTitleViewH)
@@ -50,26 +66,11 @@ class ITLanguageViewController: ITBaseTransitionViewController {
         }
         
     let contentView = ITPageContentView(frame: contentFrame, childVcs: childVcs, parentVc: self)
-        contentView.delegate = self
-        return contentView
+    contentView.delegate = self
+    return contentView
     }()
     
     var isFirstLaunch = false
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // 设置 UI 界面
-        setUpUI()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        launchAnimate()
-        self.tabBarController?.tabBar.tintColor = UIColor.orange
-    }
-    
 }
 
 

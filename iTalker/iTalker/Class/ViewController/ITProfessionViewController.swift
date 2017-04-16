@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ITProfessionViewController: ITBaseTransitionViewController
+class ITProfessionViewController: ITBasePushTransitionVC
 {
     
     // MARK: Life Cycle
@@ -26,16 +26,17 @@ class ITProfessionViewController: ITBaseTransitionViewController
     
     // MARK:- 懒加载
     fileprivate var titles = ["iOS Developer",
-                              "Web Developer",
-                              "Java Developer",
                               "Android Developer",
+                              "Java Developer",
+                              "Web Developer",
                               "PHP Engineer",
                               "Python Engineer",
                               "Game Developer",
                               "Database Engineer",
                               "BigData Engineer",
                               "Linux Engineer",
-                              "Algorithm Engineer"]
+                              "Algorithm Engineer",
+                              "Network Engineer"]
     
     fileprivate lazy var pageTitleView: ITPageTitleView = {
         let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavBarH, width: kScreenW, height: kTitleViewH)
