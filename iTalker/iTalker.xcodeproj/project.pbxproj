@@ -64,6 +64,9 @@
 		6DE690E11E99155D00351BF2 /* iTalkerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE690E01E99155D00351BF2 /* iTalkerUITests.swift */; };
 		6DE691301E99202400351BF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE6912B1E99202400351BF2 /* AppDelegate.swift */; };
 		6DE691371E9925DF00351BF2 /* ITProfessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE691361E9925DF00351BF2 /* ITProfessionViewController.swift */; };
+		6DECE6791EA314FA00B2AE3B /* ITScalePushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DECE6781EA314FA00B2AE3B /* ITScalePushTransition.swift */; };
+		6DECE67B1EA3150C00B2AE3B /* ITScalePopTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DECE67A1EA3150C00B2AE3B /* ITScalePopTransition.swift */; };
+		6DECE67D1EA3573C00B2AE3B /* ITBaseTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DECE67C1EA3573C00B2AE3B /* ITBaseTransitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +152,9 @@
 		6DE690E21E99155D00351BF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DE6912B1E99202400351BF2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DE691361E9925DF00351BF2 /* ITProfessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITProfessionViewController.swift; sourceTree = "<group>"; };
+		6DECE6781EA314FA00B2AE3B /* ITScalePushTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITScalePushTransition.swift; sourceTree = "<group>"; };
+		6DECE67A1EA3150C00B2AE3B /* ITScalePopTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITScalePopTransition.swift; sourceTree = "<group>"; };
+		6DECE67C1EA3573C00B2AE3B /* ITBaseTransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITBaseTransitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,6 +336,7 @@
 				6DE6912C1E99202400351BF2 /* Model */,
 				6DE6912D1E99202400351BF2 /* View */,
 				6D3B547D1E9A41FB00FF7F36 /* Common */,
+				6DECE6741EA3146D00B2AE3B /* Tools */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -364,6 +371,7 @@
 				6DE691361E9925DF00351BF2 /* ITProfessionViewController.swift */,
 				6D3B54801E9A439C00FF7F36 /* ITQuestionListViewController.swift */,
 				6D3B54821E9A43B200FF7F36 /* ITQuestionDetailViewController.swift */,
+				6DECE67C1EA3573C00B2AE3B /* ITBaseTransitionViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -384,6 +392,15 @@
 				6D0838501E99F6AE00B2D807 /* jsonFiles */,
 			);
 			path = Documents;
+			sourceTree = "<group>";
+		};
+		6DECE6741EA3146D00B2AE3B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				6DECE6781EA314FA00B2AE3B /* ITScalePushTransition.swift */,
+				6DECE67A1EA3150C00B2AE3B /* ITScalePopTransition.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -555,14 +572,17 @@
 				6D3B548A1E9A557C00FF7F36 /* ITQuestionDetailViewCell.swift in Sources */,
 				6D3B547C1E9A416100FF7F36 /* ITPageTitleView.swift in Sources */,
 				6D08384F1E99EBD800B2D807 /* ITFeatchITJsonFile.swift in Sources */,
+				6DECE67B1EA3150C00B2AE3B /* ITScalePopTransition.swift in Sources */,
 				6DE691371E9925DF00351BF2 /* ITProfessionViewController.swift in Sources */,
 				6D3B54811E9A439C00FF7F36 /* ITQuestionListViewController.swift in Sources */,
+				6DECE6791EA314FA00B2AE3B /* ITScalePushTransition.swift in Sources */,
 				6D3B547F1E9A423C00FF7F36 /* CommonDefine.swift in Sources */,
 				6D3B54831E9A43B200FF7F36 /* ITQuestionDetailViewController.swift in Sources */,
 				6D08384B1E99C9FE00B2D807 /* ITModel.swift in Sources */,
 				6D3B548D1E9A6BB300FF7F36 /* ITCopyLabel.swift in Sources */,
 				6D08384D1E99DB6900B2D807 /* ITQuestionModel.swift in Sources */,
 				6DE691301E99202400351BF2 /* AppDelegate.swift in Sources */,
+				6DECE67D1EA3573C00B2AE3B /* ITBaseTransitionViewController.swift in Sources */,
 				6D3B54861E9A474C00FF7F36 /* ITQuestionListViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -718,7 +738,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 28PV6G96R7;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iTalker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -740,7 +760,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 28PV6G96R7;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iTalker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

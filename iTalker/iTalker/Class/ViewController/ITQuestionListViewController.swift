@@ -10,11 +10,11 @@ import UIKit
 
 class ITQuestionListViewController: UIViewController {
 
+    // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setUpUI()
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,7 +22,10 @@ class ITQuestionListViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    let refreshControl = UIRefreshControl.init()
+    var selectedCell: ITQuestionListViewCell!
+    
+    // MARK:- 懒加载
     lazy var tableView: UITableView = {
         var tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenW, height: kScreenH-64-58), style: .plain)
         tableView.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 40, right: 0)
@@ -34,10 +37,7 @@ class ITQuestionListViewController: UIViewController {
         return tableView
     }()
     
-    let refreshControl = UIRefreshControl.init()
-    
     lazy var listModel: ITModel = {
-        
         if let file = Bundle.main.url(forResource: self.title!, withExtension: "json") {
             return self.getModel(title: self.title!)
         } else {
@@ -59,10 +59,31 @@ class ITQuestionListViewController: UIViewController {
                 print("no featch title")
             }
         }
-        
         return ITModel()
-       
     }()
+    
+    fileprivate var titles = ["iOS Developer":"Object-C,Swift",
+                              "Web Developer":"JavaScript,HTML5",
+                              "Java Developer":"Java",
+                              "Android Developer":"Java",
+                              "PHP Engineer":"PHP",
+                              "Python Engineer":"Python",
+                              "Game Developer":"JavaScript,C#",
+                              "Database Engineer":"SQL",
+                              "BigData Engineer":"R,BigData",
+                              "Linux Engineer":"Linux",
+                              "Algorithm Engineer":"Algorithm"]
+}
+
+
+// MARK:- prive mothod
+extension ITQuestionListViewController {
+    fileprivate func setUpUI() {
+    
+        view.addSubview(tableView)
+        tableView.delegate = self;
+        tableView.dataSource = self;
+    }
     
     public func randomRefresh(sender: AnyObject) {
         self.listModel.result.shuffle()
@@ -70,7 +91,7 @@ class ITQuestionListViewController: UIViewController {
         refreshControl.endRefreshing()
     }
     
-    func getModel(title: String) -> ITModel {
+    public func getModel(title: String) -> ITModel {
         
         if let file = Bundle.main.url(forResource: title, withExtension: "json") {
             do {
@@ -93,36 +114,11 @@ class ITQuestionListViewController: UIViewController {
             print("no file")
             return ITModel()
         }
-        
         return ITModel()
     }
-    
-    // MARK:- 懒加载
-    fileprivate var titles = ["iOS Developer":"Object-C,Swift",
-                              "Web Developer":"JavaScript,HTML5",
-                              "Java Developer":"Java",
-                              "Android Developer":"Java",
-                              "PHP Engineer":"PHP",
-                              "Python Engineer":"Python",
-                              "Game Developer":"JavaScript,C#",
-                              "Database Engineer":"SQL",
-                              "BigData Engineer":"R,BigData",
-                              "Linux Engineer":"Linux",
-                              "Algorithm Engineer":"Algorithm"]
 }
 
-
-extension ITQuestionListViewController {
-    fileprivate func setUpUI() {
-    
-        view.addSubview(tableView)
-        tableView.delegate = self;
-        tableView.dataSource = self;
-    }
-    
-}
-
-
+// MARK: Tableview Delegate
 extension ITQuestionListViewController : UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -135,7 +131,10 @@ extension ITQuestionListViewController : UITableViewDelegate, UITableViewDataSou
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: ITQuestionListViewCell = tableView.dequeueReusableCell(withIdentifier: "ITQuestionListViewCell") as! ITQuestionListViewCell
-        cell.accessoryType = .disclosureIndicator
+//        cell.accessoryType = .disclosureIndicator
+//        cell.selectedBackgroundView = UIView.init(frame: cell.frame)
+//        cell.selectedBackgroundView?.backgroundColor = UIColor.clear
+        cell.selectionStyle = .none
         cell.tagLbl.layer.cornerRadius = 3
         cell.tagLbl.layer.masksToBounds = true
         cell.langugeLbl.layer.cornerRadius = 3
@@ -164,17 +163,19 @@ extension ITQuestionListViewController : UITableViewDelegate, UITableViewDataSou
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
+        self.selectedCell = tableView.cellForRow(at: indexPath) as! ITQuestionListViewCell
+    
         let question = self.listModel.result[indexPath.row]
         let questionVC = ITQuestionDetailViewController()
         questionVC.title = self.title
         questionVC.questionModle = question
         questionVC.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(questionVC, animated: true)
-        
     }
 }
 
 
+// MARK: 随机数
 extension MutableCollection where Indices.Iterator.Element == Index {
     /// Shuffles the contents of this collection.
     mutating func shuffle() {

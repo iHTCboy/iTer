@@ -8,11 +8,21 @@
 
 import UIKit
 
-
-
-fileprivate let kTitleViewH : CGFloat = 40
-
-class ITProfessionViewController: UIViewController {
+class ITProfessionViewController: ITBaseTransitionViewController
+{
+    
+    // MARK: Life Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // 设置 UI 界面
+        setUpUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
     
     // MARK:- 懒加载
     fileprivate var titles = ["iOS Developer",
@@ -54,13 +64,6 @@ class ITProfessionViewController: UIViewController {
         return contentView
         }()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // 设置 UI 界面
-        setUpUI()
-    }
-    
 }
 
 
@@ -82,6 +85,7 @@ extension ITProfessionViewController {
 extension ITProfessionViewController: ITPageTitleViewDelegate {
     func pageTitleView(pageTitleView: ITPageTitleView, didSelectedIndex index: Int) {
         pageContentView.scrollToIndex(index: index)
+        self.selectTitleIndex = index
     }
 }
 
@@ -89,6 +93,7 @@ extension ITProfessionViewController: ITPageTitleViewDelegate {
 extension ITProfessionViewController: ITPageContentViewDelegate {
     func pageContentView(pageContentView: ITPageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
         pageTitleView.setTitleWithProgerss(sourceIndex: sourceIndex, targetIndex: targetIndex, progress: progress)
+        self.selectTitleIndex = targetIndex
     }
 }
 

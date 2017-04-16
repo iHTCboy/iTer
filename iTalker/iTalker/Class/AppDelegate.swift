@@ -77,7 +77,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     let json = try JSONSerialization.jsonObject(with: data, options: [])
                     if let responseObject = json as? [String: Any] {
                         // json is a dictionary
-                        print(responseObject)
+                        //print(responseObject)
                         let resultCount = responseObject["resultCount"] as! Int
                         if resultCount == 0 {
                             return

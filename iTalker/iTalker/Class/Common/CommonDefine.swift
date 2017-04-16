@@ -13,6 +13,7 @@ import UIKit
 let kAppAppleId = "1224934068"
 let kStatusBarH: CGFloat = 20
 let kNavBarH: CGFloat = 40
+let kTitleViewH : CGFloat = 40
 let kScreenW = UIScreen.main.bounds.width
 let kScreenH = UIScreen.main.bounds.height
 

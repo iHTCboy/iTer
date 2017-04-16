@@ -10,20 +10,33 @@ import UIKit
 
 class ITQuestionDetailViewController: UIViewController {
  
-    var questionModle : ITQuestionModel?
-    var isShowAnswer : Bool = false
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setUpUI()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
+        self.navigationController?.delegate = self
+        
+        //手势监听器
+        let edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(self.edgePanGesture(_:)))
+        edgePan.edges = UIRectEdge.left
+        self.view.addGestureRecognizer(edgePan)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    fileprivate var percentDrivenTransition: UIPercentDrivenInteractiveTransition?
+    var selectedCell: ITQuestionListViewCell!
+    
+    var questionModle : ITQuestionModel?
+    var isShowAnswer : Bool = false
     
     lazy var tableView: UITableView = {
         var tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenW, height: kScreenH), style: .plain)
@@ -40,12 +53,28 @@ class ITQuestionDetailViewController: UIViewController {
 
 extension ITQuestionDetailViewController {
     fileprivate func setUpUI() {
-        
         view.addSubview(tableView)
         tableView.delegate = self;
         tableView.dataSource = self;
     }
     
+    func edgePanGesture(_ edgePan: UIScreenEdgePanGestureRecognizer) {
+        let progress = edgePan.translation(in: self.view).x / self.view.bounds.width
+        
+        if edgePan.state == UIGestureRecognizerState.began {
+            self.percentDrivenTransition = UIPercentDrivenInteractiveTransition()
+            self.navigationController?.popViewController(animated: true)
+        } else if edgePan.state == UIGestureRecognizerState.changed {
+            self.percentDrivenTransition?.update(progress)
+        } else if edgePan.state == UIGestureRecognizerState.cancelled || edgePan.state == UIGestureRecognizerState.ended {
+            if progress > 0.5 {
+                self.percentDrivenTransition?.finish()
+            } else {
+                self.percentDrivenTransition?.cancel()
+            }
+            self.percentDrivenTransition = nil
+        }
+    }
 }
 
 
@@ -86,6 +115,7 @@ extension ITQuestionDetailViewController : UITableViewDelegate, UITableViewDataS
                 cell.langugeLbl.text = " \(questionModle!.lauguage) "
                 
             }
+            self.selectedCell = cell;
             return cell
         default:
             let cell: ITQuestionDetailViewCell = tableView.dequeueReusableCell(withIdentifier: "ITQuestionDetailViewCell") as! ITQuestionDetailViewCell
@@ -117,6 +147,25 @@ extension ITQuestionDetailViewController : UITableViewDelegate, UITableViewDataS
         tableView.deselectRow(at: indexPath, animated: true)
         
         
+    }
+}
+
+extension ITQuestionDetailViewController : UINavigationControllerDelegate {
+    
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        if operation == UINavigationControllerOperation.pop {
+            return ITScalePopTransition()
+        } else {
+            return nil
+        }
+    }
+    
+    func navigationController(_ navigationController: UINavigationController, interactionControllerFor animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        if animationController is ITScalePopTransition {
+            return self.percentDrivenTransition
+        } else {
+            return nil
+        }
     }
 }
 

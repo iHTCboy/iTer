@@ -8,9 +8,7 @@
 
 import UIKit
 
-fileprivate let kTitleViewH : CGFloat = 40
-
-class ITLanguageViewController: UIViewController {
+class ITLanguageViewController: ITBaseTransitionViewController {
     
     // MARK:- 懒加载
     fileprivate var titles = ["Object-C",
@@ -69,9 +67,23 @@ class ITLanguageViewController: UIViewController {
         super.viewWillAppear(animated)
         
         launchAnimate()
-        
         self.tabBarController?.tabBar.tintColor = UIColor.orange
+    }
+    
+}
+
+
+// MARK:- 设置 UI
+extension ITLanguageViewController {
+    fileprivate func setUpUI() {
+        // 0. 不允许系统调整 scrollview 内边距
+        automaticallyAdjustsScrollViewInsets = false
         
+        // 1. 添加 titleview
+        view.addSubview(pageTitleView)
+        
+        // 2. 添加 contentview
+        view.addSubview(pageContentView)
     }
     
     func launchAnimate() {
@@ -100,28 +112,14 @@ class ITLanguageViewController: UIViewController {
             })
         }
     }
-    
-}
 
-
-// MARK:- 设置 UI
-extension ITLanguageViewController {
-    fileprivate func setUpUI() {
-        // 0. 不允许系统调整 scrollview 内边距
-        automaticallyAdjustsScrollViewInsets = false
-        
-        // 1. 添加 titleview
-        view.addSubview(pageTitleView)
-        
-        // 2. 添加 contentview
-        view.addSubview(pageContentView)
-    }
 }
 
 // MARK:- pageTitleViewDelegate
 extension ITLanguageViewController: ITPageTitleViewDelegate {
     func pageTitleView(pageTitleView: ITPageTitleView, didSelectedIndex index: Int) {
         pageContentView.scrollToIndex(index: index)
+        selectTitleIndex = index
     }
 }
 
@@ -129,10 +127,9 @@ extension ITLanguageViewController: ITPageTitleViewDelegate {
 extension ITLanguageViewController: ITPageContentViewDelegate {
     func pageContentView(pageContentView: ITPageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
         pageTitleView.setTitleWithProgerss(sourceIndex: sourceIndex, targetIndex: targetIndex, progress: progress)
+        selectTitleIndex = targetIndex
     }
 }
-
-
 
 
 
