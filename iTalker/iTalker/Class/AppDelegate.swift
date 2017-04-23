@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         setupBaseUI()
         
-        checkAppUpdate()
+        ITCommonAPI.sharedInstance.checkAppUpdate(newHandler: nil)
         
         return true
     }
@@ -54,14 +54,16 @@ extension AppDelegate {
     
     func startBaiduMobStat() {
         
-        let statTracker = BaiduMobStat.default()
         #if DEBUG
-            statTracker?.channelId = "Debug"
+            print("Debug modle")
+            //statTracker?.channelId = "Debug"
         #else
+            let statTracker = BaiduMobStat.default()
             statTracker?.channelId = "AppStore"
+            statTracker?.shortAppVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
+            statTracker?.start(withAppId: "0f4db57bb7")
+            statTracker?.logEvent("usermodelName", eventLabel: UIDevice.modelName)
         #endif
-        statTracker?.shortAppVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
-        statTracker?.start(withAppId: "0f4db57bb7")
         //         statTracker.enableDebugOn = true;
         
     }
@@ -74,90 +76,7 @@ extension AppDelegate {
         UIApplication.shared.setStatusBarHidden(false, with: .none)
     }
     
-    func checkAppUpdate() {
-        
-        var request = URLRequest(url: URL(string: "https://itunes.apple.com/lookup?id=" + kAppAppleId)!)
-        request.httpMethod = "GET"
-        let session = URLSession.shared
-        session.dataTask(with: request) {data, response, err in
-            if let data = data {
-                do {
-                    let json = try JSONSerialization.jsonObject(with: data, options: [])
-                    if let responseObject = json as? [String: Any] {
-                        // json is a dictionary
-                        //print(responseObject)
-                        let resultCount = responseObject["resultCount"] as! Int
-                        if resultCount == 0 {
-                            return
-                        }
-                        
-                        let serverVersionArr = responseObject["results"] as! NSArray
-                        let serverVersionDic = serverVersionArr[0] as! NSDictionary
-                        let serverVersion = serverVersionDic["version"] as! NSString
-                        let localVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! NSString
-                        
-                        //以"."分隔数字然后分配到不同数组
-                        let serverArray = serverVersion.components(separatedBy: ".")
-                        let localArray = localVersion.components(separatedBy: ".")
-                        let counts = min(serverArray.count, localArray.count)
-                        for i in (0..<counts) {
-                            //判断本地版本位数小于服务器版本时，直接返回（并且判断为新版本，比如 本地为1.5 服务器1.5.1）
-                            if localArray.count < serverArray.count {
-                                self.showNewVersion(version: serverVersion , resultDic: serverVersionDic)
-                                break
-                            }
-                            
-                            //有新版本，服务器版本对应数字大于本地
-                            if  Int(serverArray[i])! >  Int(localArray[i])! {
-                                self.showNewVersion(version: serverVersion , resultDic: serverVersionDic)
-                                break
-                            }else if Int(serverArray[i])! < Int(localArray[i])! {
-                                break;
-                            }
-                            
-                        }
-                        
-                    } else if let object = json as? [Any] {
-                        // json is an array
-                        print(object)
-                        
-                    } else {
-                        print("JSON is invalid")
-                    }
-                } catch {
-                    print(error.localizedDescription)
-                }
-            }
-            
-            }.resume()
-    }
     
-    func showNewVersion(version: NSString, resultDic: NSDictionary) {
-        print(version)
-        
-        let title = "发现新版本v" + (version as String)
-        
-        let alert = UIAlertController(title: title,
-                                      message: "赶快体验最新版本吧！是否前往AppStore更新？",
-                                      preferredStyle: UIAlertControllerStyle.alert)
-        
-        let okAction = UIAlertAction.init(title: "OK", style: .default) { (action: UIAlertAction) in
-            UIApplication.shared.openURL(URL(string: "https://itunes.apple.com/cn/app/yi-mei-yun/id" + kAppAppleId + "?l=zh&ls=1&mt=8")!)
-        }
-        alert.addAction(okAction)
-        
-        let cancelAction = UIAlertAction.init(title: "Cancel", style: .cancel) { (action: UIAlertAction) in
-            
-        }
-        alert.addAction(cancelAction)
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            let vc = UIApplication.shared.keyWindow?.rootViewController;
-            vc?.present(alert, animated: true, completion: {
-                //print("UIAlertController present");
-            })
-        }
-    }
 
 }
 

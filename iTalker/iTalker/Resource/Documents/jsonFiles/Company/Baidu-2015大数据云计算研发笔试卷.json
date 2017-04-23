@@ -1,6 +1,6 @@
 {"success":1,"total":2100,"result":[
   {
-    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "answer" : " ",
     "ID" : "55fa697ee4b043d0caf27001",
     "typeID" : "55dd5e2360b258078b9e4458",
     "type" : "2",
@@ -8,7 +8,7 @@
     "question" : "请简要描述一下Hadoop, Spark, MPI三种计算框架的特点以及分别适用于什么样的场景"
   },
   {
-    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "answer" : " ",
     "ID" : "55fa697ee4b043d0caf27002",
     "typeID" : "55dd5e2360b258078b9e4458",
     "type" : "2",
@@ -16,7 +16,7 @@
     "question" : "请解释tcp连接建立过程，如果可能，请结合相应系统调用函数解释交互过程。"
   },
   {
-    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "answer" : " ",
     "ID" : "55fa697ee4b043d0caf27003",
     "typeID" : "55dd5e2360b258078b9e4458",
     "type" : "2",
@@ -24,7 +24,7 @@
     "question" : "给定一个整数的数组，相邻的数不能同时选，求从该数组选取若干整数，使得他们的和最大，要求只能使用o(1)的空间复杂度。要求给出伪码。"
   },
   {
-    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "answer" : " ",
     "ID" : "55fa697ee4b043d0caf27004",
     "typeID" : "55dd5e2360b258078b9e4458",
     "type" : "2",
@@ -32,7 +32,7 @@
     "question" : " 二分查找是常用的编程方法，请用完整代码实现该函数（不许调用库函数）\nvoid *bsearch(const void *key, const void *base, size_t nel, size_t width, int (*compar) (const void *, const void *));"
   },
   {
-    "answer" : "解析正在重新整理中……请不要离开和卸载，其实陪伴是最长情的告白。",
+    "answer" : " ",
     "ID" : "55fa697ee4b043d0caf27005",
     "typeID" : "55dd5e2360b258078b9e4458",
     "type" : "2",

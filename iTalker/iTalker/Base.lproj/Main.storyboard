@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9sW-Hr-DOm">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="bdh-Yz-2TZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hfH-ba-tb7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -33,7 +33,7 @@
             <objects>
                 <navigationController id="T0k-tT-zim" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="企业" image="company_tabbar_normal.png" selectedImage="company_tabbar_selected.png" id="tOD-5L-U1d"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="IO7-GX-A2G">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IO7-GX-A2G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0097922282289999996" green="0.58012366289999995" blue="0.94970387219999997" alpha="0.84828895250000003" colorSpace="custom" customColorSpace="sRGB"/>
@@ -50,6 +50,46 @@
             <point key="canvasLocation" x="586" y="-242"/>
         </scene>
         <!--iTalker-->
+        <scene sceneID="8VD-vo-IEO">
+            <objects>
+                <viewController id="fYG-QD-d2T" customClass="ITProgrammerVC" customModule="iTalker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Abj-Ul-1bt"/>
+                        <viewControllerLayoutGuide type="bottom" id="hlw-wn-SYs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XbG-OG-7oP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="iTalker" id="mDN-ix-urQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKO-b2-Wzr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1497" y="587"/>
+        </scene>
+        <!--猿人-->
+        <scene sceneID="mUv-b9-y8D">
+            <objects>
+                <navigationController id="I4V-gm-neW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="猿人" image="italkerman_gray.png" selectedImage="iTalkerman_blue.png" id="U2l-c7-sle"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zSy-sY-Xca">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0097922282289999996" green="0.58012366289999995" blue="0.94970387219999997" alpha="0.84828895250000003" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fYG-QD-d2T" kind="relationship" relationship="rootViewController" id="5n2-qe-KvE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U65-wC-YIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="585" y="587"/>
+        </scene>
+        <!--iTalker-->
         <scene sceneID="Jvr-UN-ojD">
             <objects>
                 <viewController id="1kw-k5-wsh" customClass="ITCompanyViewController" customModule="iTalker" customModuleProvider="target" sceneMemberID="viewController">
@@ -58,7 +98,7 @@
                         <viewControllerLayoutGuide type="bottom" id="igb-6y-J3Q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wep-FW-oqd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -77,7 +117,7 @@
                         <viewControllerLayoutGuide type="bottom" id="P9d-SD-y8W"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fPk-kt-uXR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -100,11 +140,12 @@
                         <segue destination="2km-lX-hSg" kind="relationship" relationship="viewControllers" id="ftZ-Zs-uQy"/>
                         <segue destination="bLq-5e-DWk" kind="relationship" relationship="viewControllers" id="1eD-ag-XmO"/>
                         <segue destination="T0k-tT-zim" kind="relationship" relationship="viewControllers" id="MkO-dR-dnu"/>
+                        <segue destination="I4V-gm-neW" kind="relationship" relationship="viewControllers" id="w50-5O-ONZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6xl-OX-9YF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-391" y="-1263"/>
+            <point key="canvasLocation" x="-1260" y="-550"/>
         </scene>
         <!--语言-->
         <scene sceneID="EjM-gk-Jnz">
@@ -154,11 +195,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Engineer_normal.png" width="27" height="27"/>
-        <image name="Engineer_selected.png" width="27" height="27"/>
-        <image name="company_tabbar_normal.png" width="27" height="27"/>
-        <image name="company_tabbar_selected.png" width="27" height="27"/>
-        <image name="language_tabbar_normal.png" width="27" height="27"/>
-        <image name="language_tabbar_selected.png" width="27" height="27"/>
+        <image name="Engineer_normal.png" width="30" height="30"/>
+        <image name="Engineer_selected.png" width="30" height="30"/>
+        <image name="company_tabbar_normal.png" width="30" height="30"/>
+        <image name="company_tabbar_selected.png" width="30" height="30"/>
+        <image name="iTalkerman_blue.png" width="30" height="30"/>
+        <image name="italkerman_gray.png" width="30" height="30"/>
+        <image name="language_tabbar_normal.png" width="30" height="30"/>
+        <image name="language_tabbar_selected.png" width="30" height="30"/>
     </resources>
 </document>
