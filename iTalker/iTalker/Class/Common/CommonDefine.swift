@@ -10,7 +10,7 @@ import UIKit
 
 
 // 常量
-let kiTalker = "iTalker"
+let kiTalker = "iTer"
 let kAppAppleId = "1224934068"
 let kAppDownloadURl = "https://itunes.apple.com/us/app/italker-it%E5%AD%A6%E4%B9%A0-%E6%B1%82%E8%81%8C%E9%9D%A2%E8%AF%95%E5%BF%85%E5%A4%87/id1224934068?l=zh&ls=1&mt=8"
 let kReviewAction = "&action=write-review"

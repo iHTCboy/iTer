@@ -15,6 +15,7 @@
     {
       "idiom" : "iphone",
       "size" : "29x29",
+      "filename" : "Icon-Small.png",
       "scale" : "1x"
     },
     {
@@ -73,6 +74,7 @@
     {
       "idiom" : "ipad",
       "size" : "20x20",
+      "filename" : "Icon-Spotlight-40.png",
       "scale" : "2x"
     },
     {
@@ -90,11 +92,13 @@
     {
       "idiom" : "ipad",
       "size" : "40x40",
+      "filename" : "Icon-Spotlight-40.png",
       "scale" : "1x"
     },
     {
       "idiom" : "ipad",
       "size" : "40x40",
+      "filename" : "Icon-Spotlight-40@2x.png",
       "scale" : "2x"
     },
     {

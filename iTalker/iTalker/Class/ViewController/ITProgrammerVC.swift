@@ -37,7 +37,7 @@ class ITProgrammerVC: UIViewController {
     
     fileprivate var titles = ["0":"图片题库:真实公司面试题目",
                               "1": "应用内评分:欢迎给\(kiTalker)打评分！,AppStore评价:欢迎给\(kiTalker)写评论!,分享给朋友:与身边的好友一起分享！",
-                              "2":"意见反馈:欢迎到AppStore提需求或bug问题,邮件联系:如有问题欢迎来信,开源地址:未来逐步开放代码，欢迎关注,关于应用:iTalker"] as [String : String]
+                              "2":"意见反馈:欢迎到AppStore提需求或bug问题,邮件联系:如有问题欢迎来信,开源地址:未来逐步开放代码，欢迎关注,关于应用:\(kiTalker)"] as [String : String]
 
 }
 

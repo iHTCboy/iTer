@@ -62,7 +62,7 @@ extension AppDelegate {
             statTracker?.channelId = "AppStore"
             statTracker?.shortAppVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
             statTracker?.start(withAppId: "0f4db57bb7")
-            statTracker?.logEvent("usermodelName", eventLabel: UIDevice.modelName)
+            statTracker?.logEvent("usermodelName", eventLabel: UIDevice.init().modelName)
         #endif
         //         statTracker.enableDebugOn = true;
         
