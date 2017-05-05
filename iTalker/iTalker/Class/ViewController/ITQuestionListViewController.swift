@@ -31,6 +31,8 @@ class ITQuestionListViewController: UIViewController {
         tableView.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 40, right: 0)
         tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         tableView.estimatedRowHeight = 80
+        tableView.delegate = self;
+        tableView.dataSource = self;
         tableView.register(UINib.init(nibName: "ITQuestionListViewCell", bundle: Bundle.main), forCellReuseIdentifier: "ITQuestionListViewCell")
         self.refreshControl.addTarget(self, action: #selector(randomRefresh(sender:)), for: UIControlEvents.valueChanged)
         tableView.addSubview(self.refreshControl)
@@ -107,10 +109,19 @@ class ITQuestionListViewController: UIViewController {
 // MARK:- Prive mothod
 extension ITQuestionListViewController {
     fileprivate func setUpUI() {
-    
         view.addSubview(tableView)
-        tableView.delegate = self;
-        tableView.dataSource = self;
+//        tableView.translatesAutoresizingMaskIntoConstraints = false
+//        
+//        let viewDict = [
+//            "tableView": tableView
+//            ]
+//        
+//        let vFormat = "V:|[tableView]|"
+//        let hFormat = "H:|[tableView]|"
+//        let vConstraints = NSLayoutConstraint.constraints(withVisualFormat: vFormat, options: [], metrics: nil, views: viewDict)
+//        let hConstraints = NSLayoutConstraint.constraints(withVisualFormat: hFormat, options: [], metrics: nil, views: viewDict)
+//        view.addConstraints(vConstraints)
+//        view.addConstraints(hConstraints)
     }
     
     public func randomRefresh(sender: AnyObject) {

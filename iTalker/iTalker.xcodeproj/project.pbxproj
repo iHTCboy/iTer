@@ -84,7 +84,7 @@
 		6D3B549A1E9A850400FF7F36 /* language_tabbar_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D3B54981E9A850400FF7F36 /* language_tabbar_selected@2x.png */; };
 		6D3B549D1E9A855A00FF7F36 /* language_tabbar_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D3B549B1E9A855A00FF7F36 /* language_tabbar_normal@2x.png */; };
 		6D3B549E1E9A855A00FF7F36 /* language_tabbar_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D3B549C1E9A855A00FF7F36 /* language_tabbar_normal@3x.png */; };
-		6D3B54AC1E9A8F5600FF7F36 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3B54AB1E9A8F5600FF7F36 /* JavaScriptCore.framework */; };
+		6D3B54AC1E9A8F5600FF7F36 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3B54AB1E9A8F5600FF7F36 /* JavaScriptCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D3B54AE1E9A8F6500FF7F36 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3B54AD1E9A8F6500FF7F36 /* Security.framework */; };
 		6D3B54B01E9A8F6900FF7F36 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3B54AF1E9A8F6900FF7F36 /* CoreLocation.framework */; };
 		6D3B54B21E9A8F7900FF7F36 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3B54B11E9A8F7900FF7F36 /* SystemConfiguration.framework */; };
@@ -100,6 +100,7 @@
 		6D4EB07A1EAAE7F80063D5A1 /* iTalkerman_blue@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4EB0761EAAE7F80063D5A1 /* iTalkerman_blue@3x.png */; };
 		6D4EB07B1EAAE7F80063D5A1 /* italkerman_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4EB0771EAAE7F80063D5A1 /* italkerman_gray@2x.png */; };
 		6D4EB07C1EAAE7F80063D5A1 /* italkerman_gray@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4EB0781EAAE7F80063D5A1 /* italkerman_gray@3x.png */; };
+		6D6E2B3D1EBCC531001799DD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6E2B3C1EBCC531001799DD /* CFNetwork.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D6E2D6F1EA3961400FBC6F8 /* Android.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E2D6D1EA3961400FBC6F8 /* Android.json */; };
 		6D6E2D701EA3961400FBC6F8 /* NetworkSecurity.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E2D6E1EA3961400FBC6F8 /* NetworkSecurity.json */; };
 		6D6E2DB81EA3BCCC00FBC6F8 /* 360-2014校招笔试卷.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E2D721EA3BCCC00FBC6F8 /* 360-2014校招笔试卷.json */; };
@@ -175,12 +176,11 @@
 		6D6E2DFF1EA3C13100FBC6F8 /* ITCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E2DFE1EA3C13100FBC6F8 /* ITCompanyViewController.swift */; };
 		6DA0048F1E9C55AE001638CB /* iTalker_LogoBgImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DA0048D1E9C55AE001638CB /* iTalker_LogoBgImage.png */; };
 		6DA004901E9C55AE001638CB /* iTalker_TextLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DA0048E1E9C55AE001638CB /* iTalker_TextLogo.png */; };
-		6DC17B551EAC8EFC00FAA190 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC17B541EAC8EFC00FAA190 /* StoreKit.framework */; };
+		6DC17B551EAC8EFC00FAA190 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC17B541EAC8EFC00FAA190 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6DC17B571EAC8FEF00FAA190 /* ITCommonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC17B561EAC8FEF00FAA190 /* ITCommonAPI.swift */; };
 		6DC17B591EAC991200FAA190 /* iTaler_shareIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DC17B581EAC991200FAA190 /* iTaler_shareIcon.png */; };
-		6DC17B5B1EAC9FD900FAA190 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC17B5A1EAC9FD900FAA190 /* SafariServices.framework */; };
+		6DC17B5B1EAC9FD900FAA190 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC17B5A1EAC9FD900FAA190 /* SafariServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6DC17B5D1EACA12C00FAA190 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC17B5C1EACA12C00FAA190 /* MessageUI.framework */; };
-		6DC17B5F1EACA13200FAA190 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC17B5E1EACA13200FAA190 /* Messages.framework */; };
 		6DE690C61E99155C00351BF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE690C41E99155C00351BF2 /* Main.storyboard */; };
 		6DE690C81E99155C00351BF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DE690C71E99155C00351BF2 /* Assets.xcassets */; };
 		6DE690CB1E99155C00351BF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE690C91E99155C00351BF2 /* LaunchScreen.storyboard */; };
@@ -317,6 +317,7 @@
 		6D4EB0891EAAEBC40063D5A1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		6D4EB08B1EAAEBFF0063D5A1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
 		6D4EB08D1EAAEC0A0063D5A1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		6D6E2B3C1EBCC531001799DD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		6D6E2D6D1EA3961400FBC6F8 /* Android.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Android.json; sourceTree = "<group>"; };
 		6D6E2D6E1EA3961400FBC6F8 /* NetworkSecurity.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NetworkSecurity.json; sourceTree = "<group>"; };
 		6D6E2D721EA3BCCC00FBC6F8 /* 360-2014校招笔试卷.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "360-2014校招笔试卷.json"; sourceTree = "<group>"; };
@@ -422,7 +423,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DC17B5F1EACA13200FAA190 /* Messages.framework in Frameworks */,
+				6D6E2B3D1EBCC531001799DD /* CFNetwork.framework in Frameworks */,
 				6DC17B5D1EACA12C00FAA190 /* MessageUI.framework in Frameworks */,
 				6DC17B5B1EAC9FD900FAA190 /* SafariServices.framework in Frameworks */,
 				6DC17B551EAC8EFC00FAA190 /* StoreKit.framework in Frameworks */,
@@ -604,6 +605,7 @@
 		6D3B54AA1E9A8F5500FF7F36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D6E2B3C1EBCC531001799DD /* CFNetwork.framework */,
 				6DC17B5E1EACA13200FAA190 /* Messages.framework */,
 				6DC17B5C1EACA12C00FAA190 /* MessageUI.framework */,
 				6DC17B5A1EAC9FD900FAA190 /* SafariServices.framework */,

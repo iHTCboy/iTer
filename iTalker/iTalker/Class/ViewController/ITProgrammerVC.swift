@@ -146,7 +146,7 @@ extension ITProgrammerVC : UITableViewDelegate, UITableViewDataSource
             if row == 1 {
                 let message = "欢迎来信，写下你的问题吧" + "\n\n\n\n" + kMarginLine + "\n 当前\(kiTalker)版本：" + KAppVersion + "， 系统版本：" + String(Version.SYS_VERSION_FLOAT) + "， 设备信息：" + UIDevice.init().modelName
                 
-                ITCommonAPI.sharedInstance.sendEmail(recipients: [kGmail], messae: message, vc: self)
+                ITCommonAPI.sharedInstance.sendEmail(recipients: [kEmail], messae: message, vc: self)
             }
             if row == 2 {
                 if #available(iOS 9.0, *) {

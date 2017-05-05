@@ -35,6 +35,10 @@ extension ITAboutAppVC
     func setupUI() {
         self.title = "关于\(kiTalker)"
         
+        guard (self.logoImgView != nil) else {
+            return
+        }
+        
         self.logoImgView.image = Image.init(named: "iTaler_shareIcon")
         self.logoImgView.layer.cornerRadius = 8
         self.logoImgView.layer.masksToBounds = true
