@@ -255,11 +255,16 @@ class CHTCollectionViewWaterfallLayout : UICollectionViewLayout{
         idx = 0;
         let itemCounts = self.allItemAttributes.count
         while(idx < itemCounts){
-            let rect1 = (self.allItemAttributes.object(at: idx) as AnyObject).frame as CGRect
-            idx = min(idx + unionSize, itemCounts) - 1
-            let rect2 = (self.allItemAttributes.object(at: idx) as AnyObject).frame as CGRect
-            self.unionRects.add(NSValue(cgRect:rect1.union(rect2)))
-            idx += 1
+            if #available(iOS 12.0, *) {
+                let rect1 = (self.allItemAttributes.object(at: idx) as AnyObject).frame as CGRect
+                idx = min(idx + unionSize, itemCounts) - 1
+                let rect2 = (self.allItemAttributes.object(at: idx) as AnyObject).frame as CGRect
+                self.unionRects.add(NSValue(cgRect:rect1.union(rect2)))
+                idx += 1
+            } else {
+                // Fallback on earlier versions
+            }
+            
         }
     }
     

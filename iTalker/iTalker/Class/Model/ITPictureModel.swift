@@ -25,17 +25,3 @@ class ITPictureModel: NSObject {
         reply = dictionary["reply"] as! String
     }
 }
-
-/*
-{
-    "addtime": "2017-02-21 15:57:02",
-    "approve": "1",
-    "company": "武汉大工尹",
-    "ID": "219",
-    "loader": "草原狼",
-    "openid": null,
-    "pic": "http://api.codertopic.com/itapi/admin/uploadpic/uploadimages/1487663822up.png",
-    "pictype": "Java",
-    "reply": "无"
-},
-*/

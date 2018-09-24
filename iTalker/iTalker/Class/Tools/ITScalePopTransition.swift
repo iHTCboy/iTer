@@ -11,7 +11,7 @@ import UIKit
 class ITScalePopTransition: NSObject, UIViewControllerAnimatedTransitioning {
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.5
+        return 0.3
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
@@ -21,7 +21,7 @@ class ITScalePopTransition: NSObject, UIViewControllerAnimatedTransitioning {
         let container = transitionContext.containerView
         
         func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-            return 0.5
+            return 0.3
         }
         
         func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {

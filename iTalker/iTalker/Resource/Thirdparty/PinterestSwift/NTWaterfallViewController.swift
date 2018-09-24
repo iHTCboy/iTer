@@ -84,7 +84,7 @@ class NTWaterfallViewController:UICollectionViewController {
 
 extension NTWaterfallViewController
 {
-    func didCloseVC() {
+    @objc func didCloseVC() {
         self.dismiss(animated: true, completion: nil);
     }
     

@@ -37,7 +37,7 @@ class ITBasePopTransitionVC: UIViewController {
 
 
 extension ITBasePopTransitionVC {
-    func edgePanGesture(_ edgePan: UIScreenEdgePanGestureRecognizer) {
+    @objc func edgePanGesture(_ edgePan: UIScreenEdgePanGestureRecognizer) {
         let progress = edgePan.translation(in: self.view).x / self.view.bounds.width
         
         if edgePan.state == UIGestureRecognizerState.began {

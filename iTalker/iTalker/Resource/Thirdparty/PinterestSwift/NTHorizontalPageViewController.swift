@@ -52,7 +52,7 @@ class NTHorizontalPageViewController : UICollectionViewController
 
 extension NTHorizontalPageViewController
 {
-    func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
         
         if let error = error {
             // we got back an error!

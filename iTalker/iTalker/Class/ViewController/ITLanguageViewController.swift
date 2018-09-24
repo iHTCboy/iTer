@@ -52,7 +52,7 @@ class ITLanguageViewController: ITBasePushTransitionVC {
     
     fileprivate lazy var pageContentView: ITPageContentView = {[weak self] in
         // 1. 确定内容 frame
-        let contentH = kScreenH - kStatusBarH - kNavBarH
+        let contentH = kScreenH - kStatusBarH - kNavBarH - kHomeIndcator
         let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavBarH + kTitleViewH, width: kScreenW, height: contentH)
         // 2. 确定所有控制器
         let counts = 0

@@ -120,13 +120,13 @@ extension ITQuestionDetailViewController : UITableViewDelegate, UITableViewDataS
             }
             textLbl.textAlignment = .left
         }else{
-            answer = "\n\n\n\n\n\n\n轻点显示答案\n长按答案可以复制\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+            answer = "\n\n\n\n\n\n\n轻点显示答案\n长按文字可以复制答案\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
             textLbl.textAlignment = .center
         }
         return answer
     }
     
-    func textTapped(gestureReconizer: UITapGestureRecognizer) {
+    @objc func textTapped(gestureReconizer: UITapGestureRecognizer) {
         isShowAnswer = !isShowAnswer
         
         let lbl = gestureReconizer.view as! UILabel

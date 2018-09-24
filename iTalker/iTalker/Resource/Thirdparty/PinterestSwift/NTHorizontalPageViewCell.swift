@@ -91,12 +91,12 @@ extension NTHorizontalPageViewCell
     }
     
     //图片单击事件响应
-    func tapSingleDid(_ ges:UITapGestureRecognizer){
+    @objc func tapSingleDid(_ ges:UITapGestureRecognizer){
         tappedAction?(false)
     }
     
     //图片双击事件响应
-    func tapDoubleDid(_ ges:UITapGestureRecognizer){
+    @objc func tapDoubleDid(_ ges:UITapGestureRecognizer){
 
         //缩放视图（带有动画效果）
         UIView.animate(withDuration: 0.5, animations: {
@@ -118,7 +118,7 @@ extension NTHorizontalPageViewCell
         })
     }
     
-    func tapLongDid() {
+    @objc func tapLongDid() {
         longTappedAction?(self.imageView.image!)
     }
     

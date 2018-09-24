@@ -63,6 +63,13 @@ extension AppDelegate {
             statTracker?.shortAppVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
             statTracker?.start(withAppId: "0f4db57bb7")
             statTracker?.logEvent("usermodelName", eventLabel: UIDevice.init().modelName)
+            statTracker?.logEvent("systemVersion", eventLabel: UIDevice.current.systemVersion)
+            
+            let formatter = DateFormatter()
+            formatter.locale = Locale.current
+            formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            let currentDate = formatter.string(from: Date())
+            statTracker?.logEvent("DateSystemVersion", eventLabel: currentDate + " " + UIDevice.current.systemVersion)
         #endif
         //         statTracker.enableDebugOn = true;
         

@@ -28,8 +28,10 @@ class NTNavigationController : UINavigationController{
         
         // set tint
         navigationBar.tintColor = UIColor.white
-        navigationBar.subviews[0].alpha = 0.7
-        let titleDict = [NSForegroundColorAttributeName: UIColor.white]
+        if let view = navigationBar.subviews.first {
+            view.alpha = 0.7
+        }
+        let titleDict = [NSAttributedStringKey.foregroundColor: UIColor.white]
         navigationBar.titleTextAttributes = titleDict
     }
     

@@ -37,7 +37,7 @@ class ITProgrammerVC: UIViewController {
     
     fileprivate var titles = ["0":"图片题库:真实公司面试题目",
                               "1": "应用内评分:欢迎给\(kiTalker)打评分！,AppStore评价:欢迎给\(kiTalker)写评论!,分享给朋友:与身边的好友一起分享！",
-                              "2":"意见反馈:欢迎到AppStore提需求或bug问题,邮件联系:如有问题欢迎来信,开源地址:未来逐步开放代码，欢迎关注,关于应用:\(kiTalker)"] as [String : String]
+        "2":"意见反馈:欢迎到AppStore提需求或bug问题,邮件联系:如有问题欢迎来信,开源地址:未来逐步开放代码，欢迎关注,更多关注:了解更多，欢迎访问作者博客,关于应用:\(kiTalker)"] as [String : String]
 
 }
 
@@ -152,6 +152,13 @@ extension ITProgrammerVC : UITableViewDelegate, UITableViewDataSource
                 if #available(iOS 9.0, *) {
                     let vc = SFSafariViewController(url: URL(string: kGithubURL
                         )!, entersReaderIfAvailable: true)
+                    if #available(iOS 10.0, *) {
+                        vc.preferredBarTintColor = kColorAppOrange
+                        vc.preferredControlTintColor = UIColor.white
+                    }
+                    if #available(iOS 11.0, *) {
+                        vc.dismissButtonStyle = .close
+                    }
                     present(vc, animated: true)
                 } else {
                     if UIApplication.shared.canOpenURL(URL.init(string: kGithubURL )!) {
@@ -160,6 +167,24 @@ extension ITProgrammerVC : UITableViewDelegate, UITableViewDataSource
                 }
             }
             if row == 3 {
+                if #available(iOS 9.0, *) {
+                    let vc = SFSafariViewController(url: URL(string: kiHTCboyURL
+                        )!, entersReaderIfAvailable: true)
+                    if #available(iOS 10.0, *) {
+                        vc.preferredBarTintColor = kColorAppOrange
+                        vc.preferredControlTintColor = UIColor.white
+                    }
+                    if #available(iOS 11.0, *) {
+                        vc.dismissButtonStyle = .close
+                    }
+                    present(vc, animated: true)
+                } else {
+                    if UIApplication.shared.canOpenURL(URL.init(string: kiHTCboyURL )!) {
+                        UIApplication.shared.openURL(URL.init(string: kiHTCboyURL)!)
+                    }
+                }
+            }
+            if row == 4 {
                 let vc = ITAboutAppVC()
                 vc.hidesBottomBarWhenPushed = true
                 self.navigationController?.pushViewController(vc, animated: true)

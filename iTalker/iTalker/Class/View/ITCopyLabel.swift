@@ -35,7 +35,7 @@ class ITCopyLabel: UILabel {
         attachTapHandler()
     }
 
-    func copying(sender: Any) {
+    @objc func copying(sender: Any) {
         //print("\(self.text!)")
         let pasteboard = UIPasteboard.general
         pasteboard.string = self.text
@@ -47,7 +47,7 @@ class ITCopyLabel: UILabel {
     }
     
     
-    func handlelongPress(recognizer : UIGestureRecognizer) {
+    @objc func handlelongPress(recognizer : UIGestureRecognizer) {
         becomeFirstResponder()
         let menu = UIMenuController.shared
         let deleteItem = UIMenuItem(title: "Copy", action: #selector(copying(sender:)))
