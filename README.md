@@ -10,4 +10,4 @@ iTer - IT learning, job interview essential, IT interview basic exam questions g
 本应用主要是学习到Swift的使用和页面切换动画、流水布局使用。
 
 ### 下载地址
-收费人民币1元以表示意  [iOS App Store](https://itunes.apple.com/us/app/iter-it学习-求职面试必备/id1224934068?l=zh&ls=1&mt=8)
+收费人民币1元以表示意  [iOS App Store](https://itunes.apple.com/cn/app/iter-it学习-求职面试必备/id1224934068?l=zh&ls=1&mt=8)
