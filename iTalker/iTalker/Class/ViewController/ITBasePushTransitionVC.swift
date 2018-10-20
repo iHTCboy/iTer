@@ -31,8 +31,8 @@ class ITBasePushTransitionVC: UIViewController {
 
 // MARK: 转换协议
 extension ITBasePushTransitionVC : UINavigationControllerDelegate{
-    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        if operation == UINavigationControllerOperation.push {
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        if operation == UINavigationController.Operation.push {
             return ITScalePushTransition()
         } else {
             return nil

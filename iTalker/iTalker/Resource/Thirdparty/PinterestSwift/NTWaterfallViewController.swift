@@ -11,7 +11,7 @@ import UIKit
 let waterfallViewCellIdentify = "waterfallViewCellIdentify"
 
 class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate{
-    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning?{
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning?{
         
         let fromVCConfromA = (fromVC as? NTTransitionProtocol)
         let fromVCConfromB = (fromVC as? NTWaterFallViewControllerProtocol)
@@ -174,7 +174,7 @@ extension NTWaterfallViewController: CHTCollectionViewDelegateWaterfallLayout, N
     //动画
     func displayCellAnimation(_ view:UIView){
         view.transform = CGAffineTransform(scaleX: 0.0, y: 0.0)
-        UIView.animate(withDuration: 0.3, delay: 0.1, usingSpringWithDamping: 0.6, initialSpringVelocity: 7, options: UIViewAnimationOptions.curveEaseIn, animations: { () -> Void in
+        UIView.animate(withDuration: 0.3, delay: 0.1, usingSpringWithDamping: 0.6, initialSpringVelocity: 7, options: UIView.AnimationOptions.curveEaseIn, animations: { () -> Void in
             view.transform = CGAffineTransform.identity
             
         }) { (success) -> Void in
@@ -214,8 +214,8 @@ extension NTWaterfallViewController: CHTCollectionViewDelegateWaterfallLayout, N
     }
     
     func viewWillAppearWithPageIndex(_ pageIndex: NSInteger) {
-        var position: UICollectionViewScrollPosition =
-            UICollectionViewScrollPosition.centeredHorizontally.intersection(.centeredVertically)
+        var position: UICollectionView.ScrollPosition =
+            UICollectionView.ScrollPosition.centeredHorizontally.intersection(.centeredVertically)
         var image: UIImage? = nil
         // cell reuse
         if let cell = self.collectionView?.cellForItem(at: IndexPath.init(row: pageIndex, section: 0)) as? NTWaterfallViewCell {
@@ -256,7 +256,7 @@ extension NTWaterfallViewController: CHTCollectionViewDelegateWaterfallLayout, N
 
 extension NTWaterfallViewController: UICollectionViewDataSourcePrefetching {
     func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
-        let urls = indexPaths.flatMap {
+        let urls = indexPaths.compactMap {
             URL(string: self.listModel.result[$0.row].pictureURL as String)
         }
         ImagePrefetcher(urls: urls).start()

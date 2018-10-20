@@ -17,7 +17,7 @@ class ITScalePopTransition: NSObject, UIViewControllerAnimatedTransitioning {
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         let fromVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from) as! ITQuestionDetailViewController
         let prentVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) as! ITBasePushTransitionVC
-        let toVC = prentVC.childViewControllers[prentVC.selectTitleIndex] as! ITQuestionListViewController
+        let toVC = prentVC.children[prentVC.selectTitleIndex] as! ITQuestionListViewController
         let container = transitionContext.containerView
         
         func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
@@ -27,7 +27,7 @@ class ITScalePopTransition: NSObject, UIViewControllerAnimatedTransitioning {
         func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
             let fromVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from) as! ITQuestionDetailViewController
             let prentVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) as! ITBasePushTransitionVC
-            let toVC = prentVC.childViewControllers[prentVC.selectTitleIndex] as! ITQuestionListViewController
+            let toVC = prentVC.children[prentVC.selectTitleIndex] as! ITQuestionListViewController
             let container = transitionContext.containerView
             
             let snapshotView = fromVC.selectedCell.snapshotView(afterScreenUpdates: false)
@@ -40,7 +40,7 @@ class ITScalePopTransition: NSObject, UIViewControllerAnimatedTransitioning {
             container.insertSubview(prentVC.view, belowSubview: fromVC.tableView)
             container.addSubview(snapshotView!)
             
-            UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0, options: UIViewAnimationOptions(), animations: { () -> Void in
+            UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0, options: UIView.AnimationOptions(), animations: { () -> Void in
                 snapshotView?.frame = container.convert(toVC.selectedCell.frame, from: toVC.tableView)
                 fromVC.view.alpha = 0
             }) { (finish: Bool) -> Void in
@@ -64,7 +64,7 @@ class ITScalePopTransition: NSObject, UIViewControllerAnimatedTransitioning {
         //container.insertSubview(toVC.view, belowSubview: fromVC.view)
         container.addSubview(snapshotView!)
         
-        UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0, options: UIViewAnimationOptions(), animations: { () -> Void in
+        UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0, options: UIView.AnimationOptions(), animations: { () -> Void in
             snapshotView?.frame = container.convert(toVC.selectedCell.frame, from: toVC.tableView)
             fromVC.view.alpha = 0
         }) { (finish: Bool) -> Void in

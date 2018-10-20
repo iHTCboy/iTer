@@ -40,12 +40,12 @@ extension ITBasePopTransitionVC {
     @objc func edgePanGesture(_ edgePan: UIScreenEdgePanGestureRecognizer) {
         let progress = edgePan.translation(in: self.view).x / self.view.bounds.width
         
-        if edgePan.state == UIGestureRecognizerState.began {
+        if edgePan.state == UIGestureRecognizer.State.began {
             self.percentDrivenTransition = UIPercentDrivenInteractiveTransition()
             self.navigationController?.popViewController(animated: true)
-        } else if edgePan.state == UIGestureRecognizerState.changed {
+        } else if edgePan.state == UIGestureRecognizer.State.changed {
             self.percentDrivenTransition?.update(progress)
-        } else if edgePan.state == UIGestureRecognizerState.cancelled || edgePan.state == UIGestureRecognizerState.ended {
+        } else if edgePan.state == UIGestureRecognizer.State.cancelled || edgePan.state == UIGestureRecognizer.State.ended {
             if progress > 0.3 {
                 self.percentDrivenTransition?.finish()
             } else {
@@ -59,8 +59,8 @@ extension ITBasePopTransitionVC {
 
 extension ITBasePopTransitionVC : UINavigationControllerDelegate {
     
-    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        if operation == UINavigationControllerOperation.pop {
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        if operation == UINavigationController.Operation.pop {
             return ITScalePopTransition()
         } else {
             return nil

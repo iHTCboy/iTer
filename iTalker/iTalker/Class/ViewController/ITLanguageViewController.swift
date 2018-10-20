@@ -94,7 +94,7 @@ extension ITLanguageViewController {
             let vc = UIStoryboard.init(name: "LaunchScreen", bundle: nil);
             let launchView = vc.instantiateInitialViewController()!.view
             let window =  UIWindow.init(frame: (view?.frame)!)
-            window.windowLevel = UIWindowLevelAlert
+            window.windowLevel = UIWindow.Level.alert
             window.backgroundColor = UIColor.clear
             window.addSubview(launchView!)
             window.makeKeyAndVisible()

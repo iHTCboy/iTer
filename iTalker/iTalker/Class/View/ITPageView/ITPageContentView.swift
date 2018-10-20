@@ -70,7 +70,7 @@ extension ITPageContentView {
     fileprivate func setUpUI() {
         // 1. 将所有子控制器添加到父控制器中
         for childVc in childVcs {
-            parentVc?.addChildViewController(childVc)
+            parentVc?.addChild(childVc)
         }
         
         // 2. 添加 collectionview, 用于显示信息

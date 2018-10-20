@@ -31,7 +31,7 @@ class NTNavigationController : UINavigationController{
         if let view = navigationBar.subviews.first {
             view.alpha = 0.7
         }
-        let titleDict = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        let titleDict = [NSAttributedString.Key.foregroundColor: UIColor.white]
         navigationBar.titleTextAttributes = titleDict
     }
     

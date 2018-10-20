@@ -16,7 +16,7 @@ class ITScalePushTransition: NSObject, UIViewControllerAnimatedTransitioning {
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         //1.获取动画的源控制器和目标控制器
         let prentVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from) as! ITBasePushTransitionVC
-        let fromVC = prentVC.childViewControllers[prentVC.selectTitleIndex] as! ITQuestionListViewController
+        let fromVC = prentVC.children[prentVC.selectTitleIndex] as! ITQuestionListViewController
         let toVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) as! ITQuestionDetailViewController
         let container = transitionContext.containerView
         
@@ -41,7 +41,7 @@ class ITScalePushTransition: NSObject, UIViewControllerAnimatedTransitioning {
          所以需要在动画执行前执行一次toVC.avatarImageView.layoutIfNeeded() update一次frame
          */
         //toVC.selectedCell.layoutIfNeeded()
-        UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0, options: UIViewAnimationOptions(), animations: { () -> Void in
+        UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0, options: UIView.AnimationOptions(), animations: { () -> Void in
             snapshotView?.frame = CGRect.init(x: 0, y: 64, width: (snapshotView?.frame.width)!, height: (snapshotView?.frame.height)!)
             toVC.view.alpha = 1
         }) { (finish: Bool) -> Void in

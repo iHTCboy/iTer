@@ -17,7 +17,7 @@ class NTHorizontalPageViewController : UICollectionViewController
     var imagesModel : ITPictureQuestionListModel = ITPictureQuestionListModel()
     var pullOffset = CGPoint.zero
     var rightItem :UIBarButtonItem = {
-        let item = UIBarButtonItem.init(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        let item = UIBarButtonItem.init(title: "", style: UIBarButtonItem.Style.plain, target: nil, action: nil)
         item.isEnabled = false
         return item
     }()
@@ -26,7 +26,7 @@ class NTHorizontalPageViewController : UICollectionViewController
         super.init(collectionViewLayout:layout)
         let collectionView :UICollectionView = self.collectionView!;
         collectionView.isPagingEnabled = true
-        collectionView.contentInset = UIEdgeInsetsMake(-64, 0, -44, 0)
+        collectionView.contentInset = UIEdgeInsets.init(top: -64, left: 0, bottom: -44, right: 0)
         collectionView.register(NTHorizontalPageViewCell.self, forCellWithReuseIdentifier: horizontalPageViewCellIdentify)
         collectionView.setToIndexPath(indexPath)
         collectionView.performBatchUpdates({collectionView.reloadData()}, completion: { finished in
