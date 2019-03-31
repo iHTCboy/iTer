@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 let waterfallViewCellIdentify = "waterfallViewCellIdentify"
 
@@ -150,7 +151,7 @@ extension NTWaterfallViewController: CHTCollectionViewDelegateWaterfallLayout, N
         let url = URL(string: model.pictureURL)!
         (cell as! NTWaterfallViewCell).typeLbl.text = model.pictype
         
-        _ = (cell as! NTWaterfallViewCell).imageViewContent.kf.setImage(with: url, placeholder: Image.init(named: "iTalker_TextLogo"), options: [.transition(ImageTransition.fade(1))], progressBlock: { receivedSize, totalSize in
+        _ = (cell as! NTWaterfallViewCell).imageViewContent.kf.setImage(with: url, placeholder: UIImage.init(named: "iTalker_TextLogo"), options: [.transition(ImageTransition.fade(1))], progressBlock: { receivedSize, totalSize in
             
         }, completionHandler: { image, error, cacheType, imageURL in
             

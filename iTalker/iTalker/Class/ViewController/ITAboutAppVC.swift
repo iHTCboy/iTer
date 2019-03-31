@@ -39,7 +39,7 @@ extension ITAboutAppVC
             return
         }
         
-        self.logoImgView.image = Image.init(named: "iTaler_shareIcon")
+        self.logoImgView.image = UIImage.init(named: "iTaler_shareIcon")
         self.logoImgView.layer.cornerRadius = 8
         self.logoImgView.layer.masksToBounds = true
         self.appNameLbl.text = kiTalker

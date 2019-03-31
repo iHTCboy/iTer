@@ -6,8 +6,9 @@
 //  Copyright (c) 2014 Nicholas Tau. All rights reserved.
 //
 
-import Foundation
 import UIKit
+import Foundation
+import Kingfisher
 
 class NTHorizontalPageViewCell : UICollectionViewCell {
     //var imageName : String?
@@ -16,7 +17,7 @@ class NTHorizontalPageViewCell : UICollectionViewCell {
         didSet
         {
             let url = URL.init(string: imageURL)
-            imageView.kf.setImage(with: url, placeholder: Image.init(named: "iTalker_TextLogo"), options: [.transition(ImageTransition.fade(1))], progressBlock: { receivedSize, totalSize in
+            imageView.kf.setImage(with: url, placeholder: UIImage.init(named: "iTalker_TextLogo"), options: [.transition(ImageTransition.fade(1))], progressBlock: { receivedSize, totalSize in
                 
             }, completionHandler: { image, error, cacheType, imageURL in
                 
@@ -25,7 +26,7 @@ class NTHorizontalPageViewCell : UICollectionViewCell {
     }
     var pullAction : ((_ offset : CGPoint) -> Void)?
     var tappedAction : ((_ isSacle : Bool) -> Void)?
-    var longTappedAction : ((_ image : Image) -> Void)?
+    var longTappedAction : ((_ image : UIImage) -> Void)?
     lazy var imageView: UIImageView = {
         var imgView = UIImageView.init(frame: self.bounds)
         imgView.contentMode = .scaleAspectFit
