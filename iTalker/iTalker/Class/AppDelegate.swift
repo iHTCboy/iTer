@@ -87,8 +87,6 @@ extension AppDelegate {
         UIApplication.shared.setStatusBarHidden(false, with: .none)
     }
     
-    
-
 }
 
 

@@ -207,7 +207,7 @@ extension ITQuestionListViewController : UITableViewDelegate, UITableViewDataSou
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        self.selectedCell = tableView.cellForRow(at: indexPath) as! ITQuestionListViewCell
+        self.selectedCell = (tableView.cellForRow(at: indexPath) as! ITQuestionListViewCell)
     
         let question = self.listModel.result[indexPath.row]
         let questionVC = ITQuestionDetailViewController()
@@ -227,7 +227,7 @@ extension MutableCollection where Indices.Iterator.Element == Index {
         guard c > 1 else { return }
         
         for (firstUnshuffled , unshuffledCount) in zip(indices, stride(from: c, to: 1, by: -1)) {
-            let d: IndexDistance = numericCast(arc4random_uniform(numericCast(unshuffledCount)))
+            let d: Int = numericCast(arc4random_uniform(numericCast(unshuffledCount)))
             guard d != 0 else { continue }
             let i = index(firstUnshuffled, offsetBy: d)
             self.swapAt(firstUnshuffled, i)

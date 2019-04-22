@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6D046AC91EAAEED4002A653D /* ITProgrammerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D046AC81EAAEED4002A653D /* ITProgrammerVC.swift */; };
 		6D046ACC1EAB58E1002A653D /* ITPictureQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D046ACB1EAB58E1002A653D /* ITPictureQuestionVC.swift */; };
-		6D046DA51EABA1A4002A653D /* libBaiduMobStat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D046DA41EABA1A4002A653D /* libBaiduMobStat.a */; };
 		6D046DF51EABA1EC002A653D /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D046DD61EABA1EC002A653D /* CHTCollectionViewWaterfallLayout.swift */; };
 		6D046DF61EABA1EC002A653D /* NTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D046DD71EABA1EC002A653D /* NTExtension.swift */; };
 		6D046E071EABA1EC002A653D /* NTMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D046DE91EABA1EC002A653D /* NTMacro.swift */; };
@@ -77,6 +76,7 @@
 		6D3B54BE1E9A8FB800FF7F36 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3B54BD1E9A8FB800FF7F36 /* libstdc++.tbd */; };
 		6D3BA25C1EACA59500D15753 /* ITAboutAppVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3BA25A1EACA59500D15753 /* ITAboutAppVC.swift */; };
 		6D3BA25D1EACA59500D15753 /* ITAboutAppVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3BA25B1EACA59500D15753 /* ITAboutAppVC.xib */; };
+		6D4ABE6E225093530022AAFC /* libBaiduMobStat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4ABE6C225093530022AAFC /* libBaiduMobStat.a */; };
 		6D4EB0791EAAE7F80063D5A1 /* iTalkerman_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4EB0751EAAE7F80063D5A1 /* iTalkerman_blue@2x.png */; };
 		6D4EB07A1EAAE7F80063D5A1 /* iTalkerman_blue@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4EB0761EAAE7F80063D5A1 /* iTalkerman_blue@3x.png */; };
 		6D4EB07B1EAAE7F80063D5A1 /* italkerman_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4EB0771EAAE7F80063D5A1 /* italkerman_gray@2x.png */; };
@@ -157,6 +157,9 @@
 		6D6E2DFF1EA3C13100FBC6F8 /* ITCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E2DFE1EA3C13100FBC6F8 /* ITCompanyViewController.swift */; };
 		6DA0048F1E9C55AE001638CB /* iTalker_LogoBgImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DA0048D1E9C55AE001638CB /* iTalker_LogoBgImage.png */; };
 		6DA004901E9C55AE001638CB /* iTalker_TextLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DA0048E1E9C55AE001638CB /* iTalker_TextLogo.png */; };
+		6DB6165E226E147E00E4EEDF /* advance_learning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DB6165C226E147D00E4EEDF /* advance_learning@2x.png */; };
+		6DB6165F226E147E00E4EEDF /* advance_learning@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DB6165D226E147E00E4EEDF /* advance_learning@3x.png */; };
+		6DB61661226E14BA00E4EEDF /* ITAdvanceLearningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB61660226E14BA00E4EEDF /* ITAdvanceLearningViewController.swift */; };
 		6DC17B551EAC8EFC00FAA190 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC17B541EAC8EFC00FAA190 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6DC17B571EAC8FEF00FAA190 /* ITCommonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC17B561EAC8FEF00FAA190 /* ITCommonAPI.swift */; };
 		6DC17B591EAC991200FAA190 /* iTaler_shareIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DC17B581EAC991200FAA190 /* iTaler_shareIcon.png */; };
@@ -200,8 +203,6 @@
 		63C650628B42D86420E1EBF7 /* Pods_iTalkerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTalkerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D046AC81EAAEED4002A653D /* ITProgrammerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITProgrammerVC.swift; sourceTree = "<group>"; };
 		6D046ACB1EAB58E1002A653D /* ITPictureQuestionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITPictureQuestionVC.swift; sourceTree = "<group>"; };
-		6D046DA31EABA1A4002A653D /* BaiduMobStat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMobStat.h; sourceTree = "<group>"; };
-		6D046DA41EABA1A4002A653D /* libBaiduMobStat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBaiduMobStat.a; sourceTree = "<group>"; };
 		6D046DD61EABA1EC002A653D /* CHTCollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHTCollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
 		6D046DD71EABA1EC002A653D /* NTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTExtension.swift; sourceTree = "<group>"; };
 		6D046DE91EABA1EC002A653D /* NTMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTMacro.swift; sourceTree = "<group>"; };
@@ -274,6 +275,8 @@
 		6D3B54BD1E9A8FB800FF7F36 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		6D3BA25A1EACA59500D15753 /* ITAboutAppVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITAboutAppVC.swift; sourceTree = "<group>"; };
 		6D3BA25B1EACA59500D15753 /* ITAboutAppVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ITAboutAppVC.xib; sourceTree = "<group>"; };
+		6D4ABE6C225093530022AAFC /* libBaiduMobStat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBaiduMobStat.a; sourceTree = "<group>"; };
+		6D4ABE6D225093530022AAFC /* BaiduMobStat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMobStat.h; sourceTree = "<group>"; };
 		6D4EB0751EAAE7F80063D5A1 /* iTalkerman_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTalkerman_blue@2x.png"; sourceTree = "<group>"; };
 		6D4EB0761EAAE7F80063D5A1 /* iTalkerman_blue@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTalkerman_blue@3x.png"; sourceTree = "<group>"; };
 		6D4EB0771EAAE7F80063D5A1 /* italkerman_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "italkerman_gray@2x.png"; sourceTree = "<group>"; };
@@ -359,6 +362,9 @@
 		6D6E2DFE1EA3C13100FBC6F8 /* ITCompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITCompanyViewController.swift; sourceTree = "<group>"; };
 		6DA0048D1E9C55AE001638CB /* iTalker_LogoBgImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTalker_LogoBgImage.png; sourceTree = "<group>"; };
 		6DA0048E1E9C55AE001638CB /* iTalker_TextLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTalker_TextLogo.png; sourceTree = "<group>"; };
+		6DB6165C226E147D00E4EEDF /* advance_learning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "advance_learning@2x.png"; sourceTree = "<group>"; };
+		6DB6165D226E147E00E4EEDF /* advance_learning@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "advance_learning@3x.png"; sourceTree = "<group>"; };
+		6DB61660226E14BA00E4EEDF /* ITAdvanceLearningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITAdvanceLearningViewController.swift; sourceTree = "<group>"; };
 		6DC17B541EAC8EFC00FAA190 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		6DC17B561EAC8FEF00FAA190 /* ITCommonAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITCommonAPI.swift; sourceTree = "<group>"; };
 		6DC17B581EAC991200FAA190 /* iTaler_shareIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTaler_shareIcon.png; sourceTree = "<group>"; };
@@ -402,6 +408,7 @@
 				6DC17B551EAC8EFC00FAA190 /* StoreKit.framework in Frameworks */,
 				6D3B54BE1E9A8FB800FF7F36 /* libstdc++.tbd in Frameworks */,
 				6D3B54BC1E9A8FAC00FF7F36 /* libz.1.2.5.tbd in Frameworks */,
+				6D4ABE6E225093530022AAFC /* libBaiduMobStat.a in Frameworks */,
 				6D3B54BA1E9A8FA600FF7F36 /* Foundation.framework in Frameworks */,
 				6D3B54B81E9A8F9A00FF7F36 /* UIKit.framework in Frameworks */,
 				6D3B54B61E9A8F8800FF7F36 /* CoreTelephony.framework in Frameworks */,
@@ -410,7 +417,6 @@
 				6D3B54B01E9A8F6900FF7F36 /* CoreLocation.framework in Frameworks */,
 				6D3B54AE1E9A8F6500FF7F36 /* Security.framework in Frameworks */,
 				6D3B54AC1E9A8F5600FF7F36 /* JavaScriptCore.framework in Frameworks */,
-				6D046DA51EABA1A4002A653D /* libBaiduMobStat.a in Frameworks */,
 				9BBBD4672A9F406762E66B77 /* Pods_iTalker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,31 +453,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		6D046ACA1EAB587D002A653D /* BaseVC */ = {
-			isa = PBXGroup;
-			children = (
-				6DECE67C1EA3573C00B2AE3B /* ITBasePushTransitionVC.swift */,
-				6DECE67E1EA3673200B2AE3B /* ITBasePopTransitionVC.swift */,
-			);
-			name = BaseVC;
-			sourceTree = "<group>";
-		};
 		6D046DA11EABA1A4002A653D /* Thirdparty */ = {
 			isa = PBXGroup;
 			children = (
+				6D4ABE6B225093530022AAFC /* ios_api */,
 				6D046DD21EABA1EC002A653D /* PinterestSwift */,
-				6D046DA21EABA1A4002A653D /* ios_api */,
 			);
 			path = Thirdparty;
-			sourceTree = "<group>";
-		};
-		6D046DA21EABA1A4002A653D /* ios_api */ = {
-			isa = PBXGroup;
-			children = (
-				6D046DA31EABA1A4002A653D /* BaiduMobStat.h */,
-				6D046DA41EABA1A4002A653D /* libBaiduMobStat.a */,
-			);
-			path = ios_api;
 			sourceTree = "<group>";
 		};
 		6D046DD21EABA1EC002A653D /* PinterestSwift */ = {
@@ -557,6 +545,8 @@
 				6D09942F1EA3C43000B5EA5C /* company_tabbar_normal@3x.png */,
 				6D0994301EA3C43000B5EA5C /* company_tabbar_selected@2x.png */,
 				6D0994311EA3C43000B5EA5C /* company_tabbar_selected@3x.png */,
+				6DB6165C226E147D00E4EEDF /* advance_learning@2x.png */,
+				6DB6165D226E147E00E4EEDF /* advance_learning@3x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -584,6 +574,24 @@
 				63C650628B42D86420E1EBF7 /* Pods_iTalkerUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D4ABD502250889B0022AAFC /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				6DECE67C1EA3573C00B2AE3B /* ITBasePushTransitionVC.swift */,
+				6DECE67E1EA3673200B2AE3B /* ITBasePopTransitionVC.swift */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		6D4ABE6B225093530022AAFC /* ios_api */ = {
+			isa = PBXGroup;
+			children = (
+				6D4ABE6C225093530022AAFC /* libBaiduMobStat.a */,
+				6D4ABE6D225093530022AAFC /* BaiduMobStat.h */,
+			);
+			path = ios_api;
 			sourceTree = "<group>";
 		};
 		6D6E2D711EA3BCC300FBC6F8 /* Company */ = {
@@ -759,12 +767,13 @@
 		6DE6912E1E99202400351BF2 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6D046ACA1EAB587D002A653D /* BaseVC */,
+				6D4ABD502250889B0022AAFC /* BaseVC */,
 				6D0CB6DE1E9929FB00078553 /* ITLanguageViewController.swift */,
 				6DE691361E9925DF00351BF2 /* ITProfessionViewController.swift */,
 				6D6E2DFE1EA3C13100FBC6F8 /* ITCompanyViewController.swift */,
 				6D3B54801E9A439C00FF7F36 /* ITQuestionListViewController.swift */,
 				6D3B54821E9A43B200FF7F36 /* ITQuestionDetailViewController.swift */,
+				6DB61660226E14BA00E4EEDF /* ITAdvanceLearningViewController.swift */,
 				6D046AC81EAAEED4002A653D /* ITProgrammerVC.swift */,
 				6D046ACB1EAB58E1002A653D /* ITPictureQuestionVC.swift */,
 				6D3BA25A1EACA59500D15753 /* ITAboutAppVC.swift */,
@@ -867,7 +876,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "ihtc.cc @iHTCboy";
 				TargetAttributes = {
 					6DE690BC1E99155C00351BF2 = {
@@ -894,10 +903,9 @@
 			};
 			buildConfigurationList = 6DE690B81E99155C00351BF2 /* Build configuration list for PBXProject "iTalker" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 				"zh-Hant",
@@ -959,6 +967,7 @@
 				6D6E2DCC1EA3BCCC00FBC6F8 /* Baidu-2005面试笔试题.json in Resources */,
 				6D6E2DBB1EA3BCCC00FBC6F8 /* 360-2016C++研发工程师内推笔试题.json in Resources */,
 				6D6E2DBD1EA3BCCC00FBC6F8 /* Alibaba-2010搜索研发C++工程师笔试卷.json in Resources */,
+				6DB6165E226E147E00E4EEDF /* advance_learning@2x.png in Resources */,
 				6D6E2DFA1EA3BCCC00FBC6F8 /* Tencent-Java工程师笔试卷.json in Resources */,
 				6D0994331EA3C43000B5EA5C /* company_tabbar_normal@3x.png in Resources */,
 				6D6E2DD81EA3BCCC00FBC6F8 /* Google-2012笔试卷.json in Resources */,
@@ -1005,6 +1014,7 @@
 				6D6E2DEA1EA3BCCC00FBC6F8 /* RenRen-2015研发笔试卷C.json in Resources */,
 				6D0838611E99F6AE00B2D807 /* BigData.json in Resources */,
 				6D6E2DEE1EA3BCCC00FBC6F8 /* sogou-2015C++工程师笔试题.json in Resources */,
+				6DB6165F226E147E00E4EEDF /* advance_learning@3x.png in Resources */,
 				6D6E2DD01EA3BCCC00FBC6F8 /* Baidu-2013研发工程师笔试卷B.json in Resources */,
 				6D0838661E99F6AE00B2D807 /* JavaScript.json in Resources */,
 				6D6E2DC41EA3BCCC00FBC6F8 /* Alibaba-2015研发工程师B笔试卷.json in Resources */,
@@ -1160,6 +1170,7 @@
 				6D046E0F1EABA1EC002A653D /* NTWaterfallViewController.swift in Sources */,
 				6D046ACC1EAB58E1002A653D /* ITPictureQuestionVC.swift in Sources */,
 				6D046E171EABAF83002A653D /* ITPictureModel.swift in Sources */,
+				6DB61661226E14BA00E4EEDF /* ITAdvanceLearningViewController.swift in Sources */,
 				6D3BA25C1EACA59500D15753 /* ITAboutAppVC.swift in Sources */,
 				6D3B547C1E9A416100FF7F36 /* ITPageTitleView.swift in Sources */,
 				6DECE67B1EA3150C00B2AE3B /* ITScalePopTransition.swift in Sources */,
@@ -1260,15 +1271,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1312,15 +1331,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
