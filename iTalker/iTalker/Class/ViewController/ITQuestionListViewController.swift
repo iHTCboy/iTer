@@ -144,7 +144,7 @@ extension ITQuestionListViewController {
                     
                 } else {
                     print("JSON is invalid")
-                    return ITModel();
+                    return ITModel()
                 }
             } catch {
                 print(error.localizedDescription)

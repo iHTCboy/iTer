@@ -90,7 +90,7 @@ extension ITPageTitleView {
             label.textAlignment = .center
             
             let textNS = title as NSString
-            let labelRect:CGRect = textNS.boundingRect(with: CGSize.init(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude), options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: label.font], context: nil)
+            let labelRect:CGRect = textNS.boundingRect(with: CGSize.init(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude), options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: label.font as Any], context: nil)
             let labelW = labelRect.width + kTitleMargin
             
             

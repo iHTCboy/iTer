@@ -33,14 +33,15 @@ class ITQuestionDetailViewController: ITBasePopTransitionVC {
     var isShowAnswer : Bool = false
     
     lazy var tableView: UITableView = {
-        var tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenW, height: kScreenH), style: .plain)
+        var tableView = UITableView.init(frame: CGRect.zero, style: .plain)
         tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         tableView.estimatedRowHeight = 80
         tableView.estimatedSectionHeaderHeight = 80
         tableView.register(UINib.init(nibName: "ITQuestionListViewCell", bundle: Bundle.main), forCellReuseIdentifier: "ITQuestionListViewCell")
         tableView.register(UINib.init(nibName: "ITQuestionDetailViewCell", bundle: Bundle.main), forCellReuseIdentifier: "ITQuestionDetailViewCell")
-        // 调试
-        //        tableView.fd_debugLogEnabled = true
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.delegate = self;
+        tableView.dataSource = self;
         return tableView
     }()
 }
@@ -49,9 +50,31 @@ class ITQuestionDetailViewController: ITBasePopTransitionVC {
 extension ITQuestionDetailViewController {
     fileprivate func setUpUI() {
         view.addSubview(tableView)
-        tableView.delegate = self;
-        tableView.dataSource = self;
+        let constraintViews = [
+            "tableView": tableView
+        ]
+        let vFormat = "V:|-0-[tableView]-0-|"
+        let hFormat = "H:|-0-[tableView]-0-|"
+        let vConstraints = NSLayoutConstraint.constraints(withVisualFormat: vFormat, options: [], metrics: [:], views: constraintViews)
+        let hConstraints = NSLayoutConstraint.constraints(withVisualFormat: hFormat, options: [], metrics: [:], views: constraintViews)
+        view.addConstraints(vConstraints)
+        view.addConstraints(hConstraints)
+        view.layoutIfNeeded()
+        
+        // UIBarButtonItem
+        let shareItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(sharedPageView))
+        navigationItem.rightBarButtonItems = [shareItem]
+        
     }
+    
+    @objc func sharedPageView(item: Any) {
+        //let headerImage = selectedCell.screenshot ?? UIImage.init(named: "App-share-Icon")
+        let masterImage = tableView.screenshot ?? UIImage.init(named: "iTalker_TextLogo")!
+        let footerImage = IHTCShareFooterView.footerView(image: UIImage.init(named: "iTaler_shareIcon_qrcode")!, title: kShareTitle, subTitle: kShareSubTitle).screenshot
+        let image = ImageHandle.slaveImageWithMaster(masterImage: masterImage, headerImage: UIImage(), footerImage: footerImage!)
+        IAppleServiceUtil.shareImage(image: image!, vc: UIApplication.shared.keyWindow!.rootViewController!)
+    }
+    
 }
 
 

@@ -12,11 +12,16 @@ import UIKit
 // 常量
 let kiTalker = "iTer"
 let kAppAppleId = "1224934068"
-let kAppDownloadURl = "https://itunes.apple.com/us/app/italker-it%E5%AD%A6%E4%B9%A0-%E6%B1%82%E8%81%8C%E9%9D%A2%E8%AF%95%E5%BF%85%E5%A4%87/id1224934068?l=zh&ls=1&mt=8"
+let kAppDownloadURl = "https://itunes.apple.com/us/app/italker-it/id1224934068?l=zh&ls=1&mt=8"
 let kReviewAction = "&action=write-review"
 let kGithubURL = "https://github.com/iHTCboy/iTalker"
+let kLicenseURL = "https://raw.githubusercontent.com/iHTCboy/iTalker/master/LICENSE"
 let kiHTCboyURL = "https://ihtcboy.com"
 let kEmail = "ihetiancong@qq.com"
+let kShareTitle = "长按识别二维码下载"
+let kShareSubTitle = "10000+ IT企业题库，完名企梦！"
+
+
 let kStatusBarH: CGFloat = 20
 let kNavBarH: CGFloat = (DeviceType.IS_IPHONE_X_S ? 68 : 40)
 let kHomeIndcator: CGFloat = (DeviceType.IS_IPHONE_X_S ? (34 + 49) : 0) //49 Tab bars

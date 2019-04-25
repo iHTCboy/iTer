@@ -91,7 +91,7 @@ extension ITLanguageViewController {
         if !isFirstLaunch {
             isFirstLaunch = true
             
-            let vc = UIStoryboard.init(name: "LaunchScreen", bundle: nil);
+            let vc = UIStoryboard.init(name: "AppLaunchScreen", bundle: nil);
             let launchView = vc.instantiateInitialViewController()!.view
             let window =  UIWindow.init(frame: (view?.frame)!)
             window.windowLevel = UIWindow.Level.alert
