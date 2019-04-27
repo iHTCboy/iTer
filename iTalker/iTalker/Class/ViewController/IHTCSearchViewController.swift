@@ -79,6 +79,8 @@ class IHTCSearchViewController: UIViewController {
         }
         return question
     }()
+    
+    var jsonData: Dictionary<String, Array<Dictionary<String, String>>> = Dictionary<String, Array<Dictionary<String, String>>>()
 }
 
 
@@ -133,7 +135,15 @@ extension IHTCSearchViewController {
         // 读取数据
         var dataArray = Array<Dictionary<String, String>>()
         for titile in filterArray {
-            dataArray.append(contentsOf: getJsonData(title: titile))
+            // 判断是否缓存数据读取
+            if let data = jsonData[titile] {
+                dataArray.append(contentsOf: data)
+            }
+            else {
+                let json = getJsonData(title: titile)
+                dataArray.append(contentsOf: json)
+                jsonData.updateValue(json, forKey: titile)
+            }
         }
 
         // Update the filtered array based on the search text.
