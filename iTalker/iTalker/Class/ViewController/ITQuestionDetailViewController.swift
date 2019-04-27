@@ -74,7 +74,7 @@ extension ITQuestionDetailViewController {
         let image = ImageHandle.slaveImageWithMaster(masterImage: masterImage, headerImage: UIImage(), footerImage: footerImage!)
         IAppleServiceUtil.shareImage(image: image!, vc: UIApplication.shared.keyWindow!.rootViewController!)
     }
-    
+
 }
 
 
@@ -101,9 +101,10 @@ extension ITQuestionDetailViewController : UITableViewDelegate, UITableViewDataS
         
         cell.tagLbl.text =  " " + self.title! + "   "
         if questionModle!.hasOptionQuestion {
-            cell.questionLbl.text = questionModle!.question + "\n  A: " + questionModle!.optionA + "\n  B: " + questionModle!.optionB + "\n  C: " + questionModle!.optionC + "\n  D: " + questionModle!.optionD
-        }else{
-            
+            let text = questionModle!.question + "\n\n  A: " + questionModle!.optionA + "\n  B: " + questionModle!.optionB + "\n  C: " + questionModle!.optionC + "\n  D: " + questionModle!.optionD
+            cell.questionLbl.attributedText = getTextAttributedText(text: text, fontSize: 17, color: .darkGray, option: .backwards, styleText: [questionModle!.optionA, questionModle!.optionB, questionModle!.optionC, questionModle!.optionD])
+        }
+        else {
             cell.questionLbl.text = questionModle!.question
         }
         
@@ -111,8 +112,8 @@ extension ITQuestionDetailViewController : UITableViewDelegate, UITableViewDataS
             // 判断当前是语言tabbar 也可以用 self.tabBarController?.selectedIndex 判断，但兼容性不好
             cell.tagLbl.backgroundColor = kColorAppBlue
             cell.langugeLbl.isHidden = true
-        }else{
-            
+        }
+        else{
             cell.tagLbl.backgroundColor = kColorAppOrange
             cell.langugeLbl.isHidden = false
             cell.langugeLbl.text =   " " + questionModle!.lauguage + "   "            
@@ -126,6 +127,7 @@ extension ITQuestionDetailViewController : UITableViewDelegate, UITableViewDataS
         let cell: ITQuestionDetailViewCell = tableView.dequeueReusableCell(withIdentifier: "ITQuestionDetailViewCell") as! ITQuestionDetailViewCell
         cell.accessoryType = .none
         cell.selectionStyle = .none
+        cell.answerLbl.textColor = .darkGray
         cell.answerLbl.text = getAnswer(textLbl: cell.answerLbl)
         let tap = UITapGestureRecognizer.init(target: self, action: #selector(textTapped(gestureReconizer:)))
         cell.answerLbl.addGestureRecognizer(tap)
@@ -138,12 +140,13 @@ extension ITQuestionDetailViewController : UITableViewDelegate, UITableViewDataS
         if isShowAnswer {
             if questionModle!.hasOptionQuestion {
                 answer = "答案：" + questionModle!.optionAnswer + "\n\n" + questionModle!.answer
-            }else{
+            }
+            else{
                 answer = questionModle!.answer
             }
             textLbl.textAlignment = .left
         }else{
-            answer = "\n\n\n\n\n\n\n轻点显示答案\n长按文字可以复制答案\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+            answer = "\n\n\n\n\n\n\n轻点显示答案\n长按文字可以复制答案\n\n"
             textLbl.textAlignment = .center
         }
         return answer

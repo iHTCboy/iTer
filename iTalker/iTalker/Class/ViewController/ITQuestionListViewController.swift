@@ -111,11 +111,11 @@ extension ITQuestionListViewController {
     fileprivate func setUpUI() {
         view.addSubview(tableView)
 //        tableView.translatesAutoresizingMaskIntoConstraints = false
-//        
+//
 //        let viewDict = [
 //            "tableView": tableView
 //            ]
-//        
+//
 //        let vFormat = "V:|[tableView]|"
 //        let hFormat = "H:|[tableView]|"
 //        let vConstraints = NSLayoutConstraint.constraints(withVisualFormat: vFormat, options: [], metrics: nil, views: viewDict)
@@ -171,8 +171,6 @@ extension ITQuestionListViewController : UITableViewDelegate, UITableViewDataSou
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: ITQuestionListViewCell = tableView.dequeueReusableCell(withIdentifier: "ITQuestionListViewCell") as! ITQuestionListViewCell
         cell.accessoryType = .disclosureIndicator
-//        cell.selectedBackgroundView = UIView.init(frame: cell.frame)
-//        cell.selectedBackgroundView?.backgroundColor = UIColor.clear
         cell.selectionStyle = .none
         cell.tagLbl.layer.cornerRadius = 3
         cell.tagLbl.layer.masksToBounds = true
@@ -180,25 +178,27 @@ extension ITQuestionListViewController : UITableViewDelegate, UITableViewDataSou
         cell.langugeLbl.layer.masksToBounds = true
         cell.langugeLbl.backgroundColor = kColorAppBlue
         
-        let question = self.listModel.result[indexPath.row]
+        let questionModle = self.listModel.result[indexPath.row]
         cell.tagLbl.text =  " " + self.title! + "   "
         
-        if question.hasOptionQuestion {
-            cell.questionLbl.text = question.question + "\n  A: " + question.optionA + "\n  B: " + question.optionB + "\n  C: " + question.optionC + "\n  D: " + question.optionD
-        }else{
-            
-            cell.questionLbl.text = question.question
+        if questionModle.hasOptionQuestion {
+            let text = questionModle.question + "\n\n  A: " + questionModle.optionA + "\n  B: " + questionModle.optionB + "\n  C: " + questionModle.optionC + "\n  D: " + questionModle.optionD
+            cell.questionLbl.attributedText = getTextAttributedText(text: text, fontSize: 17, color: .darkGray, option: .backwards,styleText: [questionModle.optionA, questionModle.optionB, questionModle.optionC, questionModle.optionD])
+        }
+        else {
+            cell.questionLbl.text = questionModle.question
         }
         
-        if self.title == question.lauguage {
+        if self.title == questionModle.lauguage {
             // 判断当前是语言tabbar 也可以用 self.tabBarController?.selectedIndex 判断，但兼容性不好
             cell.tagLbl.backgroundColor = kColorAppBlue
             cell.langugeLbl.isHidden = true
-        }else{
+        }
+        else{
             
             cell.tagLbl.backgroundColor = kColorAppOrange
             cell.langugeLbl.isHidden = false
-            cell.langugeLbl.text = " " + question.lauguage + "   "
+            cell.langugeLbl.text = " " + questionModle.lauguage + "   "
         }
         
         return cell

@@ -130,3 +130,19 @@ public extension UIDevice {
         }
     }
 }
+
+
+func getTextAttributedText(text: String, fontSize: CGFloat, color: UIColor, option: NSString.CompareOptions, styleText: [String]) -> NSAttributedString {
+    
+    let newStr = NSMutableAttributedString(string: text)
+    
+    for string in styleText {
+        if let range = text.range(of: string, options: option ) {
+            let nsRange = NSRange(range, in: text)
+            newStr.addAttribute(NSAttributedString.Key.font, value:  UIFont.systemFont(ofSize: fontSize), range: nsRange)
+            newStr.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: nsRange)
+        }
+    }
+    
+    return newStr
+}

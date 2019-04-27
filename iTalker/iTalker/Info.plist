@@ -17,9 +17,9 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>6.2.0</string>
+	<string>6.3.0</string>
 	<key>CFBundleVersion</key>
-	<string>2019.04.25</string>
+	<string>2019.04.27</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -31,8 +31,10 @@
 	<string>允许使用相机功能.</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>允许使用麦克风.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>请求访问相册，以便保存App截图</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>允许访问相册.</string>
+	<string>请求访问相册，以便保存图片</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -52,6 +54,7 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

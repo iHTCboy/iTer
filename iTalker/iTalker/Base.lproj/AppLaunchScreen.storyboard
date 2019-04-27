@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,19 +18,19 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTalker_LogoBgImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="oIt-1p-vVs">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="-10" width="414" height="902"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <view alpha="0.78000000000000003" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prV-jO-S4b" userLabel="alphaView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prV-jO-S4b" userLabel="alphaView">
+                                <rect key="frame" x="0.0" y="-3" width="414" height="902"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTalker_TextLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Brh-f6-rUs">
-                                <rect key="frame" x="145" y="232.33333333333334" width="124" height="124.33333333333334"/>
+                                <rect key="frame" x="145" y="296.33333333333331" width="124" height="124.33333333333331"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.125" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Brh-f6-rUs" secondAttribute="height" id="DsA-75-3xe"/>
@@ -41,14 +41,14 @@
                         <constraints>
                             <constraint firstItem="Brh-f6-rUs" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.3" id="0pi-83-F9z"/>
                             <constraint firstItem="oIt-1p-vVs" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="5Qg-MF-iSb"/>
+                            <constraint firstItem="oIt-1p-vVs" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-10" id="5el-5X-xYn"/>
                             <constraint firstItem="Brh-f6-rUs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6bb-bg-GSR"/>
                             <constraint firstItem="prV-jO-S4b" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="9rl-W3-GUh"/>
                             <constraint firstItem="oIt-1p-vVs" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="AmT-QE-SPK"/>
-                            <constraint firstItem="oIt-1p-vVs" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="Do5-hn-hda"/>
                             <constraint firstItem="Brh-f6-rUs" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.8" id="Kcf-hg-Qaz"/>
                             <constraint firstItem="prV-jO-S4b" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="r9j-LM-uuI"/>
                             <constraint firstItem="prV-jO-S4b" firstAttribute="height" secondItem="oIt-1p-vVs" secondAttribute="height" id="shz-UH-8wS"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="oIt-1p-vVs" secondAttribute="bottom" id="tFa-PD-ceb"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="oIt-1p-vVs" secondAttribute="bottom" constant="-30" id="tFa-PD-ceb"/>
                             <constraint firstItem="prV-jO-S4b" firstAttribute="width" secondItem="oIt-1p-vVs" secondAttribute="width" id="vrk-K7-3iJ"/>
                         </constraints>
                     </view>
