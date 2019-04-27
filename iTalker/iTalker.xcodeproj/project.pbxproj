@@ -182,6 +182,9 @@
 		6DD090D522744575000439B7 /* IHTCSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD090D322744575000439B7 /* IHTCSearchViewController.swift */; };
 		6DD090D622744575000439B7 /* IHTCSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD090D422744575000439B7 /* IHTCSearchViewController.xib */; };
 		6DD090D822746E44000439B7 /* IHTCSearchDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD090D722746E44000439B7 /* IHTCSearchDetailVC.swift */; };
+		6DD090DA22749000000439B7 /* PracticeProject.json in Resources */ = {isa = PBXBuildFile; fileRef = 6DD090D922749000000439B7 /* PracticeProject.json */; };
+		6DD090DC227498DE000439B7 /* Gitbook.json in Resources */ = {isa = PBXBuildFile; fileRef = 6DD090DB227498DE000439B7 /* Gitbook.json */; };
+		6DD090DE22749AAF000439B7 /* Awesome.json in Resources */ = {isa = PBXBuildFile; fileRef = 6DD090DD22749AAE000439B7 /* Awesome.json */; };
 		6DE690C61E99155C00351BF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE690C41E99155C00351BF2 /* Main.storyboard */; };
 		6DE690C81E99155C00351BF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DE690C71E99155C00351BF2 /* Assets.xcassets */; };
 		6DE690CB1E99155C00351BF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE690C91E99155C00351BF2 /* LaunchScreen.storyboard */; };
@@ -405,6 +408,9 @@
 		6DD090D322744575000439B7 /* IHTCSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHTCSearchViewController.swift; sourceTree = "<group>"; };
 		6DD090D422744575000439B7 /* IHTCSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IHTCSearchViewController.xib; sourceTree = "<group>"; };
 		6DD090D722746E44000439B7 /* IHTCSearchDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHTCSearchDetailVC.swift; sourceTree = "<group>"; };
+		6DD090D922749000000439B7 /* PracticeProject.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PracticeProject.json; sourceTree = "<group>"; };
+		6DD090DB227498DE000439B7 /* Gitbook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Gitbook.json; sourceTree = "<group>"; };
+		6DD090DD22749AAE000439B7 /* Awesome.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Awesome.json; sourceTree = "<group>"; };
 		6DE690BD1E99155C00351BF2 /* iTalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DE690C51E99155C00351BF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DE690C71E99155C00351BF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -851,6 +857,9 @@
 		6DE691331E99207E00351BF2 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				6DD090DD22749AAE000439B7 /* Awesome.json */,
+				6DD090DB227498DE000439B7 /* Gitbook.json */,
+				6DD090D922749000000439B7 /* PracticeProject.json */,
 				6DBD66BA22708C9F008363F0 /* NSHipster.json */,
 				6DBD66BB22708C9F008363F0 /* Objc.io.json */,
 				6D0838501E99F6AE00B2D807 /* jsonFiles */,
@@ -1080,7 +1089,9 @@
 				6D3E80A82271EF9E002D4CC0 /* IHTCShareFooterView.xib in Resources */,
 				6D6E2DD01EA3BCCC00FBC6F8 /* Baidu-2013研发工程师笔试卷B.json in Resources */,
 				6D0838661E99F6AE00B2D807 /* JavaScript.json in Resources */,
+				6DD090DA22749000000439B7 /* PracticeProject.json in Resources */,
 				6DBD66C32270A5A4008363F0 /* TableHeaderView.xib in Resources */,
+				6DD090DC227498DE000439B7 /* Gitbook.json in Resources */,
 				6D6E2DC41EA3BCCC00FBC6F8 /* Alibaba-2015研发工程师B笔试卷.json in Resources */,
 				6D0838691E99F6AE00B2D807 /* PHP.json in Resources */,
 				6D6E2DCD1EA3BCCC00FBC6F8 /* Baidu-2007面试笔试题.json in Resources */,
@@ -1098,6 +1109,7 @@
 				6D6E2DE01EA3BCCC00FBC6F8 /* NetEase-2013研发工程师笔试卷.json in Resources */,
 				6D6E2DF51EA3BCCC00FBC6F8 /* Tencent-2016研发工程师笔试真题（一）.json in Resources */,
 				6D3B54951E9A841000FF7F36 /* Engineer_normal@3x.png in Resources */,
+				6DD090DE22749AAF000439B7 /* Awesome.json in Resources */,
 				6D6E2DF31EA3BCCC00FBC6F8 /* Tencent-2016研发工程师笔试真题（二）.json in Resources */,
 				6D6E2DE11EA3BCCC00FBC6F8 /* NetEase-2015校园招聘运维开发岗笔试题.json in Resources */,
 				6D3B549D1E9A855A00FF7F36 /* language_tabbar_normal@2x.png in Resources */,

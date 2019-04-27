@@ -35,14 +35,15 @@ class ITAdvanceLearningViewController: UIViewController {
     
     
     lazy var titleArray: Array<String> = {
-        return ["算法进阶", "iOS进阶", "练手项目","题目库"]
+        return ["算法进阶", "iOS进阶", "学习资源", "练手项目","题目库"]
     }()
     
     lazy var titles: [String : String] = {
         return ["0": "力扣:提升你的算法水平最好的地方，为下一次面试做准备！,LeetCode:Level up your coding skills and quickly land a job.,iLeetCoder:一款精心的算法题目学习App，迅速找到工作。",
                 "1": "Objc.io 期刊:关于iOS和macOS开发最佳实践和先进技术,NSHipster:关注被忽略的 Objective-C、Swift 和 Cocoa 特性",
-                "2": "动手实践:GitHub开源最火的项目",
-                "3": "图片题库:真实公司面试题目"
+                "2": "Awesome:历上最全的收集学习、工具、书籍等指南,Gitbook:免费在线阅读电子书",
+                "3": "动手实践:GitHub开源最火的项目",
+                "4": "图片题库:真实公司面试题目"
                 ] as [String : String]
     }()
     
@@ -152,15 +153,27 @@ extension ITAdvanceLearningViewController : UITableViewDelegate, UITableViewData
             self.navigationController?.pushViewController(vc, animated: true)
             break
         case 2:
+            let vc = ITAdvancelDetailViewController()
+            vc.title = titile
             if row == 0 {
-                let vc = ITAdvancelDetailViewController()
-                vc.title = titile
-                vc.advancelType = .PracticeProject
-                vc.hidesBottomBarWhenPushed = true
-                self.navigationController?.pushViewController(vc, animated: true)
+                vc.advancelType = .Awesome
             }
+            if row == 1 {
+                vc.advancelType = .Gitbook
+            }
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(vc, animated: true)
             break
         case 3:
+            let vc = ITAdvancelDetailViewController()
+            vc.title = titile
+            if row == 0 {
+                vc.advancelType = .PracticeProject
+            }
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case 4:
             if row == 0 {
                 let vc = NTWaterfallViewController.init(collectionViewLayout:CHTCollectionViewWaterfallLayout())
                 let nav = NTNavigationController.init(rootViewController: vc)

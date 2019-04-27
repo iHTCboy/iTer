@@ -1,0 +1,2027 @@
+[
+  {
+    "issue_title": "\u64cd\u4f5c\u7cfb\u7edf",
+    "issue_list": [
+      {
+        "title": "\u5f00\u6e90\u4e16\u754c\u65c5\u884c\u624b\u518c",
+        "url": "http://i.linuxtoy.org/docs/guide/index.html",
+        "author": "website"
+      },
+      {
+        "title": "The Linux Command Line",
+        "url": "http://billie66.github.io/TLCL/index.html",
+        "author": "website"
+      },
+      {
+        "title": "Linux \u8bbe\u5907\u9a71\u52a8",
+        "url": "http://oss.org.cn/kernel-book/ldd3/index.html",
+        "author": "website"
+      },
+      {
+        "title": "\u6df1\u5165\u5206\u6790Linux\u5185\u6838\u6e90\u7801",
+        "url": "http://www.kerneltravel.net/kernel-book/%E6%B7%B1%E5%85%A5%E5%88%86%E6%9E%90Linux%E5%86%85%E6%A0%B8%E6%BA%90%E7%A0%81.html",
+        "author": "website"
+      },
+      {
+        "title": "UNIX TOOLBOX",
+        "url": "http://cb.vu/unixtoolbox_zh_CN.xhtml",
+        "author": "website"
+      },
+      {
+        "title": "Docker\u4e2d\u6587\u6307\u5357",
+        "url": "https://github.com/widuu/chinese_docker",
+        "author": "github"
+      },
+      {
+        "title": "Docker \u2014\u2014 \u4ece\u5165\u95e8\u5230\u5b9e\u8df5",
+        "url": "https://github.com/yeasy/docker_practice",
+        "author": "github"
+      },
+      {
+        "title": "Docker\u5165\u95e8\u5b9e\u6218",
+        "url": "http://yuedu.baidu.com/ebook/d817967416fc700abb68fca1",
+        "author": "website"
+      },
+      {
+        "title": "Docker Cheat Sheet",
+        "url": "https://github.com/wsargent/docker-cheat-sheet/tree/master/zh-cn#docker-cheat-sheet",
+        "author": "github"
+      },
+      {
+        "title": "Mac \u5f00\u53d1\u914d\u7f6e\u624b\u518c",
+        "url": "https://aaaaaashu.gitbooks.io/mac-dev-setup/content/",
+        "author": "website"
+      },
+      {
+        "title": "FreeBSD \u4f7f\u7528\u624b\u518c",
+        "url": "https://www.freebsd.org/doc/zh_CN/books/handbook/index.html",
+        "author": "website"
+      },
+      {
+        "title": "Linux \u547d\u4ee4\u884c(\u4e2d\u6587\u7248)",
+        "url": "http://billie66.github.io/TLCL/book/",
+        "author": "website"
+      },
+      {
+        "title": "Linux \u6784\u5efa\u6307\u5357",
+        "url": "http://works.jinbuguo.com/lfs/lfs62/index.html",
+        "author": "website"
+      },
+      {
+        "title": "Linux\u5de5\u5177\u5feb\u901f\u6559\u7a0b",
+        "url": "https://github.com/me115/linuxtools_rst",
+        "author": "github"
+      },
+      {
+        "title": "Linux Documentation (\u4e2d\u6587\u7248)",
+        "url": "https://www.gitbook.com/book/tinylab/linux-doc/details",
+        "author": "website"
+      },
+      {
+        "title": "\u5d4c\u5165\u5f0f Linux \u77e5\u8bc6\u5e93 (eLinux.org \u4e2d\u6587\u7248)",
+        "url": "https://www.gitbook.com/book/tinylab/elinux/details",
+        "author": "website"
+      },
+      {
+        "title": "\u7406\u89e3Linux\u8fdb\u7a0b",
+        "url": "https://github.com/tobegit3hub/understand_linux_process",
+        "author": "github"
+      },
+      {
+        "title": "\u547d\u4ee4\u884c\u7684\u827a\u672f",
+        "url": "https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md",
+        "author": "github"
+      },
+      {
+        "title": "SystemTap\u65b0\u624b\u6307\u5357",
+        "url": "https://spacewander.gitbooks.io/systemtapbeginnersguide_zh/content/index.html",
+        "author": "website"
+      },
+      {
+        "title": "\u64cd\u4f5c\u7cfb\u7edf\u601d\u8003",
+        "url": "https://github.com/wizardforcel/think-os-zh",
+        "author": "github"
+      }
+    ]
+  },
+  {
+    "issue_title": "\u667a\u80fd\u7cfb\u7edf",
+    "issue_list": [
+      {
+        "title": "\u4e00\u6b65\u6b65\u642d\u5efa\u7269\u8054\u7f51\u7cfb\u7edf",
+        "url": "https://github.com/phodal/designiot",
+        "author": "github"
+      }
+    ]
+  },
+  {
+    "issue_title": "\u5206\u5e03\u5f0f\u7cfb\u7edf",
+    "issue_list": [
+      {
+        "title": "\u8d70\u5411\u5206\u5e03\u5f0f",
+        "url": "http://dcaoyuan.github.io/papers/pdfs/Scalability.pdf",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "\u7f16\u8bd1\u539f\u7406",
+    "issue_list": [
+      {
+        "title": "\u300a\u8ba1\u7b97\u673a\u7a0b\u5e8f\u7684\u7ed3\u6784\u548c\u89e3\u91ca\u300b\u516c\u5f00\u8bfe \u7ffb\u8bd1\u9879\u76ee",
+        "url": "https://github.com/DeathKing/Learning-SICP",
+        "author": "github"
+      }
+    ]
+  },
+  {
+    "issue_title": "\u51fd\u6570\u5f0f\u6982\u5ff5",
+    "issue_list": [
+      {
+        "title": "\u50bb\u74dc\u51fd\u6570\u7f16\u7a0b",
+        "url": "https://github.com/justinyhuang/Functional-Programming-For-The-Rest-of-Us-Cn",
+        "author": "github"
+      }
+    ]
+  },
+  {
+    "issue_title": "\u8ba1\u7b97\u673a\u56fe\u5f62\u5b66",
+    "issue_list": [
+      {
+        "title": "OpenGL \u6559\u7a0b",
+        "url": "https://github.com/zilongshanren/opengl-tutorials",
+        "author": "github"
+      },
+      {
+        "title": "WebGL\u81ea\u5b66\u7f51",
+        "url": "http://html5.iii.org.tw/course/webgl/",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "WEB\u670d\u52a1\u5668",
+    "issue_list": [
+      {
+        "title": "Nginx\u5f00\u53d1\u4ece\u5165\u95e8\u5230\u7cbe\u901a",
+        "url": "http://tengine.taobao.org/book/index.html",
+        "author": "website"
+      },
+      {
+        "title": "Nginx\u6559\u7a0b\u4ece\u5165\u95e8\u5230\u7cbe\u901a",
+        "url": "http://www.ttlsa.com/nginx/nginx-stu-pdf/",
+        "author": "website"
+      },
+      {
+        "title": "OpenResty\u6700\u4f73\u5b9e\u8df5",
+        "url": "https://www.gitbook.com/book/moonbingbing/openresty-best-practices/details",
+        "author": "website"
+      },
+      {
+        "title": "Apache \u4e2d\u6587\u624b\u518c",
+        "url": "http://works.jinbuguo.com/apache/menu22/index.html",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "\u7248\u672c\u63a7\u5236",
+    "issue_list": [
+      {
+        "title": "Git\u6559\u7a0b",
+        "url": "http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000",
+        "author": "website"
+      },
+      {
+        "title": "git - \u7b80\u6613\u6307\u5357",
+        "url": "http://rogerdudler.github.io/git-guide/index.zh.html",
+        "author": "website"
+      },
+      {
+        "title": "\u7334\u5b50\u90fd\u80fd\u61c2\u7684GIT\u5165\u95e8",
+        "url": "http://backlogtool.com/git-guide/cn/",
+        "author": "website"
+      },
+      {
+        "title": "Pro Git",
+        "url": "http://git-scm.com/book/zh/v2",
+        "author": "website"
+      },
+      {
+        "title": "Pro Git \u4e2d\u6587\u7248",
+        "url": "https://www.gitbook.com/book/0532/progit/details",
+        "author": "website"
+      },
+      {
+        "title": "GotGitHub",
+        "url": "http://www.worldhello.net/gotgithub/index.html",
+        "author": "website"
+      },
+      {
+        "title": "Git\u6743\u5a01\u6307\u5357",
+        "url": "http://www.worldhello.net/gotgit/",
+        "author": "website"
+      },
+      {
+        "title": "Git Community Book \u4e2d\u6587\u7248",
+        "url": "http://gitbook.liuhui998.com/index.html",
+        "author": "website"
+      },
+      {
+        "title": "Mercurial \u4f7f\u7528\u6559\u7a0b",
+        "url": "https://www.mercurial-scm.org/wiki/ChineseTutorial",
+        "author": "website"
+      },
+      {
+        "title": "HgInit (\u4e2d\u6587\u7248)",
+        "url": "http://bucunzai.net/hginit/",
+        "author": "website"
+      },
+      {
+        "title": "Git-Cheat-Sheet",
+        "url": "https://github.com/flyhigher139/Git-Cheat-Sheet",
+        "author": "github"
+      },
+      {
+        "title": "GitHub\u79d8\u7c4d",
+        "url": "https://snowdream86.gitbooks.io/github-cheat-sheet/content/zh/index.html",
+        "author": "website"
+      },
+      {
+        "title": "GitHub\u5e2e\u52a9\u6587\u6863",
+        "url": "https://github.com/waylau/github-help",
+        "author": "github"
+      },
+      {
+        "title": "git-flow \u5907\u5fd8\u6e05\u5355",
+        "url": "http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html",
+        "author": "website"
+      },
+      {
+        "title": "svn \u624b\u518c",
+        "url": "http://svnbook.red-bean.com/nightly/zh/index.html",
+        "author": "website"
+      },
+      {
+        "title": "GitHub\u6f2b\u6e38\u6307\u5357",
+        "url": "https://github.com/phodal/github-roam",
+        "author": "github"
+      }
+    ]
+  },
+  {
+    "issue_title": "\u7f16\u8f91\u5668",
+    "issue_list": [
+      {
+        "title": "exvim--vim \u6539\u826f\u6210IDE\u9879\u76ee",
+        "url": "http://exvim.github.io/docs-zh/intro/",
+        "author": "website"
+      },
+      {
+        "title": "Vim\u4e2d\u6587\u6587\u6863",
+        "url": "https://github.com/vimcn/vimcdoc",
+        "author": "github"
+      },
+      {
+        "title": "\u6240\u9700\u5373\u6240\u83b7\uff1a\u50cf IDE \u4e00\u6837\u4f7f\u7528 vim",
+        "url": "https://github.com/yangyangwithgnu/use_vim_as_ide",
+        "author": "github"
+      },
+      {
+        "title": "Atom\u98de\u884c\u624b\u518c\u4e2d\u6587\u7248",
+        "url": "https://github.com/wizardforcel/atom-flight-manual-zh-cn",
+        "author": "github"
+      },
+      {
+        "title": "Markdown\u00b7\u7b80\u5355\u7684\u4e16\u754c",
+        "url": "https://github.com/wizardforcel/markdown-simple-world",
+        "author": "github"
+      },
+      {
+        "title": "\u4e00\u5e74\u6210\u4e3a Emacs \u9ad8\u624b",
+        "url": "https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org",
+        "author": "github"
+      },
+      {
+        "title": "Emacs \u751f\u5b58\u6307\u5357",
+        "url": "http://lifegoo.pluskid.org/upload/blog/152/Survive.in.Emacs.pdf",
+        "author": "website"
+      },
+      {
+        "title": "Atom\u5b98\u65b9\u624b\u518c",
+        "url": "https://atom-china.org/t/atom/62",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "NoSQL",
+    "issue_list": [
+      {
+        "title": "NoSQL\u6570\u636e\u5e93\u7b14\u8c08",
+        "url": "http://old.sebug.net/paper/databases/nosql/Nosql.html",
+        "author": "website"
+      },
+      {
+        "title": "\u5e26\u6709\u8be6\u7ec6\u6ce8\u91ca\u7684 Redis 3.0 \u4ee3\u7801",
+        "url": "https://github.com/huangz1990/redis-3.0-annotated",
+        "author": "github"
+      },
+      {
+        "title": "\u5e26\u6709\u8be6\u7ec6\u6ce8\u91ca\u7684 Redis 2.6 \u4ee3\u7801",
+        "url": "https://github.com/huangz1990/annotated_redis_source",
+        "author": "github"
+      },
+      {
+        "title": "The Little MongoDB Book",
+        "url": "https://github.com/justinyhuang/the-little-mongodb-book-cn/blob/master/mongodb.md",
+        "author": "github"
+      },
+      {
+        "title": "The Little Redis Book",
+        "url": "https://github.com/JasonLai256/the-little-redis-book/blob/master/cn/redis.md",
+        "author": "github"
+      },
+      {
+        "title": "Apache Spark \u8bbe\u8ba1\u4e0e\u5b9e\u73b0",
+        "url": "https://github.com/JerryLead/SparkInternals/tree/master/markdown",
+        "author": "github"
+      }
+    ]
+  },
+  {
+    "issue_title": "PostgreSQL",
+    "issue_list": [
+      {
+        "title": "PostgreSQL 8.2.3 \u4e2d\u6587\u6587\u6863",
+        "url": "http://works.jinbuguo.com/postgresql/menu823/index.html",
+        "author": "website"
+      },
+      {
+        "title": "PostgreSQL 9.3.1 \u4e2d\u6587\u6587\u6863",
+        "url": "http://www.postgres.cn/docs/9.3/index.html",
+        "author": "website"
+      },
+      {
+        "title": "PostgreSQL 9.5.3 \u4e2d\u6587\u6587\u6863",
+        "url": "http://www.postgres.cn/docs/9.5/index.html",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "MySQL",
+    "issue_list": [
+      {
+        "title": "MySQL\u7d22\u5f15\u80cc\u540e\u7684\u6570\u636e\u7ed3\u6784\u53ca\u7b97\u6cd5\u539f\u7406",
+        "url": "http://blog.codinglabs.org/articles/theory-of-mysql-index.html",
+        "author": "website"
+      },
+      {
+        "title": "21\u5206\u949fMySQL\u5165\u95e8\u6559\u7a0b",
+        "url": "http://www.cnblogs.com/mr-wid/archive/2013/05/09/3068229.html",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "\u7ba1\u7406\u548c\u76d1\u63a7",
+    "issue_list": [
+      {
+        "title": "Mastering Elasticsearch(\u4e2d\u6587\u7248)",
+        "url": "http://udn.yyuap.com/doc/mastering-elasticsearch/",
+        "author": "website"
+      },
+      {
+        "title": "ElasticSearch \u6743\u5a01\u6307\u5357",
+        "url": "https://www.gitbook.com/book/fuxiaopang/learnelasticsearch/details",
+        "author": "website"
+      },
+      {
+        "title": "Logstash \u6700\u4f73\u5b9e\u8df5",
+        "url": "https://github.com/chenryn/logstash-best-practice-cn",
+        "author": "github"
+      },
+      {
+        "title": "Puppet 2.7 Cookbook \u4e2d\u6587\u7248",
+        "url": "http://bbs.konotes.org/workdoc/puppet-27/",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "\u9879\u76ee\u76f8\u5173",
+    "issue_list": [
+      {
+        "title": "\u6301\u7eed\u96c6\u6210\uff08\u7b2c\u4e8c\u7248\uff09",
+        "url": "http://article.yeeyan.org/view/2251/94882",
+        "author": "website"
+      },
+      {
+        "title": "\u8ba9\u5f00\u53d1\u81ea\u52a8\u5316\u7cfb\u5217\u4e13\u680f",
+        "url": "http://www.ibm.com/developerworks/cn/java/j-ap/",
+        "author": "website"
+      },
+      {
+        "title": "\u8ffd\u6c42\u4ee3\u7801\u8d28\u91cf",
+        "url": "http://www.ibm.com/developerworks/cn/java/j-cq/",
+        "author": "website"
+      },
+      {
+        "title": "selenium \u4e2d\u6587\u6587\u6863",
+        "url": "https://github.com/fool2fish/selenium-doc",
+        "author": "github"
+      },
+      {
+        "title": "Selenium Webdriver \u7b80\u6613\u6559\u7a0b",
+        "url": "http://it-ebooks.flygon.net/selenium-simple-tutorial/",
+        "author": "website"
+      },
+      {
+        "title": "Joel\u8c08\u8f6f\u4ef6",
+        "url": "http://local.joelonsoftware.com/wiki/Chinese_(Simplified)",
+        "author": "website"
+      },
+      {
+        "title": "\u7d04\u8033\u8ac7\u8edf\u9ad4(Joel on Software)",
+        "url": "http://local.joelonsoftware.com/wiki/%E9%A6%96%E9%A0%81",
+        "author": "website"
+      },
+      {
+        "title": "Gradle 2 \u7528\u6237\u6307\u5357",
+        "url": "https://github.com/waylau/Gradle-2-User-Guide",
+        "author": "github"
+      },
+      {
+        "title": "Gradle \u4e2d\u6587\u4f7f\u7528\u6587\u6863",
+        "url": "http://yuedu.baidu.com/ebook/f23af265998fcc22bcd10da2",
+        "author": "website"
+      },
+      {
+        "title": "\u7f16\u7801\u89c4\u8303",
+        "url": "https://github.com/ecomfe/spec",
+        "author": "github"
+      },
+      {
+        "title": "\u5f00\u6e90\u8f6f\u4ef6\u67b6\u6784",
+        "url": "http://www.ituring.com.cn/book/1143",
+        "author": "website"
+      },
+      {
+        "title": "GNU make \u6307\u5357",
+        "url": "http://docs.huihoo.com/gnu/linux/gmake.html",
+        "author": "website"
+      },
+      {
+        "title": "GNU make \u4e2d\u6587\u624b\u518c",
+        "url": "http://www.yayu.org/book/gnu_make/",
+        "author": "website"
+      },
+      {
+        "title": "The Twelve-Factor App",
+        "url": "http://12factor.net/zh_cn/",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "\u8bbe\u8ba1\u6a21\u5f0f",
+    "issue_list": [
+      {
+        "title": "\u56fe\u8bf4\u8bbe\u8ba1\u6a21\u5f0f",
+        "url": "https://github.com/me115/design_patterns",
+        "author": "github"
+      },
+      {
+        "title": "\u53f2\u4e0a\u6700\u5168\u8bbe\u8ba1\u6a21\u5f0f\u5bfc\u5b66\u76ee\u5f55",
+        "url": "http://blog.csdn.net/lovelion/article/details/17517213",
+        "author": "website"
+      },
+      {
+        "title": "design pattern \u5305\u6559\u4e0d\u5305\u4f1a",
+        "url": "https://github.com/AlfredTheBest/Design-Pattern",
+        "author": "github"
+      },
+      {
+        "title": "\u8bbe\u8ba1\u6a21\u5f0f Java \u7248",
+        "url": "https://quanke.gitbooks.io/design-pattern-java/content/",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "Web",
+    "issue_list": [
+      {
+        "title": "\u5173\u4e8e\u6d4f\u89c8\u5668\u548c\u7f51\u7edc\u7684 20 \u9879\u987b\u77e5",
+        "url": "http://www.20thingsilearned.com/zh-CN/home",
+        "author": "website"
+      },
+      {
+        "title": "\u6d4f\u89c8\u5668\u5f00\u53d1\u5de5\u5177\u7684\u79d8\u5bc6",
+        "url": "http://jinlong.github.io/2013/08/29/devtoolsecrets/",
+        "author": "website"
+      },
+      {
+        "title": "Chrome \u5f00\u53d1\u8005\u5de5\u5177\u4e2d\u6587\u624b\u518c",
+        "url": "https://github.com/CN-Chrome-DevTools/CN-Chrome-DevTools",
+        "author": "github"
+      },
+      {
+        "title": "Chrome\u6269\u5c55\u5f00\u53d1\u6587\u6863",
+        "url": "http://open.chrome.360.cn/extension_dev/overview.html",
+        "author": "website"
+      },
+      {
+        "title": "gulp\u4e2d\u6587\u6587\u6863",
+        "url": "http://www.gulpjs.com.cn/docs/",
+        "author": "website"
+      },
+      {
+        "title": "Gulp \u5165\u95e8\u6307\u5357",
+        "url": "https://github.com/nimojs/gulp-book",
+        "author": "github"
+      },
+      {
+        "title": "\u79fb\u52a8Web\u524d\u7aef\u77e5\u8bc6\u5e93",
+        "url": "https://github.com/AlloyTeam/Mars",
+        "author": "github"
+      },
+      {
+        "title": "\u6b63\u5219\u8868\u8fbe\u5f0f30\u5206\u949f\u5165\u95e8\u6559\u7a0b",
+        "url": "http://deerchao.net/tutorials/regex/regex.htm",
+        "author": "website"
+      },
+      {
+        "title": "\u524d\u7aef\u5f00\u53d1\u4f53\u7cfb\u5efa\u8bbe\u65e5\u8bb0",
+        "url": "https://github.com/fouber/blog/issues/2",
+        "author": "github"
+      },
+      {
+        "title": "\u79fb\u52a8\u524d\u7aef\u5f00\u53d1\u6536\u85cf\u5939",
+        "url": "https://github.com/hoosin/mobile-web-favorites",
+        "author": "github"
+      },
+      {
+        "title": "JSON\u98ce\u683c\u6307\u5357",
+        "url": "https://github.com/darcyliu/google-styleguide/blob/master/JSONStyleGuide.md",
+        "author": "github"
+      },
+      {
+        "title": "HTTP \u63a5\u53e3\u8bbe\u8ba1\u6307\u5317",
+        "url": "https://github.com/bolasblack/http-api-guide",
+        "author": "github"
+      },
+      {
+        "title": "\u524d\u7aef\u8d44\u6e90\u5206\u4eab\uff08\u4e00\uff09",
+        "url": "https://github.com/hacke2/hacke2.github.io/issues/1",
+        "author": "github"
+      },
+      {
+        "title": "\u524d\u7aef\u8d44\u6e90\u5206\u4eab\uff08\u4e8c\uff09",
+        "url": "https://github.com/hacke2/hacke2.github.io/issues/3",
+        "author": "github"
+      },
+      {
+        "title": "\u524d\u7aef\u4ee3\u7801\u89c4\u8303 \u53ca \u6700\u4f73\u5b9e\u8df5",
+        "url": "http://coderlmn.github.io/code-standards/",
+        "author": "website"
+      },
+      {
+        "title": "\u524d\u7aef\u5f00\u53d1\u8005\u624b\u518c",
+        "url": "https://www.gitbook.com/book/dwqs/frontenddevhandbook/details",
+        "author": "website"
+      },
+      {
+        "title": "\u524d\u7aef\u5de5\u7a0b\u5e08\u624b\u518c",
+        "url": "https://www.gitbook.com/book/leohxj/front-end-database/details",
+        "author": "website"
+      },
+      {
+        "title": "w3school\u6559\u7a0b\u6574\u7406",
+        "url": "https://github.com/wizardforcel/w3school",
+        "author": "github"
+      },
+      {
+        "title": "Wireshark\u7528\u6237\u624b\u518c",
+        "url": "http://man.lupaworld.com/content/network/wireshark/index.html",
+        "author": "website"
+      },
+      {
+        "title": "\u4e00\u7ad9\u5f0f\u5b66\u4e60Wireshark",
+        "url": "https://community.emc.com/thread/194901",
+        "author": "website"
+      },
+      {
+        "title": "HTTP \u4e0b\u5348\u8336",
+        "url": "http://happypeter.github.io/tealeaf-http/",
+        "author": "website"
+      },
+      {
+        "title": "HTTP/2.0 \u4e2d\u6587\u7ffb\u8bd1",
+        "url": "http://yuedu.baidu.com/ebook/478d1a62376baf1ffc4fad99?pn=1",
+        "author": "website"
+      },
+      {
+        "title": "RFC 7540 - HTTP/2 \u4e2d\u6587\u7ffb\u8bd1\u7248",
+        "url": "https://github.com/abbshr/rfc7540-translation-zh_cn",
+        "author": "github"
+      },
+      {
+        "title": "http2\u8bb2\u89e3",
+        "url": "https://www.gitbook.com/book/ye11ow/http2-explained/details",
+        "author": "website"
+      },
+      {
+        "title": "3 Web Designs in 3 Weeks",
+        "url": "https://www.gitbook.com/book/juntao/3-web-designs-in-3-weeks/details",
+        "author": "website"
+      },
+      {
+        "title": "\u7ad9\u70b9\u53ef\u9760\u6027\u5de5\u7a0b",
+        "url": "https://github.com/hellorocky/Site-Reliability-Engineering",
+        "author": "github"
+      }
+    ]
+  },
+  {
+    "issue_title": "\u5927\u6570\u636e",
+    "issue_list": [
+      {
+        "title": "\u5927\u6570\u636e/\u6570\u636e\u6316\u6398/\u63a8\u8350\u7cfb\u7edf/\u673a\u5668\u5b66\u4e60\u76f8\u5173\u8d44\u6e90",
+        "url": "https://github.com/Flowerowl/Big-Data-Resources",
+        "author": "github"
+      },
+      {
+        "title": "\u9762\u5411\u7a0b\u5e8f\u5458\u7684\u6570\u636e\u6316\u6398\u6307\u5357",
+        "url": "https://github.com/egrcc/guidetodatamining",
+        "author": "github"
+      },
+      {
+        "title": "\u5927\u578b\u96c6\u7fa4\u4e0a\u7684\u5feb\u901f\u548c\u901a\u7528\u6570\u636e\u5904\u7406\u67b6\u6784",
+        "url": "https://code.csdn.net/CODE_Translation/spark_matei_phd",
+        "author": "website"
+      },
+      {
+        "title": "\u6570\u636e\u6316\u6398\u4e2d\u7ecf\u5178\u7684\u7b97\u6cd5\u5b9e\u73b0\u548c\u8be6\u7ec6\u7684\u6ce8\u91ca",
+        "url": "https://github.com/linyiqun/DataMiningAlgorithm",
+        "author": "github"
+      },
+      {
+        "title": "Spark \u7f16\u7a0b\u6307\u5357\u7b80\u4f53\u4e2d\u6587\u7248",
+        "url": "https://aiyanbo.gitbooks.io/spark-programming-guide-zh-cn/content/",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "\u7f16\u7a0b\u827a\u672f",
+    "issue_list": [
+      {
+        "title": "\u7a0b\u5e8f\u5458\u7f16\u7a0b\u827a\u672f",
+        "url": "https://github.com/julycoding/The-Art-Of-Programming-by-July",
+        "author": "github"
+      },
+      {
+        "title": "\u6bcf\u4e2a\u7a0b\u5e8f\u5458\u90fd\u5e94\u8be5\u4e86\u89e3\u7684\u5185\u5b58\u77e5\u8bc6(\u8bd1)",
+        "url": "http://www.oschina.net/translate/what-every-programmer-should-know-about-memory-part1?print",
+        "author": "website"
+      },
+      {
+        "title": "\u53d6\u60a6\u7684\u5de5\u5e8f\uff1a\u5982\u4f55\u7406\u89e3\u6e38\u620f",
+        "url": "http://read.douban.com/ebook/4972883/",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "\u5176\u5b83",
+    "issue_list": [
+      {
+        "title": "OpenWrt\u667a\u80fd\u3001\u81ea\u52a8\u3001\u900f\u660e\u7ffb\u5899\u8def\u7531\u5668\u6559\u7a0b",
+        "url": "https://www.gitbook.com/book/softwaredownload/openwrt-fanqiang/details",
+        "author": "website"
+      },
+      {
+        "title": "SAN \u7ba1\u7406\u5165\u95e8\u7cfb\u5217",
+        "url": "https://community.emc.com/docs/DOC-16067",
+        "author": "website"
+      },
+      {
+        "title": "Sketch \u4e2d\u6587\u624b\u518c",
+        "url": "http://sketchcn.com/sketch-chinese-user-manual.html#introduce",
+        "author": "website"
+      },
+      {
+        "title": "\u6df1\u5165\u7406\u89e3\u5e76\u884c\u7f16\u7a0b",
+        "url": "http://ifeve.com/perfbook/",
+        "author": "website"
+      },
+      {
+        "title": "\u7a0b\u5e8f\u5458\u7684\u81ea\u6211\u4fee\u517b",
+        "url": "http://www.kancloud.cn/kancloud/a-programmer-prepares",
+        "author": "website"
+      },
+      {
+        "title": "Growth: \u5168\u6808\u589e\u957f\u5de5\u7a0b\u5e08\u6307\u5357",
+        "url": "https://github.com/phodal/growth-ebook",
+        "author": "github"
+      }
+    ]
+  },
+  {
+    "issue_title": "Android",
+    "issue_list": [
+      {
+        "title": "Android Design(\u4e2d\u6587\u7248)",
+        "url": "http://www.apkbus.com/design/index.html",
+        "author": "website"
+      },
+      {
+        "title": "Material Design \u4e2d\u6587\u7248",
+        "url": "http://wiki.jikexueyuan.com/project/material-design/",
+        "author": "website"
+      },
+      {
+        "title": "Google Android\u5b98\u65b9\u57f9\u8bad\u8bfe\u7a0b\u4e2d\u6587\u7248",
+        "url": "http://hukai.me/android-training-course-in-chinese/index.html",
+        "author": "website"
+      },
+      {
+        "title": "Android\u5b66\u4e60\u4e4b\u8def",
+        "url": "http://www.stormzhang.com/android/2014/07/07/learn-android-from-rookie/",
+        "author": "website"
+      },
+      {
+        "title": "Android\u5f00\u53d1\u6280\u672f\u524d\u7ebf(android-tech-frontier)",
+        "url": "https://github.com/bboyfeiyu/android-tech-frontier",
+        "author": "github"
+      },
+      {
+        "title": "Point-of-Android",
+        "url": "https://github.com/FX-Max/Point-of-Android",
+        "author": "github"
+      },
+      {
+        "title": "Android6.0\u65b0\u7279\u6027\u8be6\u89e3",
+        "url": "http://leanote.com/blog/post/561658f938f41126b2000298?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "APP",
+    "issue_list": [
+      {
+        "title": "Apache Cordova \u5f00\u53d1\u6307\u5357",
+        "url": "https://github.com/waylau/cordova-dev-guide",
+        "author": "github"
+      }
+    ]
+  },
+  {
+    "issue_title": "AWK",
+    "issue_list": [
+      {
+        "title": "awk\u7a0b\u5e8f\u8bbe\u8ba1\u8bed\u8a00",
+        "url": "https://github.com/wuzhouhui/awk",
+        "author": "github"
+      },
+      {
+        "title": "awk\u4e2d\u6587\u6307\u5357",
+        "url": "http://awk.readthedocs.org/en/latest/index.html",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "C/C++",
+    "issue_list": [
+      {
+        "title": "C \u8bed\u8a00\u7f16\u7a0b\u900f\u89c6",
+        "url": "https://www.gitbook.com/book/tinylab/cbook/details",
+        "author": "website"
+      },
+      {
+        "title": "C++ \u5e76\u53d1\u7f16\u7a0b\u6307\u5357",
+        "url": "https://github.com/forhappy/Cplusplus-Concurrency-In-Practice",
+        "author": "github"
+      },
+      {
+        "title": "Linux C\u7f16\u7a0b\u4e00\u7ad9\u5f0f\u5b66\u4e60",
+        "url": "http://akaedu.github.io/book/",
+        "author": "website"
+      },
+      {
+        "title": "CGDB\u4e2d\u6587\u624b\u518c",
+        "url": "https://github.com/leeyiw/cgdb-manual-in-chinese",
+        "author": "github"
+      },
+      {
+        "title": "100\u4e2agdb\u5c0f\u6280\u5de7",
+        "url": "https://github.com/hellogcc/100-gdb-tips/blob/master/src/index.md",
+        "author": "github"
+      },
+      {
+        "title": "100\u4e2agcc\u5c0f\u6280\u5de7",
+        "url": "https://github.com/hellogcc/100-gcc-tips/blob/master/src/index.md",
+        "author": "github"
+      },
+      {
+        "title": "ZMQ \u6307\u5357",
+        "url": "https://github.com/anjuke/zguide-cn",
+        "author": "github"
+      },
+      {
+        "title": "How to Think Like a Computer Scientist",
+        "url": "http://www.ituring.com.cn/book/1203",
+        "author": "website"
+      },
+      {
+        "title": "\u8ddf\u6211\u4e00\u8d77\u5199Makefile(PDF)",
+        "url": "http://scc.qibebt.cas.cn/docs/linux/base/%B8%FA%CE%D2%D2%BB%C6%F0%D0%B4Makefile-%B3%C2%F0%A9.pdf",
+        "author": "website"
+      },
+      {
+        "title": "GNU make\u4e2d\u6587\u624b\u518c",
+        "url": "http://www.yayu.org/book/gnu_make/",
+        "author": "website"
+      },
+      {
+        "title": "GNU make \u6307\u5357",
+        "url": "http://docs.huihoo.com/gnu/linux/gmake.html",
+        "author": "website"
+      },
+      {
+        "title": "Google C++ \u98ce\u683c\u6307\u5357",
+        "url": "http://zh-google-styleguide.readthedocs.org/en/latest/google-cpp-styleguide/contents/",
+        "author": "website"
+      },
+      {
+        "title": "C/C++ Primer",
+        "url": "https://github.com/andycai/cprimer",
+        "author": "github"
+      },
+      {
+        "title": "\u7b80\u5355\u6613\u61c2\u7684C\u9b54\u6cd5",
+        "url": "http://www.nowamagic.net/librarys/books/contents/c",
+        "author": "website"
+      },
+      {
+        "title": "Cmake \u5b9e\u8df5",
+        "url": "http://sewm.pku.edu.cn/src/paradise/reference/CMake%20Practice.pdf",
+        "author": "website"
+      },
+      {
+        "title": "C++ FAQ LITE(\u4e2d\u6587\u7248)",
+        "url": "http://www.sunistudio.com/cppfaq/",
+        "author": "website"
+      },
+      {
+        "title": "C++ Primer 5th Answers",
+        "url": "https://github.com/Mooophy/Cpp-Primer",
+        "author": "github"
+      },
+      {
+        "title": "C++ \u5e76\u53d1\u7f16\u7a0b(\u57fa\u4e8eC++11)",
+        "url": "https://www.gitbook.com/book/chenxiaowei/cpp_concurrency_in_action/details",
+        "author": "website"
+      },
+      {
+        "title": "QT \u6559\u7a0b",
+        "url": "http://www.kuqin.com/qtdocument/tutorial.html",
+        "author": "website"
+      },
+      {
+        "title": "DevBean\u7684\u300aQt\u5b66\u4e60\u4e4b\u8def2\u300b(Qt5)",
+        "url": "http://www.devbean.net/category/qt-study-road-2/",
+        "author": "website"
+      },
+      {
+        "title": "C++ Template \u8fdb\u9636\u6307\u5357",
+        "url": "https://github.com/wuye9036/CppTemplateTutorial",
+        "author": "github"
+      },
+      {
+        "title": "libuv\u4e2d\u6587\u6559\u7a0b",
+        "url": "https://github.com/luohaha/Chinese-uvbook",
+        "author": "github"
+      },
+      {
+        "title": "Boost \u5e93\u4e2d\u6587\u6559\u7a0b",
+        "url": "http://zh.highscore.de/cpp/boost/",
+        "author": "website"
+      },
+      {
+        "title": "\u7b28\u529e\u6cd5\u5b66C",
+        "url": "https://github.com/wizardforcel/lcthw-zh",
+        "author": "github"
+      }
+    ]
+  },
+  {
+    "issue_title": "C#",
+    "issue_list": [
+      {
+        "title": "MSDN C# \u4e2d\u6587\u6587\u6863",
+        "url": "https://msdn.microsoft.com/zh-cn/library/kx37x362.aspx",
+        "author": "website"
+      },
+      {
+        "title": ".NET \u7c7b\u5e93\u53c2\u8003",
+        "url": "https://msdn.microsoft.com/zh-cn/library/gg145045.aspx",
+        "author": "website"
+      },
+      {
+        "title": "ASP.NET MVC 5 \u5165\u95e8\u6307\u5357",
+        "url": "http://www.cnblogs.com/powertoolsteam/p/aspnetmvc5-tutorials-grapecity.html",
+        "author": "website"
+      },
+      {
+        "title": "\u8d85\u5168\u9762\u7684 .NET GDI+ \u56fe\u5f62\u56fe\u50cf\u7f16\u7a0b\u6559\u7a0b",
+        "url": "http://www.cnblogs.com/LonelyShadow/p/4162318.html",
+        "author": "website"
+      },
+      {
+        "title": ".NET\u63a7\u4ef6\u5f00\u53d1\u57fa\u7840",
+        "url": "https://github.com/JackWangCUMT/customcontrol",
+        "author": "github"
+      },
+      {
+        "title": ".NET\u5f00\u53d1\u8981\u70b9\u7cbe\u8bb2\uff08\u521d\u7a3f\uff09",
+        "url": "https://github.com/sherlockchou86/-free-ebook-.NET-",
+        "author": "github"
+      }
+    ]
+  },
+  {
+    "issue_title": "Clojure",
+    "issue_list": [
+      {
+        "title": "Clojure\u5165\u95e8\u6559\u7a0b",
+        "url": "http://xumingming.sinaapp.com/302/clojure-functional-programming-for-the-jvm-clojure-tutorial/",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "Clojure",
+    "issue_list": [
+      {
+        "title": "\u901a\u7528 CSS \u7b14\u8bb0\u3001\u5efa\u8bae\u4e0e\u6307\u5bfc",
+        "url": "https://github.com/chadluo/CSS-Guidelines/blob/master/README.md",
+        "author": "github"
+      },
+      {
+        "title": "Emmet \u6587\u6863",
+        "url": "http://yanxyz.github.io/emmet-docs/",
+        "author": "website"
+      },
+      {
+        "title": "\u524d\u7aef\u4ee3\u7801\u89c4\u8303",
+        "url": "http://alloyteam.github.io/CodeGuide/",
+        "author": "website"
+      },
+      {
+        "title": "Sass Guidelines \u4e2d\u6587",
+        "url": "http://sass-guidelin.es/zh/",
+        "author": "website"
+      },
+      {
+        "title": "CSS3 Tutorial \u300aCSS3 \u6559\u7a0b\u300b",
+        "url": "https://github.com/waylau/css3-tutorial",
+        "author": "github"
+      },
+      {
+        "title": "MDN HTML \u4e2d\u6587\u6587\u6863",
+        "url": "https://developer.mozilla.org/zh-CN/docs/Web/HTML",
+        "author": "website"
+      },
+      {
+        "title": "MDN CSS \u4e2d\u6587\u6587\u6863",
+        "url": "https://developer.mozilla.org/zh-CN/docs/Web/CSS",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "Dart",
+    "issue_list": [
+      {
+        "title": "Dart \u8bed\u8a00\u5bfc\u89c8",
+        "url": "http://dart.lidian.info/wiki/Language_Tour",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "Elixir",
+    "issue_list": [
+      {
+        "title": "Elixir\u7f16\u7a0b\u5165\u95e8",
+        "url": "https://github.com/straightdave/programming_elixir",
+        "author": "github"
+      }
+    ]
+  },
+  {
+    "issue_title": "Fortran",
+    "issue_list": [
+      {
+        "title": "Fortran77\u548c90/95\u7f16\u7a0b\u5165\u95e8",
+        "url": "http://micro.ustc.edu.cn/Fortran/ZJDing/",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "Go",
+    "issue_list": [
+      {
+        "title": "Go\u7f16\u7a0b\u57fa\u7840",
+        "url": "https://github.com/Unknwon/go-fundamental-programming",
+        "author": "github"
+      },
+      {
+        "title": "Go\u5165\u95e8\u6307\u5357",
+        "url": "https://github.com/Unknwon/the-way-to-go_ZH_CN",
+        "author": "github"
+      },
+      {
+        "title": "\u5b66\u4e60Go\u8bed\u8a00",
+        "url": "http://mikespook.com/learning-go/",
+        "author": "website"
+      },
+      {
+        "title": "Go Web \u7f16\u7a0b",
+        "url": "https://github.com/astaxie/build-web-application-with-golang",
+        "author": "github"
+      },
+      {
+        "title": "Go\u5b9e\u6218\u5f00\u53d1",
+        "url": "https://github.com/astaxie/Go-in-Action",
+        "author": "github"
+      },
+      {
+        "title": "Network programming with Go \u4e2d\u6587\u7ffb\u8bd1\u7248\u672c",
+        "url": "https://github.com/astaxie/NPWG_zh",
+        "author": "github"
+      },
+      {
+        "title": "Effective Go",
+        "url": "http://www.hellogcc.org/effective_go.html",
+        "author": "website"
+      },
+      {
+        "title": "Go \u8bed\u8a00\u6807\u51c6\u5e93",
+        "url": "https://github.com/polaris1119/The-Golang-Standard-Library-by-Example",
+        "author": "github"
+      },
+      {
+        "title": "Revel \u6846\u67b6\u624b\u518c",
+        "url": "http://gorevel.cn/docs/manual/index.html",
+        "author": "website"
+      },
+      {
+        "title": "Java\u7a0b\u5e8f\u5458\u7684Golang\u5165\u95e8\u6307\u5357",
+        "url": "http://blog.csdn.net/dc_726/article/details/46565241",
+        "author": "website"
+      },
+      {
+        "title": "Go\u547d\u4ee4\u6559\u7a0b",
+        "url": "https://github.com/hyper-carrot/go_command_tutorial",
+        "author": "github"
+      },
+      {
+        "title": "Go\u8bed\u8a00\u535a\u5ba2\u5b9e\u8df5",
+        "url": "https://github.com/achun/Go-Blog-In-Action",
+        "author": "github"
+      },
+      {
+        "title": "Go \u5b98\u65b9\u6587\u6863\u7ffb\u8bd1",
+        "url": "https://github.com/golang-china/golangdoc.translations",
+        "author": "github"
+      },
+      {
+        "title": "\u6df1\u5165\u89e3\u6790Go",
+        "url": "https://github.com/tiancaiamao/go-internals",
+        "author": "github"
+      },
+      {
+        "title": "Go\u8bed\u8a00\u5723\u7ecf(\u4e2d\u6587\u7248)",
+        "url": "https://bitbucket.org/golang-china/gopl-zh/wiki/Home",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "Groovy",
+    "issue_list": [
+      {
+        "title": "\u5b9e\u6218 Groovy \u7cfb\u5217",
+        "url": "http://www.ibm.com/developerworks/cn/java/j-pg/",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "Haskell",
+    "issue_list": [
+      {
+        "title": "Real World Haskell \u4e2d\u6587\u7248",
+        "url": "http://rwh.readthedocs.org/en/latest/",
+        "author": "website"
+      },
+      {
+        "title": "Haskell\u8da3\u5b66\u6307\u5357",
+        "url": "http://fleurer-lee.com/lyah/",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "iOS",
+    "issue_list": [
+      {
+        "title": "iOS\u5f00\u53d160\u5206\u949f\u5165\u95e8",
+        "url": "https://github.com/qinjx/30min_guides/blob/master/ios.md",
+        "author": "github"
+      },
+      {
+        "title": "iOS7\u4eba\u673a\u754c\u9762\u6307\u5357",
+        "url": "http://isux.tencent.com/ios-human-interface-guidelines-ui-design-basics-ios7.html",
+        "author": "website"
+      },
+      {
+        "title": "Google Objective-C Style Guide \u4e2d\u6587\u7248",
+        "url": "http://zh-google-styleguide.readthedocs.org/en/latest/google-objc-styleguide/",
+        "author": "website"
+      },
+      {
+        "title": "iPhone 6 \u5c4f\u5e55\u63ed\u79d8",
+        "url": "http://wileam.com/iphone-6-screen-cn/",
+        "author": "website"
+      },
+      {
+        "title": "Apple Watch\u5f00\u53d1\u521d\u63a2",
+        "url": "http://nilsun.github.io/apple-watch/",
+        "author": "website"
+      },
+      {
+        "title": "\u9a6c\u4e0a\u7740\u624b\u5f00\u53d1 iOS \u5e94\u7528\u7a0b\u5e8f",
+        "url": "https://developer.apple.com/library/ios/referencelibrary/GettingStarted/RoadMapiOSCh/index.html",
+        "author": "website"
+      },
+      {
+        "title": "\u7f51\u6613\u65af\u5766\u798f\u5927\u5b66\u516c\u5f00\u8bfe\uff1aiOS 7\u5e94\u7528\u5f00\u53d1\u5b57\u5e55\u6587\u4ef6",
+        "url": "https://github.com/jkyin/Subtitle",
+        "author": "github"
+      }
+    ]
+  },
+  {
+    "issue_title": "Java",
+    "issue_list": [
+      {
+        "title": "Apache Shiro \u7528\u6237\u6307\u5357",
+        "url": "https://github.com/waylau/apache-shiro-1.2.x-reference",
+        "author": "github"
+      },
+      {
+        "title": "Jersey 2.x \u7528\u6237\u6307\u5357",
+        "url": "https://github.com/waylau/Jersey-2.x-User-Guide",
+        "author": "github"
+      },
+      {
+        "title": "Spring Framework 4.x\u53c2\u8003\u6587\u6863",
+        "url": "https://github.com/waylau/spring-framework-4-reference",
+        "author": "github"
+      },
+      {
+        "title": "Spring Boot\u53c2\u8003\u6307\u5357",
+        "url": "https://github.com/qibaoguang/Spring-Boot-Reference-Guide",
+        "author": "github"
+      },
+      {
+        "title": "MyBatis\u4e2d\u6587\u6587\u6863",
+        "url": "http://mybatis.org/mybatis-3/zh/index.html",
+        "author": "website"
+      },
+      {
+        "title": "\u7528jersey\u6784\u5efaREST\u670d\u52a1",
+        "url": "https://github.com/waylau/RestDemo",
+        "author": "github"
+      },
+      {
+        "title": "Activiti 5.x \u7528\u6237\u6307\u5357",
+        "url": "https://github.com/waylau/activiti-5.x-user-guide",
+        "author": "github"
+      },
+      {
+        "title": "Google Java\u7f16\u7a0b\u98ce\u683c\u6307\u5357",
+        "url": "http://www.hawstein.com/posts/google-java-style.html",
+        "author": "website"
+      },
+      {
+        "title": "Netty 4.x \u7528\u6237\u6307\u5357",
+        "url": "https://github.com/waylau/netty-4-user-guide",
+        "author": "github"
+      },
+      {
+        "title": "Netty \u5b9e\u6218(\u7cbe\u9ad3)",
+        "url": "https://github.com/waylau/essential-netty-in-action",
+        "author": "github"
+      },
+      {
+        "title": "REST \u5b9e\u6218",
+        "url": "https://github.com/waylau/rest-in-action",
+        "author": "github"
+      },
+      {
+        "title": "Java \u7f16\u7801\u89c4\u8303",
+        "url": "https://github.com/waylau/java-code-conventions",
+        "author": "github"
+      },
+      {
+        "title": "Apache MINA 2 \u7528\u6237\u6307\u5357",
+        "url": "https://github.com/waylau/apache-mina-2.x-user-guide",
+        "author": "github"
+      },
+      {
+        "title": "H2 Database \u6559\u7a0b",
+        "url": "https://github.com/waylau/h2-database-doc",
+        "author": "github"
+      },
+      {
+        "title": "Java Servlet 3.1 \u89c4\u8303",
+        "url": "https://github.com/waylau/servlet-3.1-specification",
+        "author": "github"
+      },
+      {
+        "title": "JSSE \u53c2\u8003\u6307\u5357",
+        "url": "https://github.com/waylau/jsse-reference-guide",
+        "author": "github"
+      },
+      {
+        "title": "Java\u5f00\u6e90\u5b9e\u73b0\u53ca\u6700\u4f73\u5b9e\u8df5",
+        "url": "https://github.com/biezhi/jb",
+        "author": "github"
+      },
+      {
+        "title": "Java \u7f16\u7a0b\u8981\u70b9",
+        "url": "https://github.com/waylau/essential-java",
+        "author": "github"
+      },
+      {
+        "title": "Think Java",
+        "url": "http://www.ituring.com.cn/minibook/69",
+        "author": "website"
+      },
+      {
+        "title": "Java 8 \u7b80\u660e\u6559\u7a0b",
+        "url": "https://github.com/wizardforcel/modern-java-zh",
+        "author": "github"
+      }
+    ]
+  },
+  {
+    "issue_title": "JavaScript",
+    "issue_list": [
+      {
+        "title": "Google JavaScript \u4ee3\u7801\u98ce\u683c\u6307\u5357",
+        "url": "http://bq69.com/blog/articles/script/868/google-javascript-style-guide.html",
+        "author": "website"
+      },
+      {
+        "title": "Google JSON \u98ce\u683c\u6307\u5357",
+        "url": "https://github.com/darcyliu/google-styleguide/blob/master/JSONStyleGuide.md",
+        "author": "github"
+      },
+      {
+        "title": "Airbnb JavaScript \u89c4\u8303",
+        "url": "https://github.com/adamlu/javascript-style-guide",
+        "author": "github"
+      },
+      {
+        "title": "javascript \u7684 12 \u4e2a\u602a\u7656",
+        "url": "https://github.com/justjavac/12-javascript-quirks",
+        "author": "github"
+      },
+      {
+        "title": "JavaScript \u79d8\u5bc6\u82b1\u56ed",
+        "url": "http://bonsaiden.github.io/JavaScript-Garden/zh/",
+        "author": "website"
+      },
+      {
+        "title": "JavaScript\u6838\u5fc3\u6982\u5ff5\u53ca\u5b9e\u8df5",
+        "url": "http://icodeit.org/jsccp/",
+        "author": "website"
+      },
+      {
+        "title": "\u300aJavaScript \u6a21\u5f0f\u300b",
+        "url": "https://github.com/jayli/javascript-patterns",
+        "author": "github"
+      },
+      {
+        "title": "\u547d\u540d\u51fd\u6570\u8868\u8fbe\u5f0f\u63a2\u79d8",
+        "url": "http://justjavac.com/named-function-expressions-demystified.html",
+        "author": "website"
+      },
+      {
+        "title": "\u5b66\u7528 JavaScript \u8bbe\u8ba1\u6a21\u5f0f",
+        "url": "http://www.oschina.net/translate/learning-javascript-design-patterns",
+        "author": "website"
+      },
+      {
+        "title": "\u6df1\u5165\u7406\u89e3JavaScript\u7cfb\u5217",
+        "url": "http://www.cnblogs.com/TomXu/archive/2011/12/15/2288411.html",
+        "author": "website"
+      },
+      {
+        "title": "ECMAScript 5.1 \u4e2d\u6587\u7248",
+        "url": "http://yanhaijing.com/es5",
+        "author": "website"
+      },
+      {
+        "title": "JavaScript Promise\u8ff7\u4f60\u4e66",
+        "url": "http://liubin.github.io/promises-book/",
+        "author": "website"
+      },
+      {
+        "title": "You-Dont-Know-JS",
+        "url": "https://github.com/getify/You-Dont-Know-JS",
+        "author": "github"
+      },
+      {
+        "title": "JavaScript \u6559\u7a0b",
+        "url": "http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000",
+        "author": "website"
+      },
+      {
+        "title": "MDN JavaScript \u4e2d\u6587\u6587\u6863",
+        "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript",
+        "author": "website"
+      },
+      {
+        "title": "Chrome\u6269\u5c55\u53ca\u5e94\u7528\u5f00\u53d1",
+        "url": "http://www.ituring.com.cn/minibook/950",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "LaTeX",
+    "issue_list": [
+      {
+        "title": "\u4e00\u4efd\u5176\u5b9e\u5f88\u77ed\u7684 LaTeX \u5165\u95e8\u6587\u6863",
+        "url": "http://liam0205.me/2014/09/08/latex-introduction/",
+        "author": "website"
+      },
+      {
+        "title": "\u4e00\u4efd\u4e0d\u592a\u7b80\u77ed\u7684 LATEX 2\u03b5 \u4ecb\u7ecd",
+        "url": "http://www.mohu.org/info/lshort-cn.pdf",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "Lua",
+    "issue_list": [
+      {
+        "title": "Lua\u7f16\u7a0b\u5165\u95e8",
+        "url": "https://github.com/andycai/luaprimer",
+        "author": "github"
+      },
+      {
+        "title": "Lua 5.1 \u53c2\u8003\u624b\u518c \u4e2d\u6587\u7ffb\u8bd1",
+        "url": "http://www.codingnow.com/2000/download/lua_manual.html",
+        "author": "website"
+      },
+      {
+        "title": "Lua 5.3 \u53c2\u8003\u624b\u518c \u4e2d\u6587\u7ffb\u8bd1",
+        "url": "http://cloudwu.github.io/lua53doc/",
+        "author": "website"
+      },
+      {
+        "title": "Lua\u6e90\u7801\u6b23\u8d4f",
+        "url": "http://www.codingnow.com/temp/readinglua.pdf",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "OCaml",
+    "issue_list": [
+      {
+        "title": "Real World OCaml",
+        "url": "https://github.com/zforget/translation/tree/master/real_world_ocaml",
+        "author": "github"
+      }
+    ]
+  },
+  {
+    "issue_title": "Perl",
+    "issue_list": [
+      {
+        "title": "Modern Perl \u4e2d\u6587\u7248",
+        "url": "https://github.com/horus/modern_perl_book",
+        "author": "github"
+      }
+    ]
+  },
+  {
+    "issue_title": "PHP",
+    "issue_list": [
+      {
+        "title": "PHP \u5b98\u65b9\u624b\u518c",
+        "url": "http://php.net/manual/zh/",
+        "author": "website"
+      },
+      {
+        "title": "PHP\u8c03\u8bd5\u6280\u672f\u624b\u518c",
+        "url": "http://www.laruence.com/2010/06/21/1608.html",
+        "author": "website"
+      },
+      {
+        "title": "PHP \u6700\u4f73\u5b9e\u8df5",
+        "url": "https://github.com/justjavac/PHP-Best-Practices-zh_CN",
+        "author": "github"
+      },
+      {
+        "title": "PHP \u5f00\u53d1\u8005\u5b9e\u8df5",
+        "url": "https://ryancao.gitbooks.io/php-developer-prepares/content/",
+        "author": "website"
+      },
+      {
+        "title": "\u6df1\u5165\u7406\u89e3PHP\u5185\u6838",
+        "url": "https://github.com/reeze/tipi",
+        "author": "github"
+      },
+      {
+        "title": "PHP\u6269\u5c55\u5f00\u53d1\u53ca\u5185\u6838\u5e94\u7528",
+        "url": "http://www.walu.cc/phpbook/",
+        "author": "website"
+      },
+      {
+        "title": "Laravel5.1 \u4e2d\u6587\u6587\u6863",
+        "url": "http://laravel-china.org/docs/5.1",
+        "author": "website"
+      },
+      {
+        "title": "Symfony2 Cookbook \u4e2d\u6587\u7248",
+        "url": "http://wiki.jikexueyuan.com/project/symfony-cookbook/",
+        "author": "website"
+      },
+      {
+        "title": "Symfony2\u4e2d\u6587\u6587\u6863",
+        "url": "http://symfony-docs-chs.readthedocs.org/en/latest/",
+        "author": "website"
+      },
+      {
+        "title": "\u7b80\u5355\u6613\u61c2\u7684PHP\u9b54\u6cd5",
+        "url": "http://www.nowamagic.net/librarys/books/contents/php",
+        "author": "website"
+      },
+      {
+        "title": "swoole\u6587\u6863\u53ca\u5165\u95e8\u6559\u7a0b",
+        "url": "https://github.com/LinkedDestiny/swoole-doc",
+        "author": "github"
+      },
+      {
+        "title": "Slim \u4e2d\u6587\u6587\u6863",
+        "url": "http://ww1.minimee.org/php/slim",
+        "author": "website"
+      },
+      {
+        "title": "PHPUnit \u4e2d\u6587\u6587\u6863",
+        "url": "https://phpunit.de/manual/current/zh_cn/installation.html",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "Prolog",
+    "issue_list": [
+      {
+        "title": "\u7b28\u529e\u6cd5\u5b66Prolog",
+        "url": "http://fengdidi.github.io/blog/2011/11/15/qian-yan/",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "Python",
+    "issue_list": [
+      {
+        "title": "\u5ed6\u96ea\u5cf0 Python 2.7 \u4e2d\u6587\u6559\u7a0b",
+        "url": "http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000",
+        "author": "website"
+      },
+      {
+        "title": "\u5ed6\u96ea\u5cf0 Python 3 \u4e2d\u6587\u6559\u7a0b",
+        "url": "http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000",
+        "author": "website"
+      },
+      {
+        "title": "\u7b80\u660ePython\u6559\u7a0b",
+        "url": "http://www.kuqin.com/abyteofpython_cn/",
+        "author": "website"
+      },
+      {
+        "title": "\u96f6\u57fa\u7840\u5b66 Python \u7b2c\u4e00\u7248",
+        "url": "http://www.kancloud.cn/kancloud/python-basic",
+        "author": "website"
+      },
+      {
+        "title": "\u96f6\u57fa\u7840\u5b66 Python \u7b2c\u4e8c\u7248",
+        "url": "http://www.kancloud.cn/kancloud/starter-learning-python",
+        "author": "website"
+      },
+      {
+        "title": "\u53ef\u7231\u7684 Python",
+        "url": "http://lovelypython.readthedocs.org/en/latest/",
+        "author": "website"
+      },
+      {
+        "title": "Python 2.7 \u5b98\u65b9\u6559\u7a0b\u4e2d\u6587\u7248",
+        "url": "http://www.pythondoc.com/pythontutorial27/index.html",
+        "author": "website"
+      },
+      {
+        "title": "Python 3.3 \u5b98\u65b9\u6559\u7a0b\u4e2d\u6587\u7248",
+        "url": "http://www.pythondoc.com/pythontutorial3/index.html",
+        "author": "website"
+      },
+      {
+        "title": "Python Cookbook \u4e2d\u6587\u7248",
+        "url": "http://www.kancloud.cn/thinkphp/python-cookbook",
+        "author": "website"
+      },
+      {
+        "title": "Python3 Cookbook \u4e2d\u6587\u7248",
+        "url": "https://github.com/yidao620c/python3-cookbook",
+        "author": "github"
+      },
+      {
+        "title": "\u6df1\u5165 Python",
+        "url": "http://www.kuqin.com/docs/diveintopythonzh-cn-5.4b/html/toc/",
+        "author": "website"
+      },
+      {
+        "title": "\u6df1\u5165 Python 3",
+        "url": "http://old.sebug.net/paper/books/dive-into-python3/",
+        "author": "website"
+      },
+      {
+        "title": "PEP8 Python\u4ee3\u7801\u98ce\u683c\u89c4\u8303",
+        "url": "https://code.google.com/p/zhong-wiki/wiki/PEP8",
+        "author": "website"
+      },
+      {
+        "title": "Google Python \u98ce\u683c\u6307\u5357 \u4e2d\u6587\u7248",
+        "url": "http://zh-google-styleguide.readthedocs.org/en/latest/google-python-styleguide/",
+        "author": "website"
+      },
+      {
+        "title": "Python\u5165\u95e8\u6559\u7a0b",
+        "url": "http://liam0205.me/2013/11/02/Python-tutorial-zh_cn/",
+        "author": "website"
+      },
+      {
+        "title": "\u7b28\u529e\u6cd5\u5b66 Python",
+        "url": "http://old.sebug.net/paper/books/LearnPythonTheHardWay/",
+        "author": "website"
+      },
+      {
+        "title": "Python\u81ea\u7136\u8bed\u8a00\u5904\u7406\u4e2d\u6587\u7248",
+        "url": "http://pan.baidu.com/s/1qW4pvnY",
+        "author": "website"
+      },
+      {
+        "title": "Python \u7ed8\u56fe\u5e93 matplotlib \u5b98\u65b9\u6307\u5357\u4e2d\u6587\u7ffb\u8bd1",
+        "url": "http://liam0205.me/2014/09/11/matplotlib-tutorial-zh-cn/",
+        "author": "website"
+      },
+      {
+        "title": "Scrapy 0.25 \u6587\u6863",
+        "url": "http://scrapy-chs.readthedocs.org/zh_CN/latest/",
+        "author": "website"
+      },
+      {
+        "title": "ThinkPython",
+        "url": "https://github.com/carfly/thinkpython-cn",
+        "author": "github"
+      },
+      {
+        "title": "ThinkPython 2ed",
+        "url": "https://github.com/bingjin/ThinkPython2-CN",
+        "author": "github"
+      },
+      {
+        "title": "Python\u5feb\u901f\u6559\u7a0b",
+        "url": "http://www.cnblogs.com/vamei/archive/2012/09/13/2682778.html",
+        "author": "website"
+      },
+      {
+        "title": "Python \u6b63\u5219\u8868\u8fbe\u5f0f\u64cd\u4f5c\u6307\u5357",
+        "url": "http://wiki.ubuntu.org.cn/Python\u6b63\u5219\u8868\u8fbe\u5f0f\u64cd\u4f5c\u6307\u5357",
+        "author": "website"
+      },
+      {
+        "title": "python\u521d\u7ea7\u6559\u7a0b\uff1a\u5165\u95e8\u8be6\u89e3",
+        "url": "http://www.crifan.com/files/doc/docbook/python_beginner_tutorial/release/html/python_beginner_tutorial.html",
+        "author": "website"
+      },
+      {
+        "title": "Twisted \u4e0e\u5f02\u6b65\u7f16\u7a0b\u5165\u95e8",
+        "url": "https://www.gitbook.com/book/likebeta/twisted-intro-cn/details",
+        "author": "website"
+      },
+      {
+        "title": "TextGrocery \u4e2d\u6587 API",
+        "url": "http://textgrocery.readthedocs.org/zh/latest/index.html",
+        "author": "website"
+      },
+      {
+        "title": "Requests: HTTP for Humans",
+        "url": "http://requests-docs-cn.readthedocs.org/zh_CN/latest/",
+        "author": "website"
+      },
+      {
+        "title": "Pillow \u4e2d\u6587\u6587\u6863",
+        "url": "http://pillow-cn.readthedocs.org/en/latest/#",
+        "author": "website"
+      },
+      {
+        "title": "PyMOTW \u4e2d\u6587\u7248",
+        "url": "http://pymotwcn.readthedocs.org/en/latest/index.html",
+        "author": "website"
+      },
+      {
+        "title": "Python \u5b98\u65b9\u6587\u6863\u4e2d\u6587\u7248",
+        "url": "http://data.digitser.net/zh-CN/python_index.html",
+        "author": "website"
+      },
+      {
+        "title": "Beautiful Soup 4.2.0 \u4e2d\u6587\u6587\u6863",
+        "url": "http://beautifulsoup.readthedocs.org/zh_CN/latest/",
+        "author": "website"
+      },
+      {
+        "title": "\u7528Python\u505a\u79d1\u5b66\u8ba1\u7b97",
+        "url": "http://old.sebug.net/paper/books/scipydoc",
+        "author": "website"
+      },
+      {
+        "title": "Sphinx \u4e2d\u6587\u6587\u6863",
+        "url": "http://www.pythondoc.com/sphinx/index.html",
+        "author": "website"
+      },
+      {
+        "title": "\u7cbe\u901a Python \u8bbe\u8ba1\u6a21\u5f0f",
+        "url": "https://github.com/cundi/Mastering.Python.Design.Patterns",
+        "author": "github"
+      },
+      {
+        "title": "python \u5b89\u5168\u7f16\u7a0b\u6559\u7a0b",
+        "url": "https://github.com/smartFlash/pySecurity",
+        "author": "github"
+      },
+      {
+        "title": "\u7a0b\u5e8f\u8bbe\u8ba1\u601d\u60f3\u4e0e\u65b9\u6cd5",
+        "url": "https://www.gitbook.com/book/wizardforcel/sjtu-cs902-courseware/details",
+        "author": "website"
+      },
+      {
+        "title": "\u77e5\u4e4e\u5468\u520a\u00b7\u7f16\u7a0b\u5c0f\u767d\u5b66Python",
+        "url": "https://read.douban.com/ebook/16691849/",
+        "author": "website"
+      },
+      {
+        "title": "Scipy \u8bb2\u4e49",
+        "url": "https://github.com/cloga/scipy-lecture-notes_cn",
+        "author": "github"
+      },
+      {
+        "title": "Python \u5b66\u4e60\u7b14\u8bb0 \u57fa\u7840\u7bc7",
+        "url": "http://www.kuqin.com/docs/pythonbasic.html",
+        "author": "website"
+      },
+      {
+        "title": "Python \u5b66\u4e60\u7b14\u8bb0 \u6a21\u5757\u7bc7",
+        "url": "http://www.kuqin.com/docs/pythonmodule.html",
+        "author": "website"
+      },
+      {
+        "title": "Python \u6807\u51c6\u5e93 \u4e2d\u6587\u7248",
+        "url": "http://old.sebug.net/paper/books/python/%E3%80%8APython%E6%A0%87%E5%87%86%E5%BA%93%E3%80%8B%E4%B8%AD%E6%96%87%E7%89%88.pdf",
+        "author": "website"
+      },
+      {
+        "title": "Python\u8fdb\u9636",
+        "url": "https://www.gitbook.com/book/eastlakeside/interpy-zh/details",
+        "author": "website"
+      },
+      {
+        "title": "Python \u6838\u5fc3\u7f16\u7a0b \u7b2c\u4e8c\u7248",
+        "url": "https://wizardforcel.gitbooks.io/core-python-2e/content/",
+        "author": "website"
+      },
+      {
+        "title": "Python\u6700\u4f73\u5b9e\u8df5\u6307\u5357",
+        "url": "http://pythonguidecn.readthedocs.io/zh/latest/",
+        "author": "website"
+      },
+      {
+        "title": "Python \u7cbe\u8981\u6559\u7a0b",
+        "url": "https://www.gitbook.com/book/wizardforcel/python-essential-tutorial/details",
+        "author": "website"
+      },
+      {
+        "title": "Python \u91cf\u5316\u4ea4\u6613\u6559\u7a0b",
+        "url": "https://www.gitbook.com/book/wizardforcel/python-quant-uqer/details",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "R",
+    "issue_list": [
+      {
+        "title": "R\u8bed\u8a00\u5fcd\u8005\u79d8\u7b08",
+        "url": "https://github.com/yihui/r-ninja",
+        "author": "github"
+      }
+    ]
+  },
+  {
+    "issue_title": "Ruby",
+    "issue_list": [
+      {
+        "title": "Ruby \u98ce\u683c\u6307\u5357",
+        "url": "https://github.com/JuanitoFatas/ruby-style-guide/blob/master/README-zhCN.md",
+        "author": "github"
+      },
+      {
+        "title": "Rails \u98ce\u683c\u6307\u5357",
+        "url": "https://github.com/JuanitoFatas/rails-style-guide/blob/master/README-zhCN.md",
+        "author": "github"
+      },
+      {
+        "title": "Ruby on Rails \u5be6\u6230\u8056\u7d93",
+        "url": "https://ihower.tw/rails4/index.html",
+        "author": "website"
+      },
+      {
+        "title": "Rails \u5b9e\u8df5",
+        "url": "http://rails-practice.com/content/index.html",
+        "author": "website"
+      },
+      {
+        "title": "Rails 5 \u5f00\u53d1\u8fdb\u9636(Beta)",
+        "url": "https://www.gitbook.com/book/kelby/rails-beginner-s-guide/details",
+        "author": "website"
+      },
+      {
+        "title": "Rails 102",
+        "url": "https://www.gitbook.com/book/rocodev/rails-102/details",
+        "author": "website"
+      },
+      {
+        "title": "\u7f16\u5199Ruby\u7684C\u62d3\u5c55",
+        "url": "https://wusuopu.gitbooks.io/write-ruby-extension-with-c/content/",
+        "author": "website"
+      },
+      {
+        "title": "Ruby \u6e90\u7801\u89e3\u8bfb",
+        "url": "https://ruby-china.org/topics/22386",
+        "author": "website"
+      },
+      {
+        "title": "Ruby\u4e2d\u7684\u5143\u7f16\u7a0b",
+        "url": "http://deathking.github.io/metaprogramming-in-ruby/",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "Rust",
+    "issue_list": [
+      {
+        "title": "rust book \u4e2d\u6587\u7ffb\u8bd1",
+        "url": "https://www.gitbook.com/book/kaisery/rust-book-chinese/details",
+        "author": "website"
+      },
+      {
+        "title": "rust primer",
+        "url": "https://github.com/rustcc/RustPrimer",
+        "author": "github"
+      }
+    ]
+  },
+  {
+    "issue_title": "Scala",
+    "issue_list": [
+      {
+        "title": "Scala\u8bfe\u5802",
+        "url": "http://twitter.github.io/scala_school/zh_cn/index.html",
+        "author": "website"
+      },
+      {
+        "title": "Effective Scala",
+        "url": "http://twitter.github.io/effectivescala/index-cn.html",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "Shell",
+    "issue_list": [
+      {
+        "title": "Shell\u811a\u672c\u7f16\u7a0b30\u5206\u949f\u5165\u95e8",
+        "url": "https://github.com/qinjx/30min_guides/blob/master/shell.md",
+        "author": "github"
+      },
+      {
+        "title": "Bash\u811a\u672c15\u5206\u949f\u8fdb\u9636\u6559\u7a0b",
+        "url": "http://blog.sae.sina.com.cn/archives/3606",
+        "author": "website"
+      },
+      {
+        "title": "Linux\u5de5\u5177\u5feb\u901f\u6559\u7a0b",
+        "url": "https://github.com/me115/linuxtools_rst",
+        "author": "github"
+      },
+      {
+        "title": "shell\u5341\u4e09\u95ee",
+        "url": "https://github.com/wzb56/13_questions_of_shell",
+        "author": "github"
+      },
+      {
+        "title": "Shell\u7f16\u7a0b\u8303\u4f8b",
+        "url": "https://www.gitbook.com/book/tinylab/shellbook/details",
+        "author": "website"
+      }
+    ]
+  },
+  {
+    "issue_title": "Swift",
+    "issue_list": [
+      {
+        "title": "The Swift Programming Language \u4e2d\u6587\u7248",
+        "url": "http://numbbbbb.github.io/the-swift-programming-language-in-chinese/",
+        "author": "website"
+      },
+      {
+        "title": "Stanford \u516c\u5f00\u8bfe\uff0cDeveloping iOS 8 Apps with Swift \u5b57\u5e55\u7ffb\u8bd1\u6587\u4ef6",
+        "url": "https://github.com/x140yu/Developing_iOS_8_Apps_With_Swift",
+        "author": "github"
+      }
+    ]
+  },
+  {
+    "issue_title": "\u8bfb\u4e66\u7b14\u8bb0\u53ca\u5176\u5b83",
+    "issue_list": [
+      {
+        "title": "\u7f16\u8bd1\u539f\u7406\uff08\u7d2b\u9f99\u4e66\uff09\u4e2d\u6587\u7b2c2\u7248\u4e60\u9898\u7b54\u6848",
+        "url": "https://github.com/fool2fish/dragon-book-exercise-answers",
+        "author": "github"
+      },
+      {
+        "title": "\u628a\u300a\u7f16\u7a0b\u73e0\u7391\u300b\u8bfb\u8584",
+        "url": "http://www.hawstein.com/posts/make-thiner-programming-pearls.html",
+        "author": "website"
+      },
+      {
+        "title": "Effective C++\u8bfb\u4e66\u7b14\u8bb0",
+        "url": "https://github.com/XiaolongJason/ReadingNote/blob/master/Effective%20C%2B%2B/Effective%20C%2B%2B.md",
+        "author": "github"
+      },
+      {
+        "title": "Golang \u5b66\u4e60\u7b14\u8bb0\u3001Python \u5b66\u4e60\u7b14\u8bb0\u3001C \u5b66\u4e60\u7b14\u8bb0",
+        "url": "https://github.com/qyuhen/book",
+        "author": "github"
+      },
+      {
+        "title": "Jsoup \u5b66\u4e60\u7b14\u8bb0",
+        "url": "https://github.com/code4craft/jsoup-learning",
+        "author": "github"
+      },
+      {
+        "title": "\u5b66\u4e60\u7b14\u8bb0: Vim\u3001Python\u3001memcached",
+        "url": "https://github.com/lzjun567/note",
+        "author": "github"
+      },
+      {
+        "title": "\u56fe\u7075\u5f00\u653e\u4e66\u7ffb\u8bd1\u8ba1\u5212--C++\u3001Python\u3001Java\u7b49",
+        "url": "http://www.ituring.com.cn/activity/details/2004",
+        "author": "website"
+      },
+      {
+        "title": "\u8482\u59c6\u00b7\u5965\u83b1\u5229\u968f\u7b14",
+        "url": "http://g.yeeyan.org/books/2095",
+        "author": "website"
+      },
+      {
+        "title": "SICP \u89e3\u9898\u96c6",
+        "url": "http://sicp.readthedocs.org/en/latest/",
+        "author": "website"
+      },
+      {
+        "title": "\u7cbe\u5f69\u535a\u5ba2\u96c6\u5408",
+        "url": "https://github.com/hacke2/hacke2.github.io/issues/2",
+        "author": "github"
+      },
+      {
+        "title": "\u4e2d\u6587\u6587\u6848\u6392\u7248\u6307\u5317",
+        "url": "https://github.com/sparanoid/chinese-copywriting-guidelines",
+        "author": "github"
+      },
+      {
+        "title": "Standard C \u8bed\u8a00\u6807\u51c6\u51fd\u6570\u5e93\u901f\u67e5 (Cheat Sheet)",
+        "url": "http://ganquan.info/standard-c/",
+        "author": "website"
+      },
+      {
+        "title": "Git Cheatsheet Chs",
+        "url": "http://gh.amio.us/git-cheatsheet-chs/",
+        "author": "website"
+      },
+      {
+        "title": "GitBook\u7b80\u660e\u6559\u7a0b",
+        "url": "http://www.chengweiyang.cn/gitbook/index.html",
+        "author": "website"
+      },
+      {
+        "title": "JavaScript\u8bed\u8a00\u7cbe\u7cb9",
+        "url": "https://github.com/qibaoguang/Study-Step-by-Step/blob/master/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/javascript_the_good_parts.md",
+        "author": "github"
+      },
+      {
+        "title": "\u5236\u9020\u5f00\u6e90\u8f6f\u4ef6",
+        "url": "http://producingoss.com/zh/",
+        "author": "website"
+      },
+      {
+        "title": "\u63d0\u95ee\u7684\u667a\u6167",
+        "url": "http://www.dianbo.org/9238/stone/tiwendezhihui.htm",
+        "author": "website"
+      },
+      {
+        "title": "Markdown \u5165\u95e8\u53c2\u8003",
+        "url": "https://github.com/LearnShare/Learning-Markdown",
+        "author": "github"
+      },
+      {
+        "title": "AsciiDoc\u7b80\u660e\u6307\u5357",
+        "url": "https://github.com/stanzgy/wiki/blob/master/markup/asciidoc-guide.asciidoc",
+        "author": "github"
+      },
+      {
+        "title": "\u80cc\u5305\u95ee\u9898\u4e5d\u8bb2",
+        "url": "http://love-oriented.com/pack/",
+        "author": "website"
+      },
+      {
+        "title": "\u8001\u9f50\u7684\u6280\u672f\u8d44\u6599",
+        "url": "https://github.com/qiwsir/ITArticles",
+        "author": "github"
+      },
+      {
+        "title": "\u524d\u7aef\u6280\u80fd\u6c47\u603b",
+        "url": "https://github.com/JacksonTian/fks",
+        "author": "github"
+      },
+      {
+        "title": "\u501f\u52a9\u5f00\u6e90\u9879\u76ee\uff0c\u5b66\u4e60\u8f6f\u4ef6\u5f00\u53d1",
+        "url": "https://github.com/zhuangbiaowei/learn-with-open-source",
+        "author": "github"
+      },
+      {
+        "title": "\u524d\u7aef\u5de5\u4f5c\u9762\u8bd5\u95ee\u9898",
+        "url": "https://github.com/h5bp/Front-end-Developer-Interview-Questions/tree/master/Translations/Chinese",
+        "author": "github"
+      },
+      {
+        "title": "leetcode/lintcode\u9898\u89e3/\u7b97\u6cd5\u5b66\u4e60\u7b14\u8bb0",
+        "url": "https://www.gitbook.com/book/yuanbin/algorithm/details",
+        "author": "website"
+      },
+      {
+        "title": "\u524d\u7aef\u5f00\u53d1\u7b14\u8bb0\u672c",
+        "url": "https://github.com/li-xinyang/FEND_Note",
+        "author": "github"
+      }
+    ]
+  },
+  {
+    "issue_title": "\u6d4b\u8bd5\u76f8\u5173",
+    "issue_list": [
+      {
+        "title": "\u79fb\u52a8APP\u81ea\u52a8\u5316\u6d4b\u8bd5\u4f18\u79c0\u6846\u67b6Appium API Reference V1.2.0 CN",
+        "url": "http://appium.io/slate/cn/v1.2.0/",
+        "author": "website"
+      }
+    ]
+  }
+]

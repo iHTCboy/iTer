@@ -80,6 +80,7 @@ class IHTCSearchViewController: UIViewController {
         return question
     }()
     
+    // 缓存所有题目内容
     var jsonData: Dictionary<String, Array<Dictionary<String, String>>> = Dictionary<String, Array<Dictionary<String, String>>>()
 }
 

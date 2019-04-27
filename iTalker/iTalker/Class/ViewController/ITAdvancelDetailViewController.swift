@@ -12,7 +12,9 @@ import UIKit
 enum ITAdvancelType {
     case Objc
     case NSHipster
+    case Awesome
     case PracticeProject
+    case Gitbook
 }
 
 class ITAdvancelDetailViewController: UIViewController {
@@ -62,7 +64,6 @@ class ITAdvancelDetailViewController: UIViewController {
                 print(error.localizedDescription)
             }
         }
-        
         print("no file")
         return Array()
     }()
@@ -89,7 +90,6 @@ class ITAdvancelDetailViewController: UIViewController {
                 print(error.localizedDescription)
             }
         }
-        
         print("no file")
         return Array()
     }()
@@ -112,14 +112,20 @@ extension ITAdvancelDetailViewController
         view.layoutIfNeeded()
         
         switch advancelType {
-            case .Objc:
-                dataArray = objcArray
-                break
-            case .NSHipster:
-                dataArray = nshipsterArray
-                break
-            case .PracticeProject:
-                break
+        case .Objc:
+            dataArray = objcArray
+            break
+        case .NSHipster:
+            dataArray = nshipsterArray
+            break
+        case .PracticeProject:
+            dataArray = getJsonData(title: "PracticeProject")
+            break
+        case .Gitbook:
+            dataArray = getJsonData(title: "Gitbook")
+            break
+        case .Awesome:
+            dataArray = getJsonData(title: "Awesome")
         }
     }
 
@@ -129,6 +135,28 @@ extension ITAdvancelDetailViewController
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+    
+    func getJsonData(title: String) -> Array<Dictionary<String, Any>> {
+        if let file = Bundle.main.url(forResource: title, withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: file)
+                let json = try JSONSerialization.jsonObject(with: data, options: [])
+                if let object = json as? Array<Dictionary<String, Any>> {
+                    var array: Array<Dictionary<String, Any>> = Array()
+                    for obj in object {
+                        array.append(["title": obj["issue_title"] as! String, "subtitle": obj["issue_subtitle"] ?? "", "data": obj["issue_list"] as Any])
+                    }
+                    return array
+                } else {
+                    print("JSON is invalid")
+                }
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        print("no file")
+        return Array()
     }
 
 }
