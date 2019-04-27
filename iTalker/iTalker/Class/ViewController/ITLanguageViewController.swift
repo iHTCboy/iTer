@@ -26,22 +26,7 @@ class ITLanguageViewController: ITBasePushTransitionVC {
     }
     
     // MARK:- 懒加载
-    fileprivate var titles = ["Object-C",
-                              "Swift",
-                              "Java",
-                              "C&C++",
-                              "PHP",
-                              "JavaScript",
-                              "Python",
-                              "SQL",
-                              "C#",
-                              "HTML5",
-                              "Ruby",
-                              "R",
-                              "Linux",
-                              "BigData",
-                              "Algorithm",
-                              "NetworkSecurity"]
+    fileprivate var titles = ITModel.shared.languageArray
     
     fileprivate lazy var pageTitleView: ITPageTitleView = {
         let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavBarH, width: kScreenW, height: kTitleViewH)
@@ -71,6 +56,13 @@ class ITLanguageViewController: ITBasePushTransitionVC {
     }()
     
     var isFirstLaunch = false
+
+    @IBAction func clickedSearchItem(_ sender: Any) {
+        let vc = IHTCSearchViewController()
+        let navi = UINavigationController.init(rootViewController: vc)
+        navi.navigationBar.isHidden = true
+        self.present(navi, animated: true, completion: nil)
+    }
 }
 
 

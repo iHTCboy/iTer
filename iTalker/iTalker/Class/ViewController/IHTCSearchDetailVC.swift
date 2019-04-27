@@ -1,15 +1,15 @@
 //
-//  ITQuestionDetailViewController.swift
+//  IHTCSearchDetailVC.swift
 //  iTalker
 //
-//  Created by HTC on 2017/4/9.
-//  Copyright © 2017年 ihtc.cc @iHTCboy. All rights reserved.
+//  Created by HTC on 2019/4/27.
+//  Copyright © 2019 ihtc.cc @iHTCboy. All rights reserved.
 //
 
 import UIKit
 
-class ITQuestionDetailViewController: ITBasePopTransitionVC {
- 
+class IHTCSearchDetailVC: UIViewController {
+    
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,9 +17,14 @@ class ITQuestionDetailViewController: ITBasePopTransitionVC {
         setUpUI()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = false
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBar.isHidden = false
     }
     
     override func didReceiveMemoryWarning() {
@@ -60,7 +65,7 @@ class ITQuestionDetailViewController: ITBasePopTransitionVC {
 }
 
 
-extension ITQuestionDetailViewController {
+extension IHTCSearchDetailVC {
     fileprivate func setUpUI() {
         view.addSubview(tableView)
         let constraintViews = [
@@ -85,13 +90,13 @@ extension ITQuestionDetailViewController {
         let masterImage = tableView.screenshot ?? UIImage.init(named: "iTalker_TextLogo")!
         let footerImage = IHTCShareFooterView.footerView(image: UIImage.init(named: "iTaler_shareIcon_qrcode")!, title: kShareTitle, subTitle: kShareSubTitle).screenshot
         let image = ImageHandle.slaveImageWithMaster(masterImage: masterImage, headerImage: UIImage(), footerImage: footerImage!)
-        IAppleServiceUtil.shareImage(image: image!, vc: UIApplication.shared.keyWindow!.rootViewController!)
+        IAppleServiceUtil.shareImage(image: image!, vc: UIApplication.shared.keyWindow!.rootViewController!.presentedViewController!)
     }
-
+    
 }
 
 
-extension ITQuestionDetailViewController : UITableViewDelegate, UITableViewDataSource {
+extension IHTCSearchDetailVC : UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -111,10 +116,8 @@ extension ITQuestionDetailViewController : UITableViewDelegate, UITableViewDataS
         cell.langugeLbl.layer.cornerRadius = 3
         cell.langugeLbl.layer.masksToBounds = true
         cell.langugeLbl.backgroundColor = kColorAppBlue
-        cell.knowledgeLbl.layer.cornerRadius = 3
-        cell.knowledgeLbl.layer.masksToBounds = true
         
-        cell.tagLbl.text =  " " + self.title! + "   "
+        cell.tagLbl.text =  " " + questionModle!.title + "   "
         if questionModle!.hasOptionQuestion {
             let text = questionModle!.question + "\n\n  A: " + questionModle!.optionA + "\n  B: " + questionModle!.optionB + "\n  C: " + questionModle!.optionC + "\n  D: " + questionModle!.optionD
             cell.questionLbl.attributedText = getTextAttributedText(text: text, fontSize: 17, color: .darkGray, option: .backwards, styleText: [questionModle!.optionA, questionModle!.optionB, questionModle!.optionC, questionModle!.optionD])
@@ -123,26 +126,16 @@ extension ITQuestionDetailViewController : UITableViewDelegate, UITableViewDataS
             cell.questionLbl.text = questionModle!.question
         }
         
-        if self.title == questionModle?.lauguage {
-            // 判断当前是语言tabbar 也可以用 self.tabBarController?.selectedIndex 判断，但兼容性不好
-            cell.tagLbl.backgroundColor = kColorAppBlue
-            cell.langugeLbl.isHidden = true
-        }
-        else{
-            cell.tagLbl.backgroundColor = kColorAppOrange
-            cell.langugeLbl.isHidden = false
-            cell.langugeLbl.text =   " " + questionModle!.lauguage + "   "            
-        }
-        
-        cell.knowledgeLbl.isHidden = questionModle!.knowledge.count>0 ? false : true
-        cell.knowledgeLbl.text = " " + questionModle!.knowledge + "   "
+        cell.tagLbl.backgroundColor = kColorAppOrange
+        cell.langugeLbl.isHidden = questionModle!.knowledge.count>0 ? false : true
+        cell.langugeLbl.text = " " + questionModle!.knowledge + "   "
         
         self.selectedCell = cell;
         return cell
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      
+        
         let cell: ITQuestionDetailViewCell = tableView.dequeueReusableCell(withIdentifier: "ITQuestionDetailViewCell") as! ITQuestionDetailViewCell
         cell.accessoryType = .none
         cell.selectionStyle = .none
@@ -184,4 +177,3 @@ extension ITQuestionDetailViewController : UITableViewDelegate, UITableViewDataS
         
     }
 }
-

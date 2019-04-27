@@ -21,6 +21,8 @@ class ITQuestionModel: NSObject {
     var optionD = ""
     var optionAnswer = ""
     var hasOptionQuestion = false
+    var title = ""
+    var knowledge = ""
     
     
     init(dictionary: Dictionary<String, Any>) {
@@ -29,6 +31,12 @@ class ITQuestionModel: NSObject {
         typeID = dictionary["typeID"] as! String
         answer = dictionary["answer"] as! String
         question = dictionary["question"] as! String
+        if let tt = dictionary["title"] as? String {
+            title = tt
+        }
+        if let kn = dictionary["knowledge"] as? String {
+            knowledge = kn
+        }
         let typeU = dictionary["type"] as? NSString
         if let typeQ = typeU?.intValue {
             type = dictionary["type"] as! String

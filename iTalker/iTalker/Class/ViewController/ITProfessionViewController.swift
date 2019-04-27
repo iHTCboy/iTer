@@ -25,18 +25,7 @@ class ITProfessionViewController: ITBasePushTransitionVC
     }
     
     // MARK:- 懒加载
-    fileprivate var titles = ["iOS Developer",
-                              "Android Developer",
-                              "Java Developer",
-                              "Web Developer",
-                              "PHP Engineer",
-                              "Python Engineer",
-                              "Game Developer",
-                              "Database Engineer",
-                              "BigData Engineer",
-                              "Linux Engineer",
-                              "Algorithm Engineer",
-                              "Network Engineer"]
+    fileprivate var titles = ITModel.shared.professionArray
     
     fileprivate lazy var pageTitleView: ITPageTitleView = {
         let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavBarH, width: kScreenW, height: kTitleViewH)
@@ -64,6 +53,13 @@ class ITProfessionViewController: ITBasePushTransitionVC
         contentView.delegate = self
         return contentView
         }()
+    
+    @IBAction func clickedSearchItem(_ sender: Any) {
+        let vc = IHTCSearchViewController()
+        let navi = UINavigationController.init(rootViewController: vc)
+        navi.navigationBar.isHidden = true
+        self.present(navi, animated: true, completion: nil)
+    }
     
 }
 

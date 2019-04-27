@@ -24,18 +24,7 @@ class ITCompanyViewController: ITBasePushTransitionVC
     }
     
     // MARK:- 懒加载
-    fileprivate var titles = ["Google",
-                              "Microsoft",
-                              "Baidu",
-                              "Tencent",
-                              "Alibaba",
-                              "JD",
-                              "360",
-                              "NetEase",
-                              "RenRen",
-                              "Xunlei",
-                              "sogou",
-                              "other"]
+    fileprivate var titles = ITModel.shared.companyNameArray
     
     fileprivate lazy var pageTitleView: ITPageTitleView = {
         let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavBarH, width: kScreenW, height: kTitleViewH)
@@ -63,7 +52,15 @@ class ITCompanyViewController: ITBasePushTransitionVC
         contentView.delegate = self
         return contentView
     }()
-
+    
+    
+    @IBAction func clickedSearchItem(_ sender: Any) {
+        let vc = IHTCSearchViewController()
+        let navi = UINavigationController.init(rootViewController: vc)
+        navi.navigationBar.isHidden = true
+        self.present(navi, animated: true, completion: nil)
+    }
+    
 }
     
 // MARK:- 设置 UI

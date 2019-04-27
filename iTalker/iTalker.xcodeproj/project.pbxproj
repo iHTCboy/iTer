@@ -117,7 +117,7 @@
 		6D6E2DCE1EA3BCCC00FBC6F8 /* Baidu-2011研发工程师笔试卷.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E2D881EA3BCCC00FBC6F8 /* Baidu-2011研发工程师笔试卷.json */; };
 		6D6E2DCF1EA3BCCC00FBC6F8 /* Baidu-2012研发工程师笔试卷.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E2D891EA3BCCC00FBC6F8 /* Baidu-2012研发工程师笔试卷.json */; };
 		6D6E2DD01EA3BCCC00FBC6F8 /* Baidu-2013研发工程师笔试卷B.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E2D8A1EA3BCCC00FBC6F8 /* Baidu-2013研发工程师笔试卷B.json */; };
-		6D6E2DD11EA3BCCC00FBC6F8 /* Baidu-2013研发工程师A笔试卷.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E2D8B1EA3BCCC00FBC6F8 /* Baidu-2013研发工程师A笔试卷.json */; };
+		6D6E2DD11EA3BCCC00FBC6F8 /* Baidu-2013研发工程师笔试卷A.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E2D8B1EA3BCCC00FBC6F8 /* Baidu-2013研发工程师笔试卷A.json */; };
 		6D6E2DD21EA3BCCC00FBC6F8 /* Baidu-2015安全研发笔试卷.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E2D8C1EA3BCCC00FBC6F8 /* Baidu-2015安全研发笔试卷.json */; };
 		6D6E2DD31EA3BCCC00FBC6F8 /* Baidu-2015大数据云计算研发笔试卷.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E2D8D1EA3BCCC00FBC6F8 /* Baidu-2015大数据云计算研发笔试卷.json */; };
 		6D6E2DD41EA3BCCC00FBC6F8 /* Baidu-2015前端研发笔试卷.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E2D8E1EA3BCCC00FBC6F8 /* Baidu-2015前端研发笔试卷.json */; };
@@ -181,6 +181,7 @@
 		6DC17B5D1EACA12C00FAA190 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC17B5C1EACA12C00FAA190 /* MessageUI.framework */; };
 		6DD090D522744575000439B7 /* IHTCSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD090D322744575000439B7 /* IHTCSearchViewController.swift */; };
 		6DD090D622744575000439B7 /* IHTCSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD090D422744575000439B7 /* IHTCSearchViewController.xib */; };
+		6DD090D822746E44000439B7 /* IHTCSearchDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD090D722746E44000439B7 /* IHTCSearchDetailVC.swift */; };
 		6DE690C61E99155C00351BF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE690C41E99155C00351BF2 /* Main.storyboard */; };
 		6DE690C81E99155C00351BF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DE690C71E99155C00351BF2 /* Assets.xcassets */; };
 		6DE690CB1E99155C00351BF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE690C91E99155C00351BF2 /* LaunchScreen.storyboard */; };
@@ -338,7 +339,7 @@
 		6D6E2D881EA3BCCC00FBC6F8 /* Baidu-2011研发工程师笔试卷.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Baidu-2011研发工程师笔试卷.json"; sourceTree = "<group>"; };
 		6D6E2D891EA3BCCC00FBC6F8 /* Baidu-2012研发工程师笔试卷.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Baidu-2012研发工程师笔试卷.json"; sourceTree = "<group>"; };
 		6D6E2D8A1EA3BCCC00FBC6F8 /* Baidu-2013研发工程师笔试卷B.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Baidu-2013研发工程师笔试卷B.json"; sourceTree = "<group>"; };
-		6D6E2D8B1EA3BCCC00FBC6F8 /* Baidu-2013研发工程师A笔试卷.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Baidu-2013研发工程师A笔试卷.json"; sourceTree = "<group>"; };
+		6D6E2D8B1EA3BCCC00FBC6F8 /* Baidu-2013研发工程师笔试卷A.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Baidu-2013研发工程师笔试卷A.json"; sourceTree = "<group>"; };
 		6D6E2D8C1EA3BCCC00FBC6F8 /* Baidu-2015安全研发笔试卷.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Baidu-2015安全研发笔试卷.json"; sourceTree = "<group>"; };
 		6D6E2D8D1EA3BCCC00FBC6F8 /* Baidu-2015大数据云计算研发笔试卷.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Baidu-2015大数据云计算研发笔试卷.json"; sourceTree = "<group>"; };
 		6D6E2D8E1EA3BCCC00FBC6F8 /* Baidu-2015前端研发笔试卷.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Baidu-2015前端研发笔试卷.json"; sourceTree = "<group>"; };
@@ -403,6 +404,7 @@
 		6DC17B5E1EACA13200FAA190 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
 		6DD090D322744575000439B7 /* IHTCSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHTCSearchViewController.swift; sourceTree = "<group>"; };
 		6DD090D422744575000439B7 /* IHTCSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IHTCSearchViewController.xib; sourceTree = "<group>"; };
+		6DD090D722746E44000439B7 /* IHTCSearchDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHTCSearchDetailVC.swift; sourceTree = "<group>"; };
 		6DE690BD1E99155C00351BF2 /* iTalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DE690C51E99155C00351BF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DE690C71E99155C00351BF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -667,7 +669,7 @@
 				6D6E2D881EA3BCCC00FBC6F8 /* Baidu-2011研发工程师笔试卷.json */,
 				6D6E2D891EA3BCCC00FBC6F8 /* Baidu-2012研发工程师笔试卷.json */,
 				6D6E2D8A1EA3BCCC00FBC6F8 /* Baidu-2013研发工程师笔试卷B.json */,
-				6D6E2D8B1EA3BCCC00FBC6F8 /* Baidu-2013研发工程师A笔试卷.json */,
+				6D6E2D8B1EA3BCCC00FBC6F8 /* Baidu-2013研发工程师笔试卷A.json */,
 				6D6E2D8C1EA3BCCC00FBC6F8 /* Baidu-2015安全研发笔试卷.json */,
 				6D6E2D8D1EA3BCCC00FBC6F8 /* Baidu-2015大数据云计算研发笔试卷.json */,
 				6D6E2D8E1EA3BCCC00FBC6F8 /* Baidu-2015前端研发笔试卷.json */,
@@ -825,6 +827,7 @@
 				6D3B54821E9A43B200FF7F36 /* ITQuestionDetailViewController.swift */,
 				6DD090D322744575000439B7 /* IHTCSearchViewController.swift */,
 				6DD090D422744575000439B7 /* IHTCSearchViewController.xib */,
+				6DD090D722746E44000439B7 /* IHTCSearchDetailVC.swift */,
 				6DB61660226E14BA00E4EEDF /* ITAdvanceLearningViewController.swift */,
 				6DBD66C022709DAC008363F0 /* ITAdvancelDetailViewController.swift */,
 				6D046AC81EAAEED4002A653D /* ITProgrammerVC.swift */,
@@ -1106,7 +1109,7 @@
 				6D2C0FBA2157FC1700C37783 /* README.md in Resources */,
 				6D3B549A1E9A850400FF7F36 /* language_tabbar_selected@2x.png in Resources */,
 				6D6E2DFD1EA3BCCC00FBC6F8 /* Xunlei-2014C++研发笔试卷C.json in Resources */,
-				6D6E2DD11EA3BCCC00FBC6F8 /* Baidu-2013研发工程师A笔试卷.json in Resources */,
+				6D6E2DD11EA3BCCC00FBC6F8 /* Baidu-2013研发工程师笔试卷A.json in Resources */,
 				6D6E2DBC1EA3BCCC00FBC6F8 /* 360-2016Java研发工程师内推笔试题.json in Resources */,
 				6DD090D622744575000439B7 /* IHTCSearchViewController.xib in Resources */,
 				6D0994321EA3C43000B5EA5C /* company_tabbar_normal@2x.png in Resources */,
@@ -1239,6 +1242,7 @@
 				6D3BA25C1EACA59500D15753 /* ITAboutAppVC.swift in Sources */,
 				6D3B547C1E9A416100FF7F36 /* ITPageTitleView.swift in Sources */,
 				6DECE67B1EA3150C00B2AE3B /* ITScalePopTransition.swift in Sources */,
+				6DD090D822746E44000439B7 /* IHTCSearchDetailVC.swift in Sources */,
 				6DE691371E9925DF00351BF2 /* ITProfessionViewController.swift in Sources */,
 				6D3B54811E9A439C00FF7F36 /* ITQuestionListViewController.swift in Sources */,
 				6DBD66C72270AD4B008363F0 /* IAppleServiceUtil.swift in Sources */,
@@ -1390,7 +1394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1444,7 +1448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1461,7 +1465,7 @@
 				DEVELOPMENT_TEAM = 28PV6G96R7;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iTalker/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1485,7 +1489,7 @@
 				DEVELOPMENT_TEAM = 28PV6G96R7;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iTalker/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
