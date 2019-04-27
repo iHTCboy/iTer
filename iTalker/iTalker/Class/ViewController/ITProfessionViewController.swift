@@ -86,7 +86,7 @@ extension ITProfessionViewController {
 extension ITProfessionViewController: ITPageTitleViewDelegate {
     func pageTitleView(pageTitleView: ITPageTitleView, didSelectedIndex index: Int) {
         pageContentView.scrollToIndex(index: index)
-        self.selectTitleIndex = index
+        selectTitleIndex = index
     }
 }
 
@@ -94,7 +94,7 @@ extension ITProfessionViewController: ITPageTitleViewDelegate {
 extension ITProfessionViewController: ITPageContentViewDelegate {
     func pageContentView(pageContentView: ITPageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
         pageTitleView.setTitleWithProgerss(sourceIndex: sourceIndex, targetIndex: targetIndex, progress: progress)
-        self.selectTitleIndex = targetIndex
+        selectTitleIndex = targetIndex
     }
 }
 

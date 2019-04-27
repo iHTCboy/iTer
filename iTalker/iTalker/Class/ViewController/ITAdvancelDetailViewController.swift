@@ -12,6 +12,7 @@ import UIKit
 enum ITAdvancelType {
     case Objc
     case NSHipster
+    case PracticeProject
 }
 
 class ITAdvancelDetailViewController: UIViewController {
@@ -116,6 +117,8 @@ extension ITAdvancelDetailViewController
                 break
             case .NSHipster:
                 dataArray = nshipsterArray
+                break
+            case .PracticeProject:
                 break
         }
     }

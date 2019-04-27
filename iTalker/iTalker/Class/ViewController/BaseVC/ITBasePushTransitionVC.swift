@@ -25,7 +25,7 @@ class ITBasePushTransitionVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    var selectTitleIndex = 0
+    var selectTitleIndex = 0 // 选中的下标
 }
 
 
