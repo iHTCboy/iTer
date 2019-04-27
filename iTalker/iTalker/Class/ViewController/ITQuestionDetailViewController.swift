@@ -44,6 +44,19 @@ class ITQuestionDetailViewController: ITBasePopTransitionVC {
         tableView.dataSource = self;
         return tableView
     }()
+    
+    @available(iOS 9.0, *)
+    lazy var previewActions: [UIPreviewActionItem] = {
+        let b = UIPreviewAction(title: "分享", style: .default, handler: { (action, vc) in
+            self.sharedPageView(item: action)
+        })
+        return [b]
+    }()
+    
+    @available(iOS 9.0, *)
+    override var previewActionItems: [UIPreviewActionItem] {
+        return previewActions
+    }
 }
 
 
