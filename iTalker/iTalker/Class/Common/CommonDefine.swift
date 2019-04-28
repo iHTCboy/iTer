@@ -17,7 +17,7 @@ let kReviewAction = "&action=write-review"
 let kGithubURL = "https://github.com/iHTCboy/iTalker"
 let kLicenseURL = "https://raw.githubusercontent.com/iHTCboy/iTalker/master/LICENSE"
 let kiHTCboyURL = "https://ihtcboy.com"
-let kEmail = "ihetiancong@qq.com"
+let kEmail = "ihetiancong@gmail.com"
 let kShareTitle = "长按识别二维码下载"
 let kShareSubTitle = "10000+ IT企业题库，完名企梦！"
 

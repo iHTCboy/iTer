@@ -275,8 +275,8 @@ extension IHTCSearchViewController : UITableViewDelegate, UITableViewDataSource 
         cell.tagLbl.text =  " " + questionModle.title + "   "
         
         if questionModle.hasOptionQuestion {
-            let text = questionModle.question + "\n\n  A: " + questionModle.optionA + "\n  B: " + questionModle.optionB + "\n  C: " + questionModle.optionC + "\n  D: " + questionModle.optionD
-            cell.questionLbl.attributedText = getTextAttributedText(text: text, fontSize: 17, color: .darkGray, option: .backwards,styleText: [questionModle.optionA, questionModle.optionB, questionModle.optionC, questionModle.optionD])
+            let text = questionModle.question + "\n\n  A: " + questionModle.optionA + " \n  B: " + questionModle.optionB + " \n  C: " + questionModle.optionC + " \n  D: " + questionModle.optionD + " "
+            cell.questionLbl.attributedText = getTextAttributedText(text: text, fontSize: 17, color: .darkGray, option: .backwards,styleText: [" \(questionModle.optionA) ", " \(questionModle.optionB) ", " \(questionModle.optionC) ", " \(questionModle.optionD) "])
         }
         else {
             cell.questionLbl.text = questionModle.question
@@ -326,7 +326,7 @@ extension IHTCSearchViewController: UIViewControllerPreviewingDelegate {
         
         let question = self.listModel.result[indexPath.row]
         let questionVC = IHTCSearchDetailVC()
-        questionVC.title = self.title
+        questionVC.title = self.searchBar.text
         questionVC.questionModle = question
         questionVC.hidesBottomBarWhenPushed = true
         

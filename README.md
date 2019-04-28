@@ -21,3 +21,6 @@ iTer - IT learning, job interview essential, IT interview basic exam questions g
 ![](screenshot/04.png)
 ![](screenshot/05.png)
 ![](screenshot/06.png)
+![](screenshot/07.png)
+![](screenshot/08.png)
+![](screenshot/09.png)

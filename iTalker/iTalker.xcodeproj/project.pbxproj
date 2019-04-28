@@ -44,8 +44,6 @@
 		6D0994341EA3C43000B5EA5C /* company_tabbar_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D0994301EA3C43000B5EA5C /* company_tabbar_selected@2x.png */; };
 		6D0994351EA3C43000B5EA5C /* company_tabbar_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D0994311EA3C43000B5EA5C /* company_tabbar_selected@3x.png */; };
 		6D0CB6DF1E9929FB00078553 /* ITLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0CB6DE1E9929FB00078553 /* ITLanguageViewController.swift */; };
-		6D2C0FBA2157FC1700C37783 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6D2C0FB82157FC1600C37783 /* README.md */; };
-		6D2C0FBB2157FC1700C37783 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 6D2C0FB92157FC1600C37783 /* LICENSE */; };
 		6D3B547B1E9A416100FF7F36 /* ITPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B54791E9A416100FF7F36 /* ITPageContentView.swift */; };
 		6D3B547C1E9A416100FF7F36 /* ITPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B547A1E9A416100FF7F36 /* ITPageTitleView.swift */; };
 		6D3B547F1E9A423C00FF7F36 /* CommonDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B547E1E9A423C00FF7F36 /* CommonDefine.swift */; };
@@ -192,6 +190,7 @@
 		6DE690E11E99155D00351BF2 /* iTalkerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE690E01E99155D00351BF2 /* iTalkerUITests.swift */; };
 		6DE691301E99202400351BF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE6912B1E99202400351BF2 /* AppDelegate.swift */; };
 		6DE691371E9925DF00351BF2 /* ITProfessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE691361E9925DF00351BF2 /* ITProfessionViewController.swift */; };
+		6DE72AA022751C7900C82A5D /* Copyright.json in Resources */ = {isa = PBXBuildFile; fileRef = 6DE72A9F22751C7900C82A5D /* Copyright.json */; };
 		6DECE6791EA314FA00B2AE3B /* ITScalePushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DECE6781EA314FA00B2AE3B /* ITScalePushTransition.swift */; };
 		6DECE67B1EA3150C00B2AE3B /* ITScalePopTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DECE67A1EA3150C00B2AE3B /* ITScalePopTransition.swift */; };
 		6DECE67D1EA3573C00B2AE3B /* ITBasePushTransitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DECE67C1EA3573C00B2AE3B /* ITBasePushTransitionVC.swift */; };
@@ -424,6 +423,7 @@
 		6DE690E21E99155D00351BF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DE6912B1E99202400351BF2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DE691361E9925DF00351BF2 /* ITProfessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITProfessionViewController.swift; sourceTree = "<group>"; };
+		6DE72A9F22751C7900C82A5D /* Copyright.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Copyright.json; sourceTree = "<group>"; };
 		6DECE6781EA314FA00B2AE3B /* ITScalePushTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITScalePushTransition.swift; sourceTree = "<group>"; };
 		6DECE67A1EA3150C00B2AE3B /* ITScalePopTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITScalePopTransition.swift; sourceTree = "<group>"; };
 		6DECE67C1EA3573C00B2AE3B /* ITBasePushTransitionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITBasePushTransitionVC.swift; sourceTree = "<group>"; };
@@ -857,6 +857,7 @@
 		6DE691331E99207E00351BF2 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				6DE72A9F22751C7900C82A5D /* Copyright.json */,
 				6DD090DD22749AAE000439B7 /* Awesome.json */,
 				6DD090DB227498DE000439B7 /* Gitbook.json */,
 				6DD090D922749000000439B7 /* PracticeProject.json */,
@@ -1045,6 +1046,7 @@
 				6D6E2DF01EA3BCCC00FBC6F8 /* Tencent-2015春招测试工程师练习卷.json in Resources */,
 				6D6E2DDC1EA3BCCC00FBC6F8 /* JD-2015校园招聘技术类笔试题.json in Resources */,
 				6D0994341EA3C43000B5EA5C /* company_tabbar_selected@2x.png in Resources */,
+				6DE72AA022751C7900C82A5D /* Copyright.json in Resources */,
 				6D6E2DC71EA3BCCC00FBC6F8 /* Alibaba-2016数据挖掘工程师笔试.json in Resources */,
 				6D6E2DD41EA3BCCC00FBC6F8 /* Baidu-2015前端研发笔试卷.json in Resources */,
 				6DC17B591EAC991200FAA190 /* iTaler_shareIcon.png in Resources */,
@@ -1061,7 +1063,6 @@
 				6D4EB07C1EAAE7F80063D5A1 /* italkerman_gray@3x.png in Resources */,
 				6D6E2DCF1EA3BCCC00FBC6F8 /* Baidu-2012研发工程师笔试卷.json in Resources */,
 				6D6E2DC31EA3BCCC00FBC6F8 /* Alibaba-2015研发工程师A笔试卷.json in Resources */,
-				6D2C0FBB2157FC1700C37783 /* LICENSE in Resources */,
 				6D6E2DC01EA3BCCC00FBC6F8 /* Alibaba-2015实习生笔试真题.json in Resources */,
 				6D6E2DB81EA3BCCC00FBC6F8 /* 360-2014校招笔试卷.json in Resources */,
 				6D3B54931E9A841000FF7F36 /* Engineer_normal@2x.png in Resources */,
@@ -1118,7 +1119,6 @@
 				6D6E2DBA1EA3BCCC00FBC6F8 /* 360-2015校招研发在线笔试题.json in Resources */,
 				6D6E2DCA1EA3BCCC00FBC6F8 /* Alibaba-2016研发工程师笔试选择题（四）.json in Resources */,
 				6D6E2D701EA3961400FBC6F8 /* NetworkSecurity.json in Resources */,
-				6D2C0FBA2157FC1700C37783 /* README.md in Resources */,
 				6D3B549A1E9A850400FF7F36 /* language_tabbar_selected@2x.png in Resources */,
 				6D6E2DFD1EA3BCCC00FBC6F8 /* Xunlei-2014C++研发笔试卷C.json in Resources */,
 				6D6E2DD11EA3BCCC00FBC6F8 /* Baidu-2013研发工程师笔试卷A.json in Resources */,

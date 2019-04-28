@@ -35,6 +35,10 @@ class TableHeaderView: UIView {
         let hview = TableHeaderView.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: height))
         hview.titleLbl.text = title
         hview.subtitleLbl.text = subtitle
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            hview.titleLbl.font = UIFont.systemFont(ofSize: 17)
+            hview.subtitleLbl.font = UIFont.systemFont(ofSize: 14)
+        }
         return hview
     }
 

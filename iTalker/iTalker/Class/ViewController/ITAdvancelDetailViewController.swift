@@ -15,6 +15,7 @@ enum ITAdvancelType {
     case Awesome
     case PracticeProject
     case Gitbook
+    case Copyright
 }
 
 class ITAdvancelDetailViewController: UIViewController {
@@ -36,7 +37,7 @@ class ITAdvancelDetailViewController: UIViewController {
     
     // MARK:- 懒加载
     lazy var tableView: UITableView = {
-        var tableView = UITableView.init(frame: CGRect.zero, style: .grouped)
+        var tableView = UITableView.init(frame: CGRect.zero, style: .plain)
         tableView.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 20, right: 0)
         tableView.estimatedRowHeight = 55
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -126,6 +127,8 @@ extension ITAdvancelDetailViewController
             break
         case .Awesome:
             dataArray = getJsonData(title: "Awesome")
+        case .Copyright:
+            dataArray = getJsonData(title: "Copyright")
         }
     }
 
@@ -175,7 +178,7 @@ extension ITAdvancelDetailViewController : UITableViewDelegate, UITableViewDataS
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 60
+        return DeviceType.IS_IPAD ? 65 : 55
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -192,9 +195,10 @@ extension ITAdvancelDetailViewController : UITableViewDelegate, UITableViewDataS
         var cell = tableView.dequeueReusableCell(withIdentifier: "ITAdvanceLearningViewCell")
         if (cell  == nil) {
             cell = UITableViewCell.init(style: .value1, reuseIdentifier: "ITAdvanceLearningViewCell")
-            cell!.accessoryType = .disclosureIndicator
-            cell!.selectedBackgroundView = UIView.init(frame: cell!.frame)
-            cell!.selectedBackgroundView?.backgroundColor = kColorAppOrange.withAlphaComponent(0.7)
+            cell?.accessoryType = .disclosureIndicator
+            cell?.backgroundColor = .white
+            cell?.selectedBackgroundView = UIView.init(frame: cell!.frame)
+            cell?.selectedBackgroundView?.backgroundColor = kColorAppOrange.withAlphaComponent(0.7)
             cell?.textLabel?.font = UIFont.systemFont(ofSize: DeviceType.IS_IPAD ? 20:16.5)
             cell?.detailTextLabel?.font = UIFont.systemFont(ofSize: DeviceType.IS_IPAD ? 16:12.5)
             cell?.detailTextLabel?.sizeToFit()

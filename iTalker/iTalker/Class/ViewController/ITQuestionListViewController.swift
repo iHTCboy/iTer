@@ -124,6 +124,7 @@ extension ITQuestionListViewController {
                     // json is a dictionary
                     
                     let model = ITModel.init(dictionary: object, language: title)
+                    model.result.shuffle()
                     return model
                     
                 } else {
@@ -168,8 +169,8 @@ extension ITQuestionListViewController : UITableViewDelegate, UITableViewDataSou
         cell.tagLbl.text =  " " + self.title! + "   "
         
         if questionModle.hasOptionQuestion {
-            let text = questionModle.question + "\n\n  A: " + questionModle.optionA + "\n  B: " + questionModle.optionB + "\n  C: " + questionModle.optionC + "\n  D: " + questionModle.optionD
-            cell.questionLbl.attributedText = getTextAttributedText(text: text, fontSize: 17, color: .darkGray, option: .backwards,styleText: [questionModle.optionA, questionModle.optionB, questionModle.optionC, questionModle.optionD])
+            let text = questionModle.question + "\n\n  A: " + questionModle.optionA + " \n  B: " + questionModle.optionB + " \n  C: " + questionModle.optionC + " \n  D: " + questionModle.optionD + " "
+            cell.questionLbl.attributedText = getTextAttributedText(text: text, fontSize: 17, color: .darkGray, option: .backwards,styleText: [" \(questionModle.optionA) ", " \(questionModle.optionB) ", " \(questionModle.optionC) ", " \(questionModle.optionD) "])
         }
         else {
             cell.questionLbl.text = questionModle.question
