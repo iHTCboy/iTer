@@ -35,7 +35,7 @@ class ITAdvanceLearningViewController: UIViewController {
     
     
     lazy var titleArray: Array<String> = {
-        return ["算法进阶", "iOS进阶", "学习资源", "练手项目","题目库"]
+        return ["算法进阶", "iOS进阶", "学习资源", "练手项目", "有趣项目", "题目库"]
     }()
     
     lazy var titles: [String : String] = {
@@ -43,7 +43,8 @@ class ITAdvanceLearningViewController: UIViewController {
                 "1": "Objc.io 期刊:关于iOS和macOS开发最佳实践和先进技术,NSHipster:关注被忽略的 Objective-C、Swift 和 Cocoa 特性",
                 "2": "Awesome:历上最全的收集学习、工具、书籍等指南,Gitbook:免费在线阅读电子书",
                 "3": "动手实践:GitHub开源最火的项目",
-                "4": "图片题库:真实公司面试题目"
+                "4": "OneMindMap:一张思维导图学习一个知识点",
+                "5": "图片题库:真实公司面试题目"
                 ] as [String : String]
     }()
     
@@ -175,13 +176,17 @@ extension ITAdvanceLearningViewController : UITableViewDelegate, UITableViewData
             break
         case 4:
             if row == 0 {
+                IAppleServiceUtil.openWebView(url: kOneMindMapURL, tintColor: kColorAppBlue, vc: self)
+            }
+            break
+        case 5:
+            if row == 0 {
                 let vc = NTWaterfallViewController.init(collectionViewLayout:CHTCollectionViewWaterfallLayout())
                 let nav = NTNavigationController.init(rootViewController: vc)
                 vc.title = "实拍面试题目"
                 self.present(nav, animated: true, completion: nil);
             }
             break
-            
         default: break
             
         }

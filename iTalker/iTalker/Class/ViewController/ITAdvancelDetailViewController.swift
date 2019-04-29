@@ -16,6 +16,7 @@ enum ITAdvancelType {
     case PracticeProject
     case Gitbook
     case Copyright
+    case iHTCboyApp
 }
 
 class ITAdvancelDetailViewController: UIViewController {
@@ -129,6 +130,8 @@ extension ITAdvancelDetailViewController
             dataArray = getJsonData(title: "Awesome")
         case .Copyright:
             dataArray = getJsonData(title: "Copyright")
+        case .iHTCboyApp:
+            dataArray = getJsonData(title: "iHTCboyApp")
         }
     }
 

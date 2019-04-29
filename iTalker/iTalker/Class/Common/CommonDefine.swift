@@ -16,6 +16,7 @@ let kAppDownloadURl = "https://itunes.apple.com/us/app/italker-it/id1224934068?l
 let kReviewAction = "&action=write-review"
 let kGithubURL = "https://github.com/iHTCboy/iTalker"
 let kLicenseURL = "https://raw.githubusercontent.com/iHTCboy/iTalker/master/LICENSE"
+let kOneMindMapURL = "https://github.com/iHTCboy/OneMindMap/blob/master/README.md"
 let kiHTCboyURL = "https://ihtcboy.com"
 let kEmail = "ihetiancong@gmail.com"
 let kShareTitle = "长按识别二维码下载"

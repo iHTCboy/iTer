@@ -161,6 +161,7 @@
 		6D6E2DFC1EA3BCCC00FBC6F8 /* Xunlei-2014C++笔试卷B.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E2DB61EA3BCCC00FBC6F8 /* Xunlei-2014C++笔试卷B.json */; };
 		6D6E2DFD1EA3BCCC00FBC6F8 /* Xunlei-2014C++研发笔试卷C.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E2DB71EA3BCCC00FBC6F8 /* Xunlei-2014C++研发笔试卷C.json */; };
 		6D6E2DFF1EA3C13100FBC6F8 /* ITCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E2DFE1EA3C13100FBC6F8 /* ITCompanyViewController.swift */; };
+		6D79466A227742D600887F2D /* iHTCboyApp.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D794669227742D600887F2D /* iHTCboyApp.json */; };
 		6DA0048F1E9C55AE001638CB /* iTalker_LogoBgImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DA0048D1E9C55AE001638CB /* iTalker_LogoBgImage.png */; };
 		6DA004901E9C55AE001638CB /* iTalker_TextLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DA0048E1E9C55AE001638CB /* iTalker_TextLogo.png */; };
 		6DB6165E226E147E00E4EEDF /* advance_learning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DB6165C226E147D00E4EEDF /* advance_learning@2x.png */; };
@@ -387,6 +388,7 @@
 		6D6E2DB61EA3BCCC00FBC6F8 /* Xunlei-2014C++笔试卷B.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Xunlei-2014C++笔试卷B.json"; sourceTree = "<group>"; };
 		6D6E2DB71EA3BCCC00FBC6F8 /* Xunlei-2014C++研发笔试卷C.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Xunlei-2014C++研发笔试卷C.json"; sourceTree = "<group>"; };
 		6D6E2DFE1EA3C13100FBC6F8 /* ITCompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITCompanyViewController.swift; sourceTree = "<group>"; };
+		6D794669227742D600887F2D /* iHTCboyApp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = iHTCboyApp.json; sourceTree = "<group>"; };
 		6DA0048D1E9C55AE001638CB /* iTalker_LogoBgImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTalker_LogoBgImage.png; sourceTree = "<group>"; };
 		6DA0048E1E9C55AE001638CB /* iTalker_TextLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTalker_TextLogo.png; sourceTree = "<group>"; };
 		6DB6165C226E147D00E4EEDF /* advance_learning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "advance_learning@2x.png"; sourceTree = "<group>"; };
@@ -857,6 +859,7 @@
 		6DE691331E99207E00351BF2 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				6D794669227742D600887F2D /* iHTCboyApp.json */,
 				6DE72A9F22751C7900C82A5D /* Copyright.json */,
 				6DD090DD22749AAE000439B7 /* Awesome.json */,
 				6DD090DB227498DE000439B7 /* Gitbook.json */,
@@ -1058,6 +1061,7 @@
 				6D6E2DE91EA3BCCC00FBC6F8 /* RenRen-2015研发笔试卷B.json in Resources */,
 				6D0838651E99F6AE00B2D807 /* Java.json in Resources */,
 				6D6E2DD31EA3BCCC00FBC6F8 /* Baidu-2015大数据云计算研发笔试卷.json in Resources */,
+				6D79466A227742D600887F2D /* iHTCboyApp.json in Resources */,
 				6D6E2DDE1EA3BCCC00FBC6F8 /* Microsoft-研发工程师笔试卷A.json in Resources */,
 				6D3B54961E9A841000FF7F36 /* Engineer_selected@2x.png in Resources */,
 				6D4EB07C1EAAE7F80063D5A1 /* italkerman_gray@3x.png in Resources */,
