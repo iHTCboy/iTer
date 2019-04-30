@@ -309,11 +309,6 @@
 		6D4EB0761EAAE7F80063D5A1 /* iTalkerman_blue@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTalkerman_blue@3x.png"; sourceTree = "<group>"; };
 		6D4EB0771EAAE7F80063D5A1 /* italkerman_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "italkerman_gray@2x.png"; sourceTree = "<group>"; };
 		6D4EB0781EAAE7F80063D5A1 /* italkerman_gray@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "italkerman_gray@3x.png"; sourceTree = "<group>"; };
-		6D4EB0851EAAEBAD0063D5A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		6D4EB0871EAAEBBF0063D5A1 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
-		6D4EB0891EAAEBC40063D5A1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
-		6D4EB08B1EAAEBFF0063D5A1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
-		6D4EB08D1EAAEC0A0063D5A1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		6D6E2B3C1EBCC531001799DD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		6D6E2D6D1EA3961400FBC6F8 /* Android.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Android.json; sourceTree = "<group>"; };
 		6D6E2D6E1EA3961400FBC6F8 /* NetworkSecurity.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NetworkSecurity.json; sourceTree = "<group>"; };
@@ -391,6 +386,11 @@
 		6D794669227742D600887F2D /* iHTCboyApp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = iHTCboyApp.json; sourceTree = "<group>"; };
 		6DA0048D1E9C55AE001638CB /* iTalker_LogoBgImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTalker_LogoBgImage.png; sourceTree = "<group>"; };
 		6DA0048E1E9C55AE001638CB /* iTalker_TextLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTalker_TextLogo.png; sourceTree = "<group>"; };
+		6DB1AF89227895120051A288 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		6DB1AF8B227895320051A288 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		6DB1AF8D227895380051A288 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		6DB1AF8F2278953E0051A288 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		6DB1AF91227895450051A288 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		6DB6165C226E147D00E4EEDF /* advance_learning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "advance_learning@2x.png"; sourceTree = "<group>"; };
 		6DB6165D226E147E00E4EEDF /* advance_learning@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "advance_learning@3x.png"; sourceTree = "<group>"; };
 		6DB61660226E14BA00E4EEDF /* ITAdvanceLearningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITAdvanceLearningViewController.swift; sourceTree = "<group>"; };
@@ -1336,11 +1336,11 @@
 			isa = PBXVariantGroup;
 			children = (
 				6DE690C51E99155C00351BF2 /* Base */,
-				6D4EB0851EAAEBAD0063D5A1 /* en */,
-				6D4EB0871EAAEBBF0063D5A1 /* zh-Hant */,
-				6D4EB0891EAAEBC40063D5A1 /* ja */,
-				6D4EB08B1EAAEBFF0063D5A1 /* ko */,
-				6D4EB08D1EAAEC0A0063D5A1 /* zh-Hans */,
+				6DB1AF89227895120051A288 /* zh-Hans */,
+				6DB1AF8B227895320051A288 /* ko */,
+				6DB1AF8D227895380051A288 /* ja */,
+				6DB1AF8F2278953E0051A288 /* zh-Hant */,
+				6DB1AF91227895450051A288 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

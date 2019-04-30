@@ -22,3 +22,9 @@
 
 /* Class = "UINavigationItem"; title = "iTalker"; ObjectID = "v8D-Zh-aQr"; */
 "v8D-Zh-aQr.title" = "iTer";
+
+/* Class = "UINavigationItem"; title = "iTer"; ObjectID = "QWA-cA-YQX"; */
+"QWA-cA-YQX.title" = "iTer";
+
+/* Class = "UITabBarItem"; title = "进阶"; ObjectID = "kOn-sA-loA"; */
+"kOn-sA-loA.title" = "一阶に";
