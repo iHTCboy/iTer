@@ -1,6 +1,7 @@
 [
   {
     "issue_title": "Platforms",
+    "issue_subtitle": "开发平台",
     "issue_list": [
       {
         "title": "Node.js",
@@ -111,6 +112,7 @@
   },
   {
     "issue_title": "Programming Languages",
+    "issue_subtitle": "编程语言",
     "issue_list": [
       {
         "title": "JavaScript",
@@ -311,6 +313,7 @@
   },
   {
     "issue_title": "Front-End Development",
+    "issue_subtitle": "前端开发",
     "issue_list": [
       {
         "title": "ES6 Tools",
@@ -586,6 +589,7 @@
   },
   {
     "issue_title": "Back-End Development",
+    "issue_subtitle": "后端开发",
     "issue_list": [
       {
         "title": "Django",
@@ -686,6 +690,7 @@
   },
   {
     "issue_title": "Computer Science",
+    "issue_subtitle": "计算机科学",
     "issue_list": [
       {
         "title": "University Courses",
@@ -756,6 +761,7 @@
   },
   {
     "issue_title": "Big Data",
+    "issue_subtitle": "大数据",
     "issue_list": [
       {
         "title": "Big Data",
@@ -786,6 +792,7 @@
   },
   {
     "issue_title": "Theory",
+    "issue_subtitle": "理论",
     "issue_list": [
       {
         "title": "Papers We Love",
@@ -831,6 +838,7 @@
   },
   {
     "issue_title": "Books",
+    "issue_subtitle": "书籍",
     "issue_list": [
       {
         "title": "Free Programming Books",
@@ -871,6 +879,7 @@
   },
   {
     "issue_title": "Editors",
+    "issue_subtitle": "编辑器",
     "issue_list": [
       {
         "title": "Sublime Text",
@@ -883,9 +892,9 @@
         "author": "github"
       },
       {
-        "title": "Emacs",
-        "url": "https://github.com/emacs-tw/awesome-emacs",
-        "author": "github"
+          "title": "Visual Studio Code",
+          "url": "https://github.com/viatsko/awesome-vscode",
+          "author": "github"
       },
       {
         "title": "Atom",
@@ -893,14 +902,15 @@
         "author": "github"
       },
       {
-        "title": "Visual Studio Code",
-        "url": "https://github.com/viatsko/awesome-vscode",
-        "author": "github"
+          "title": "Emacs",
+          "url": "https://github.com/emacs-tw/awesome-emacs",
+          "author": "github"
       }
     ]
   },
   {
     "issue_title": "Gaming",
+    "issue_subtitle": "游戏",
     "issue_list": [
       {
         "title": "Game Development",
@@ -956,6 +966,7 @@
   },
   {
     "issue_title": "Development Environment",
+    "issue_subtitle": "开发环境",
     "issue_list": [
       {
         "title": "Quick Look Plugins",
@@ -1041,6 +1052,7 @@
   },
   {
     "issue_title": "Entertainment",
+    "issue_subtitle": "娱乐",
     "issue_list": [
       {
         "title": "Science Fiction",
@@ -1066,6 +1078,7 @@
   },
   {
     "issue_title": "Databases",
+    "issue_subtitle": "数据库",
     "issue_list": [
       {
         "title": "Database",
@@ -1121,6 +1134,7 @@
   },
   {
     "issue_title": "Media",
+    "issue_subtitle": "媒体",
     "issue_list": [
       {
         "title": "Creative Commons Media",
@@ -1171,6 +1185,7 @@
   },
   {
     "issue_title": "Learn",
+    "issue_subtitle": "学习",
     "issue_list": [
       {
         "title": "CLI Workshoppers",
@@ -1221,6 +1236,7 @@
   },
   {
     "issue_title": "Security",
+    "issue_subtitle": "安全",
     "issue_list": [
       {
         "title": "Application Security",
@@ -1276,6 +1292,7 @@
   },
   {
     "issue_title": "Content Management Systems",
+    "issue_subtitle": "内容管理系统",
     "issue_list": [
       {
         "title": "Umbraco",
@@ -1306,6 +1323,7 @@
   },
   {
     "issue_title": "Hardware",
+    "issue_subtitle": "硬件",
     "issue_list": [
       {
         "title": "Robotics",
@@ -1336,6 +1354,7 @@
   },
   {
     "issue_title": "Business",
+    "issue_subtitle": "商业",
     "issue_list": [
       {
         "title": "Open Companies",
@@ -1356,6 +1375,7 @@
   },
   {
     "issue_title": "Work",
+    "issue_subtitle": "工作",
     "issue_list": [
       {
         "title": "Slack",
@@ -1386,6 +1406,7 @@
   },
   {
     "issue_title": "Networking",
+    "issue_subtitle": "网络",
     "issue_list": [
       {
         "title": "Software-Defined Networking",
@@ -1411,6 +1432,7 @@
   },
   {
     "issue_title": "Miscellaneous",
+    "issue_subtitle": "杂项",
     "issue_list": [
       {
         "title": "JSON",

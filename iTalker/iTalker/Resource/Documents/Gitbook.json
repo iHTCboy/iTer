@@ -1,6 +1,7 @@
 [
   {
     "issue_title": "\u64cd\u4f5c\u7cfb\u7edf",
+    "issue_subtitle": "Operating System",
     "issue_list": [
       {
         "title": "\u5f00\u6e90\u4e16\u754c\u65c5\u884c\u624b\u518c",
@@ -106,6 +107,7 @@
   },
   {
     "issue_title": "\u667a\u80fd\u7cfb\u7edf",
+    "issue_subtitle": "Intelligence System",
     "issue_list": [
       {
         "title": "\u4e00\u6b65\u6b65\u642d\u5efa\u7269\u8054\u7f51\u7cfb\u7edf",
@@ -116,6 +118,7 @@
   },
   {
     "issue_title": "\u5206\u5e03\u5f0f\u7cfb\u7edf",
+    "issue_subtitle": "Distributed System",
     "issue_list": [
       {
         "title": "\u8d70\u5411\u5206\u5e03\u5f0f",
@@ -126,6 +129,7 @@
   },
   {
     "issue_title": "\u7f16\u8bd1\u539f\u7406",
+    "issue_subtitle": "Compilation Principle",
     "issue_list": [
       {
         "title": "\u300a\u8ba1\u7b97\u673a\u7a0b\u5e8f\u7684\u7ed3\u6784\u548c\u89e3\u91ca\u300b\u516c\u5f00\u8bfe \u7ffb\u8bd1\u9879\u76ee",
@@ -136,6 +140,7 @@
   },
   {
     "issue_title": "\u51fd\u6570\u5f0f\u6982\u5ff5",
+    "issue_subtitle": "Functional Concept",
     "issue_list": [
       {
         "title": "\u50bb\u74dc\u51fd\u6570\u7f16\u7a0b",
@@ -146,6 +151,7 @@
   },
   {
     "issue_title": "\u8ba1\u7b97\u673a\u56fe\u5f62\u5b66",
+    "issue_subtitle": "Computer Graphics",
     "issue_list": [
       {
         "title": "OpenGL \u6559\u7a0b",
@@ -161,6 +167,7 @@
   },
   {
     "issue_title": "WEB\u670d\u52a1\u5668",
+    "issue_subtitle": "The Web Server",
     "issue_list": [
       {
         "title": "Nginx\u5f00\u53d1\u4ece\u5165\u95e8\u5230\u7cbe\u901a",
@@ -186,6 +193,7 @@
   },
   {
     "issue_title": "\u7248\u672c\u63a7\u5236",
+    "issue_subtitle": "Version Control",
     "issue_list": [
       {
         "title": "Git\u6559\u7a0b",
@@ -271,6 +279,7 @@
   },
   {
     "issue_title": "\u7f16\u8f91\u5668",
+    "issue_subtitle": "Editors",
     "issue_list": [
       {
         "title": "exvim--vim \u6539\u826f\u6210IDE\u9879\u76ee",
@@ -316,6 +325,7 @@
   },
   {
     "issue_title": "NoSQL",
+    "issue_subtitle": "数据库",
     "issue_list": [
       {
         "title": "NoSQL\u6570\u636e\u5e93\u7b14\u8c08",
@@ -351,6 +361,7 @@
   },
   {
     "issue_title": "PostgreSQL",
+    "issue_subtitle": "数据库",
     "issue_list": [
       {
         "title": "PostgreSQL 8.2.3 \u4e2d\u6587\u6587\u6863",
@@ -371,6 +382,7 @@
   },
   {
     "issue_title": "MySQL",
+    "issue_subtitle": "数据库",
     "issue_list": [
       {
         "title": "MySQL\u7d22\u5f15\u80cc\u540e\u7684\u6570\u636e\u7ed3\u6784\u53ca\u7b97\u6cd5\u539f\u7406",
@@ -386,6 +398,7 @@
   },
   {
     "issue_title": "\u7ba1\u7406\u548c\u76d1\u63a7",
+    "issue_subtitle": "Management And Monitoring",
     "issue_list": [
       {
         "title": "Mastering Elasticsearch(\u4e2d\u6587\u7248)",
@@ -411,6 +424,7 @@
   },
   {
     "issue_title": "\u9879\u76ee\u76f8\u5173",
+    "issue_subtitle": "Project Related",
     "issue_list": [
       {
         "title": "\u6301\u7eed\u96c6\u6210\uff08\u7b2c\u4e8c\u7248\uff09",
@@ -486,6 +500,7 @@
   },
   {
     "issue_title": "\u8bbe\u8ba1\u6a21\u5f0f",
+    "issue_subtitle": "Design Patterns",
     "issue_list": [
       {
         "title": "\u56fe\u8bf4\u8bbe\u8ba1\u6a21\u5f0f",
@@ -511,6 +526,7 @@
   },
   {
     "issue_title": "Web",
+    "issue_subtitle": "前端",
     "issue_list": [
       {
         "title": "\u5173\u4e8e\u6d4f\u89c8\u5668\u548c\u7f51\u7edc\u7684 20 \u9879\u987b\u77e5",
@@ -646,6 +662,7 @@
   },
   {
     "issue_title": "\u5927\u6570\u636e",
+    "issue_subtitle": "Big Data",
     "issue_list": [
       {
         "title": "\u5927\u6570\u636e/\u6570\u636e\u6316\u6398/\u63a8\u8350\u7cfb\u7edf/\u673a\u5668\u5b66\u4e60\u76f8\u5173\u8d44\u6e90",
@@ -676,6 +693,7 @@
   },
   {
     "issue_title": "\u7f16\u7a0b\u827a\u672f",
+    "issue_subtitle": "Art Of Programming",
     "issue_list": [
       {
         "title": "\u7a0b\u5e8f\u5458\u7f16\u7a0b\u827a\u672f",
@@ -696,6 +714,7 @@
   },
   {
     "issue_title": "\u5176\u5b83",
+    "issue_subtitle": "Other",
     "issue_list": [
       {
         "title": "OpenWrt\u667a\u80fd\u3001\u81ea\u52a8\u3001\u900f\u660e\u7ffb\u5899\u8def\u7531\u5668\u6559\u7a0b",
@@ -731,6 +750,7 @@
   },
   {
     "issue_title": "Android",
+    "issue_subtitle": "安卓",
     "issue_list": [
       {
         "title": "Android Design(\u4e2d\u6587\u7248)",
@@ -771,6 +791,7 @@
   },
   {
     "issue_title": "APP",
+    "issue_subtitle": "应用",
     "issue_list": [
       {
         "title": "Apache Cordova \u5f00\u53d1\u6307\u5357",
@@ -781,6 +802,7 @@
   },
   {
     "issue_title": "AWK",
+    "issue_subtitle": "Alfred Aho、Peter Weinberger、Brian Kernighan",
     "issue_list": [
       {
         "title": "awk\u7a0b\u5e8f\u8bbe\u8ba1\u8bed\u8a00",
@@ -796,6 +818,7 @@
   },
   {
     "issue_title": "C/C++",
+    "issue_subtitle": "编程语言",
     "issue_list": [
       {
         "title": "C \u8bed\u8a00\u7f16\u7a0b\u900f\u89c6",
@@ -921,6 +944,7 @@
   },
   {
     "issue_title": "C#",
+    "issue_subtitle": "编程语言",
     "issue_list": [
       {
         "title": "MSDN C# \u4e2d\u6587\u6587\u6863",
@@ -965,7 +989,7 @@
     ]
   },
   {
-    "issue_title": "Clojure",
+    "issue_title": "CSS",
     "issue_list": [
       {
         "title": "\u901a\u7528 CSS \u7b14\u8bb0\u3001\u5efa\u8bae\u4e0e\u6307\u5bfc",
@@ -1881,6 +1905,7 @@
   },
   {
     "issue_title": "\u8bfb\u4e66\u7b14\u8bb0\u53ca\u5176\u5b83",
+    "issue_subtitle": "Reading Notes And Others",
     "issue_list": [
       {
         "title": "\u7f16\u8bd1\u539f\u7406\uff08\u7d2b\u9f99\u4e66\uff09\u4e2d\u6587\u7b2c2\u7248\u4e60\u9898\u7b54\u6848",
@@ -2016,6 +2041,7 @@
   },
   {
     "issue_title": "\u6d4b\u8bd5\u76f8\u5173",
+    "issue_subtitle": "Test",
     "issue_list": [
       {
         "title": "\u79fb\u52a8APP\u81ea\u52a8\u5316\u6d4b\u8bd5\u4f18\u79c0\u6846\u67b6Appium API Reference V1.2.0 CN",

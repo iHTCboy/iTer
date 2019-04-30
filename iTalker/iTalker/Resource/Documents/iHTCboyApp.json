@@ -1,6 +1,7 @@
 [
     {
         "issue_title": "Apps",
+        "issue_subtitle": "开发者应用",
         "issue_list": [
             {
                 "title": "iLeetCoder",
@@ -31,6 +32,7 @@
     },
     {
         "issue_title": "开源项目",
+        "issue_subtitle": "GitHub",
         "issue_list": [
             {
                 "title": "OneMindMap",
