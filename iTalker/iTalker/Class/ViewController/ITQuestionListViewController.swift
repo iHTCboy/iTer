@@ -27,8 +27,9 @@ class ITQuestionListViewController: UIViewController {
     
     // MARK:- 懒加载
     lazy var tableView: UITableView = {
-        var tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenW, height: kScreenH-64-58), style: .plain)
-        tableView.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 40, right: 0)
+        var tableView = UITableView.init(frame: CGRect.zero, style: .plain)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 40 + 58, right: 0) //tabBarHeight
         tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         tableView.estimatedRowHeight = 80
         tableView.delegate = self;
@@ -88,18 +89,16 @@ class ITQuestionListViewController: UIViewController {
 extension ITQuestionListViewController {
     fileprivate func setUpUI() {
         view.addSubview(tableView)
-//        tableView.translatesAutoresizingMaskIntoConstraints = false
-//
-//        let viewDict = [
-//            "tableView": tableView
-//            ]
-//
-//        let vFormat = "V:|[tableView]|"
-//        let hFormat = "H:|[tableView]|"
-//        let vConstraints = NSLayoutConstraint.constraints(withVisualFormat: vFormat, options: [], metrics: nil, views: viewDict)
-//        let hConstraints = NSLayoutConstraint.constraints(withVisualFormat: hFormat, options: [], metrics: nil, views: viewDict)
-//        view.addConstraints(vConstraints)
-//        view.addConstraints(hConstraints)
+        let constraintViews = [
+            "tableView": tableView
+        ]
+        let vFormat = "V:|-0-[tableView]-0-|"
+        let hFormat = "H:|-0-[tableView]-0-|"
+        let vConstraints = NSLayoutConstraint.constraints(withVisualFormat: vFormat, options: [], metrics: [:], views: constraintViews)
+        let hConstraints = NSLayoutConstraint.constraints(withVisualFormat: hFormat, options: [], metrics: [:], views: constraintViews)
+        view.addConstraints(vConstraints)
+        view.addConstraints(hConstraints)
+        view.layoutIfNeeded()
         
         // 判断系统版本，必须iOS 9及以上，同时检测是否支持触摸力度识别
         if #available(iOS 9.0, *), traitCollection.forceTouchCapability == .available {
