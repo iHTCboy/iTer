@@ -39,7 +39,7 @@ class ITProgrammerVC: UIViewController {
     }()
     
     fileprivate var titles = ["0": "应用内评分:欢迎给\(kiTalker)打评分！,AppStore评价:欢迎给\(kiTalker)写评论!,分享给朋友:与身边的好友一起分享！",
-        "1":"意见反馈:欢迎到AppStore提需求或bug问题,邮件联系:如有问题欢迎来信,隐私条款:用户使用服务协议,开源地址:现已公开代码，欢迎关注,感谢开源:参考和引用的项目,更多关注:欢迎访问作者博客,更多学习:更多开发者内容推荐,关于应用:\(kiTalker)"] as [String : String]
+        "1":"意见反馈:欢迎到AppStore提需求或bug问题,邮件联系:如有问题欢迎来信,隐私条款:用户使用服务协议,开源地址:现已公开代码，欢迎关注,感谢开源:参考和引用的项目,更多关注:欢迎访问作者博客,更多应用:更多开发者内容推荐,关于应用:\(kiTalker)"] as [String : String]
 
 }
 
