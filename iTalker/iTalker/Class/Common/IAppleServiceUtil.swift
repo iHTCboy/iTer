@@ -11,10 +11,10 @@ import StoreKit
 import SafariServices
 
 class IAppleServiceUtil: NSObject {
-    class func openWebView(url: String, tintColor: UIColor, vc: UIViewController) {
+    class func openWebView(url: String, tintColor: UIColor, isReader: Bool, vc: UIViewController) {
         if #available(iOS 9.0, *) {
             let sf = SFSafariViewController(url: URL(string: url
-                )!, entersReaderIfAvailable: true)
+                )!, entersReaderIfAvailable: isReader)
             if #available(iOS 10.0, *) {
                 sf.preferredBarTintColor = tintColor
                 sf.preferredControlTintColor = UIColor.white

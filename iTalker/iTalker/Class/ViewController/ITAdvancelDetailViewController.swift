@@ -225,6 +225,6 @@ extension ITAdvancelDetailViewController : UITableViewDelegate, UITableViewDataS
         let dict = dataArray[indexPath.section]
         let array = dict["data"] as! Array<Dictionary<String, String>>
         let data = array[indexPath.row]
-        IAppleServiceUtil.openWebView(url: data["url"] ?? "", tintColor: kColorAppBlue, vc: self)
+        IAppleServiceUtil.openWebView(url: data["url"] ?? "", tintColor: kColorAppBlue, isReader:true, vc: self)
     }
 }

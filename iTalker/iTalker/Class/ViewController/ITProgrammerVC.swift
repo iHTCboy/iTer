@@ -153,10 +153,10 @@ extension ITProgrammerVC : UITableViewDelegate, UITableViewDataSource
                 ITCommonAPI.sharedInstance.sendEmail(recipients: [kEmail], messae: message, vc: self)
             }
             if row == 2 {
-                IAppleServiceUtil.openWebView(url: kLicenseURL, tintColor: kColorAppOrange, vc: self)
+                IAppleServiceUtil.openWebView(url: kLicenseURL, tintColor: kColorAppOrange, isReader:true, vc: self)
             }
             if row == 3 {
-                IAppleServiceUtil.openWebView(url: kGithubURL, tintColor: kColorAppOrange, vc: self)
+                IAppleServiceUtil.openWebView(url: kGithubURL, tintColor: kColorAppOrange, isReader:true, vc: self)
             }
             if row == 4 {
                 let vc = ITAdvancelDetailViewController()
@@ -166,7 +166,7 @@ extension ITProgrammerVC : UITableViewDelegate, UITableViewDataSource
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             if row == 5 {
-                IAppleServiceUtil.openWebView(url: kiHTCboyURL, tintColor: kColorAppOrange, vc: self)
+                IAppleServiceUtil.openWebView(url: kiHTCboyURL, tintColor: kColorAppOrange, isReader:false, vc: self)
             }
             if row == 6 {
                 let vc = ITAdvancelDetailViewController()

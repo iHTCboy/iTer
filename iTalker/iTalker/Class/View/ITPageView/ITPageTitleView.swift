@@ -107,6 +107,10 @@ extension ITPageTitleView {
             let tapGes = UITapGestureRecognizer(target: self, action: #selector(titleLabelClick(tapGes:)))
             label.addGestureRecognizer(tapGes)
         }
+        
+        if scrollView.contentSize.width < scrollView.frame.width {
+            scrollView.frame = CGRect.init(x: 0, y: 0, width: scrollView.contentSize.width, height: frame.height)
+        }
     }
     
     fileprivate func setUpBottomLineAndScroLine() {

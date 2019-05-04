@@ -132,10 +132,10 @@ extension ITAdvanceLearningViewController : UITableViewDelegate, UITableViewData
         switch section {
         case 0:
             if row == 0 {
-                IAppleServiceUtil.openWebView(url: "https://leetcode-cn.com/problemset/all/", tintColor: kColorAppBlue, vc: self)
+                IAppleServiceUtil.openWebView(url: "https://leetcode-cn.com/problemset/all/", tintColor: kColorAppBlue, isReader:false, vc: self)
             }
             if row == 1 {
-                IAppleServiceUtil.openWebView(url: "https://leetcode.com/problemset/all/", tintColor: kColorAppBlue, vc: self)
+                IAppleServiceUtil.openWebView(url: "https://leetcode.com/problemset/all/", tintColor: kColorAppBlue, isReader:false, vc: self)
             }
             if row == 2 {
                 IAppleServiceUtil.openAppstore(url: "https://itunes.apple.com/cn/app/iLeetCoder/id1458259471?l=zh&ls=1&mt=8", isAssessment: false)
@@ -176,7 +176,7 @@ extension ITAdvanceLearningViewController : UITableViewDelegate, UITableViewData
             break
         case 4:
             if row == 0 {
-                IAppleServiceUtil.openWebView(url: kOneMindMapURL, tintColor: kColorAppBlue, vc: self)
+                IAppleServiceUtil.openWebView(url: kOneMindMapURL, tintColor: kColorAppBlue, isReader:false, vc: self)
             }
             break
         case 5:
