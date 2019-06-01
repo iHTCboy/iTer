@@ -1,5 +1,5 @@
-# iTalker
-iTalker is technical problems library for iOS App, in order to it learners better understand knowledge, understand their mastery of the content.
+# iTer
+iTer is technical problems library for iOS App, in order to it learners better understand knowledge, understand their mastery of the content.
 
 ### 项目介绍
 iTer - IT学习、求职面试必备，IT面试基础必备试题指南。
