@@ -11,10 +11,16 @@ import StoreKit
 import SafariServices
 
 class IAppleServiceUtil: NSObject {
-    class func openWebView(url: String, tintColor: UIColor, isReader: Bool, vc: UIViewController) {
+    class func openWebView(url: String, tintColor: UIColor, vc: UIViewController) {
         if #available(iOS 9.0, *) {
-            let sf = SFSafariViewController(url: URL(string: url
-                )!, entersReaderIfAvailable: isReader)
+            var sf: SFSafariViewController
+            if #available(iOS 13.0, *) {
+                let config = SFSafariViewController.Configuration()
+                config.entersReaderIfAvailable = true
+                sf = SFSafariViewController.init(url: URL(string: url)!, configuration: config)
+            } else {
+                sf = SFSafariViewController(url: URL(string: url)!, entersReaderIfAvailable: true)
+            }
             if #available(iOS 10.0, *) {
                 sf.preferredBarTintColor = tintColor
                 sf.preferredControlTintColor = UIColor.white
@@ -27,7 +33,6 @@ class IAppleServiceUtil: NSObject {
             // Fallback on earlier versions
             UIApplication.shared.openURL(URL.init(string: url)!)
         }
-
     }
     
     class func shareWithImage(image: UIImage, text: String, url: String,  vc: UIViewController) {
@@ -35,18 +40,18 @@ class IAppleServiceUtil: NSObject {
         let activityController = UIActivityViewController(activityItems: [image , iURL, text], applicationActivities: nil)
         //if iPhone
         if (UIDevice.current.userInterfaceIdiom == .phone) {
+            activityController.modalPresentationStyle = .fullScreen
             vc.present(activityController, animated: true, completion: nil)
         } else {
             //if iPad
             // Change Rect to position Popover
-            let popup = UIPopoverController.init(contentViewController: activityController);
+            let popup = UIPopoverController.init(contentViewController: activityController)
             popup.present(from: CGRect.init(x: vc.view.frame.width-44, y: 64, width: 0, height: 0), in: vc.view, permittedArrowDirections: .any, animated: true)
         }
     }
     
     class func shareImage(image: UIImage, vc: UIViewController) {
         let activityController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
-        vc.present(activityController, animated: true, completion: nil)
         //if iPhone
         if (UIDevice.current.userInterfaceIdiom == .phone) {
             vc.present(activityController, animated: true, completion: nil)
@@ -61,7 +66,11 @@ class IAppleServiceUtil: NSObject {
     class func openAppstore(url: String, isAssessment: Bool) {
         let iURL = URL.init(string: url + (isAssessment ? "&action=write-review": ""))!
         if UIApplication.shared.canOpenURL(iURL) {
-            UIApplication.shared.openURL(iURL)
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(iURL, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(iURL)
+            }
         }
     }
     
@@ -86,7 +95,7 @@ class IAppleServiceUtil: NSObject {
                 
             }
             alert.addAction(cancelAction)
-            UIApplication.shared.keyWindow?.rootViewController!.present(alert, animated: true, completion: nil)
+            UIViewController.keyWindowHTC()?.rootViewController!.present(alert, animated: true, completion: nil)
         }
     }
 }
@@ -171,6 +180,17 @@ extension UIViewController {
     }
     
     func currentRootViewController() -> UIViewController {
-        return UIApplication.shared.keyWindow!.rootViewController ?? self
+        return view.window!.rootViewController ?? self
+    }
+    
+    func topViewController() -> UIViewController {
+        
+        var vc = view.window!.rootViewController ?? self
+        
+        while ((vc.presentedViewController) != nil) {
+            vc = vc.presentedViewController!;
+        }
+        
+        return vc;
     }
 }

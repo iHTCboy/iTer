@@ -38,8 +38,40 @@ let kColorAppBlue = UIColor(red:53/255.0,  green:177/255.0,  blue:1, alpha:1)
 let kColorAppOrange =  UIColor(red:1,  green:0.503,  blue:0, alpha:1)
 
 
+
 // 系统
 let KAppVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
+
+
+extension UIViewController {
+
+    /// The app's key window taking into consideration apps that support multiple scenes.
+    class func keyWindowHTC() -> UIWindow? {
+        var foundWindow: UIWindow? = nil
+        for window in UIApplication.shared.windows {
+            if (window.isKeyWindow) {
+                foundWindow = window;
+                break
+            }
+        }
+        
+        if  foundWindow == nil {
+            foundWindow = UIApplication.shared.keyWindow
+        }
+        
+        if  foundWindow == nil {
+            foundWindow = UIApplication.shared.windows.first
+        }
+        
+        // 先兼容iPhone设备
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            foundWindow = UIApplication.shared.keyWindow
+        }
+        
+        return foundWindow
+    }
+
+}
 
 enum UIUserInterfaceIdiom : Int
 {
@@ -88,6 +120,7 @@ public extension UIDevice {
         switch identifier {
         case "iPod5,1":                                 return "iPod Touch 5"
         case "iPod7,1":                                 return "iPod Touch 6"
+        case "iPod9,1":                                 return "7th Gen iPod"
         case "iPhone3,1", "iPhone3,2", "iPhone3,3":     return "iPhone 4"
         case "iPhone4,1":                               return "iPhone 4s"
         case "iPhone5,1", "iPhone5,2":                  return "iPhone 5"
@@ -106,6 +139,9 @@ public extension UIDevice {
         case "iPhone11,1", "iPhone11,2":                return "iPhone XS"
         case "iPhone11,4", "iPhone11,6":                return "iPhone XS Max"
         case "iPhone11,8", "iPhone11,9":                return "iPhone XR"
+        case "iPhone12,1":                              return "iPhone 11"
+        case "iPhone12,3":                              return "iPhone 11 Pro"
+        case "iPhone12,5":                              return "iPhone 11 Pro Max"
         case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4":return "iPad 2"
         case "iPad3,1", "iPad3,2", "iPad3,3":           return "iPad 3"
         case "iPad3,4", "iPad3,5", "iPad3,6":           return "iPad 4"
@@ -120,6 +156,22 @@ public extension UIDevice {
         case "iPad6,11", "iPad6,12":                    return "iPad (5th Gen)"
         case "iPad7,1", "iPad7,2":                      return "iPad Pro 12.9 (2nd Gen)"
         case "iPad7,3", "iPad7,4":                      return "iPad Pro 10.5"
+        case "iPad7,5":                                 return "iPad 6th Gen (WiFi)"
+        case "iPad7,6":                                 return "iPad 6th Gen (WiFi+Cellular)"
+        case "iPad7,11":                                return "iPad 7th Gen 10.2-inch (WiFi)"
+        case "iPad7,12":                                return "iPad 7th Gen 10.2-inch (WiFi+Cellular)"
+        case "iPad8,1":                                 return "iPad Pro 3rd Gen (11 inch, WiFi)"
+        case "iPad8,2":                                 return "iPad Pro 3rd Gen (11 inch, 1TB, WiFi)"
+        case "iPad8,3":                                 return "iPad Pro 3rd Gen (11 inch, WiFi+Cellular)"
+        case "iPad8,4":                                 return "iPad Pro 3rd Gen (11 inch, 1TB, WiFi+Cellular)"
+        case "iPad8,5":                                 return "iPad Pro 3rd Gen (12.9 inch, WiFi)"
+        case "iPad8,6":                                 return "iPad Pro 3rd Gen (12.9 inch, 1TB, WiFi)"
+        case "iPad8,7":                                 return "iPad Pro 3rd Gen (12.9 inch, WiFi+Cellular)"
+        case "iPad8,8":                                 return "iPad Pro 3rd Gen (12.9 inch, 1TB, WiFi+Cellular)"
+        case "iPad11,1":                                return "iPad mini 5th Gen (WiFi)"
+        case "iPad11,2":                                return "iPad mini 5th Gen"
+        case "iPad11,3":                                return "iPad Air 3rd Gen (WiFi)"
+        case "iPad11,4":                                return "iPad Air 3rd Gen"
         case "AppleTV2,1":                              return "Apple TV 2G"
         case "AppleTV3,1":                              return "Apple TV 3"
         case "AppleTV3,2":                              return "Apple TV 3 (2013)"

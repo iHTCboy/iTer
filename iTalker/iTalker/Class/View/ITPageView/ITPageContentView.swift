@@ -76,6 +76,9 @@ extension ITPageContentView {
         // 2. 添加 collectionview, 用于显示信息
         addSubview(collectionView)
         collectionView.frame = bounds
+//        if #available(iOS 11.0, *) , DeviceType.IS_IPHONE_X_S {
+//            collectionView.contentInset = UIEdgeInsetsMake(kTitleViewH + kStatusBarH, 0, kHomeIndcator, 0)
+//        }
     }
 }
 

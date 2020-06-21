@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="ipad12_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,11 +13,11 @@
             <rect key="frame" x="0.0" y="0.0" width="407" height="109"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="369" height="108.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="376" height="109"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ca7-QA-H6s">
-                        <rect key="frame" x="30" y="31" width="33" height="20"/>
+                        <rect key="frame" x="25" y="11" width="33" height="20"/>
                         <color key="backgroundColor" red="0.27572933521949206" green="0.74357826637324975" blue="0.98872262239456177" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="kPO-To-a1Z"/>
@@ -29,20 +27,20 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Uc-TE-V7e" customClass="ITCopyLabel" customModule="iTalker" customModuleProvider="target">
-                        <rect key="frame" x="30" y="59" width="331" height="29"/>
+                        <rect key="frame" x="25" y="39" width="348" height="49"/>
                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r64-Rm-FMh">
-                        <rect key="frame" x="0.0" y="107.5" width="406" height="1"/>
+                        <rect key="frame" x="0.0" y="108" width="418" height="1"/>
                         <color key="backgroundColor" red="0.84162270309999998" green="0.84162270309999998" blue="0.84162270309999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="0.80000000000000004" id="etT-Ob-Wuz"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iT-FL-dXy">
-                        <rect key="frame" x="71" y="31" width="33" height="20"/>
+                        <rect key="frame" x="66" y="11" width="33" height="20"/>
                         <color key="backgroundColor" red="0.97480666039999997" green="0.52825597879999997" blue="0.069089337319999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="aek-mR-Hnt"/>
@@ -52,7 +50,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yy7-2D-sV6">
-                        <rect key="frame" x="112" y="31" width="33" height="20"/>
+                        <rect key="frame" x="107" y="11" width="33" height="20"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="9K2-u8-gKp"/>
@@ -62,6 +60,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                 <constraints>
                     <constraint firstItem="0iT-FL-dXy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="1ua-pD-Ly1"/>
                     <constraint firstItem="Yy7-2D-sV6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="4Cp-YT-UJW"/>
@@ -78,6 +77,7 @@
                     <constraint firstAttribute="bottom" secondItem="r64-Rm-FMh" secondAttribute="bottom" id="sJy-YO-son"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
             <connections>
                 <outlet property="knowledgeLbl" destination="Yy7-2D-sV6" id="FyL-FA-ibk"/>
                 <outlet property="langugeLbl" destination="0iT-FL-dXy" id="thq-du-Eb0"/>

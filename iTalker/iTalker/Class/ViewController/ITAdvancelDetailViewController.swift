@@ -190,6 +190,9 @@ extension ITAdvancelDetailViewController : UITableViewDelegate, UITableViewDataS
         let subtitle = dict["subtitle"] as! String
         let view = TableHeaderView.initView(title: titile, subtitle: subtitle, height: 40)
         view.backgroundColor = .clear
+        if #available(iOS 13.0, *) {
+            view.backgroundColor = .systemGroupedBackground
+        }
         return view
     }
 
@@ -199,12 +202,19 @@ extension ITAdvancelDetailViewController : UITableViewDelegate, UITableViewDataS
         if (cell  == nil) {
             cell = UITableViewCell.init(style: .value1, reuseIdentifier: "ITAdvanceLearningViewCell")
             cell?.accessoryType = .disclosureIndicator
-            cell?.backgroundColor = .white
+            if #available(iOS 13.0, *) {
+                cell?.backgroundColor = .secondarySystemGroupedBackground
+            } else {
+                cell?.backgroundColor = .white
+            }
             cell?.selectedBackgroundView = UIView.init(frame: cell!.frame)
             cell?.selectedBackgroundView?.backgroundColor = kColorAppOrange.withAlphaComponent(0.7)
             cell?.textLabel?.font = UIFont.systemFont(ofSize: DeviceType.IS_IPAD ? 20:16.5)
             cell?.detailTextLabel?.font = UIFont.systemFont(ofSize: DeviceType.IS_IPAD ? 16:12.5)
             cell?.detailTextLabel?.sizeToFit()
+            #if targetEnvironment(macCatalyst)
+                cell?.textLabel?.font = UIFont.systemFont(ofSize: 20)
+            #endif
         }
 
         let dict = dataArray[indexPath.section]
@@ -225,6 +235,6 @@ extension ITAdvancelDetailViewController : UITableViewDelegate, UITableViewDataS
         let dict = dataArray[indexPath.section]
         let array = dict["data"] as! Array<Dictionary<String, String>>
         let data = array[indexPath.row]
-        IAppleServiceUtil.openWebView(url: data["url"] ?? "", tintColor: kColorAppBlue, isReader:true, vc: self)
+        IAppleServiceUtil.openWebView(url: data["url"] ?? "", tintColor: kColorAppBlue, vc: self)
     }
 }

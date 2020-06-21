@@ -44,6 +44,11 @@
 		6D0994341EA3C43000B5EA5C /* company_tabbar_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D0994301EA3C43000B5EA5C /* company_tabbar_selected@2x.png */; };
 		6D0994351EA3C43000B5EA5C /* company_tabbar_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D0994311EA3C43000B5EA5C /* company_tabbar_selected@3x.png */; };
 		6D0CB6DF1E9929FB00078553 /* ITLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0CB6DE1E9929FB00078553 /* ITLanguageViewController.swift */; };
+		6D1F29EC249F81050050B115 /* IHTCAppearanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1F29EB249F81050050B115 /* IHTCAppearanceVC.swift */; };
+		6D1F29EE249F811B0050B115 /* IHTCUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1F29ED249F811A0050B115 /* IHTCUserDefaults.swift */; };
+		6D1F29F0249F812F0050B115 /* IHTCLocalizedManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1F29EF249F812F0050B115 /* IHTCLocalizedManger.swift */; };
+		6D1F29F5249F852A0050B115 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D1F29F7249F852A0050B115 /* Localizable.strings */; };
+		6D1F29F8249F852F0050B115 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D1F29FA249F852F0050B115 /* InfoPlist.strings */; };
 		6D3B547B1E9A416100FF7F36 /* ITPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B54791E9A416100FF7F36 /* ITPageContentView.swift */; };
 		6D3B547C1E9A416100FF7F36 /* ITPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B547A1E9A416100FF7F36 /* ITPageTitleView.swift */; };
 		6D3B547F1E9A423C00FF7F36 /* CommonDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B547E1E9A423C00FF7F36 /* CommonDefine.swift */; };
@@ -258,6 +263,14 @@
 		6D0994301EA3C43000B5EA5C /* company_tabbar_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "company_tabbar_selected@2x.png"; sourceTree = "<group>"; };
 		6D0994311EA3C43000B5EA5C /* company_tabbar_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "company_tabbar_selected@3x.png"; sourceTree = "<group>"; };
 		6D0CB6DE1E9929FB00078553 /* ITLanguageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITLanguageViewController.swift; sourceTree = "<group>"; };
+		6D1F29EB249F81050050B115 /* IHTCAppearanceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHTCAppearanceVC.swift; sourceTree = "<group>"; };
+		6D1F29ED249F811A0050B115 /* IHTCUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHTCUserDefaults.swift; sourceTree = "<group>"; };
+		6D1F29EF249F812F0050B115 /* IHTCLocalizedManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHTCLocalizedManger.swift; sourceTree = "<group>"; };
+		6D1F29F6249F852A0050B115 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		6D1F29FB249F85370050B115 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		6D1F29FD249F85440050B115 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		6D1F29FE249F85450050B115 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		6D1F29FF249F8CD10050B115 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6D2A38C71EA50A480022918A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		6D2A38C91EA50A4D0022918A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		6D2A38CB1EA50AB00022918A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -799,6 +812,8 @@
 		6DE6912C1E99202400351BF2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6D1F29ED249F811A0050B115 /* IHTCUserDefaults.swift */,
+				6D1F29EF249F812F0050B115 /* IHTCLocalizedManger.swift */,
 				6D08384A1E99C9FE00B2D807 /* ITModel.swift */,
 				6D08384C1E99DB6900B2D807 /* ITQuestionModel.swift */,
 				6D046E121EABAF19002A653D /* ITPictureQuestionListModel.swift */,
@@ -840,6 +855,7 @@
 				6DBD66C022709DAC008363F0 /* ITAdvancelDetailViewController.swift */,
 				6D046AC81EAAEED4002A653D /* ITProgrammerVC.swift */,
 				6D046ACB1EAB58E1002A653D /* ITPictureQuestionVC.swift */,
+				6D1F29EB249F81050050B115 /* IHTCAppearanceVC.swift */,
 				6D3BA25A1EACA59500D15753 /* ITAboutAppVC.swift */,
 				6D3BA25B1EACA59500D15753 /* ITAboutAppVC.xib */,
 			);
@@ -852,6 +868,8 @@
 				6D046DA11EABA1A4002A653D /* Thirdparty */,
 				6D3B548E1E9A840A00FF7F36 /* Images */,
 				6DE691331E99207E00351BF2 /* Documents */,
+				6D1F29F7249F852A0050B115 /* Localizable.strings */,
+				6D1F29FA249F852F0050B115 /* InfoPlist.strings */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -1047,6 +1065,7 @@
 				6D6E2DC21EA3BCCC00FBC6F8 /* Alibaba-2015系统工程师研发笔试题.json in Resources */,
 				6D6E2D6F1EA3961400FBC6F8 /* Android.json in Resources */,
 				6D6E2DF01EA3BCCC00FBC6F8 /* Tencent-2015春招测试工程师练习卷.json in Resources */,
+				6D1F29F5249F852A0050B115 /* Localizable.strings in Resources */,
 				6D6E2DDC1EA3BCCC00FBC6F8 /* JD-2015校园招聘技术类笔试题.json in Resources */,
 				6D0994341EA3C43000B5EA5C /* company_tabbar_selected@2x.png in Resources */,
 				6DE72AA022751C7900C82A5D /* Copyright.json in Resources */,
@@ -1068,6 +1087,7 @@
 				6D6E2DCF1EA3BCCC00FBC6F8 /* Baidu-2012研发工程师笔试卷.json in Resources */,
 				6D6E2DC31EA3BCCC00FBC6F8 /* Alibaba-2015研发工程师A笔试卷.json in Resources */,
 				6D6E2DC01EA3BCCC00FBC6F8 /* Alibaba-2015实习生笔试真题.json in Resources */,
+				6D1F29F8249F852F0050B115 /* InfoPlist.strings in Resources */,
 				6D6E2DB81EA3BCCC00FBC6F8 /* 360-2014校招笔试卷.json in Resources */,
 				6D3B54931E9A841000FF7F36 /* Engineer_normal@2x.png in Resources */,
 				6D6E2DB91EA3BCCC00FBC6F8 /* 360-2015软件测试工程师笔试题.json in Resources */,
@@ -1252,6 +1272,7 @@
 				6D046E0F1EABA1EC002A653D /* NTWaterfallViewController.swift in Sources */,
 				6D046ACC1EAB58E1002A653D /* ITPictureQuestionVC.swift in Sources */,
 				6D046E171EABAF83002A653D /* ITPictureModel.swift in Sources */,
+				6D1F29EC249F81050050B115 /* IHTCAppearanceVC.swift in Sources */,
 				6DB61661226E14BA00E4EEDF /* ITAdvanceLearningViewController.swift in Sources */,
 				6D3E80A42271EF84002D4CC0 /* UITableView+Additions.swift in Sources */,
 				6DD090D522744575000439B7 /* IHTCSearchViewController.swift in Sources */,
@@ -1280,6 +1301,7 @@
 				6D046E131EABAF19002A653D /* ITPictureQuestionListModel.swift in Sources */,
 				6D3E80A32271EF84002D4CC0 /* UIScrollView+Additions.swift in Sources */,
 				6DECE67F1EA3673200B2AE3B /* ITBasePopTransitionVC.swift in Sources */,
+				6D1F29EE249F811B0050B115 /* IHTCUserDefaults.swift in Sources */,
 				6DBD66C52270A833008363F0 /* TableHeaderView.swift in Sources */,
 				6D08384D1E99DB6900B2D807 /* ITQuestionModel.swift in Sources */,
 				6D3E80A72271EF9E002D4CC0 /* IHTCShareFooterView.swift in Sources */,
@@ -1287,6 +1309,7 @@
 				6D046E0D1EABA1EC002A653D /* NTTransitionProtocol.swift in Sources */,
 				6DE691301E99202400351BF2 /* AppDelegate.swift in Sources */,
 				6DECE67D1EA3573C00B2AE3B /* ITBasePushTransitionVC.swift in Sources */,
+				6D1F29F0249F812F0050B115 /* IHTCLocalizedManger.swift in Sources */,
 				6D046E0C1EABA1EC002A653D /* NTTransition.swift in Sources */,
 				6D3B54861E9A474C00FF7F36 /* ITQuestionListViewCell.swift in Sources */,
 			);
@@ -1324,6 +1347,25 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6D1F29F7249F852A0050B115 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D1F29F6249F852A0050B115 /* zh-Hans */,
+				6D1F29FB249F85370050B115 /* zh-Hant */,
+				6D1F29FF249F8CD10050B115 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		6D1F29FA249F852F0050B115 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D1F29FD249F85440050B115 /* zh-Hans */,
+				6D1F29FE249F85450050B115 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		6D3E80992271EA95002D4CC0 /* AppLaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1478,6 +1520,7 @@
 			baseConfigurationReference = EBB5952DF8A00E08D0A102EE /* Pods-iTalker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 2020.06.21;
 				DEVELOPMENT_TEAM = 28PV6G96R7;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iTalker/Info.plist;
@@ -1487,6 +1530,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iTalker/Resource/Thirdparty/ios_api",
 				);
+				MARKETING_VERSION = 7.0.0;
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ihtc.iTalker;
@@ -1502,6 +1546,7 @@
 			baseConfigurationReference = A3FCD108DC12D93A456A3837 /* Pods-iTalker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 2020.06.21;
 				DEVELOPMENT_TEAM = 28PV6G96R7;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iTalker/Info.plist;
@@ -1511,6 +1556,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iTalker/Resource/Thirdparty/ios_api",
 				);
+				MARKETING_VERSION = 7.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ihtc.iTalker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/iTalker/Class/iTalker-Brdging-Header.h";
