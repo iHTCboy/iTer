@@ -1520,7 +1520,7 @@
 			baseConfigurationReference = EBB5952DF8A00E08D0A102EE /* Pods-iTalker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 2020.06.21;
+				CURRENT_PROJECT_VERSION = 2020.06.26;
 				DEVELOPMENT_TEAM = 28PV6G96R7;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iTalker/Info.plist;
@@ -1530,7 +1530,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iTalker/Resource/Thirdparty/ios_api",
 				);
-				MARKETING_VERSION = 7.0.0;
+				MARKETING_VERSION = 7.1.0;
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ihtc.iTalker;
@@ -1546,7 +1546,7 @@
 			baseConfigurationReference = A3FCD108DC12D93A456A3837 /* Pods-iTalker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 2020.06.21;
+				CURRENT_PROJECT_VERSION = 2020.06.26;
 				DEVELOPMENT_TEAM = 28PV6G96R7;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iTalker/Info.plist;
@@ -1556,7 +1556,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iTalker/Resource/Thirdparty/ios_api",
 				);
-				MARKETING_VERSION = 7.0.0;
+				MARKETING_VERSION = 7.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ihtc.iTalker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/iTalker/Class/iTalker-Brdging-Header.h";
