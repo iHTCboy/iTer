@@ -87,6 +87,10 @@ class IHTCSearchViewController: UIViewController {
 
 extension IHTCSearchViewController {
     func setupUI() {
+        if #available(iOS 13.0, *) {
+             tableView?.backgroundColor = .secondarySystemBackground
+        }
+        
         self.searchBar.tintColor = kColorAppBlue
         self.searchBar.becomeFirstResponder()
         self.searchBar.delegate = self
@@ -332,5 +336,28 @@ extension IHTCSearchViewController: UIViewControllerPreviewingDelegate {
         
         // 返回需要弹出的控制权
         return questionVC
+    }
+}
+
+
+extension IHTCSearchViewController {
+    override public var keyCommands: [UIKeyCommand]? {
+        let backKeyCommand = UIKeyCommand.init(input: UIKeyCommand.inputEscape, modifierFlags: [], action: #selector(backCommand))
+        backKeyCommand.discoverabilityTitle = HTCLocalized("Close")
+        let wordKeyCommand = UIKeyCommand.init(input: "T", modifierFlags: [.command], action: #selector(wordCommand))
+        wordKeyCommand.discoverabilityTitle = HTCLocalized("Filter")
+        return [backKeyCommand, wordKeyCommand]
+    }
+
+    @objc private func backCommand() {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @objc private func wordCommand() {
+        clickedOptionItem(optionItem)
+    }
+    
+    open override var canBecomeFirstResponder: Bool {
+        return true
     }
 }

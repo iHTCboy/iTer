@@ -115,6 +115,9 @@ extension ITAdvanceLearningViewController : UITableViewDelegate, UITableViewData
             cell?.textLabel?.font = UIFont.systemFont(ofSize: DeviceType.IS_IPAD ? 20:16.5)
             cell?.detailTextLabel?.font = UIFont.systemFont(ofSize: DeviceType.IS_IPAD ? 16:11.5)
             cell?.detailTextLabel?.sizeToFit()
+            #if targetEnvironment(macCatalyst)
+                cell?.textLabel?.font = UIFont.systemFont(ofSize: 20)
+            #endif
         }
         
         let string = self.titles["\(indexPath.section)"]

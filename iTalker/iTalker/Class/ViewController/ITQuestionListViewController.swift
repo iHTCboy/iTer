@@ -164,12 +164,21 @@ extension ITQuestionListViewController : UITableViewDelegate, UITableViewDataSou
         cell.knowledgeLbl.layer.cornerRadius = 3
         cell.knowledgeLbl.layer.masksToBounds = true
         
+        #if targetEnvironment(macCatalyst)
+        cell.questionLbl.font = UIFont.systemFont(ofSize: 20)
+        #endif
+        
         let questionModle = self.listModel.result[indexPath.row]
         cell.tagLbl.text =  " " + self.title! + "   "
         
+        var secondaryLabel = UIColor.darkGray
+        if #available(iOS 13.0, *) {
+            secondaryLabel = UIColor.secondaryLabel
+        }
+        
         if questionModle.hasOptionQuestion {
             let text = questionModle.question + "\n\n  A: " + questionModle.optionA + " \n  B: " + questionModle.optionB + " \n  C: " + questionModle.optionC + " \n  D: " + questionModle.optionD + " "
-            cell.questionLbl.attributedText = getTextAttributedText(text: text, fontSize: 17, color: .darkGray, option: .backwards,styleText: [" \(questionModle.optionA) ", " \(questionModle.optionB) ", " \(questionModle.optionC) ", " \(questionModle.optionD) "])
+            cell.questionLbl.attributedText = getTextAttributedText(text: text, fontSize: 17, color: secondaryLabel, option: .backwards,styleText: [" \(questionModle.optionA) ", " \(questionModle.optionB) ", " \(questionModle.optionC) ", " \(questionModle.optionD) "])
         }
         else {
             cell.questionLbl.text = questionModle.question

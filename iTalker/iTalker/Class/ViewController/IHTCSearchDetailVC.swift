@@ -116,6 +116,9 @@ extension IHTCSearchDetailVC : UITableViewDelegate, UITableViewDataSource {
         cell.langugeLbl.layer.cornerRadius = 3
         cell.langugeLbl.layer.masksToBounds = true
         cell.langugeLbl.backgroundColor = kColorAppBlue
+        #if targetEnvironment(macCatalyst)
+           cell.questionLbl.font = UIFont.systemFont(ofSize: 20)
+        #endif
         
         cell.tagLbl.text =  " " + questionModle!.title + "   "
         if questionModle!.hasOptionQuestion {

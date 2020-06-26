@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041334B1C637486E4C5EAE45 /* Pods_iTalker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B7C8D1C9E63A63A2DADE23 /* Pods_iTalker.framework */; };
 		6D046AC91EAAEED4002A653D /* ITProgrammerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D046AC81EAAEED4002A653D /* ITProgrammerVC.swift */; };
 		6D046ACC1EAB58E1002A653D /* ITPictureQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D046ACB1EAB58E1002A653D /* ITPictureQuestionVC.swift */; };
 		6D046DF51EABA1EC002A653D /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D046DD61EABA1EC002A653D /* CHTCollectionViewWaterfallLayout.swift */; };
@@ -87,7 +88,7 @@
 		6D3E80A72271EF9E002D4CC0 /* IHTCShareFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3E80A52271EF9D002D4CC0 /* IHTCShareFooterView.swift */; };
 		6D3E80A82271EF9E002D4CC0 /* IHTCShareFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3E80A62271EF9D002D4CC0 /* IHTCShareFooterView.xib */; };
 		6D3E80AA2271F30F002D4CC0 /* iTaler_shareIcon_qrcode.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D3E80A92271F30F002D4CC0 /* iTaler_shareIcon_qrcode.png */; };
-		6D4ABE6E225093530022AAFC /* libBaiduMobStat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4ABE6C225093530022AAFC /* libBaiduMobStat.a */; };
+		6D4ABE6E225093530022AAFC /* libBaiduMobStat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4ABE6C225093530022AAFC /* libBaiduMobStat.a */; platformFilter = ios; };
 		6D4EB0791EAAE7F80063D5A1 /* iTalkerman_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4EB0751EAAE7F80063D5A1 /* iTalkerman_blue@2x.png */; };
 		6D4EB07A1EAAE7F80063D5A1 /* iTalkerman_blue@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4EB0761EAAE7F80063D5A1 /* iTalkerman_blue@3x.png */; };
 		6D4EB07B1EAAE7F80063D5A1 /* italkerman_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4EB0771EAAE7F80063D5A1 /* italkerman_gray@2x.png */; };
@@ -224,6 +225,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DEF7067E082EA46E7FAF96D /* Pods-iTalker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTalker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTalker/Pods-iTalker.debug.xcconfig"; sourceTree = "<group>"; };
+		124B9BFE4744540AC9335719 /* Pods-iTalker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTalker.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTalker/Pods-iTalker.release.xcconfig"; sourceTree = "<group>"; };
 		636CFD79CA0E771B0425CE95 /* Pods-iTalkerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTalkerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTalkerTests/Pods-iTalkerTests.release.xcconfig"; sourceTree = "<group>"; };
 		63C650628B42D86420E1EBF7 /* Pods_iTalkerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTalkerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D046AC81EAAEED4002A653D /* ITProgrammerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITProgrammerVC.swift; sourceTree = "<group>"; };
@@ -407,6 +410,8 @@
 		6DB6165C226E147D00E4EEDF /* advance_learning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "advance_learning@2x.png"; sourceTree = "<group>"; };
 		6DB6165D226E147E00E4EEDF /* advance_learning@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "advance_learning@3x.png"; sourceTree = "<group>"; };
 		6DB61660226E14BA00E4EEDF /* ITAdvanceLearningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITAdvanceLearningViewController.swift; sourceTree = "<group>"; };
+		6DBBD44C24A5C1BF00202A0A /* iTalker copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iTalker copy-Info.plist"; path = "/Users/HTC/Documents/Programing/HTCiOS/iTer/iTalker/iTalker copy-Info.plist"; sourceTree = "<absolute>"; };
+		6DBBD44D24A5CE0800202A0A /* iTalker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iTalker.entitlements; sourceTree = "<group>"; };
 		6DBD66BA22708C9F008363F0 /* NSHipster.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NSHipster.json; sourceTree = "<group>"; };
 		6DBD66BB22708C9F008363F0 /* Objc.io.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Objc.io.json; sourceTree = "<group>"; };
 		6DBD66C022709DAC008363F0 /* ITAdvancelDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITAdvancelDetailViewController.swift; sourceTree = "<group>"; };
@@ -444,10 +449,8 @@
 		6DECE67C1EA3573C00B2AE3B /* ITBasePushTransitionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITBasePushTransitionVC.swift; sourceTree = "<group>"; };
 		6DECE67E1EA3673200B2AE3B /* ITBasePopTransitionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITBasePopTransitionVC.swift; sourceTree = "<group>"; };
 		95B7C8D1C9E63A63A2DADE23 /* Pods_iTalker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTalker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3FCD108DC12D93A456A3837 /* Pods-iTalker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTalker.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTalker/Pods-iTalker.release.xcconfig"; sourceTree = "<group>"; };
 		D523A4D2B94E56CA6667AFD7 /* Pods-iTalkerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTalkerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTalkerUITests/Pods-iTalkerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E59486BECA28F734960BE3A3 /* Pods_iTalkerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTalkerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBB5952DF8A00E08D0A102EE /* Pods-iTalker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTalker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTalker/Pods-iTalker.debug.xcconfig"; sourceTree = "<group>"; };
 		F0D9459C61647545F1A5DB99 /* Pods-iTalkerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTalkerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTalkerUITests/Pods-iTalkerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F44E8E70AFDC3023E7D91E92 /* Pods-iTalkerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTalkerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTalkerTests/Pods-iTalkerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -473,6 +476,7 @@
 				6D3B54AE1E9A8F6500FF7F36 /* Security.framework in Frameworks */,
 				6D3B54AC1E9A8F5600FF7F36 /* JavaScriptCore.framework in Frameworks */,
 				9BBBD4672A9F406762E66B77 /* Pods_iTalker.framework in Frameworks */,
+				041334B1C637486E4C5EAE45 /* Pods_iTalker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,12 +502,12 @@
 		3D2C9D8D27477B9B3D40774A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EBB5952DF8A00E08D0A102EE /* Pods-iTalker.debug.xcconfig */,
-				A3FCD108DC12D93A456A3837 /* Pods-iTalker.release.xcconfig */,
 				F44E8E70AFDC3023E7D91E92 /* Pods-iTalkerTests.debug.xcconfig */,
 				636CFD79CA0E771B0425CE95 /* Pods-iTalkerTests.release.xcconfig */,
 				F0D9459C61647545F1A5DB99 /* Pods-iTalkerUITests.debug.xcconfig */,
 				D523A4D2B94E56CA6667AFD7 /* Pods-iTalkerUITests.release.xcconfig */,
+				0DEF7067E082EA46E7FAF96D /* Pods-iTalker.debug.xcconfig */,
+				124B9BFE4744540AC9335719 /* Pods-iTalker.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -748,6 +752,7 @@
 				6DE690BE1E99155C00351BF2 /* Products */,
 				6D3B54AA1E9A8F5500FF7F36 /* Frameworks */,
 				3D2C9D8D27477B9B3D40774A /* Pods */,
+				6DBBD44C24A5C1BF00202A0A /* iTalker copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -764,6 +769,7 @@
 		6DE690BF1E99155C00351BF2 /* iTalker */ = {
 			isa = PBXGroup;
 			children = (
+				6DBBD44D24A5CE0800202A0A /* iTalker.entitlements */,
 				6DE6912A1E99202400351BF2 /* Class */,
 				6DE691321E99205D00351BF2 /* Resource */,
 				6DE690C41E99155C00351BF2 /* Main.storyboard */,
@@ -1174,21 +1180,17 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iTalker/Pods-iTalker-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-iTalker/Pods-iTalker-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTalker/Pods-iTalker-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iTalker/Pods-iTalker-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		944F1BFE1BF325C493D8DB11 /* [CP] Check Pods Manifest.lock */ = {
@@ -1509,7 +1511,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1517,15 +1520,20 @@
 		};
 		6DE690E61E99155D00351BF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBB5952DF8A00E08D0A102EE /* Pods-iTalker.debug.xcconfig */;
+			baseConfigurationReference = 0DEF7067E082EA46E7FAF96D /* Pods-iTalker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iTalker/iTalker.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CURRENT_PROJECT_VERSION = 2020.06.26;
 				DEVELOPMENT_TEAM = 28PV6G96R7;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iTalker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iTalker/Resource/Thirdparty/ios_api",
@@ -1535,6 +1543,7 @@
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ihtc.iTalker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/iTalker/Class/iTalker-Brdging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1543,15 +1552,20 @@
 		};
 		6DE690E71E99155D00351BF2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3FCD108DC12D93A456A3837 /* Pods-iTalker.release.xcconfig */;
+			baseConfigurationReference = 124B9BFE4744540AC9335719 /* Pods-iTalker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iTalker/iTalker.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CURRENT_PROJECT_VERSION = 2020.06.26;
 				DEVELOPMENT_TEAM = 28PV6G96R7;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iTalker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iTalker/Resource/Thirdparty/ios_api",
@@ -1559,6 +1573,7 @@
 				MARKETING_VERSION = 7.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ihtc.iTalker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/iTalker/Class/iTalker-Brdging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1573,7 +1588,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 28PV6G96R7;
 				INFOPLIST_FILE = iTalkerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ihtc.iTalkerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1589,7 +1608,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 28PV6G96R7;
 				INFOPLIST_FILE = iTalkerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ihtc.iTalkerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1604,7 +1627,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 28PV6G96R7;
 				INFOPLIST_FILE = iTalkerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ihtc.iTalkerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1619,7 +1646,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 28PV6G96R7;
 				INFOPLIST_FILE = iTalkerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ihtc.iTalkerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

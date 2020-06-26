@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9sW-Hr-DOm">
-    <device id="retina5_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9sW-Hr-DOm" initialMenu="fqr-gU-7ge">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -43,7 +42,7 @@
                 <navigationController id="T0k-tT-zim" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="企业" image="company_tabbar_normal.png" selectedImage="company_tabbar_selected.png" id="tOD-5L-U1d"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IO7-GX-A2G">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0097922282289999996" green="0.58012366289999995" blue="0.94970387219999997" alpha="0.84828895250000003" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -83,7 +82,7 @@
                 <navigationController id="I4V-gm-neW" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="猿人" image="italkerman_gray.png" selectedImage="iTalkerman_blue.png" id="U2l-c7-sle"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zSy-sY-Xca">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0097922282289999996" green="0.58012366289999995" blue="0.94970387219999997" alpha="0.84828895250000003" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -182,7 +181,7 @@
                     <tabBarItem key="tabBarItem" title="语言" image="language_tabbar_normal.png" selectedImage="language_tabbar_selected.png" id="fhS-3c-oCy"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="O3v-qv-Ey5">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0097922282289999996" green="0.58012366289999995" blue="0.94970387219999997" alpha="0.84729863556338025" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -205,7 +204,7 @@
                     <tabBarItem key="tabBarItem" title="职位" image="Engineer_normal.png" selectedImage="Engineer_selected.png" id="Auc-75-r2L"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IZs-vs-zoc">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0097922282289999996" green="0.58012366289999995" blue="0.94970387219999997" alpha="0.84828895246478875" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -227,7 +226,7 @@
                 <navigationController id="eaG-Jl-ypc" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="进阶" image="advance_learning.png" selectedImage="advance_learning.png" id="kOn-sA-loA"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TSU-c8-adY">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0097922282289999996" green="0.58012366289999995" blue="0.94970387219999997" alpha="0.84828895250000003" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -260,6 +259,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LRg-bp-koL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1496" y="514"/>
+        </scene>
+        <!--Main Menu-->
+        <scene sceneID="cXX-UM-IOp">
+            <objects>
+                <menu isSystemItem="YES" title="Main Menu" identifier="com.apple.menu.root" id="fqr-gU-7ge" sceneMemberID="viewController">
+                    <children>
+                        <menu isSystemItem="YES" title="File" identifier="com.apple.menu.file" id="Ez6-Nv-SVA">
+                            <children>
+                                <command title="Search" input="f" id="d4j-yG-zyl">
+                                    <keyModifierFlags key="modifierFlags" command="YES"/>
+                                    <connections>
+                                        <action selector="showSearch:" destination="hcA-hz-CY5" id="qL5-NE-O4X"/>
+                                    </connections>
+                                </command>
+                            </children>
+                            <systemMenuChildDeletions>
+                                <menuDeletion anchor="com.apple.menu.print"/>
+                            </systemMenuChildDeletions>
+                        </menu>
+                        <menu isSystemItem="YES" title="View" identifier="com.apple.menu.view" id="2LQ-B7-ttw">
+                            <systemMenuChildDeletions>
+                                <menuDeletion anchor="com.apple.menu.toolbar"/>
+                            </systemMenuChildDeletions>
+                        </menu>
+                    </children>
+                    <systemMenuChildDeletions>
+                        <menuDeletion anchor="com.apple.menu.edit"/>
+                        <menuDeletion anchor="com.apple.menu.format"/>
+                    </systemMenuChildDeletions>
+                </menu>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hcA-hz-CY5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1272" y="-929"/>
         </scene>
     </scenes>
     <resources>

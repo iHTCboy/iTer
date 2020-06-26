@@ -113,6 +113,9 @@ extension ITQuestionDetailViewController : UITableViewDelegate, UITableViewDataS
         cell.langugeLbl.backgroundColor = kColorAppBlue
         cell.knowledgeLbl.layer.cornerRadius = 3
         cell.knowledgeLbl.layer.masksToBounds = true
+        #if targetEnvironment(macCatalyst)
+           cell.questionLbl.font = UIFont.systemFont(ofSize: 20)
+        #endif
         
         cell.tagLbl.text =  " " + self.title! + "   "
         if questionModle!.hasOptionQuestion {
