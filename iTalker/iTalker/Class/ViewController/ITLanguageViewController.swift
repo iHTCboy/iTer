@@ -61,9 +61,9 @@ class ITLanguageViewController: ITBasePushTransitionVC {
             }
         }
         
-    let contentView = ITPageContentView(frame: contentFrame, childVcs: childVcs, parentVc: self)
-    contentView.delegate = self
-    return contentView
+        let contentView = ITPageContentView(frame: contentFrame, childVcs: childVcs, parentVc: self)
+        contentView.delegate = self
+        return contentView
     }()
     
     var isFirstLaunch = false
@@ -97,24 +97,56 @@ extension ITLanguageViewController {
     }
     
     func launchAnimate() {
-        if !isFirstLaunch {
-            isFirstLaunch = true
-            
-            let vc = UIStoryboard.init(name: "AppLaunchScreen", bundle: nil);
-            let launchView = vc.instantiateInitialViewController()!.view
-            let window =  UIWindow.init(frame: (view?.frame)!)
-            window.windowLevel = UIWindow.Level.alert
-            window.backgroundColor = UIColor.clear
-            window.addSubview(launchView!)
-            window.makeKeyAndVisible()
-            
-            UIView.animate(withDuration: 0.25, delay: 0.8, options: .beginFromCurrentState, animations: {
-                launchView?.layer.transform = CATransform3DScale(CATransform3DIdentity, 2, 2, 1)
-                launchView?.alpha = 0.0
-            }, completion: { (true) in
-                window.removeFromSuperview()
-            })
-        }
+         if !isFirstLaunch {
+             isFirstLaunch = true
+             
+             let sb = UIStoryboard.init(name: "AppLaunchScreen", bundle: nil);
+             let vc = sb.instantiateInitialViewController()!
+             if #available(iOS 13.0, *), UIDevice.current.userInterfaceIdiom == .pad {
+                 vc.view.frame = view.frame //Support iPadOS mutiple windows
+             }
+             let launchView = vc.view
+             var window = view.window
+             
+             if window == nil {
+                  // Support iPadOS mutiple windows, 当前有2个窗口在前台时
+                 if #available(iOS 13.0, *), UIDevice.current.userInterfaceIdiom == .pad {
+                     let scenes = UIApplication.shared.connectedScenes
+                     .filter({$0.activationState == .foregroundActive})
+                     .map({$0 as? UIWindowScene})
+                     .compactMap({$0})
+                     
+                     scenes.forEach { (scene) in
+                         scene.windows.forEach({ (wd) in
+                             if wd.isMember(of: UIWindow.self) && wd.frame.equalTo(view.frame) {
+                                 window = wd
+                             }
+                         })
+                     }
+                 }
+             }
+             
+             if window == nil {
+                 window = UIViewController.keyWindowHTC()
+             }
+             
+             window?.addSubview(launchView!)
+             
+             UIView.animate(withDuration: 0.25, delay: 0.8, options: .beginFromCurrentState, animations: {
+                 launchView?.layer.transform = CATransform3DScale(CATransform3DIdentity, 2, 2, 1)
+                 launchView?.alpha = 0.0
+             }, completion: { (true) in
+                 launchView?.removeFromSuperview()
+             })
+         }
+     }
+    
+    override var prefersStatusBarHidden: Bool {
+        return false
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 
 }
@@ -135,6 +167,26 @@ extension ITLanguageViewController: ITPageContentViewDelegate {
     }
 }
 
+
+
+extension ITLanguageViewController {
+    override public var keyCommands: [UIKeyCommand]? {
+        let reloadKeyCommand = UIKeyCommand.init(input: "R", modifierFlags: [.command], action: #selector(refresh))
+        reloadKeyCommand.discoverabilityTitle = HTCLocalized("Refresh")
+        return [reloadKeyCommand]
+    }
+    
+    @objc private func refresh() {
+        if selectTitleIndex < children.count {
+            let vc: ITQuestionListViewController = children[selectTitleIndex] as! ITQuestionListViewController
+            vc.randomRefresh(sender: vc.refreshControl)
+        }
+    }
+    
+    open override var canBecomeFirstResponder: Bool {
+        return true
+    }
+}
 
 
 
