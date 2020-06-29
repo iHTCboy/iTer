@@ -39,6 +39,11 @@ extension ITAboutAppVC
             return
         }
         
+        #if targetEnvironment(macCatalyst)
+        appNameLbl.font = UIFont.systemFont(ofSize: 20)
+        contentLbl.font = UIFont.systemFont(ofSize: 18)
+        #endif
+        
         self.logoImgView.image = UIImage.init(named: "iTaler_shareIcon")
         self.logoImgView.layer.cornerRadius = 8
         self.logoImgView.layer.masksToBounds = true

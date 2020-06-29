@@ -576,8 +576,8 @@
 		6D3B547D1E9A41FB00FF7F36 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				6DBD66C62270AD4B008363F0 /* IAppleServiceUtil.swift */,
 				6D3B547E1E9A423C00FF7F36 /* CommonDefine.swift */,
+				6DBD66C62270AD4B008363F0 /* IAppleServiceUtil.swift */,
 				6DC17B561EAC8FEF00FAA190 /* ITCommonAPI.swift */,
 			);
 			path = Common;
@@ -769,7 +769,6 @@
 		6DE690BF1E99155C00351BF2 /* iTalker */ = {
 			isa = PBXGroup;
 			children = (
-				6DBBD44D24A5CE0800202A0A /* iTalker.entitlements */,
 				6DE6912A1E99202400351BF2 /* Class */,
 				6DE691321E99205D00351BF2 /* Resource */,
 				6DE690C41E99155C00351BF2 /* Main.storyboard */,
@@ -804,6 +803,7 @@
 		6DE6912A1E99202400351BF2 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				6DBBD44D24A5CE0800202A0A /* iTalker.entitlements */,
 				6D3B54A41E9A8B5500FF7F36 /* iTalker-Brdging-Header.h */,
 				6DE6912B1E99202400351BF2 /* AppDelegate.swift */,
 				6DE6912E1E99202400351BF2 /* ViewController */,
@@ -1523,9 +1523,9 @@
 			baseConfigurationReference = 0DEF7067E082EA46E7FAF96D /* Pods-iTalker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = iTalker/iTalker.entitlements;
+				CODE_SIGN_ENTITLEMENTS = iTalker/Class/iTalker.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CURRENT_PROJECT_VERSION = 2020.06.27;
+				CURRENT_PROJECT_VERSION = 2020.06.29;
 				DEVELOPMENT_TEAM = 28PV6G96R7;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iTalker/Info.plist;
@@ -1538,7 +1538,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iTalker/Resource/Thirdparty/ios_api",
 				);
-				MARKETING_VERSION = 7.2.0;
+				MARKETING_VERSION = 7.3.0;
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ihtc.iTalker;
@@ -1555,9 +1555,9 @@
 			baseConfigurationReference = 124B9BFE4744540AC9335719 /* Pods-iTalker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = iTalker/iTalker.entitlements;
+				CODE_SIGN_ENTITLEMENTS = iTalker/Class/iTalker.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CURRENT_PROJECT_VERSION = 2020.06.27;
+				CURRENT_PROJECT_VERSION = 2020.06.29;
 				DEVELOPMENT_TEAM = 28PV6G96R7;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iTalker/Info.plist;
@@ -1570,7 +1570,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iTalker/Resource/Thirdparty/ios_api",
 				);
-				MARKETING_VERSION = 7.2.0;
+				MARKETING_VERSION = 7.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ihtc.iTalker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;

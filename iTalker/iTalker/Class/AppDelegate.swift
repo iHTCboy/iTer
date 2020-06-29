@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         setupBaseUI()
         
-        ITCommonAPI.sharedInstance.checkAppUpdate(newHandler: nil)
+        //ITCommonAPI.sharedInstance.checkAppUpdate(newHandler: nil)
         
         return true
     }
