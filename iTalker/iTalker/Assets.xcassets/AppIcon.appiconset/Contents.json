@@ -104,7 +104,79 @@
 				"idiom" : "ios-marketing",
 				"filename" : "icon-1024.jpg",
 				"scale" : "1x"
-			}
+			},
+		    {
+		    "filename" : "icon-120.png",
+		      "idiom" : "car",
+		      "scale" : "2x",
+		      "size" : "60x60"
+		    },
+		    {
+			  "filename" : "icon-180.png",
+		      "idiom" : "car",
+		      "scale" : "3x",
+		      "size" : "60x60"
+		    },
+		    {
+		      "filename" : "macOS-icon-16.png",
+		      "idiom" : "mac",
+		      "scale" : "1x",
+		      "size" : "16x16"
+		    },
+		    {
+		      "filename" : "macOS-icon-32.png",
+		      "idiom" : "mac",
+		      "scale" : "2x",
+		      "size" : "16x16"
+		    },
+		    {
+		      "filename" : "macOS-icon-32.png",
+		      "idiom" : "mac",
+		      "scale" : "1x",
+		      "size" : "32x32"
+		    },
+		    {
+		      "filename" : "macOS-icon-64.png",
+		      "idiom" : "mac",
+		      "scale" : "2x",
+		      "size" : "32x32"
+		    },
+		    {
+		      "filename" : "macOS-icon-128.png",
+		      "idiom" : "mac",
+		      "scale" : "1x",
+		      "size" : "128x128"
+		    },
+		    {
+		      "filename" : "macOS-icon-256.png",
+		      "idiom" : "mac",
+		      "scale" : "2x",
+		      "size" : "128x128"
+		    },
+		    {
+		      "filename" : "macOS-icon-256.png",
+		      "idiom" : "mac",
+		      "scale" : "1x",
+		      "size" : "256x256"
+		    },
+		    {
+		      "filename" : "macOS-icon-512.png",
+		      "idiom" : "mac",
+		      "scale" : "2x",
+		      "size" : "256x256"
+		    },
+		    {
+		      "filename" : "macOS-icon-512.png",
+		      "idiom" : "mac",
+		      "scale" : "1x",
+		      "size" : "512x512"
+		    },
+		    {
+		      "filename" : "macOS-icon-1024.png",
+		      "idiom" : "mac",
+		      "scale" : "2x",
+		      "size" : "512x512"
+		    }
 		],
 		"info" : {
 			"version" : 1,

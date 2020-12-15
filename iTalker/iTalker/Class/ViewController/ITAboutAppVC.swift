@@ -33,7 +33,7 @@ class ITAboutAppVC: UIViewController {
 extension ITAboutAppVC
 {
     func setupUI() {
-        self.title = "关于\(kiTalker)"
+        self.title = "关于\(kAppName)"
         
         guard (self.logoImgView != nil) else {
             return
@@ -47,9 +47,9 @@ extension ITAboutAppVC
         self.logoImgView.image = UIImage.init(named: "iTaler_shareIcon")
         self.logoImgView.layer.cornerRadius = 8
         self.logoImgView.layer.masksToBounds = true
-        self.appNameLbl.text = kiTalker
+        self.appNameLbl.text = kAppName
         self.versionLbl.text = "v" + KAppVersion
-        self.contentLbl.text = "\(kiTalker) 为一款IT工程师们提供知识充电的应用，IT知识学习、面试必备的工具，不断努力打造更多更好方式呈现更有趣的知识，让大家在零碎时间也可以快速和简单的学习get! \n \n 1、10000+题目库，满足你的求知欲！\n2、IT企业面试题目，为你完名企的梦！\n3、IT知识内容，为你准备好的面试！"
+        self.contentLbl.text = "\(kAppName) 为一款IT工程师们提供知识充电的应用，IT知识学习、面试必备的工具，不断努力打造更多更好方式呈现更有趣的知识，让大家在零碎时间也可以快速和简单的学习get! \n \n 1、10000+题目库，满足你的求知欲！\n2、IT企业面试题目，为你完名企的梦！\n3、IT知识内容，为你准备好的面试！"
         let formatter = DateFormatter.init()
         formatter.dateFormat = "yyyy"
         let yearString = formatter.string(from: Date.init())
