@@ -109,12 +109,34 @@ extension AppDelegate {
     }
     
     func setupBaseUI() {
-        let ui = UINavigationBar.appearance()
-        ui.tintColor = UIColor.white
-        ui.barTintColor = kColorAppBlue
-        ui.barStyle = .black
         UIApplication.shared.setStatusBarHidden(false, with: .none)
         
+        let appearance = UINavigationBar.appearance()
+        appearance.tintColor = UIColor.white
+        appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        appearance.barTintColor = kColorAppBlue.withAlphaComponent(0.9)
+        appearance.barStyle = .black
+        UITabBar.appearance().tintColor = kColorAppBlue.withAlphaComponent(0.9)
+        
+        if #available(iOS 13.0, *) {
+            let navBarAppearance = UINavigationBarAppearance()
+            navBarAppearance.configureWithOpaqueBackground()
+            navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+            navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+            navBarAppearance.backgroundColor = kColorAppBlue.withAlphaComponent(0.9)
+            appearance.standardAppearance = navBarAppearance
+            appearance.scrollEdgeAppearance = navBarAppearance
+        }
+        
+        if #available(iOS 13.0, *) {
+            let tabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.backgroundEffect = .init(style: .systemMaterial)
+            let tabBar = UITabBar.appearance()
+            tabBar.standardAppearance = tabBarAppearance
+            if #available(iOS 15.0, *) {
+                tabBar.scrollEdgeAppearance = tabBarAppearance
+            }
+        }
         
         #if targetEnvironment(macCatalyst)
         let tabbar = UITabBarItem.appearance()
